@@ -31,4 +31,11 @@ now whenever you work/add a file/remove a file/whatever, after you are done do t
 and it will update the repo. if you want the latest version of the repo before you start working, do `git pull`
 At least that is how I understand. Gonna test it now with this readme
 
+update: you may have to run these commands
+
+git config --global user.name "Your Name"
+git config --global user.email "your_email@example.com"
+
+if it isn't working
+
 - David
