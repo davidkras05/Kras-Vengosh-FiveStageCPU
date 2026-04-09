@@ -8,7 +8,7 @@ module register (
 );
 	
 	/*This is the 64 bit register for wiring to the five_thirtytwodecoder. This creates one
-		instance of a 64 bit register. the full 32 can be instantiated in the top module*/
+		instance of a 64 bit register. The full 32 can be instantiated in the top module*/
 	
 	genvar i;
 	
