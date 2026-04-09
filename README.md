@@ -19,3 +19,16 @@ Then, to push, you do the following three commands:
 To pull, you just do `git pull` in the PowerShell.
 
 - Adam
+
+Okay I figured it out. basically I did the `git clone https://github.com/davidkras05/CPU-EE469.git` in the powershell. It saved the repo as a folder.
+then I took the folder and put it on my desktop.
+
+now whenever you work/add a file/remove a file/whatever, after you are done do these three things in cmd
+1. `git add .`
+2.  `git commit -m "your message"`
+3. `git push`
+
+and it will update the repo. if you want the latest version of the repo before you start working, do `git pull`
+At least that is how I understand. Gonna test it now with this readme
+
+- David
