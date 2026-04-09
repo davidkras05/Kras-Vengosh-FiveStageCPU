@@ -8,3 +8,14 @@ but also save the OG versions. Pretty nice, also it shows the Systemverilog code
 also if you figure out how to do stuff with github put it here ig. systemverilogmaxxing
 
 - Dave
+
+Gotchu. I used chatgpt to help me setup git, but you need to download it and then copy the repo onto ur computer using the command
+`git clone https://github.com/davidkras05/CPU-EE469.git` in PowerShell.
+Then, to push, you do the following three commands:
+1. `git add .`
+2. `git commit -m "your message"`
+3. `git push`
+
+To pull, you just do `git pull` in the PowerShell.
+
+- Adam
