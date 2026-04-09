@@ -1,0 +1,31 @@
+# Quartus
+db/
+incremental_db/
+output_files/
+simulation/
+greybox_tmp/
+
+# Reports
+*.rpt
+*.summary
+*.smsg
+
+# Generated files
+*.qws
+*.qdf
+*.cmp
+*.jdi
+*.sopcinfo
+
+# Programming
+*.sof
+*.pof
+
+# Temp
+*.log
+*.bak
+*.tmp
+
+# OS
+.DS_Store
+Thumbs.db
