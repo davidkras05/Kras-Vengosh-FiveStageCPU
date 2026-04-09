@@ -3,8 +3,7 @@
 This is the github for our CPU project.
 
 Its best you look up how GITHUB works but basically everytime you edit something you make a commit. Github will save the latest version
-but also save the OG versions. Pretty nice. Im still figuring out how to use the full platform myself. I added a README for us to track changes
-and stuff we do. maybe everytime we make a change we could add like the date and change or something. idk we can figure it out.
+but also save the OG versions. Pretty nice, also it shows the Systemverilog code directly in each .sv file which is great. Im still figuring out how to use the full platform myself. I added a README for us to track changes and stuff we do. maybe everytime we make a change we could add like the date and change or something. idk we can figure it out.
 
 also if you figure out how to do stuff with github put it here ig
 
