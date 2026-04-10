@@ -1,5 +1,5 @@
 module loopedthirtytwo_mux(
-	input logic [31:0][63:0] data_lines,
+	input logic [63:0][31:0] data_lines,
 	input logic [4:0] s,
 	output logic [63:0] mux_out
 );
@@ -7,8 +7,8 @@ module loopedthirtytwo_mux(
 genvar i;
 
 generate
-	for (int i = 0; i < 64; i++) begin:
-		thirtytwo_1_mux (.in(data_lines[31:0][i]), .s(s), .y(mux_out[i]))
+	for (i = 0; i < 64; i++) begin: mux_loop
+		thirtytwo_1_mux muxes (.in(data_lines[i][31:0]), .s(s), .y(mux_out[i]));
 	end
 endgenerate
 

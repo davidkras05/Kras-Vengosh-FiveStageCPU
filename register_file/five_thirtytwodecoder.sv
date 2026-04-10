@@ -5,7 +5,7 @@ module one_twodecoder(
 );
 
 	logic nA;
-	not #50 (nA, A)
+	not #50 (nA, A);
 	
 	and #50 (y[0], nA, En);
 	and #50 (y[1], A, En);
@@ -17,7 +17,7 @@ module two_fourdecoder(
 	input logic A, B, En, // B is LSB
 	output logic [3:0] y
 );
-	logic onetwo_out;
+	logic[1:0] onetwo_out;
 	
 	one_twodecoder en_dec (.A(B), .En(En), .y(onetwo_out));
 	
@@ -37,7 +37,7 @@ module three_eightdecoder(
 	input logic A, B, C, En, // C is LSB
 	output logic [7:0] y
 );
-	logic onetwo_out;
+	logic[1:0] onetwo_out;
 	
 	one_twodecoder en_dec (.A(C), .En(En), .y(onetwo_out));
 	
@@ -57,7 +57,7 @@ module four_sixteendecoder(
 	output logic [15:0] y
 );
 
-	logic onetwo_out;
+	logic[1:0] onetwo_out;
 	
 	one_twodecoder en_dec (.A(D), .En(En), .y(onetwo_out));
 	
@@ -77,7 +77,7 @@ module five_thirtytwodecoder(
 	output logic [31:0] y
 );
 
-	logic onetwo_out;
+	logic[1:0] onetwo_out;
 	
 	one_twodecoder en_dec (.A(E), .En(En), .y(onetwo_out));
 	
@@ -86,8 +86,8 @@ module five_thirtytwodecoder(
 	and #50 (first_en, onetwo_out[0], En);
 	and #50 (second_en, onetwo_out[1], En);
 	
-	four_sixteendecoder first (.A(A), .B(B), .C(C), .D(D) .En(first_en), .y(y[15:0]));
-	four_sixteendecoder second (.A(A), .B(B), .C(C), .D(D) .En(seco,nd_en), .y(y[31:16]));
+	four_sixteendecoder first (.A(A), .B(B), .C(C), .D(D), .En(first_en), .y(y[15:0]));
+	four_sixteendecoder second (.A(A), .B(B), .C(C), .D(D), .En(second_en), .y(y[31:16]));
 
 endmodule
 	
