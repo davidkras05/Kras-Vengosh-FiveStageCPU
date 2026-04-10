@@ -5,6 +5,9 @@ output_files/
 simulation/
 greybox_tmp/
 
+# ModelSim
+work/
+
 # Reports
 *.rpt
 *.summary
