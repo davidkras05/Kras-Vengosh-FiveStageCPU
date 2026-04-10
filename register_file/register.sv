@@ -20,3 +20,65 @@ module register (
 		end
 	endgenerate
 endmodule
+
+
+module register_tb();
+
+    parameter ClockDelay = 5000;
+
+    logic clk, reset;
+    logic [63:0] write, q;
+    
+    integer i;
+    
+    initial begin // Set up the clock
+        clk <= 0;
+        forever #(ClockDelay/2) clk <= ~clk;
+    end
+    
+    initial $timeformat(-9, 2, " ns", 10);
+    
+    register dut (.clk, .write, .reset, .q);
+    
+    
+    
+    initial begin
+        // test reset behavior:
+        $display("%t Test reset behavior.", $time);
+        reset <= 1;
+        write <= 64'b0;
+        @(posedge clk);
+        
+        reset <= 0;
+        @(posedge clk);
+        
+        // test writing into register:
+        $display("%t Write all ones.", $time);
+        write <= 64'hFFFF_FFFF_FFFF_FFFF;
+        @(posedge clk);
+        
+        // test if register holds data:
+        $display("%t Tesing hold behavior.", $time);
+        @(posedge clk);
+        
+        
+        // write in all zeros:
+        $display("%t Write all zeros.", $time);
+        write <= 64'b0;
+        @(posedge clk);
+        
+        // test each bit individually:
+        
+        $display("%t Testing each bit individually.", $time);
+        for (i = 0; i < 64; i++) begin
+            write <= 64'b1 << i; // this is a 1 bit left shifted i times
+            @(posedge clk);
+        end
+        @(posedge clk);
+    
+    $stop;
+    end
+    
+endmodule
+
+
