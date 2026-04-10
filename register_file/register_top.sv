@@ -27,8 +27,8 @@ generate
 	end
 endgenerate
 
-sixtyfour_bit_mux mux0 (.data_lines(reg_outs), .s(read_reg_0), .mux_out(regout_0))
-sixtyfour_bit_mux mux1 (.data_lines(reg_outs), .s(read_reg_1), .mux_out(regout_1))
+loopedthirtytwo_mux mux0 (.data_lines(reg_outs), .s(read_reg_0), .mux_out(regout_0))
+loopedthirtytwo_mux mux1 (.data_lines(reg_outs), .s(read_reg_1), .mux_out(regout_1))
 									
 endmodule 
 
