@@ -1,4 +1,6 @@
 // 1:2 decoder with enable
+`timescale 1ns/10ps
+
 module one_twodecoder(
 	input logic A, En,
 	output logic [1:0] y

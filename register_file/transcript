@@ -1,0 +1,347 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:26:25 on Apr 10,2026
+# vlog -reportprogress 300 ./thirtytwo_1_mux.sv 
+# -- Compiling module two_onemux
+# -- Compiling module four_onemux
+# -- Compiling module eight_onemux
+# -- Compiling module sixteen_onemux
+# -- Compiling module thirtytwo_1_mux
+# 
+# Top level modules:
+# 	thirtytwo_1_mux
+# End time: 08:26:25 on Apr 10,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:26:25 on Apr 10,2026
+# vlog -reportprogress 300 ./regstim.sv 
+# -- Compiling module regstim
+# 
+# Top level modules:
+# 	regstim
+# End time: 08:26:25 on Apr 10,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:26:25 on Apr 10,2026
+# vlog -reportprogress 300 ./register.sv 
+# -- Compiling module register
+# 
+# Top level modules:
+# 	register
+# End time: 08:26:26 on Apr 10,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:26:26 on Apr 10,2026
+# vlog -reportprogress 300 ./loopedthirtytwo_mux.sv 
+# -- Compiling module loopedthirtytwo_mux
+# 
+# Top level modules:
+# 	loopedthirtytwo_mux
+# End time: 08:26:26 on Apr 10,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:26:26 on Apr 10,2026
+# vlog -reportprogress 300 ./five_thirtytwodecoder.sv 
+# -- Compiling module one_twodecoder
+# -- Compiling module two_fourdecoder
+# -- Compiling module three_eightdecoder
+# -- Compiling module four_sixteendecoder
+# -- Compiling module five_thirtytwodecoder
+# 
+# Top level modules:
+# 	five_thirtytwodecoder
+# End time: 08:26:26 on Apr 10,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:26:26 on Apr 10,2026
+# vlog -reportprogress 300 ./D_FF.sv 
+# -- Compiling module D_FF
+# 
+# Top level modules:
+# 	D_FF
+# End time: 08:26:26 on Apr 10,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:26:26 on Apr 10,2026
+# vlog -reportprogress 300 ./regfile.sv 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 08:26:26 on Apr 10,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work regstim 
+# Start time: 08:26:26 on Apr 10,2026
+# Loading sv_std.std
+# Loading work.regstim
+# Loading work.regfile
+# Loading work.five_thirtytwodecoder
+# Loading work.one_twodecoder
+# Loading work.four_sixteendecoder
+# Loading work.three_eightdecoder
+# Loading work.two_fourdecoder
+# Loading work.register
+# Loading work.loopedthirtytwo_mux
+# Loading work.D_FF
+# Loading work.thirtytwo_1_mux
+# Loading work.sixteen_onemux
+# Loading work.eight_onemux
+# Loading work.four_onemux
+# Loading work.two_onemux
+# ** Warning: (vsim-3017) ./regstim.sv(18): [TFMPC] - Too few port connections. Expected 9, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut File: ./regfile.sv
+# ** Warning: (vsim-3722) ./regstim.sv(18): [TFMPC] - Missing connection for port 'reset'.
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[0]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[1]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[2]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[3]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[4]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[5]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[6]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[7]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[8]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[9]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[10]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[11]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[12]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[13]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[14]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[15]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[16]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[17]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[18]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[19]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[20]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[21]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[22]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[23]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[24]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[25]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[26]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[27]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[28]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[29]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[30]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(31): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/zero_reg File: ./register.sv
+# ** Warning: Design size of 8018 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+# ** Error: Cannot open macro file: regtest.do
+# Error in macro ./runlab.do line 23
+# Cannot open macro file: regtest.do
+#     while executing
+# "do regtest.do"
+add wave -position end  sim:/regstim/clk
+add wave -position end  sim:/regstim/RegWrite
+add wave -position end  sim:/regstim/WriteRegister
+add wave -position end  sim:/regstim/ReadData1
+add wave -position end  sim:/regstim/ReadData2
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/texan/Desktop/CPU-EE469/register_file/regtest.do
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:35:53 on Apr 10,2026
+# vlog -reportprogress 300 ./thirtytwo_1_mux.sv 
+# -- Compiling module two_onemux
+# -- Compiling module four_onemux
+# -- Compiling module eight_onemux
+# -- Compiling module sixteen_onemux
+# -- Compiling module thirtytwo_1_mux
+# 
+# Top level modules:
+# 	thirtytwo_1_mux
+# End time: 08:35:53 on Apr 10,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:35:53 on Apr 10,2026
+# vlog -reportprogress 300 ./regstim.sv 
+# -- Compiling module regstim
+# 
+# Top level modules:
+# 	regstim
+# End time: 08:35:54 on Apr 10,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:35:54 on Apr 10,2026
+# vlog -reportprogress 300 ./register.sv 
+# -- Compiling module register
+# 
+# Top level modules:
+# 	register
+# End time: 08:35:54 on Apr 10,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:35:54 on Apr 10,2026
+# vlog -reportprogress 300 ./loopedthirtytwo_mux.sv 
+# -- Compiling module loopedthirtytwo_mux
+# 
+# Top level modules:
+# 	loopedthirtytwo_mux
+# End time: 08:35:54 on Apr 10,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:35:54 on Apr 10,2026
+# vlog -reportprogress 300 ./five_thirtytwodecoder.sv 
+# -- Compiling module one_twodecoder
+# -- Compiling module two_fourdecoder
+# -- Compiling module three_eightdecoder
+# -- Compiling module four_sixteendecoder
+# -- Compiling module five_thirtytwodecoder
+# 
+# Top level modules:
+# 	five_thirtytwodecoder
+# End time: 08:35:54 on Apr 10,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:35:54 on Apr 10,2026
+# vlog -reportprogress 300 ./D_FF.sv 
+# -- Compiling module D_FF
+# 
+# Top level modules:
+# 	D_FF
+# End time: 08:35:54 on Apr 10,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:35:54 on Apr 10,2026
+# vlog -reportprogress 300 ./regfile.sv 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 08:35:54 on Apr 10,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 08:35:58 on Apr 10,2026, Elapsed time: 0:09:32
+# Errors: 3, Warnings: 35
+# vsim -voptargs=""+acc"" -t 1ps -lib work regstim 
+# Start time: 08:35:58 on Apr 10,2026
+# Loading sv_std.std
+# Loading work.regstim
+# Loading work.regfile
+# Loading work.five_thirtytwodecoder
+# Loading work.one_twodecoder
+# Loading work.four_sixteendecoder
+# Loading work.three_eightdecoder
+# Loading work.two_fourdecoder
+# Loading work.register
+# Loading work.loopedthirtytwo_mux
+# Loading work.D_FF
+# Loading work.thirtytwo_1_mux
+# Loading work.sixteen_onemux
+# Loading work.eight_onemux
+# Loading work.four_onemux
+# Loading work.two_onemux
+# ** Warning: (vsim-3017) ./regstim.sv(18): [TFMPC] - Too few port connections. Expected 9, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut File: ./regfile.sv
+# ** Warning: (vsim-3722) ./regstim.sv(18): [TFMPC] - Missing connection for port 'reset'.
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[0]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[1]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[2]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[3]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[4]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[5]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[6]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[7]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[8]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[9]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[10]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[11]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[12]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[13]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[14]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[15]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[16]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[17]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[18]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[19]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[20]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[21]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[22]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[23]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[24]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[25]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[26]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[27]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[28]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[29]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(27): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/register_loop[30]/registers File: ./register.sv
+# ** Warning: (vsim-3015) ./regfile.sv(31): [PCDPC] - Port size (64) does not match connection size (32) for port 'q'. The port definition is at: ./register.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut/zero_reg File: ./register.sv
+# ** Warning: Design size of 8018 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# 2500.00 ns Attempting overwrite of register 31, which should always be 0
+# 7500.00 ns Writing pattern to all registers.
+# 317500.00 ns Checking pattern.
+# ** Note: $stop    : ./regstim.sv(69)
+#    Time: 477500 ns  Iteration: 1  Instance: /regstim
+# Break in Module regstim at ./regstim.sv line 69
+# End time: 08:38:09 on Apr 10,2026, Elapsed time: 0:02:11
+# Errors: 0, Warnings: 35

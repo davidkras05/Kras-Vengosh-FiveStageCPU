@@ -10,6 +10,7 @@ vlog "./register.sv"
 vlog "./loopedthirtytwo_mux.sv"
 vlog "./five_thirtytwodecoder.sv"
 vlog "./D_FF.sv"
+vlog "./regfile.sv"
 
 # Call vsim to invoke simulator
 #     Make sure the last item on the line is the name of the
@@ -19,7 +20,7 @@ vsim -voptargs="+acc" -t 1ps -lib work regstim
 # Source the wave do file
 #     This should be the file that sets up the signal window for
 #     the module you are testing.
-do mux2_1_wave.do
+do regtest.do
 
 # Set the window types
 view wave
