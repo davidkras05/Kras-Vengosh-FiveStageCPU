@@ -18,7 +18,7 @@ module regfile(
 										.En(RegWrite),
 										.y(dec_out));
 			
-	logic [63:0][31:0] reg_outs; //Swapped rows and columns due to loopedthirtytwo_Mux changes
+	logic [31:0][63:0] reg_outs; //Swapped rows and columns due to loopedthirtytwo_Mux changes
 			
 	genvar i;
 
@@ -30,9 +30,21 @@ module regfile(
 	
 	register zero_reg (.clk(clk), .write(64'b0), .reset(reset), .q(reg_outs[31]));
 	
+	logic [63:0][31:0] reg_outs_transpose;
+	
+	genvar j, k;
+	
+	generate
+		for (j = 0; j < 32; j++) begin: transpose_r
+			for (k = 0; k < 64; k++) begin: transpose_c
+				buf #50 (reg_outs_transpose[k][j], reg_outs[j][k]);
+			end
+		end
+	endgenerate
+	
 	//CHECK IF reg_outs WORK WITH NEW LOOPING/SWAPPED ROWS AND COLUMNS
-	loopedthirtytwo_mux mux1 (.data_lines(reg_outs), .s(ReadRegister1), .mux_out(ReadData1));
-	loopedthirtytwo_mux mux2 (.data_lines(reg_outs), .s(ReadRegister2), .mux_out(ReadData2));
+	loopedthirtytwo_mux mux1 (.data_lines(reg_outs_transpose), .s(ReadRegister1), .mux_out(ReadData1));
+	loopedthirtytwo_mux mux2 (.data_lines(reg_outs_transpose), .s(ReadRegister2), .mux_out(ReadData2));
 									
 endmodule 
 

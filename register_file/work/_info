@@ -7,350 +7,350 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/texan/Desktop/CPU-EE469/register_file
+dC:/Users/texan/Desktop/CPU-EE469/register_file
 vD_FF
-Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1775835354
+Z0 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z1 !s110 1775851591
 !i10b 1
 !s100 mAi1d^UBh_1VM52d9_c4K1
 ISG014znDDLNcn]Y]JfzK?1
-Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
 !s105 D_FF_sv_unit
 S1
-R0
-Z4 w1775772911
+Z3 dC:/Users/aveng/469/CPU-EE469/register_file
+w1775619782
 8./D_FF.sv
 F./D_FF.sv
 L0 1
-Z5 OV;L;10.5b;63
+Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z6 !s108 1775835354.000000
+Z5 !s108 1775851591.000000
 !s107 ./D_FF.sv|
 !s90 -reportprogress|300|./D_FF.sv|
 !i113 1
-Z7 tCvgOpt 0
+Z6 tCvgOpt 0
 n@d_@f@f
 veight_onemux
+R0
 R1
-Z8 !s110 1775835353
 !i10b 1
 !s100 0n1S=JG@d9dVC<CS^JH;82
 Izz4K84]lGF3ECmE2^hfm21
-R3
-Z9 !s105 thirtytwo_1_mux_sv_unit
+R2
+Z7 !s105 thirtytwo_1_mux_sv_unit
 S1
-R0
-Z10 w1775834720
-Z11 8./thirtytwo_1_mux.sv
-Z12 F./thirtytwo_1_mux.sv
+R3
+Z8 w1775846970
+Z9 8./thirtytwo_1_mux.sv
+Z10 F./thirtytwo_1_mux.sv
 L0 35
-R5
+R4
 r1
 !s85 0
 31
-Z13 !s108 1775835353.000000
-Z14 !s107 ./thirtytwo_1_mux.sv|
-Z15 !s90 -reportprogress|300|./thirtytwo_1_mux.sv|
+R5
+Z11 !s107 ./thirtytwo_1_mux.sv|
+Z12 !s90 -reportprogress|300|./thirtytwo_1_mux.sv|
 !i113 1
-R7
+R6
 vfive_thirtytwodecoder
+R0
 R1
-R2
 !i10b 1
 !s100 lQ]a6kHiNfmom0IYDFM`Y2
 I<nhl0S8l4Ag==XgZboEo<1
-R3
-Z16 !s105 five_thirtytwodecoder_sv_unit
+R2
+Z13 !s105 five_thirtytwodecoder_sv_unit
 S1
-R0
-Z17 w1775834488
-Z18 8./five_thirtytwodecoder.sv
-Z19 F./five_thirtytwodecoder.sv
+R3
+R8
+Z14 8./five_thirtytwodecoder.sv
+Z15 F./five_thirtytwodecoder.sv
 L0 77
-R5
+R4
 r1
 !s85 0
 31
-R6
-Z20 !s107 ./five_thirtytwodecoder.sv|
-Z21 !s90 -reportprogress|300|./five_thirtytwodecoder.sv|
+R5
+Z16 !s107 ./five_thirtytwodecoder.sv|
+Z17 !s90 -reportprogress|300|./five_thirtytwodecoder.sv|
 !i113 1
-R7
+R6
 vfour_onemux
+R0
 R1
-R8
 !i10b 1
 !s100 2iQUT5jn22PN][^HO`KeV2
 I7:38zjCZPHNYN?hncciQ<1
-R3
-R9
+R2
+R7
 S1
-R0
+R3
+R8
+R9
 R10
-R11
-R12
 L0 20
-R5
+R4
 r1
 !s85 0
 31
-R13
-R14
-R15
+R5
+R11
+R12
 !i113 1
-R7
+R6
 vfour_sixteendecoder
+R0
 R1
-R2
 !i10b 1
 !s100 ?<;8?WCg086J0l[h0D02e0
 IT:X0L9]>3i0D?B7<KEk:C1
-R3
-R16
+R2
+R13
 S1
-R0
-R17
-R18
-R19
+R3
+R8
+R14
+R15
 L0 57
-R5
+R4
 r1
 !s85 0
 31
-R6
-R20
-R21
+R5
+R16
+R17
 !i113 1
-R7
+R6
 vloopedthirtytwo_mux
+R0
 R1
-R2
 !i10b 1
 !s100 =X4khU5;>A?Bbl^zKN:nJ1
 I8Sf`4FcnQd>k3Pb9N06oY1
-R3
+R2
 !s105 loopedthirtytwo_mux_sv_unit
 S1
-R0
-w1775793302
+R3
+w1775850531
 8./loopedthirtytwo_mux.sv
 F./loopedthirtytwo_mux.sv
 L0 1
-R5
+R4
 r1
 !s85 0
 31
-R6
+R5
 !s107 ./loopedthirtytwo_mux.sv|
 !s90 -reportprogress|300|./loopedthirtytwo_mux.sv|
 !i113 1
-R7
+R6
 vone_twodecoder
+R0
 R1
-R2
 !i10b 1
 !s100 MCciUOX8BjVT7^7cV1O<51
 IKI5D3QTQzo;FhI=o68LHo1
-R3
-R16
+R2
+R13
 S1
-R0
-R17
-R18
-R19
+R3
+R8
+R14
+R15
 L0 4
-R5
+R4
 r1
 !s85 0
 31
-R6
-R20
-R21
+R5
+R16
+R17
 !i113 1
-R7
+R6
 vregfile
-R1
-R2
+R0
+!s110 1775851592
 !i10b 1
-!s100 =ZXO`IB3RV8e33=ZDW@:f3
-I[:mlGF5I9Qj50<a:VK83n3
-R3
+!s100 njjD489DXcAH`0JMQCFGo0
+ISNTi]R1OTcIl4=_mYN`j@2
+R2
 !s105 regfile_sv_unit
 S1
-R0
-w1775801007
+R3
+w1775851584
 8./regfile.sv
 F./regfile.sv
 L0 1
-R5
+R4
 r1
 !s85 0
 31
-R6
+R5
 !s107 ./regfile.sv|
 !s90 -reportprogress|300|./regfile.sv|
 !i113 1
-R7
+R6
 vregister
+R0
 R1
-R2
 !i10b 1
 !s100 dfz`7mm7_za5Cczm[zL[G1
 In76]V3FcJ0Z2[BmJGb@^K0
-R3
+R2
 !s105 register_sv_unit
 S1
-R0
-R4
+R3
+w1775707258
 8./register.sv
 F./register.sv
 L0 1
-R5
+R4
 r1
 !s85 0
 31
-R6
+R5
 !s107 ./register.sv|
 !s90 -reportprogress|300|./register.sv|
 !i113 1
-R7
+R6
 vregstim
+R0
 R1
-R2
 !i10b 1
 !s100 m[l>7zYA6o2D5_K6lagTW3
 IMP<MgbOGQ@?1nSLf`I?RZ0
-R3
+R2
 !s105 regstim_sv_unit
 S1
-R0
-w1775798799
+R3
+w1775797658
 8./regstim.sv
 F./regstim.sv
 L0 4
-R5
+R4
 r1
 !s85 0
 31
-R13
+R5
 !s107 ./regstim.sv|
 !s90 -reportprogress|300|./regstim.sv|
 !i113 1
-R7
+R6
 vsixteen_onemux
+R0
 R1
-R8
 !i10b 1
 !s100 ?b2J>Ezgjh?]^dEebi6S@1
 I;lPlb]NV5n`@IEE3[mO[g3
-R3
-R9
+R2
+R7
 S1
-R0
+R3
+R8
+R9
 R10
-R11
-R12
 L0 50
-R5
+R4
 r1
 !s85 0
 31
-R13
-R14
-R15
+R5
+R11
+R12
 !i113 1
-R7
+R6
 vthirtytwo_1_mux
+R0
 R1
-R8
 !i10b 1
 !s100 DZ:jMZORkK6_Hm`:f<]6o2
 ImKSF5`XLYaf7]bXAc9_Ek1
-R3
-R9
+R2
+R7
 S1
-R0
+R3
+R8
+R9
 R10
-R11
-R12
 L0 65
-R5
+R4
 r1
 !s85 0
 31
-R13
-R14
-R15
+R5
+R11
+R12
 !i113 1
-R7
+R6
 vthree_eightdecoder
+R0
 R1
-R2
 !i10b 1
 !s100 Te>JeR[^97UgOlNMUIdm60
 IKB:T4hhJcINj@U;@OGV@]2
-R3
-R16
+R2
+R13
 S1
-R0
-R17
-R18
-R19
+R3
+R8
+R14
+R15
 L0 38
-R5
+R4
 r1
 !s85 0
 31
-R6
-R20
-R21
+R5
+R16
+R17
 !i113 1
-R7
+R6
 vtwo_fourdecoder
+R0
 R1
-R2
 !i10b 1
 !s100 kN`C0UeVf[T]IU6ZaJ7cD3
 InCA@ZmLmW1BjfoSZFZNh[0
-R3
-R16
+R2
+R13
 S1
-R0
-R17
-R18
-R19
+R3
+R8
+R14
+R15
 L0 18
-R5
+R4
 r1
 !s85 0
 31
-R6
-R20
-R21
+R5
+R16
+R17
 !i113 1
-R7
+R6
 vtwo_onemux
+R0
 R1
-R8
 !i10b 1
 !s100 _HV9gdIXVb=GB7FaAK2AY0
 IMJ5ALECbf27Ze:aimIQzV3
-R3
-R9
+R2
+R7
 S1
-R0
+R3
+R8
+R9
 R10
-R11
-R12
 L0 3
-R5
+R4
 r1
 !s85 0
 31
-R13
-R14
-R15
+R5
+R11
+R12
 !i113 1
-R7
+R6
