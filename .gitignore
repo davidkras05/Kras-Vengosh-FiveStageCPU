@@ -23,6 +23,7 @@ greybox_tmp/
 
 *.qpf
 *.qsf
+*.done
 
 # Temp
 *.log
