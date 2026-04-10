@@ -27,6 +27,7 @@ greybox_tmp/
 *.pin
 *.sld
 *.cdf
+*.wlf
 
 *.sdc
 *.srf
