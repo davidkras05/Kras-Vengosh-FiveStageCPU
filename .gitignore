@@ -27,10 +27,16 @@ greybox_tmp/
 *.pin
 *.sld
 
+*.sdc
+*.srf
+*.cdf
+*.bat
+
 # Temp
 *.log
 *.bak
 *.tmp
+*.do
 
 # OS
 .DS_Store
