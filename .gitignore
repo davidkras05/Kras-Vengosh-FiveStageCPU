@@ -24,6 +24,8 @@ greybox_tmp/
 *.qpf
 *.qsf
 *.done
+*.pin
+*.sld
 
 # Temp
 *.log
