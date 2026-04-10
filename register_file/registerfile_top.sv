@@ -3,7 +3,7 @@ module registerfile_top(
 	input logic write_en, reset, clk,
 	input logic [4:0] reg_id, read_reg_0, read_reg_1,
 	input logic [63:0] write,
-	output logic [31:0] regout_0, regout_1
+	output logic [63:0] regout_0, regout_1 //These were originally 32 bit vectors but I think they are supposed to be 64 since they are outputs of the registers
 	
 );
 
@@ -17,7 +17,7 @@ module registerfile_top(
 										.En(write_en),
 										.y(dec_out));
 			
-	logic [31:0][63:0] reg_outs;
+	logic [63:0][31:0] reg_outs; //Swapped rows and columns due to loopedthirtytwo_Mux changes
 			
 	genvar i;
 
@@ -27,7 +27,7 @@ module registerfile_top(
 		end
 	endgenerate
 	
-	//CHECK IF DATA LINES WORK WITH NEW LOOPING
+	//CHECK IF reg_outs WORK WITH NEW LOOPING/SWAPPED ROWS AND COLUMNS
 	loopedthirtytwo_mux mux0 (.data_lines(reg_outs), .s(read_reg_0), .mux_out(regout_0));
 	loopedthirtytwo_mux mux1 (.data_lines(reg_outs), .s(read_reg_1), .mux_out(regout_1));
 									
