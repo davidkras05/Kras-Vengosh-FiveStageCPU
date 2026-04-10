@@ -38,7 +38,7 @@ greybox_tmp/
 *.log
 *.bak
 *.tmp
-*.do
+
 
 # OS
 .DS_Store
