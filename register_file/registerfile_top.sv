@@ -26,7 +26,8 @@ module registerfile_top(
 			register registers (.clk(clk), .write(write), .reset(reset), .q(reg_outs[i]));
 		end
 	endgenerate
-
+	
+	//CHECK IF DATA LINES WORK WITH NEW LOOPING
 	loopedthirtytwo_mux mux0 (.data_lines(reg_outs), .s(read_reg_0), .mux_out(regout_0));
 	loopedthirtytwo_mux mux1 (.data_lines(reg_outs), .s(read_reg_1), .mux_out(regout_1));
 									
