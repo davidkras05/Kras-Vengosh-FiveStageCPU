@@ -2,40 +2,23 @@
 
 This is the github for our CPU project.
 
-Its best you look up how GITHUB works but basically everytime you edit something you make a commit. Github will save the latest version
-but also save the OG versions. Pretty nice, also it shows the Systemverilog code directly in each .sv file which is great. Im still figuring out how to use the full platform myself. I added a README for us to track changes and stuff we do. maybe everytime we make a change we could add like the date and change or something. idk we can figure it out.
+you can get your own copy by doing `git clone https://github.com/davidkras05/CPU-EE469.git` in cmd
 
-also if you figure out how to do stuff with github put it here ig. systemverilogmaxxing
+To add a change from your repo copy onto the repo:
 
-- Dave
+1. go to cmd and navigate using cd *location* to your repo copy
+2. after your changes type `git add .` in cmd and press enter
+3. then do `git commit -m "your message"` and press enter
+4. finally, do `git push` and press enter
 
-Gotchu. I used chatgpt to help me setup git, but you need to download it and then copy the repo onto ur computer using the command
-`git clone https://github.com/davidkras05/CPU-EE469.git` in PowerShell.
-Then, to push, you do the following three commands:
-1. `git add .`
-2. `git commit -m "your message"`
-3. `git push`
+To get the latest repo copy, navigate to your repo copy in cmd and type `git pull`
 
-To pull, you just do `git pull` in the PowerShell.
+If none of that works make sure the config commands have been sent
 
-- Adam
+`git config --global user.name "your name"`
+and more importantly:
+`git config --global user.email "*type your github email*"`
 
-Okay I figured it out. basically I did the `git clone https://github.com/davidkras05/CPU-EE469.git` in the powershell. It saved the repo as a folder.
-then I took the folder and put it on my desktop.
-
-now whenever you work/add a file/remove a file/whatever, after you are done do these three things in cmd
-1. `git add .`
-2.  `git commit -m "your message"`
-3. `git push`
-
-and it will update the repo. if you want the latest version of the repo before you start working, do `git pull`
-At least that is how I understand. Gonna test it now with this readme
-
-update: you may have to run these commands
-
-git config --global user.name "Your Name"
-git config --global user.email "your_email@example.com"
-
-if it isn't working
+I updated the gitignore to include qpf (quartus project files) and qsf (quartus settings files) which means you can feel free to store your project file straight in your repo copy to work on multiple files at once and also do compiling. Makes everything a lot easier.
 
 - David
