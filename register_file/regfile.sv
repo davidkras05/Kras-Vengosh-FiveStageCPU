@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 module regfile(
-=======
-module registerfile_top(
->>>>>>> 88c8483ba73df845e355286882acd4b0bd9209d5
 	output logic [63:0] ReadData1, ReadData2, //These were originally 32 bit vectors but I think they are supposed to be 64 since they are outputs of the registers
 	input logic [63:0] WriteData,
 	input logic [4:0] ReadRegister1, ReadRegister2,
