@@ -27,6 +27,8 @@ module registerfile_top(
 		end
 	endgenerate
 	
+	register zero_reg (.clk(clk), .write(64'b0), .reset(reset), .q(reg_outs[31]));
+	
 	//CHECK IF reg_outs WORK WITH NEW LOOPING/SWAPPED ROWS AND COLUMNS
 	loopedthirtytwo_mux mux0 (.data_lines(reg_outs), .s(read_reg_0), .mux_out(regout_0));
 	loopedthirtytwo_mux mux1 (.data_lines(reg_outs), .s(read_reg_1), .mux_out(regout_1));
