@@ -8,7 +8,7 @@ genvar i;
 
 generate
 	for (int i = 0; i < 64; i++) begin:
-		thirtytwo_1_mux (.in(data_lines[31:0][i]), .s(s), .y(mux_out[i])
+		thirtytwo_1_mux (.in(data_lines[31:0][i]), .s(s), .y(mux_out[i]))
 	end
 endgenerate
 
