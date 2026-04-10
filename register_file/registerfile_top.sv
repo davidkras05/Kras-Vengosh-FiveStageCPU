@@ -1,4 +1,4 @@
-module register_top(
+module registerfile_top(
 
 	input logic write_en, reset, clk,
 	input logic [4:0] reg_id, read_reg_0, read_reg_1,
