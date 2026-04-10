@@ -22,6 +22,7 @@ greybox_tmp/
 *.pof
 
 *.qpf
+*.qsf
 
 # Temp
 *.log
