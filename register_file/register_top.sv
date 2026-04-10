@@ -23,7 +23,7 @@ genvar i;
 
 generate
 	for (i = 0; i<31; i++) begin:
-		register (.clk(clk), .write(write), .reset(reset), .q(reg_outs[i]))
+		register registers (.clk(clk), .write(write), .reset(reset), .q(reg_outs[i]))
 	end
 endgenerate
 
