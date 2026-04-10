@@ -1,6 +1,6 @@
 module two_onemux(
-	input logic [1:0] in
-	input logic s
+	input logic [1:0] in,
+	input logic s,
 	output logic y
 );
 	
@@ -16,8 +16,8 @@ module two_onemux(
 endmodule
 
 module four_onemux(
-	input logic [3:0] in
-	input logic [1:0] s
+	input logic [3:0] in,
+	input logic [1:0] s,
 	output logic y
 );
 	
@@ -31,8 +31,8 @@ module four_onemux(
 endmodule
 
 module eight_onemux(
-	input logic [7:0] in
-	input logic [2:0] s
+	input logic [7:0] in,
+	input logic [2:0] s,
 	output logic y
 );
 
@@ -46,8 +46,8 @@ module eight_onemux(
 endmodule
 
 module sixteen_onemux(
-	input logic [15:0] in
-	input logic [3:0] s
+	input logic [15:0] in,
+	input logic [3:0] s,
 	output logic y
 );
 
@@ -61,15 +61,15 @@ module sixteen_onemux(
 endmodule
 
 module thirtytwo_1_mux(
-	input logic [31:0] in
-	input logic [4:0] s
+	input logic [31:0] in,
+	input logic [4:0] s,
 	output logic y
 );
 
 	logic [1:0] first_layer_out;
 	
-	eight_onemux first (.in(in[15:0]), .s(s[3:0]), .y(first_layer_out[0]));
-	eight_onemux second (.in(in[31:16]), .s(s[3:0]), .y(first_layer_out[1]));
+	sixteen_onemux first (.in(in[15:0]), .s(s[3:0]), .y(first_layer_out[0]));
+	sixteen_onemux second (.in(in[31:16]), .s(s[3:0]), .y(first_layer_out[1]));
 	
 	two_onemux sec_layer (.in(first_layer_out), .s(s[4]), .y(y));
 

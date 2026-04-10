@@ -1,6 +1,6 @@
 // 1:2 decoder with enable
 module one_twodecoder(
-	input logic A, En
+	input logic A, En,
 	output logic [1:0] y
 );
 
@@ -14,7 +14,7 @@ endmodule
 
 // 2:4 decoder with enable, built from three 1:2 decoder above
 module two_fourdecoder(
-	input logic A, B, En // B is LSB
+	input logic A, B, En, // B is LSB
 	output logic [3:0] y
 );
 	logic onetwo_out;
@@ -34,7 +34,7 @@ endmodule
 
 // 3:8 decoder with enable, built from two 2:4 decoders above and a 1:2 decoder
 module three_eightdecoder(
-	input logic A, B, C, En // C is LSB
+	input logic A, B, C, En, // C is LSB
 	output logic [7:0] y
 );
 	logic onetwo_out;
@@ -53,7 +53,7 @@ endmodule
 
 // 4:16 decoder with enable, built from two 3:8 decoders above and a 1:2 decoder
 module four_sixteendecoder(
-	input logic A, B, C, D, En // D is LSB
+	input logic A, B, C, D, En, // D is LSB
 	output logic [15:0] y
 );
 
@@ -73,8 +73,8 @@ endmodule
 
 // 5:32 decoder with enable, built from two 4:16 decoders above and a 1:2 decoder
 module five_thirtytwodecoder(
-	input logic A, B, C, D, E, En // E is LSB
-	output logic [31:0]
+	input logic A, B, C, D, E, En, // E is LSB
+	output logic [31:0] y
 );
 
 	logic onetwo_out;
