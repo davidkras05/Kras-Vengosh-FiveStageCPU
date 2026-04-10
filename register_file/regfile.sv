@@ -1,7 +1,7 @@
 `timescale 1ns/10ps
 
 module regfile(
-	output logic [63:0] ReadData1, ReadData2, //These were originally 32 bit vectors but I think they are supposed to be 64 since they are outputs of the registers
+	output logic [63:0] ReadData1, ReadData2, 
 	input logic [63:0] WriteData,
 	input logic [4:0] ReadRegister1, ReadRegister2,
 	input logic [4:0] WriteRegister,
@@ -26,11 +26,11 @@ module regfile(
 
 	generate
 		for (i = 0; i<31; i++) begin: register_loop
-			register registers (.clk(clk), .write(WriteData), .reset(reset), .q(reg_outs[i]));
+			register registers (.clk(clk), .write(WriteData), .reset(reset), .En(dec_out[i]), .q(reg_outs[i]));
 		end
 	endgenerate
 	
-	register zero_reg (.clk(clk), .write(64'b0), .reset(reset), .q(reg_outs[31]));
+	register zero_reg (.clk(clk), .write(64'b0), .reset(reset), .En(dec_out[31]), .q(reg_outs[31]));
 	
 	//Transposing columns here due to looping errors with rows initially. have to transpose after
 	// wiring through registers.

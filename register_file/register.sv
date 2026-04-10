@@ -2,6 +2,7 @@ module register (
 	input logic clk,
 	input logic[63:0] write,
 	input logic reset,
+	input logic En,
 	
 	output logic[63:0] q
 	
@@ -9,13 +10,18 @@ module register (
 	
 	/*This is the 64 bit register for wiring to the five_thirtytwodecoder. This creates one
 		instance of a 64 bit register. The full 32 can be instantiated in the top module*/
+		
 	
 	genvar i;
 	
 	generate
 		for(i=0; i<64; i++) begin: sub_FF
+			
+			logic data_hold;
+			
+			two_onemux enable (.in({write[i], q[i]}), .s(En), .y(data_hold));
 	
-			D_FF flipflop (.q(q[i]), .d(write[i]), .reset(reset), .clk(clk));
+			D_FF flipflop (.q(q[i]), .d(data_hold), .reset(reset), .clk(clk));
 		
 		end
 	endgenerate
