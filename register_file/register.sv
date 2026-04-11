@@ -28,7 +28,7 @@ module register (
 endmodule
 
 
-module register_tb();
+module register_tb ();
 
     parameter ClockDelay = 5000;
 

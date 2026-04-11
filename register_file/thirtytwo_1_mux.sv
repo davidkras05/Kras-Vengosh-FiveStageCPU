@@ -6,14 +6,20 @@ module two_onemux(
 	output logic y
 );
 	
+	parameter delay = 50;
+	
 	logic not_s, A_line, B_line;
 	
-	not #50 (not_s, s);
+	not #(delay) (not_s, s);
 	
-	and #50 (A_line, in[0], not_s);
-	and #50 (B_line, in[1], s);
+	and #(delay) (A_line, in[0], not_s);
+	and #(delay) (B_line, in[1], s);
+	
+	logic B_line_buf;
+	
+	buf #(delay) (B_line_buf, B_line);
 
-	or #50 (y, A_line, B_line);
+	or #(delay) (y, A_line, B_line_buf);
 
 endmodule
 
