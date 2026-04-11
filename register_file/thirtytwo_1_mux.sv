@@ -74,11 +74,14 @@ module thirtytwo_1_mux(
 	output logic y
 );
 
-	logic [1:0] first_layer_out;
+	logic [3:0] first_layer_out;
 	
-	sixteen_onemux first (.in(in[15:0]), .s(s[3:0]), .y(first_layer_out[0]));
-	sixteen_onemux second (.in(in[31:16]), .s(s[3:0]), .y(first_layer_out[1]));
+	eight_onemux first (.in(in[7:0]), .s(s[2:0]), .y(first_layer_out[0]));
+	eight_onemux second (.in(in[15:8]), .s(s[2:0]), .y(first_layer_out[1]));
+	eight_onemux third (.in(in[23:16]), .s(s[2:0]), .y(first_layer_out[2]));
+	eight_onemux fourth (.in(in[31:24]), .s(s[2:0]), .y(first_layer_out[3]));
 	
-	two_onemux sec_layer (.in(first_layer_out), .s(s[4]), .y(y));
+	
+	four_onemux sec_layer (.in(first_layer_out), .s(s[4:3]), .y(y));
 
 endmodule

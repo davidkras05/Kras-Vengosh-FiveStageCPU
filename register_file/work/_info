@@ -10,7 +10,7 @@ cModel Technology
 dC:/Users/texan/Desktop/CPU-EE469/register_file
 vD_FF
 Z0 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z1 !s110 1775869122
+Z1 !s110 1775878986
 !i10b 1
 !s100 mAi1d^UBh_1VM52d9_c4K1
 ISG014znDDLNcn]Y]JfzK?1
@@ -26,7 +26,7 @@ Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1775869122.000000
+Z5 !s108 1775878986.000000
 !s107 ./D_FF.sv|
 !s90 -reportprogress|300|./D_FF.sv|
 !i113 1
@@ -42,7 +42,7 @@ R2
 Z7 !s105 thirtytwo_1_mux_sv_unit
 S1
 R3
-Z8 w1775868662
+Z8 w1775878956
 Z9 8./thirtytwo_1_mux.sv
 Z10 F./thirtytwo_1_mux.sv
 L0 41
@@ -59,16 +59,16 @@ vfive_thirtytwodecoder
 R0
 R1
 !i10b 1
-!s100 gKZJ66Dz]nFD:KTkoT`mU2
-IZRfGW8L3mLolMC=NojWJV3
+!s100 z4_iBcGa_GZZE91aSil>F1
+I]^Ni^eM3ZF8`jjQ=U=BR<3
 R2
 Z13 !s105 five_thirtytwodecoder_sv_unit
 S1
 R3
-Z14 w1775868797
+Z14 w1775877839
 Z15 8./five_thirtytwodecoder.sv
 Z16 F./five_thirtytwodecoder.sv
-L0 85
+L0 91
 R4
 r1
 !s85 0
@@ -105,8 +105,8 @@ vfour_sixteendecoder
 R0
 R1
 !i10b 1
-!s100 3J2H:?Z]cTZXHJ@bfGDf_2
-I_hA;d1FF7U=9?k:KQ^bZ33
+!s100 `jjO9iNQnTDdE6G1VPBdU1
+Ide5mL:MbdX<e9^[df8<;70
 R2
 R13
 S1
@@ -114,7 +114,7 @@ R3
 R14
 R15
 R16
-L0 65
+L0 69
 R4
 r1
 !s85 0
@@ -180,7 +180,7 @@ R2
 !s105 regfile_sv_unit
 S1
 R3
-w1775869085
+w1775877621
 8./regfile.sv
 F./regfile.sv
 L0 3
@@ -197,16 +197,16 @@ vregister
 R0
 R1
 !i10b 1
-!s100 9V_^jcD7[zCBgY8mMMlH21
-Ik7IPL]3EG2HRSZP@EG`zK0
+!s100 3L0]eBffc01QE<n8E4]]@2
+I>2iedO>1QZmST@llI<@Z=3
 R2
 Z20 !s105 register_sv_unit
 S1
 R3
-Z21 w1775864707
+Z21 w1775877985
 Z22 8./register.sv
 Z23 F./register.sv
-L0 1
+L0 3
 R4
 r1
 !s85 0
@@ -220,8 +220,8 @@ vregister_tb
 R0
 R1
 !i10b 1
-!s100 `gC@<Yb<_Ke1^:ULY8j]W2
-IF<@JIYLfiUgPVQFL9TnH_0
+!s100 ?C]>dER`bQPhO<l=o:0M]3
+IegkjDM3A<<Glz5f_ARPDQ0
 R2
 R20
 S1
@@ -229,7 +229,7 @@ R3
 R21
 R22
 R23
-L0 31
+L0 37
 R4
 r1
 !s85 0
@@ -289,8 +289,8 @@ vthirtytwo_1_mux
 R0
 R1
 !i10b 1
-!s100 oT:?YMnk:o<5jl5MHEOaA1
-IFI:[LMiM_aYHfj21]jOSD3
+!s100 6z7iKVF:44@`eZn0^J^OU2
+Im<<<U4Ro0iMD8j7Fz>5[:3
 R2
 R7
 S1
@@ -312,8 +312,8 @@ vthree_eightdecoder
 R0
 R1
 !i10b 1
-!s100 m4AQYj=5;:mho5:44=Yb21
-I@dT6PhNoWNH`>UKfUVnGk3
+!s100 lOFeiDNH;`lME62Ti;6gF0
+I^Jc3k>a4j1hd2:>1FSdR90
 R2
 R13
 S1
@@ -321,7 +321,7 @@ R3
 R14
 R15
 R16
-L0 46
+L0 48
 R4
 r1
 !s85 0
@@ -335,8 +335,8 @@ vtwo_fourdecoder
 R0
 R1
 !i10b 1
-!s100 7a5jQB[5d2Uhk34^IT@eC2
-ICe0SD16:^41=[2@oeOYBd1
+!s100 bm`@z^M=6JW1M4OEJg9TD1
+IN0U61Pa]i2h5GBkFD0:=l0
 R2
 R13
 S1

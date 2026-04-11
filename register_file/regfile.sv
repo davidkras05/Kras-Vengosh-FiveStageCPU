@@ -46,7 +46,7 @@ module regfile(
 			end
 		end
 	endgenerate
-	
+
 	
 	loopedthirtytwo_mux mux1 (.data_lines(reg_outs_transpose), .s(ReadRegister1), .mux_out(ReadData1));
 	loopedthirtytwo_mux mux2 (.data_lines(reg_outs_transpose), .s(ReadRegister2), .mux_out(ReadData2));
