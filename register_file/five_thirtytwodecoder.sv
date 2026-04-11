@@ -6,13 +6,15 @@ module one_twodecoder(
 	output logic [1:0] y
 );
 
-	logic nA, y_1_intermediate;
+	logic nA, y_1_intermediate, En_y0_buf;
 	
 	parameter delay = 50;
 	
 	not #(delay) (nA, A);
 	
-	and #(delay) (y[0], nA, En);
+	buf #(delay) (En_y0_buf, En);
+	
+	and #(delay) (y[0], nA, En_y0_buf);
 	
 	and #(delay) (y_1_intermediate, A, En);
 	

@@ -20,14 +20,13 @@ module register (
 	generate
 		for(i=0; i<64; i++) begin: sub_FF
 			
-			logic data_hold, reset_buf, clk_buf;
+			logic data_hold, reset_buf, clk_buf, data_hold_buf;
 			
 			two_onemux enable (.in({write[i], q[i]}), .s(En), .y(data_hold));
 			
-			buf #(delay) (reset_buf, reset);
-			buf #(delay) (clk_buf, clk);
+			buf #(450) (data_hold_buf, data_hold);
 	
-			D_FF flipflop (.q(q[i]), .d(data_hold), .reset(reset_buf), .clk(clk_buf));
+			D_FF flipflop (.q(q[i]), .d(data_hold_buf), .reset(reset), .clk(clk));
 		
 		end
 	endgenerate

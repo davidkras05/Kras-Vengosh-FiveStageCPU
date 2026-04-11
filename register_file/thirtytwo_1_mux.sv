@@ -10,16 +10,20 @@ module two_onemux(
 	
 	logic not_s, A_line, B_line;
 	
-	not #(delay) (not_s, s);
+	not #(delay) (not_s, s); 
 	
-	and #(delay) (A_line, in[0], not_s);
-	and #(delay) (B_line, in[1], s);
+	logic bit_0_in_buf;
 	
-	logic B_line_buf;
+	buf #(delay) (bit_0_in_buf, in[0]);
 	
-	buf #(delay) (B_line_buf, B_line);
+	and #(delay) (A_line, bit_0_in_buf, not_s); // 50 ps delay
+	and #(delay) (B_line, in[1], s); // 0 ps delay
+	
+	logic B_line_buf; 
+	
+	buf #(delay) (B_line_buf, B_line); // 50 ps delay
 
-	or #(delay) (y, A_line, B_line_buf);
+	or #(delay) (y, A_line, B_line_buf); // 100 ps delay
 
 endmodule
 
