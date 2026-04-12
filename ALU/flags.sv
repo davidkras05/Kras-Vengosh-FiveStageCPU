@@ -1,9 +1,17 @@
 `timescale 1ns/10ps
 
+//DELAYS:
+// - zero: 200 ps
+// - negative: 0 ps
+// - overflow: 50 ps
+
 module flags (
 	input logic[63:0] results,
+	input logic[1:0] overflow_in,
 	output logic overflow, negative, zero
 );
+	
+	//ZERO CHECK
 
 	parameter delay = 0;
 	
@@ -11,29 +19,42 @@ module flags (
 	logic[15:0] zero_not2;
 	logic[3:0] zero_not3;
 	
-	genvar i, j, k, f;
+	genvar i, j, k;
 	
 	//Layer 1
 	generate
-		for (i = 0; i<63; i++) begin: zero_check
+		for (i = 0; i<64; i++) begin: zero_check
 			not #(delay) (zero_not[i], results[i]);
 		end
 	endgenerate
 	
 	//Layer 2
 	generate
-		for (j = 0; j<16; j += 4) begin: zero_checklayer2
-			and #(delay) (zero_not2[j], zero_not[j], zero_not[j+1], zero_not[j+2], zero_not[j+3]);
+		for (j = 0; j<64; j += 4) begin: zero_checklayer2
+			and #(delay) (zero_not2[j/4], zero_not[j], zero_not[j+1], zero_not[j+2], zero_not[j+3]);
 		end
 	endgenerate
 	
 	//Layer 3
 	generate
-		for (k = 0; k<16; j += 4) begin: zero_checklayer3
-			and #(delay) (zero_not3[k], zero_not2[k], zero_not2[k+1], zero_not2[k+2], zero_not2[k+3]);
+		for (k = 0; k<16; k += 4) begin: zero_checklayer3
+			and #(delay) (zero_not3[k/4], zero_not2[k], zero_not2[k+1], zero_not2[k+2], zero_not2[k+3]);
 		end
 	endgenerate
 	
 	//Final Layer
-	generate
-		for (f = 0; f<3; 
+	and #(delay) (zero, zero_not3[0], zero_not3[1], zero_not3[2], zero_not3[3]);
+	
+	//TOTAL DELAY FOR ZERO FLAG: 200 ps
+	
+	//Negative check
+	assign negative = results[63];
+	
+	//TOTAL DELAY FOR NEGATIVE: 0 ps
+	
+	//Overflow check
+	xor #(delay) (overflow, overflow_in[0], overflow_in[1]);
+	
+	//TOTAL DELAY FOR OVERFLOW: 50 ps
+	
+endmodule

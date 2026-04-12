@@ -1,7 +1,7 @@
 `timescale 1ns/10ps
 module full_adder(
-	input logic A, B, Cin, SUB;
-	output logic Cout, S;
+	input logic A, B, Cin, SUB,
+	output logic Cout, S
 );
 
 	parameter delay = 50; // total delay for full adder is 150 ps
