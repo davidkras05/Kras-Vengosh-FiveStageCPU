@@ -4,7 +4,7 @@
 //  - S: 50 ps
 //  - Cout: 100 ps
 module full_adder(
-	input logic A, B, Cin, SUB,
+	input logic A, B, Cin
 	output logic Cout, S
 );
 
