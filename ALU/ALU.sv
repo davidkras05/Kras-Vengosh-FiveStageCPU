@@ -20,7 +20,7 @@ module ALU (
 	endgenerate
 	
 	
-	flags flag (.results(result), .overflow_in(Couts[63:61]), .negative(negative), .zero(zero), .overflow(overflow), .carryout(carryout));
+	flags flag (.results(result), .overflow_in(Couts[63:62]), .negative(negative), .zero(zero), .overflow(overflow), .carryout(carryout));
 
 endmodule
 	
