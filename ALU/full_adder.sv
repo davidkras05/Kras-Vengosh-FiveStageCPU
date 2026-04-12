@@ -35,21 +35,3 @@ module full_adder(
 
 endmodule
 
-module full_adder_tb();
-
-	logic A, B, Cin, sum, Cout;
-	
-	fullAdder dut(A, B, Cin, sum, Cout);
-	
-	integer i;
-	initial begin
-		// creates all possible combinations of A, B, and Cin
-		for(i=0; i < 2**3; i++) begin
-			{A, B, Cin} = i;  #10;
-		end //for loop
-		
-	end //initial
-	
-endmodule
-
-
