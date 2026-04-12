@@ -23,14 +23,24 @@ module bitsliceALU(
 
 	logic and_res, or_res, xor_res;
 
-	and #(delay) (and_res, A, B);
+	and #(delay) (and_res, A, B); // all delayed by 50 ps
 	or #(delay) (or_res, A, B);
 	xor #(delay) (xor_res, A, B);
 	
 	logic B_buf; // a clean signal for B must be buffered to match the timing of the rest of the signals to the mux
 	buf #(delay) (B_buf, B);
 
-
+	logic [7:0] mux_in;
+	
+	assign mux_in[0] = B;
+	assign mux_in[2] = S;
+	assign mux_in[3] = S;
+	assign mux_in[4] = and_res;
+	assign mux_in[5] = or_res;
+	assign mux_in[6] = xor_res;
+	
+	
+	eightone_mux selector (.in(mux_in), .s(cntrl), .y(result));
 
 
 endmodule
