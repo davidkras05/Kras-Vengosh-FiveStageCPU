@@ -5,7 +5,7 @@
 module bitsliceALU(
 	input logic A, B, Cin,
 	input logic [2:0] cntrl,
-	output logic result, Cout, // for adding and subtracting, result is s, cout is cout
+	output logic result, Cout // for adding and subtracting, result is s, cout is cout
 );
 
 	parameter delay = 50;
