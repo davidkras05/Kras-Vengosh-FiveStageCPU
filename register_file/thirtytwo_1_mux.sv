@@ -6,14 +6,24 @@ module two_onemux(
 	output logic y
 );
 	
+	parameter delay = 50;
+	
 	logic not_s, A_line, B_line;
 	
-	not #50 (not_s, s);
+	not #(delay) (not_s, s); 
 	
-	and #50 (A_line, in[0], not_s);
-	and #50 (B_line, in[1], s);
+	logic bit_0_in_buf;
+	
+	buf #(delay) (bit_0_in_buf, in[0]);
+	
+	and #(delay) (A_line, bit_0_in_buf, not_s); // 50 ps delay
+	and #(delay) (B_line, in[1], s); // 0 ps delay
+	
+	logic B_line_buf; 
+	
+	buf #(delay) (B_line_buf, B_line); // 50 ps delay
 
-	or #50 (y, A_line, B_line);
+	or #(delay) (y, A_line, B_line_buf); // 100 ps delay
 
 endmodule
 
@@ -68,11 +78,14 @@ module thirtytwo_1_mux(
 	output logic y
 );
 
-	logic [1:0] first_layer_out;
+	logic [3:0] first_layer_out;
 	
-	sixteen_onemux first (.in(in[15:0]), .s(s[3:0]), .y(first_layer_out[0]));
-	sixteen_onemux second (.in(in[31:16]), .s(s[3:0]), .y(first_layer_out[1]));
+	eight_onemux first (.in(in[7:0]), .s(s[2:0]), .y(first_layer_out[0]));
+	eight_onemux second (.in(in[15:8]), .s(s[2:0]), .y(first_layer_out[1]));
+	eight_onemux third (.in(in[23:16]), .s(s[2:0]), .y(first_layer_out[2]));
+	eight_onemux fourth (.in(in[31:24]), .s(s[2:0]), .y(first_layer_out[3]));
 	
-	two_onemux sec_layer (.in(first_layer_out), .s(s[4]), .y(y));
+	
+	four_onemux sec_layer (.in(first_layer_out), .s(s[4:3]), .y(y));
 
 endmodule

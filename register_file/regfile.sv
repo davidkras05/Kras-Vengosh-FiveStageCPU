@@ -42,10 +42,11 @@ module regfile(
 	generate
 		for (j = 0; j < 32; j++) begin: transpose_r
 			for (k = 0; k < 64; k++) begin: transpose_c
-				buf #50 (reg_outs_transpose[k][j], reg_outs[j][k]);
+				assign reg_outs_transpose[k][j] = reg_outs[j][k];
 			end
 		end
 	endgenerate
+
 	
 	
 	loopedthirtytwo_mux mux1 (.data_lines(reg_outs_transpose), .s(ReadRegister1), .mux_out(ReadData1));

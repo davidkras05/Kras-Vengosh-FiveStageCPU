@@ -6,11 +6,21 @@ module one_twodecoder(
 	output logic [1:0] y
 );
 
-	logic nA;
-	not #50 (nA, A);
+	logic nA, y_1_intermediate, En_y0_buf;
 	
-	and #50 (y[0], nA, En);
-	and #50 (y[1], A, En);
+	parameter delay = 50;
+	
+	not #(delay) (nA, A);
+	
+	buf #(delay) (En_y0_buf, En);
+	
+	and #(delay) (y[0], nA, En_y0_buf);
+	
+	and #(delay) (y_1_intermediate, A, En);
+	
+	buf (y[1], y_1_intermediate);
+	
+	
 
 endmodule
 
@@ -21,12 +31,14 @@ module two_fourdecoder(
 );
 	logic[1:0] onetwo_out;
 	
+	parameter delay = 50;
+	
 	one_twodecoder en_dec (.A(B), .En(En), .y(onetwo_out));
 	
 	logic first_en, second_en;
 	
-	and #50 (first_en, onetwo_out[0], En);
-	and #50 (second_en, onetwo_out[1], En);
+	and #(delay) (first_en, onetwo_out[0], En);
+	and #(delay) (second_en, onetwo_out[1], En);
 
 	one_twodecoder first (.A(A), .En(first_en), .y(y[1:0]));
 	one_twodecoder second (.A(A), .En(second_en), .y(y[3:2]));
@@ -45,8 +57,10 @@ module three_eightdecoder(
 	
 	logic first_en, second_en;
 	
-	and #50 (first_en, onetwo_out[0], En);
-	and #50 (second_en, onetwo_out[1], En);
+	parameter delay = 50;
+	
+	and #(delay) (first_en, onetwo_out[0], En);
+	and #(delay) (second_en, onetwo_out[1], En);
 	
 	two_fourdecoder first (.A(A), .B(B), .En(first_en), .y(y[3:0]));
 	two_fourdecoder second (.A(A), .B(B), .En(second_en), .y(y[7:4]));
@@ -65,8 +79,10 @@ module four_sixteendecoder(
 	
 	logic first_en, second_en;
 	
-	and #50 (first_en, onetwo_out[0], En);
-	and #50 (second_en, onetwo_out[1], En);
+	parameter delay = 50;
+	
+	and #(delay) (first_en, onetwo_out[0], En);
+	and #(delay) (second_en, onetwo_out[1], En);
 	
 	three_eightdecoder first (.A(A), .B(B), .C(C), .En(first_en), .y(y[7:0]));
 	three_eightdecoder second (.A(A), .B(B), .C(C), .En(second_en), .y(y[15:8]));
@@ -85,8 +101,10 @@ module five_thirtytwodecoder(
 	
 	logic first_en, second_en;
 	
-	and #50 (first_en, onetwo_out[0], En);
-	and #50 (second_en, onetwo_out[1], En);
+	parameter delay = 50;
+	
+	and #(delay) (first_en, onetwo_out[0], En);
+	and #(delay) (second_en, onetwo_out[1], En);
 	
 	four_sixteendecoder first (.A(A), .B(B), .C(C), .D(D), .En(first_en), .y(y[15:0]));
 	four_sixteendecoder second (.A(A), .B(B), .C(C), .D(D), .En(second_en), .y(y[31:16]));
