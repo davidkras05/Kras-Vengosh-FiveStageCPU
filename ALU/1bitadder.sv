@@ -1,4 +1,0 @@
-module 1bitadder(
-	
-
-);
