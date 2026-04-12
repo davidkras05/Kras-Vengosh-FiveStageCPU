@@ -4,11 +4,12 @@
 // - zero: 200 ps
 // - negative: 0 ps
 // - overflow: 50 ps
+// - carryout: 0 ps
 
 module flags (
 	input logic[63:0] results,
 	input logic[1:0] overflow_in,
-	output logic overflow, negative, zero
+	output logic negative, zero, overflow, carryout
 );
 	
 	//ZERO CHECK
@@ -56,5 +57,10 @@ module flags (
 	xor #(delay) (overflow, overflow_in[0], overflow_in[1]);
 	
 	//TOTAL DELAY FOR OVERFLOW: 50 ps
+	
+	//Carryout check
+	assign carryout = overflow_in[1];
+	
+	//TOTAL DELAY FOR CARRYOUT CHECK: 0 ps
 	
 endmodule
