@@ -40,7 +40,7 @@ module bitsliceALU(
 	assign mux_in[6] = xor_res;
 	
 	
-	eightone_mux selector (.in(mux_in), .s(cntrl), .y(result));
+	eight_onemux selector (.in(mux_in), .s(cntrl), .y(result));
 
 
 endmodule

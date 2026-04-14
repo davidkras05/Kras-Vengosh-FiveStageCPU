@@ -52,6 +52,37 @@ module alustim();
 		#(delay);
 		assert(result == 64'h0000000000000002 && carry_out == 0 && overflow == 0 && negative == 0 && zero == 0);
 		
+		$display("%t testing subtration", $time);
+		cntrl = ALU_SUBTRACT
+		A = 64'h0000000000000004; B = 64'h0000000000000002; //Testing 4-2
+		#(delay);
+		assert(result == 64'h0000000000000002 && carry_out == 0 && overflow == 0 && negative == 0 && zero == 0);
+		
+		$display("%testing AND", $time);
+		cntrl = ALU_AND;
+		A = 64'h1; B = 64'h1; //Testing AND, 64'h1 is just 64'h0000000000000001
+		#(delay)
+		assert(result == 64'h0000000000000001 && carryout == 0 && overflow == 0 && negative == 0 && zero == 0);
+		
+		$display("%testing OR", $time);
+		cntrl = ALU_OR;
+		A = 64'h1; B = 64'h0; //Testing OR
+		#(delay)
+		assert(result == 64'h0000000000000001 && carryout == 0 && overflow == 0 && negative == 0 && zero == 0);
+		
+		$display("%testing XOR", $time);
+		cntrl = ALU_XOR;
+		A = 64'h1; B = 64'h1; //Testing XOR
+		#(delay)
+		assert(result == 64'h0000000000000000 && carryout == 0 && overflow == 0 && negative == 0 && zero == 1);
+		
+		//Okay I added tests for subtration, AND, OR, and XOR. They are all to check if the operation works 
+		// properly. we can add negative checks for AND and OR if you want to see if OR will respond with a 0
+		// if you do OR 64'h0 and 64'h0. also we can test more bits'higher numbers if you like since they are 
+		// bitwise. We should also probably write tests for the flags. the XOR test also already tests the zero
+		// flag too but we should test carryout, overflow, and negative as well I think.
+		
+		
 	end
 endmodule
 
