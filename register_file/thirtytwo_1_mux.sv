@@ -6,7 +6,7 @@ module two_onemux(
 	output logic y
 );
 	
-	parameter delay = 50;
+	parameter delay = 0;
 	
 	logic not_s, A_line, B_line;
 	

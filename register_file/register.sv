@@ -13,20 +13,17 @@ module register (
 	/*This is the 64 bit register for wiring to the five_thirtytwodecoder. This creates one
 		instance of a 64 bit register. The full 32 can be instantiated in the top module*/
 		
-	parameter delay = 50;
 	
 	genvar i;
 	
 	generate
 		for(i=0; i<64; i++) begin: sub_FF
 			
-			logic data_hold, reset_buf, clk_buf, data_hold_buf;
+			logic data_hold;
 			
 			two_onemux enable (.in({write[i], q[i]}), .s(En), .y(data_hold));
-			
-			buf #(450) (data_hold_buf, data_hold);
 	
-			D_FF flipflop (.q(q[i]), .d(data_hold_buf), .reset(reset), .clk(clk));
+			D_FF flipflop (.q(q[i]), .d(data_hold), .reset(reset), .clk(clk));
 		
 		end
 	endgenerate
