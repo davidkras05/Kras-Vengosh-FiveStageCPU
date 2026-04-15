@@ -103,8 +103,8 @@ module five_thirtytwodecoder(
 	
 	parameter delay = 50;
 	
-	and #(delay) (first_en, onetwo_out[0], En);
-	and #(delay) (second_en, onetwo_out[1], En);
+	and #(delay) (first_en, onetwo_out[0], En); //first_en delay: 50ps
+	and #(delay) (second_en, onetwo_out[1], En); //Second_en delay: 50ps
 	
 	four_sixteendecoder first (.A(A), .B(B), .C(C), .D(D), .En(first_en), .y(y[15:0]));
 	four_sixteendecoder second (.A(A), .B(B), .C(C), .D(D), .En(second_en), .y(y[31:16]));
@@ -140,3 +140,35 @@ module one_two_tb;
 	end
 	
 endmodule	
+
+//5:32 decoder test bench. 500ps delays (extra room just in case)
+module five_thirtytwo_tb;
+	logic[4:0] input_test;
+	logic En;
+	logic [31:0] y;
+	
+	five_thirtytwodecoder DUT (.A(input_test[4]), .B(input_test[3]), .C(input_test[2]), .D(input_test[1]), .E(input_test[0]), .En(En), .y(y));
+	
+	initial begin
+		
+		$display("Testing all cases without enable (Should be all 0)");
+		
+		for (int i = 0; i < 32; i++) begin: first_testloop
+			En = 0; input_test = i; #500;
+			assert(y == 0);
+		end
+			
+		$display("Testing all cases with enable");
+		
+		for (int i = 0; i<32; i++) begin: second_testloop
+			En = 1; input_test = i; #500;
+			assert(y == (32'b1 << i));
+		end
+		
+	end
+	
+endmodule
+			
+			
+			
+			
