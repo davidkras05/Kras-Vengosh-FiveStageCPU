@@ -2,7 +2,7 @@
 do runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:44:40 on Apr 15,2026
+# Start time: 13:46:22 on Apr 15,2026
 # vlog -reportprogress 300 ./thirtytwo_1_mux.sv 
 # -- Compiling module two_onemux
 # -- Compiling module four_onemux
@@ -13,38 +13,38 @@ do runlab.do
 # Top level modules:
 # 	sixteen_onemux
 # 	thirtytwo_1_mux
-# End time: 12:44:40 on Apr 15,2026, Elapsed time: 0:00:00
+# End time: 13:46:22 on Apr 15,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:44:40 on Apr 15,2026
+# Start time: 13:46:22 on Apr 15,2026
 # vlog -reportprogress 300 ./regstim.sv 
 # -- Compiling module regstim
 # 
 # Top level modules:
 # 	regstim
-# End time: 12:44:41 on Apr 15,2026, Elapsed time: 0:00:01
+# End time: 13:46:22 on Apr 15,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:44:41 on Apr 15,2026
+# Start time: 13:46:22 on Apr 15,2026
 # vlog -reportprogress 300 ./register.sv 
 # -- Compiling module register
 # -- Compiling module register_tb
 # 
 # Top level modules:
 # 	register_tb
-# End time: 12:44:41 on Apr 15,2026, Elapsed time: 0:00:00
+# End time: 13:46:22 on Apr 15,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:44:41 on Apr 15,2026
+# Start time: 13:46:22 on Apr 15,2026
 # vlog -reportprogress 300 ./loopedthirtytwo_mux.sv 
 # -- Compiling module loopedthirtytwo_mux
 # 
 # Top level modules:
 # 	loopedthirtytwo_mux
-# End time: 12:44:41 on Apr 15,2026, Elapsed time: 0:00:00
+# End time: 13:46:22 on Apr 15,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:44:41 on Apr 15,2026
+# Start time: 13:46:22 on Apr 15,2026
 # vlog -reportprogress 300 ./five_thirtytwodecoder.sv 
 # -- Compiling module one_twodecoder
 # -- Compiling module two_fourdecoder
@@ -57,126 +57,28 @@ do runlab.do
 # Top level modules:
 # 	one_two_tb
 # 	five_thirtytwo_tb
-# End time: 12:44:41 on Apr 15,2026, Elapsed time: 0:00:00
+# End time: 13:46:22 on Apr 15,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:44:41 on Apr 15,2026
+# Start time: 13:46:22 on Apr 15,2026
 # vlog -reportprogress 300 ./D_FF.sv 
 # -- Compiling module D_FF
 # 
 # Top level modules:
 # 	D_FF
-# End time: 12:44:41 on Apr 15,2026, Elapsed time: 0:00:00
+# End time: 13:46:22 on Apr 15,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:44:41 on Apr 15,2026
+# Start time: 13:46:22 on Apr 15,2026
 # vlog -reportprogress 300 ./regfile.sv 
 # -- Compiling module regfile
 # 
 # Top level modules:
 # 	regfile
-# End time: 12:44:41 on Apr 15,2026, Elapsed time: 0:00:00
+# End time: 13:46:22 on Apr 15,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -voptargs=""+acc"" -t 1ps -lib work five_thirtytwo_tb 
-# Start time: 12:44:41 on Apr 15,2026
-# Loading sv_std.std
-# Loading work.five_thirtytwo_tb
-# Loading work.five_thirtytwodecoder
-# Loading work.one_twodecoder
-# Loading work.four_sixteendecoder
-# Loading work.three_eightdecoder
-# Loading work.two_fourdecoder
-# ** Error: Cannot open macro file: fivethirtytwotest.do
-# Error in macro ./runlab.do line 23
-# Cannot open macro file: fivethirtytwotest.do
-#     while executing
-# "do fivethirtytwotest.do"
-add wave -position end  sim:/five_thirtytwo_tb/En
-add wave -position end  sim:/five_thirtytwo_tb/input_test
-add wave -position end  sim:/five_thirtytwo_tb/y
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/texan/Desktop/CPU-EE469/register_file/fivethirtytwotest.do
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:45:46 on Apr 15,2026
-# vlog -reportprogress 300 ./thirtytwo_1_mux.sv 
-# -- Compiling module two_onemux
-# -- Compiling module four_onemux
-# -- Compiling module eight_onemux
-# -- Compiling module sixteen_onemux
-# -- Compiling module thirtytwo_1_mux
-# 
-# Top level modules:
-# 	sixteen_onemux
-# 	thirtytwo_1_mux
-# End time: 12:45:46 on Apr 15,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:45:46 on Apr 15,2026
-# vlog -reportprogress 300 ./regstim.sv 
-# -- Compiling module regstim
-# 
-# Top level modules:
-# 	regstim
-# End time: 12:45:46 on Apr 15,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:45:46 on Apr 15,2026
-# vlog -reportprogress 300 ./register.sv 
-# -- Compiling module register
-# -- Compiling module register_tb
-# 
-# Top level modules:
-# 	register_tb
-# End time: 12:45:46 on Apr 15,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:45:46 on Apr 15,2026
-# vlog -reportprogress 300 ./loopedthirtytwo_mux.sv 
-# -- Compiling module loopedthirtytwo_mux
-# 
-# Top level modules:
-# 	loopedthirtytwo_mux
-# End time: 12:45:46 on Apr 15,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:45:46 on Apr 15,2026
-# vlog -reportprogress 300 ./five_thirtytwodecoder.sv 
-# -- Compiling module one_twodecoder
-# -- Compiling module two_fourdecoder
-# -- Compiling module three_eightdecoder
-# -- Compiling module four_sixteendecoder
-# -- Compiling module five_thirtytwodecoder
-# -- Compiling module one_two_tb
-# -- Compiling module five_thirtytwo_tb
-# 
-# Top level modules:
-# 	one_two_tb
-# 	five_thirtytwo_tb
-# End time: 12:45:46 on Apr 15,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:45:46 on Apr 15,2026
-# vlog -reportprogress 300 ./D_FF.sv 
-# -- Compiling module D_FF
-# 
-# Top level modules:
-# 	D_FF
-# End time: 12:45:46 on Apr 15,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:45:46 on Apr 15,2026
-# vlog -reportprogress 300 ./regfile.sv 
-# -- Compiling module regfile
-# 
-# Top level modules:
-# 	regfile
-# End time: 12:45:47 on Apr 15,2026, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# End time: 12:45:47 on Apr 15,2026, Elapsed time: 0:01:06
-# Errors: 3, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work five_thirtytwo_tb 
-# Start time: 12:45:47 on Apr 15,2026
+# Start time: 13:46:22 on Apr 15,2026
 # Loading sv_std.std
 # Loading work.five_thirtytwo_tb
 # Loading work.five_thirtytwodecoder
@@ -189,69 +91,201 @@ do runlab.do
 # .main_pane.objects.interior.cs.body.tree
 # Testing all cases without enable (Should be all 0)
 # Testing all cases with enable
-# ** Error: Assertion error.
-#    Time: 16500 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
-# ** Error: Assertion error.
-#    Time: 17 us  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
-# ** Error: Assertion error.
-#    Time: 17500 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
-# ** Error: Assertion error.
-#    Time: 18 us  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
-# ** Error: Assertion error.
-#    Time: 18500 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
-# ** Error: Assertion error.
-#    Time: 19 us  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
-# ** Error: Assertion error.
-#    Time: 19500 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
-# ** Error: Assertion error.
-#    Time: 20 us  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
-# ** Error: Assertion error.
-#    Time: 20500 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
-# ** Error: Assertion error.
-#    Time: 21 us  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
-# ** Error: Assertion error.
-#    Time: 21500 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
-# ** Error: Assertion error.
-#    Time: 22 us  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
-# ** Error: Assertion error.
-#    Time: 22500 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
-# ** Error: Assertion error.
-#    Time: 23 us  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
-# ** Error: Assertion error.
-#    Time: 23500 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
-# ** Error: Assertion error.
-#    Time: 24 us  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
-# ** Error: Assertion error.
-#    Time: 24500 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
-# ** Error: Assertion error.
-#    Time: 25 us  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
-# ** Error: Assertion error.
-#    Time: 25500 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
-# ** Error: Assertion error.
-#    Time: 26 us  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
-# ** Error: Assertion error.
-#    Time: 26500 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
-# ** Error: Assertion error.
-#    Time: 27 us  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
-# ** Error: Assertion error.
-#    Time: 27500 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
-# ** Error: Assertion error.
-#    Time: 28 us  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
-# ** Error: Assertion error.
-#    Time: 28500 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
-# ** Error: Assertion error.
-#    Time: 29 us  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
-# ** Error: Assertion error.
-#    Time: 29500 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
-# ** Error: Assertion error.
-#    Time: 30 us  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
-# ** Error: Assertion error.
-#    Time: 30500 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
-# ** Error: Assertion error.
-#    Time: 31 us  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
-# ** Error: Assertion error.
-#    Time: 31500 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
-# ** Error: Assertion error.
-#    Time: 32 us  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
-# End time: 12:55:16 on Apr 15,2026, Elapsed time: 0:09:29
-# Errors: 32, Warnings: 0
+# ** Error: Test failed: Expected 00000000000000000000000000000010 Got: 00000000000000010000000000000000
+#    Time: 27200 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#165#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 167
+# ** Error: Test failed: Expected 00000000000000000000000000000100 Got: 00000000000000000000000100000000
+#    Time: 28 us  Scope: five_thirtytwo_tb.#anonblk#108680114#165#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 167
+# ** Error: Test failed: Expected 00000000000000000000000000001000 Got: 00000001000000000000000000000000
+#    Time: 28800 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#165#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 167
+# ** Error: Test failed: Expected 00000000000000000000000000100000 Got: 00000000000100000000000000000000
+#    Time: 30400 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#165#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 167
+# ** Error: Test failed: Expected 00000000000000000000000001000000 Got: 00000000000000000001000000000000
+#    Time: 31200 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#165#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 167
+# ** Error: Test failed: Expected 00000000000000000000000010000000 Got: 00010000000000000000000000000000
+#    Time: 32 us  Scope: five_thirtytwo_tb.#anonblk#108680114#165#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 167
+# ** Error: Test failed: Expected 00000000000000000000000100000000 Got: 00000000000000000000000000000100
+#    Time: 32800 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#165#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 167
+# ** Error: Test failed: Expected 00000000000000000000001000000000 Got: 00000000000001000000000000000000
+#    Time: 33600 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#165#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 167
+# ** Error: Test failed: Expected 00000000000000000000100000000000 Got: 00000100000000000000000000000000
+#    Time: 35200 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#165#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 167
+# ** Error: Test failed: Expected 00000000000000000001000000000000 Got: 00000000000000000000000001000000
+#    Time: 36 us  Scope: five_thirtytwo_tb.#anonblk#108680114#165#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 167
+# ** Error: Test failed: Expected 00000000000000000010000000000000 Got: 00000000010000000000000000000000
+#    Time: 36800 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#165#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 167
+# ** Error: Test failed: Expected 00000000000000001000000000000000 Got: 01000000000000000000000000000000
+#    Time: 38400 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#165#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 167
+# ** Error: Test failed: Expected 00000000000000010000000000000000 Got: 00000000000000000000000000000010
+#    Time: 39200 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#165#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 167
+# ** Error: Test failed: Expected 00000000000001000000000000000000 Got: 00000000000000000000001000000000
+#    Time: 40800 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#165#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 167
+# ** Error: Test failed: Expected 00000000000010000000000000000000 Got: 00000010000000000000000000000000
+#    Time: 41600 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#165#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 167
+# ** Error: Test failed: Expected 00000000000100000000000000000000 Got: 00000000000000000000000000100000
+#    Time: 42400 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#165#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 167
+# ** Error: Test failed: Expected 00000000010000000000000000000000 Got: 00000000000000000010000000000000
+#    Time: 44 us  Scope: five_thirtytwo_tb.#anonblk#108680114#165#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 167
+# ** Error: Test failed: Expected 00000000100000000000000000000000 Got: 00100000000000000000000000000000
+#    Time: 44800 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#165#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 167
+# ** Error: Test failed: Expected 00000001000000000000000000000000 Got: 00000000000000000000000000001000
+#    Time: 45600 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#165#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 167
+# ** Error: Test failed: Expected 00000010000000000000000000000000 Got: 00000000000010000000000000000000
+#    Time: 46400 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#165#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 167
+# ** Error: Test failed: Expected 00000100000000000000000000000000 Got: 00000000000000000000100000000000
+#    Time: 47200 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#165#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 167
+# ** Error: Test failed: Expected 00010000000000000000000000000000 Got: 00000000000000000000000010000000
+#    Time: 48800 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#165#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 167
+# ** Error: Test failed: Expected 00100000000000000000000000000000 Got: 00000000100000000000000000000000
+#    Time: 49600 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#165#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 167
+# ** Error: Test failed: Expected 01000000000000000000000000000000 Got: 00000000000000001000000000000000
+#    Time: 50400 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#165#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 167
+# ** Note: $stop    : ./five_thirtytwodecoder.sv(170)
+#    Time: 51200 ns  Iteration: 0  Instance: /five_thirtytwo_tb
+# Break in Module five_thirtytwo_tb at ./five_thirtytwodecoder.sv line 170
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:53:08 on Apr 15,2026
+# vlog -reportprogress 300 ./thirtytwo_1_mux.sv 
+# -- Compiling module two_onemux
+# -- Compiling module four_onemux
+# -- Compiling module eight_onemux
+# -- Compiling module sixteen_onemux
+# -- Compiling module thirtytwo_1_mux
+# 
+# Top level modules:
+# 	sixteen_onemux
+# 	thirtytwo_1_mux
+# End time: 13:53:08 on Apr 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:53:08 on Apr 15,2026
+# vlog -reportprogress 300 ./regstim.sv 
+# -- Compiling module regstim
+# 
+# Top level modules:
+# 	regstim
+# End time: 13:53:08 on Apr 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:53:08 on Apr 15,2026
+# vlog -reportprogress 300 ./register.sv 
+# -- Compiling module register
+# -- Compiling module register_tb
+# 
+# Top level modules:
+# 	register_tb
+# End time: 13:53:08 on Apr 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:53:08 on Apr 15,2026
+# vlog -reportprogress 300 ./loopedthirtytwo_mux.sv 
+# -- Compiling module loopedthirtytwo_mux
+# 
+# Top level modules:
+# 	loopedthirtytwo_mux
+# End time: 13:53:08 on Apr 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:53:08 on Apr 15,2026
+# vlog -reportprogress 300 ./five_thirtytwodecoder.sv 
+# -- Compiling module one_twodecoder
+# -- Compiling module two_fourdecoder
+# -- Compiling module three_eightdecoder
+# -- Compiling module four_sixteendecoder
+# -- Compiling module five_thirtytwodecoder
+# -- Compiling module one_two_tb
+# -- Compiling module five_thirtytwo_tb
+# 
+# Top level modules:
+# 	one_two_tb
+# 	five_thirtytwo_tb
+# End time: 13:53:08 on Apr 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:53:08 on Apr 15,2026
+# vlog -reportprogress 300 ./D_FF.sv 
+# -- Compiling module D_FF
+# 
+# Top level modules:
+# 	D_FF
+# End time: 13:53:08 on Apr 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:53:08 on Apr 15,2026
+# vlog -reportprogress 300 ./regfile.sv 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 13:53:08 on Apr 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:53:09 on Apr 15,2026, Elapsed time: 0:06:47
+# Errors: 24, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work five_thirtytwo_tb 
+# Start time: 13:53:09 on Apr 15,2026
+# Loading sv_std.std
+# Loading work.five_thirtytwo_tb
+# Loading work.five_thirtytwodecoder
+# Loading work.one_twodecoder
+# Loading work.four_sixteendecoder
+# Loading work.three_eightdecoder
+# Loading work.two_fourdecoder
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Testing all cases without enable (Should be all 0)
+# Testing all cases with enable
+# ** Error: Test failed: Expected 00000000000000000000000000000010 Got: 00000000000000010000000000000000
+#    Time: 27200 ps  Scope: five_thirtytwo_tb.#anonblk#108680114#165#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 167
+# ** Error: Test failed: Expected 00000000000000000000000000000100 Got: 00000000000000000000000100000000
+#    Time: 28 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#165#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 167
+# ** Error: Test failed: Expected 00000000000000000000000000001000 Got: 00000001000000000000000000000000
+#    Time: 28800 ps  Scope: five_thirtytwo_tb.#anonblk#108680114#165#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 167
+# ** Error: Test failed: Expected 00000000000000000000000000100000 Got: 00000000000100000000000000000000
+#    Time: 30400 ps  Scope: five_thirtytwo_tb.#anonblk#108680114#165#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 167
+# ** Error: Test failed: Expected 00000000000000000000000001000000 Got: 00000000000000000001000000000000
+#    Time: 31200 ps  Scope: five_thirtytwo_tb.#anonblk#108680114#165#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 167
+# ** Error: Test failed: Expected 00000000000000000000000010000000 Got: 00010000000000000000000000000000
+#    Time: 32 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#165#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 167
+# ** Error: Test failed: Expected 00000000000000000000000100000000 Got: 00000000000000000000000000000100
+#    Time: 32800 ps  Scope: five_thirtytwo_tb.#anonblk#108680114#165#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 167
+# ** Error: Test failed: Expected 00000000000000000000001000000000 Got: 00000000000001000000000000000000
+#    Time: 33600 ps  Scope: five_thirtytwo_tb.#anonblk#108680114#165#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 167
+# ** Error: Test failed: Expected 00000000000000000000100000000000 Got: 00000100000000000000000000000000
+#    Time: 35200 ps  Scope: five_thirtytwo_tb.#anonblk#108680114#165#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 167
+# ** Error: Test failed: Expected 00000000000000000001000000000000 Got: 00000000000000000000000001000000
+#    Time: 36 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#165#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 167
+# ** Error: Test failed: Expected 00000000000000000010000000000000 Got: 00000000010000000000000000000000
+#    Time: 36800 ps  Scope: five_thirtytwo_tb.#anonblk#108680114#165#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 167
+# ** Error: Test failed: Expected 00000000000000001000000000000000 Got: 01000000000000000000000000000000
+#    Time: 38400 ps  Scope: five_thirtytwo_tb.#anonblk#108680114#165#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 167
+# ** Error: Test failed: Expected 00000000000000010000000000000000 Got: 00000000000000000000000000000010
+#    Time: 39200 ps  Scope: five_thirtytwo_tb.#anonblk#108680114#165#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 167
+# ** Error: Test failed: Expected 00000000000001000000000000000000 Got: 00000000000000000000001000000000
+#    Time: 40800 ps  Scope: five_thirtytwo_tb.#anonblk#108680114#165#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 167
+# ** Error: Test failed: Expected 00000000000010000000000000000000 Got: 00000010000000000000000000000000
+#    Time: 41600 ps  Scope: five_thirtytwo_tb.#anonblk#108680114#165#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 167
+# ** Error: Test failed: Expected 00000000000100000000000000000000 Got: 00000000000000000000000000100000
+#    Time: 42400 ps  Scope: five_thirtytwo_tb.#anonblk#108680114#165#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 167
+# ** Error: Test failed: Expected 00000000010000000000000000000000 Got: 00000000000000000010000000000000
+#    Time: 44 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#165#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 167
+# ** Error: Test failed: Expected 00000000100000000000000000000000 Got: 00100000000000000000000000000000
+#    Time: 44800 ps  Scope: five_thirtytwo_tb.#anonblk#108680114#165#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 167
+# ** Error: Test failed: Expected 00000001000000000000000000000000 Got: 00000000000000000000000000001000
+#    Time: 45600 ps  Scope: five_thirtytwo_tb.#anonblk#108680114#165#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 167
+# ** Error: Test failed: Expected 00000010000000000000000000000000 Got: 00000000000010000000000000000000
+#    Time: 46400 ps  Scope: five_thirtytwo_tb.#anonblk#108680114#165#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 167
+# ** Error: Test failed: Expected 00000100000000000000000000000000 Got: 00000000000000000000100000000000
+#    Time: 47200 ps  Scope: five_thirtytwo_tb.#anonblk#108680114#165#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 167
+# ** Error: Test failed: Expected 00010000000000000000000000000000 Got: 00000000000000000000000010000000
+#    Time: 48800 ps  Scope: five_thirtytwo_tb.#anonblk#108680114#165#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 167
+# ** Error: Test failed: Expected 00100000000000000000000000000000 Got: 00000000100000000000000000000000
+#    Time: 49600 ps  Scope: five_thirtytwo_tb.#anonblk#108680114#165#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 167
+# ** Error: Test failed: Expected 01000000000000000000000000000000 Got: 00000000000000001000000000000000
+#    Time: 50400 ps  Scope: five_thirtytwo_tb.#anonblk#108680114#165#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 167
+# ** Note: $stop    : ./five_thirtytwodecoder.sv(170)
+#    Time: 51200 ps  Iteration: 0  Instance: /five_thirtytwo_tb
+# Break in Module five_thirtytwo_tb at ./five_thirtytwodecoder.sv line 170
+# End time: 13:55:42 on Apr 15,2026, Elapsed time: 0:02:33
+# Errors: 24, Warnings: 0

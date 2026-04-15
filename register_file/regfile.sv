@@ -1,4 +1,4 @@
-`timescale 1ns/10ps
+`timescale 1ps/1ps
 
 module regfile(
 	output logic [63:0] ReadData1, ReadData2, 

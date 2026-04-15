@@ -1,7 +1,7 @@
 // 1:2 decoder with enable
-`timescale 1ns/10ps
+`timescale 1ps/1ps
 
-module one_twodecoder(
+module one_twodecoder( //100ps DELAY
 	input logic A, En,
 	output logic [1:0] y
 );
@@ -25,7 +25,7 @@ module one_twodecoder(
 endmodule
 
 // 2:4 decoder with enable, built from three 1:2 decoder above
-module two_fourdecoder(
+module two_fourdecoder( //250ps DELAY
 	input logic A, B, En, // B is LSB
 	output logic [3:0] y
 );
@@ -47,7 +47,7 @@ endmodule
 
 
 // 3:8 decoder with enable, built from two 2:4 decoders above and a 1:2 decoder
-module three_eightdecoder(
+module three_eightdecoder( //400ps DELAY
 	input logic A, B, C, En, // C is LSB
 	output logic [7:0] y
 );
@@ -68,7 +68,7 @@ module three_eightdecoder(
 endmodule
 
 // 4:16 decoder with enable, built from two 3:8 decoders above and a 1:2 decoder
-module four_sixteendecoder(
+module four_sixteendecoder( //550ps DELAY
 	input logic A, B, C, D, En, // D is LSB
 	output logic [15:0] y
 );
@@ -90,7 +90,7 @@ module four_sixteendecoder(
 endmodule
 
 // 5:32 decoder with enable, built from two 4:16 decoders above and a 1:2 decoder
-module five_thirtytwodecoder(
+module five_thirtytwodecoder( // 700ps DELAY
 	input logic A, B, C, D, E, En, // E is LSB
 	output logic [31:0] y
 );
@@ -143,7 +143,7 @@ module one_two_tb;
 	
 endmodule	
 
-//5:32 decoder test bench. 500ps delays (extra room just in case)
+//5:32 decoder test bench. 800ps delays (extra room just in case)
 module five_thirtytwo_tb;
 	logic[4:0] input_test;
 	logic En;
@@ -156,20 +156,24 @@ module five_thirtytwo_tb;
 		$display("Testing all cases without enable (Should be all 0)");
 		
 		for (int i = 0; i < 32; i++) begin: first_testloop
-			En = 0; input_test = i; #500;
+			En = 0; input_test = i; #800;
 			assert(y == 0) else $error("Test failed: Expected: %032b Got: %032b", 32'b0, y);
 		end
 			
 		$display("Testing all cases with enable");
 		
-		for (int i = 0; i<32; i++) begin: second_testloop
-			En = 1; input_test = i; #500;
-			assert(y == (32'b1 << i)) else $error("Test failed: Expected %032b Got: %032b", (32'b1 << i), y);
+		for (int j = 0; j<32; j++) begin: second_testloop
+			En = 1; input_test = j; #800;
+			assert(y == (32'b1 << j)) else $error("Test failed: Expected %032b Got: %032b", (32'b1 << j), y);
 		end
+		
+		$stop;
 		
 	end
 	
 endmodule
+
+//3:8 decoder test bench. 500ps delays
 			
 			
 			
