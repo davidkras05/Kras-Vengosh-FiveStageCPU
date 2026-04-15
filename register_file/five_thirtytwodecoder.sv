@@ -157,14 +157,14 @@ module five_thirtytwo_tb;
 		
 		for (int i = 0; i < 32; i++) begin: first_testloop
 			En = 0; input_test = i; #500;
-			assert(y == 0);
+			assert(y == 0) else $error("Test failed: Expected: %032b Got: %032b", 32'b0, y);
 		end
 			
 		$display("Testing all cases with enable");
 		
 		for (int i = 0; i<32; i++) begin: second_testloop
 			En = 1; input_test = i; #500;
-			assert(y == (32'b1 << i));
+			assert(y == (32'b1 << i)) else $error("Test failed: Expected %032b Got: %032b", (32'b1 << i), y);
 		end
 		
 	end
