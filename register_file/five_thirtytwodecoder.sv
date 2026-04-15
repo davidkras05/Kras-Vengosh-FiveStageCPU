@@ -173,8 +173,31 @@ module five_thirtytwo_tb;
 	
 endmodule
 
-//3:8 decoder test bench. 500ps delays
-			
-			
-			
+//3:8 decoder test bench. 800ps delays
+module three_eight_tb;
+	logic[2:0] input_test;
+	logic En;
+	logic[7:0] y;
+	
+	three_eightdecoder DUT (.A(input_test[2]), .B(input_test[1]), .C(input_test[0]) .En(En), .y(y));
+	
+	initial begin
+		$display("Testing all cases without enable (Should be all 0)");
+		
+		for (int i = 0; i < 3; i++) begin: first_testloop
+			En = 0; input_test = i; #800;
+			assert(y == 0) else $error("Test failed: Expected: %08b Got: %08b", 8'b0, y);
+		end
+		
+		
+		$display("Testing all cases with enable");
+		
+		for (int j = 0; j<3; j++) begin: second_testloop
+			En = 1; input_test = j; #800;
+			assert(y == (8'b1 << j)) else $error("Test failed: Expected %08b Got: %08b", (8'b1 << j), y);
+		end
+		
+		$stop;
+	end
+endmodule	
 			
