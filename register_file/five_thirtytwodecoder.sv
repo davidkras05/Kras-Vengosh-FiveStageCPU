@@ -114,6 +114,7 @@ endmodule
 //Test benching for debugging
 
 //1:2 Decoder test bench. 200ps delays because of 100ps delay outputs
+// Lets separate the tbs, no?
 module one_two_tb;
 	logic A, En;
 	logic[1:0] y;
@@ -137,6 +138,7 @@ module one_two_tb;
 		A = 1; En = 1; #200;
 		assert(y == 2'b10);
 		
+		$stop;
 	end
 	
 endmodule	
