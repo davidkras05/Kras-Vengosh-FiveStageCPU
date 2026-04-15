@@ -2,7 +2,7 @@
 do runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:40:59 on Apr 15,2026
+# Start time: 12:44:40 on Apr 15,2026
 # vlog -reportprogress 300 ./thirtytwo_1_mux.sv 
 # -- Compiling module two_onemux
 # -- Compiling module four_onemux
@@ -13,38 +13,38 @@ do runlab.do
 # Top level modules:
 # 	sixteen_onemux
 # 	thirtytwo_1_mux
-# End time: 02:40:59 on Apr 15,2026, Elapsed time: 0:00:00
+# End time: 12:44:40 on Apr 15,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:40:59 on Apr 15,2026
+# Start time: 12:44:40 on Apr 15,2026
 # vlog -reportprogress 300 ./regstim.sv 
 # -- Compiling module regstim
 # 
 # Top level modules:
 # 	regstim
-# End time: 02:40:59 on Apr 15,2026, Elapsed time: 0:00:00
+# End time: 12:44:41 on Apr 15,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:40:59 on Apr 15,2026
+# Start time: 12:44:41 on Apr 15,2026
 # vlog -reportprogress 300 ./register.sv 
 # -- Compiling module register
 # -- Compiling module register_tb
 # 
 # Top level modules:
 # 	register_tb
-# End time: 02:40:59 on Apr 15,2026, Elapsed time: 0:00:00
+# End time: 12:44:41 on Apr 15,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:40:59 on Apr 15,2026
+# Start time: 12:44:41 on Apr 15,2026
 # vlog -reportprogress 300 ./loopedthirtytwo_mux.sv 
 # -- Compiling module loopedthirtytwo_mux
 # 
 # Top level modules:
 # 	loopedthirtytwo_mux
-# End time: 02:40:59 on Apr 15,2026, Elapsed time: 0:00:00
+# End time: 12:44:41 on Apr 15,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:40:59 on Apr 15,2026
+# Start time: 12:44:41 on Apr 15,2026
 # vlog -reportprogress 300 ./five_thirtytwodecoder.sv 
 # -- Compiling module one_twodecoder
 # -- Compiling module two_fourdecoder
@@ -57,62 +57,48 @@ do runlab.do
 # Top level modules:
 # 	one_two_tb
 # 	five_thirtytwo_tb
-# End time: 02:40:59 on Apr 15,2026, Elapsed time: 0:00:00
+# End time: 12:44:41 on Apr 15,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:40:59 on Apr 15,2026
+# Start time: 12:44:41 on Apr 15,2026
 # vlog -reportprogress 300 ./D_FF.sv 
 # -- Compiling module D_FF
 # 
 # Top level modules:
 # 	D_FF
-# End time: 02:40:59 on Apr 15,2026, Elapsed time: 0:00:00
+# End time: 12:44:41 on Apr 15,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:40:59 on Apr 15,2026
+# Start time: 12:44:41 on Apr 15,2026
 # vlog -reportprogress 300 ./regfile.sv 
 # -- Compiling module regfile
 # 
 # Top level modules:
 # 	regfile
-# End time: 02:40:59 on Apr 15,2026, Elapsed time: 0:00:00
+# End time: 12:44:41 on Apr 15,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work regstim 
-# Start time: 02:40:59 on Apr 15,2026
+# vsim -voptargs=""+acc"" -t 1ps -lib work five_thirtytwo_tb 
+# Start time: 12:44:41 on Apr 15,2026
 # Loading sv_std.std
-# Loading work.regstim
-# Loading work.regfile
+# Loading work.five_thirtytwo_tb
 # Loading work.five_thirtytwodecoder
 # Loading work.one_twodecoder
 # Loading work.four_sixteendecoder
 # Loading work.three_eightdecoder
 # Loading work.two_fourdecoder
-# Loading work.register
-# Loading work.loopedthirtytwo_mux
-# Loading work.two_onemux
-# Loading work.D_FF
-# Loading work.thirtytwo_1_mux
-# Loading work.eight_onemux
-# Loading work.four_onemux
-# ** Warning: (vsim-3017) ./regstim.sv(18): [TFMPC] - Too few port connections. Expected 9, found 8.
-#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut File: ./regfile.sv
-# ** Warning: (vsim-3722) ./regstim.sv(18): [TFMPC] - Missing connection for port 'reset'.
-# ** Warning: Design size of 9938 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
-# This may because you are loading cell libraries which are not recommended with
-# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# 2500.00 ns Attempting overwrite of register 31, which should always be 0
-# 7500.00 ns Writing pattern to all registers.
-# 317500.00 ns Checking pattern.
-# ** Note: $stop    : ./regstim.sv(69)
-#    Time: 477500 ns  Iteration: 1  Instance: /regstim
-# Break in Module regstim at ./regstim.sv line 69
+# ** Error: Cannot open macro file: fivethirtytwotest.do
+# Error in macro ./runlab.do line 23
+# Cannot open macro file: fivethirtytwotest.do
+#     while executing
+# "do fivethirtytwotest.do"
+add wave -position end  sim:/five_thirtytwo_tb/En
+add wave -position end  sim:/five_thirtytwo_tb/input_test
+add wave -position end  sim:/five_thirtytwo_tb/y
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/texan/Desktop/CPU-EE469/register_file/fivethirtytwotest.do
 do runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:42:41 on Apr 15,2026
+# Start time: 12:45:46 on Apr 15,2026
 # vlog -reportprogress 300 ./thirtytwo_1_mux.sv 
 # -- Compiling module two_onemux
 # -- Compiling module four_onemux
@@ -123,38 +109,38 @@ do runlab.do
 # Top level modules:
 # 	sixteen_onemux
 # 	thirtytwo_1_mux
-# End time: 02:42:41 on Apr 15,2026, Elapsed time: 0:00:00
+# End time: 12:45:46 on Apr 15,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:42:41 on Apr 15,2026
+# Start time: 12:45:46 on Apr 15,2026
 # vlog -reportprogress 300 ./regstim.sv 
 # -- Compiling module regstim
 # 
 # Top level modules:
 # 	regstim
-# End time: 02:42:41 on Apr 15,2026, Elapsed time: 0:00:00
+# End time: 12:45:46 on Apr 15,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:42:41 on Apr 15,2026
+# Start time: 12:45:46 on Apr 15,2026
 # vlog -reportprogress 300 ./register.sv 
 # -- Compiling module register
 # -- Compiling module register_tb
 # 
 # Top level modules:
 # 	register_tb
-# End time: 02:42:41 on Apr 15,2026, Elapsed time: 0:00:00
+# End time: 12:45:46 on Apr 15,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:42:41 on Apr 15,2026
+# Start time: 12:45:46 on Apr 15,2026
 # vlog -reportprogress 300 ./loopedthirtytwo_mux.sv 
 # -- Compiling module loopedthirtytwo_mux
 # 
 # Top level modules:
 # 	loopedthirtytwo_mux
-# End time: 02:42:41 on Apr 15,2026, Elapsed time: 0:00:00
+# End time: 12:45:46 on Apr 15,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:42:41 on Apr 15,2026
+# Start time: 12:45:46 on Apr 15,2026
 # vlog -reportprogress 300 ./five_thirtytwodecoder.sv 
 # -- Compiling module one_twodecoder
 # -- Compiling module two_fourdecoder
@@ -167,57 +153,103 @@ do runlab.do
 # Top level modules:
 # 	one_two_tb
 # 	five_thirtytwo_tb
-# End time: 02:42:41 on Apr 15,2026, Elapsed time: 0:00:00
+# End time: 12:45:46 on Apr 15,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:42:41 on Apr 15,2026
+# Start time: 12:45:46 on Apr 15,2026
 # vlog -reportprogress 300 ./D_FF.sv 
 # -- Compiling module D_FF
 # 
 # Top level modules:
 # 	D_FF
-# End time: 02:42:41 on Apr 15,2026, Elapsed time: 0:00:00
+# End time: 12:45:46 on Apr 15,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:42:41 on Apr 15,2026
+# Start time: 12:45:46 on Apr 15,2026
 # vlog -reportprogress 300 ./regfile.sv 
 # -- Compiling module regfile
 # 
 # Top level modules:
 # 	regfile
-# End time: 02:42:41 on Apr 15,2026, Elapsed time: 0:00:00
+# End time: 12:45:47 on Apr 15,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# End time: 02:42:42 on Apr 15,2026, Elapsed time: 0:01:43
-# Errors: 0, Warnings: 3
-# vsim -voptargs=""+acc"" -t 1ps -lib work regstim 
-# Start time: 02:42:42 on Apr 15,2026
+# End time: 12:45:47 on Apr 15,2026, Elapsed time: 0:01:06
+# Errors: 3, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work five_thirtytwo_tb 
+# Start time: 12:45:47 on Apr 15,2026
 # Loading sv_std.std
-# Loading work.regstim
-# Loading work.regfile
+# Loading work.five_thirtytwo_tb
 # Loading work.five_thirtytwodecoder
 # Loading work.one_twodecoder
 # Loading work.four_sixteendecoder
 # Loading work.three_eightdecoder
 # Loading work.two_fourdecoder
-# Loading work.register
-# Loading work.loopedthirtytwo_mux
-# Loading work.two_onemux
-# Loading work.D_FF
-# Loading work.thirtytwo_1_mux
-# Loading work.eight_onemux
-# Loading work.four_onemux
-# ** Warning: (vsim-3017) ./regstim.sv(18): [TFMPC] - Too few port connections. Expected 9, found 8.
-#    Time: 0 ps  Iteration: 0  Instance: /regstim/dut File: ./regfile.sv
-# ** Warning: (vsim-3722) ./regstim.sv(18): [TFMPC] - Missing connection for port 'reset'.
-# ** Warning: Design size of 9938 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
-# This may because you are loading cell libraries which are not recommended with
-# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# 2500.00 ns Attempting overwrite of register 31, which should always be 0
-# 7500.00 ns Writing pattern to all registers.
-# 317500.00 ns Checking pattern.
-# ** Note: $stop    : ./regstim.sv(69)
-#    Time: 477500 ns  Iteration: 1  Instance: /regstim
-# Break in Module regstim at ./regstim.sv line 69
+# Testing all cases without enable (Should be all 0)
+# Testing all cases with enable
+# ** Error: Assertion error.
+#    Time: 16500 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
+# ** Error: Assertion error.
+#    Time: 17 us  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
+# ** Error: Assertion error.
+#    Time: 17500 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
+# ** Error: Assertion error.
+#    Time: 18 us  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
+# ** Error: Assertion error.
+#    Time: 18500 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
+# ** Error: Assertion error.
+#    Time: 19 us  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
+# ** Error: Assertion error.
+#    Time: 19500 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
+# ** Error: Assertion error.
+#    Time: 20 us  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
+# ** Error: Assertion error.
+#    Time: 20500 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
+# ** Error: Assertion error.
+#    Time: 21 us  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
+# ** Error: Assertion error.
+#    Time: 21500 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
+# ** Error: Assertion error.
+#    Time: 22 us  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
+# ** Error: Assertion error.
+#    Time: 22500 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
+# ** Error: Assertion error.
+#    Time: 23 us  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
+# ** Error: Assertion error.
+#    Time: 23500 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
+# ** Error: Assertion error.
+#    Time: 24 us  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
+# ** Error: Assertion error.
+#    Time: 24500 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
+# ** Error: Assertion error.
+#    Time: 25 us  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
+# ** Error: Assertion error.
+#    Time: 25500 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
+# ** Error: Assertion error.
+#    Time: 26 us  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
+# ** Error: Assertion error.
+#    Time: 26500 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
+# ** Error: Assertion error.
+#    Time: 27 us  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
+# ** Error: Assertion error.
+#    Time: 27500 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
+# ** Error: Assertion error.
+#    Time: 28 us  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
+# ** Error: Assertion error.
+#    Time: 28500 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
+# ** Error: Assertion error.
+#    Time: 29 us  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
+# ** Error: Assertion error.
+#    Time: 29500 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
+# ** Error: Assertion error.
+#    Time: 30 us  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
+# ** Error: Assertion error.
+#    Time: 30500 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
+# ** Error: Assertion error.
+#    Time: 31 us  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
+# ** Error: Assertion error.
+#    Time: 31500 ns  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
+# ** Error: Assertion error.
+#    Time: 32 us  Scope: five_thirtytwo_tb.#anonblk#108680114#163#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 165
