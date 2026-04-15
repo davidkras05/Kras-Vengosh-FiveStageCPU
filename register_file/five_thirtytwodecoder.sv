@@ -10,17 +10,17 @@ module one_twodecoder(
 	
 	parameter delay = 50;
 	
-	not #(delay) (nA, A);
+	not #(delay) (nA, A); //nA is delayed 50ps
 	
-	buf #(delay) (En_y0_buf, En);
+	buf #(delay) (En_y0_buf, En); //En delayed 50ps
 	
-	and #(delay) (y[0], nA, En_y0_buf);
+	and #(delay) (y[0], nA, En_y0_buf); //y[0] delayed 100ps (delay from nA and En 50ps and the AND 50ps)
 	
 	and #(delay) (y_1_intermediate, A, En);
 	
-	buf (y[1], y_1_intermediate);
+	buf (y[1], y_1_intermediate); //y[1] delayed 100ps (delay from the AND gate +50ps delay from the buffer 50ps)
 	
-	
+	//Output bits y from 1:2 are delayed by 100ps
 
 endmodule
 
@@ -110,3 +110,33 @@ module five_thirtytwodecoder(
 	four_sixteendecoder second (.A(A), .B(B), .C(C), .D(D), .En(second_en), .y(y[31:16]));
 
 endmodule
+
+//Test benching for debugging
+
+//1:2 Decoder test bench. 200ps delays because of 100ps delay outputs
+module one_two_tb;
+	logic A, En;
+	logic[1:0] y;
+	
+	one_twodecoder DUT (.A(A), .En(En), .y(y));
+	
+	initial begin
+		
+		$display("Testing Enable");
+		A = 0; En = 0; #200;
+		assert(y == 2'b00);
+		
+		A = 1; En = 0; #200;
+		assert(y == 2'b00);
+		
+		$display("Testing output Line 0");
+		A = 0; En = 1; #200;
+		assert(y == 2'b01);
+		
+		$display("Testing output Line 1");
+		A = 1; En = 1; #200;
+		assert(y == 2'b10);
+		
+	end
+	
+endmodule	
