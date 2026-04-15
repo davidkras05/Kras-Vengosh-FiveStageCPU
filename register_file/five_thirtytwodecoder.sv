@@ -18,7 +18,7 @@ module one_twodecoder(
 	
 	and #(delay) (y_1_intermediate, A, En);
 	
-	buf (y[1], y_1_intermediate); //y[1] delayed 100ps (delay from the AND gate +50ps delay from the buffer 50ps)
+	buf #(delay) (y[1], y_1_intermediate); //y[1] delayed 100ps (delay from the AND gate +50ps delay from the buffer 50ps)
 	
 	//Output bits y from 1:2 are delayed by 100ps
 
