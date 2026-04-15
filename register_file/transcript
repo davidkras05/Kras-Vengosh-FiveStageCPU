@@ -215,3 +215,5 @@ do runlab.do
 # ** Note: $stop    : ./regstim.sv(69)
 #    Time: 477500 ns  Iteration: 1  Instance: /regstim
 # Break in Module regstim at ./regstim.sv line 69
+# End time: 16:43:10 on Apr 14,2026, Elapsed time: 1:28:33
+# Errors: 0, Warnings: 3
