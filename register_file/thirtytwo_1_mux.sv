@@ -38,7 +38,11 @@ module four_onemux(
 	two_onemux first (.in(in[1:0]), .s(s[0]), .y(first_layer_out[0])); 
 	two_onemux second (.in(in[3:2]), .s(s[0]), .y(first_layer_out[1]));
 	
-	two_onemux sec_layer (.in(first_layer_out), .s(s[1]), .y(y));
+	logic s_1_buf;
+	buf #(150) (s_1_buf, s[1]);
+	
+	
+	two_onemux sec_layer (.in(first_layer_out), .s(s_1_buf), .y(y));
 
 endmodule
 
