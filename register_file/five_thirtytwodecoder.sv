@@ -35,17 +35,17 @@ module two_fourdecoder( //250ps DELAY
 	
 	one_twodecoder en_dec (.A(A), .En(En), .y(onetwo_out));
 	
-	logic En_buf;
-	
-	buf #(100) (En_buf, En);
+	logic B_buf;
+
+	buf #(150) (B_buf, B);
 	
 	logic first_en, second_en;
 	
-	and #(delay) (first_en, onetwo_out[0], En_buf);
-	and #(delay) (second_en, onetwo_out[1], En_buf);
+	and #(delay) (first_en, onetwo_out[0], En);
+	and #(delay) (second_en, onetwo_out[1], En);
 
-	one_twodecoder first (.A(B), .En(first_en), .y(y[1:0]));
-	one_twodecoder second (.A(B), .En(second_en), .y(y[3:2]));
+	one_twodecoder first (.A(B_buf), .En(first_en), .y(y[1:0]));
+	one_twodecoder second (.A(B_buf), .En(second_en), .y(y[3:2]));
 	
 endmodule
 
@@ -61,11 +61,11 @@ module three_eightdecoder( //400ps DELAY
 	
 	logic En_buf;
 	
-	buf #(100) (En_buf, En);
+	buf #(0) (En_buf, En);
 	
 	logic first_en, second_en;
 	
-	parameter delay = 50;
+	parameter delay = 0;
 	
 	and #(delay) (first_en, onetwo_out[0], En);
 	and #(delay) (second_en, onetwo_out[1], En);
@@ -87,11 +87,11 @@ module four_sixteendecoder( //550ps DELAY
 	
 	logic En_buf;
 	
-	buf #(100) (En_buf, En);
+	buf #(0) (En_buf, En);
 	
 	logic first_en, second_en;
 	
-	parameter delay = 50;
+	parameter delay = 0;
 	
 	and #(delay) (first_en, onetwo_out[0], En);
 	and #(delay) (second_en, onetwo_out[1], En);
@@ -113,11 +113,11 @@ module five_thirtytwodecoder( // 700ps DELAY
 	
 	logic En_buf;
 	
-	buf #(100) (En_buf, En);
+	buf #(0) (En_buf, En);
 	
 	logic first_en, second_en;
 	
-	parameter delay = 50;
+	parameter delay = 0;
 	
 	and #(delay) (first_en, onetwo_out[0], En); //first_en delay: 50ps
 	and #(delay) (second_en, onetwo_out[1], En); //Second_en delay: 50ps
@@ -211,6 +211,34 @@ module three_eight_tb;
 		for (int j = 0; j<8; j++) begin: second_testloop
 			En = 1; input_test = j; #800;
 			assert(y == (8'b1 << j)) else $error("Test failed: Expected %08b Got: %08b", (8'b1 << j), y);
+		end
+		
+		$stop;
+	end
+endmodule
+
+//2:4 decoder test bench.
+module two_four_tb;
+	logic[1:0] input_test;
+	logic En;
+	logic[3:0] y;
+	
+	two_fourdecoder DUT (.A(input_test[1]), .B(input_test[0]), .En(En), .y(y));
+	
+	initial begin
+		$display("Testing all cases without enable (Should be all 0)");
+		
+		for (int i = 0; i < 4; i++) begin: first_testloop
+			En = 0; input_test = i; #800;
+			assert(y == 0) else $error("Test failed: Expected: %04b Got: %04b", 4'b0, y);
+		end
+		
+		
+		$display("Testing all cases with enable");
+		
+		for (int j = 0; j < 4; j++) begin: second_testloop
+			En = 1; input_test = j; #800;
+			assert(y == (4'b1 << j)) else $error("Test failed: Expected %04b Got: %04b", (4'b1 << j), y);
 		end
 		
 		$stop;
