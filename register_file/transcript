@@ -2,7 +2,7 @@
 do runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:01:43 on Apr 15,2026
+# Start time: 14:41:21 on Apr 15,2026
 # vlog -reportprogress 300 ./thirtytwo_1_mux.sv 
 # -- Compiling module two_onemux
 # -- Compiling module four_onemux
@@ -13,38 +13,38 @@ do runlab.do
 # Top level modules:
 # 	sixteen_onemux
 # 	thirtytwo_1_mux
-# End time: 17:01:43 on Apr 15,2026, Elapsed time: 0:00:00
+# End time: 14:41:21 on Apr 15,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:01:44 on Apr 15,2026
+# Start time: 14:41:21 on Apr 15,2026
 # vlog -reportprogress 300 ./regstim.sv 
 # -- Compiling module regstim
 # 
 # Top level modules:
 # 	regstim
-# End time: 17:01:44 on Apr 15,2026, Elapsed time: 0:00:00
+# End time: 14:41:21 on Apr 15,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:01:44 on Apr 15,2026
+# Start time: 14:41:21 on Apr 15,2026
 # vlog -reportprogress 300 ./register.sv 
 # -- Compiling module register
 # -- Compiling module register_tb
 # 
 # Top level modules:
 # 	register_tb
-# End time: 17:01:44 on Apr 15,2026, Elapsed time: 0:00:00
+# End time: 14:41:21 on Apr 15,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:01:44 on Apr 15,2026
+# Start time: 14:41:21 on Apr 15,2026
 # vlog -reportprogress 300 ./loopedthirtytwo_mux.sv 
 # -- Compiling module loopedthirtytwo_mux
 # 
 # Top level modules:
 # 	loopedthirtytwo_mux
-# End time: 17:01:45 on Apr 15,2026, Elapsed time: 0:00:01
+# End time: 14:41:21 on Apr 15,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:01:45 on Apr 15,2026
+# Start time: 14:41:22 on Apr 15,2026
 # vlog -reportprogress 300 ./five_thirtytwodecoder.sv 
 # -- Compiling module one_twodecoder
 # -- Compiling module two_fourdecoder
@@ -54,144 +54,18 @@ do runlab.do
 # -- Compiling module one_two_tb
 # -- Compiling module five_thirtytwo_tb
 # -- Compiling module three_eight_tb
-# 
-# Top level modules:
-# 	one_two_tb
-# 	five_thirtytwo_tb
-# 	three_eight_tb
-# End time: 17:01:45 on Apr 15,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:01:45 on Apr 15,2026
-# vlog -reportprogress 300 ./D_FF.sv 
-# -- Compiling module D_FF
-# 
-# Top level modules:
-# 	D_FF
-# End time: 17:01:45 on Apr 15,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:01:45 on Apr 15,2026
-# vlog -reportprogress 300 ./regfile.sv 
-# -- Compiling module regfile
-# 
-# Top level modules:
-# 	regfile
-# End time: 17:01:45 on Apr 15,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work three_eight_tb 
-# Start time: 17:01:47 on Apr 15,2026
-# Loading sv_std.std
-# Loading work.three_eight_tb
-# Loading work.three_eightdecoder
-# Loading work.one_twodecoder
-# Loading work.two_fourdecoder
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Testing all cases without enable (Should be all 0)
-# Testing all cases with enable
-# ** Note: $stop    : ./five_thirtytwodecoder.sv(200)
-#    Time: 12800 ps  Iteration: 0  Instance: /three_eight_tb
-# Break in Module three_eight_tb at ./five_thirtytwodecoder.sv line 200
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:06:09 on Apr 15,2026
-# vlog -reportprogress 300 ./thirtytwo_1_mux.sv 
-# -- Compiling module two_onemux
-# -- Compiling module four_onemux
-# -- Compiling module eight_onemux
-# -- Compiling module sixteen_onemux
-# -- Compiling module thirtytwo_1_mux
-# 
-# Top level modules:
-# 	sixteen_onemux
-# 	thirtytwo_1_mux
-# End time: 17:06:09 on Apr 15,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:06:10 on Apr 15,2026
-# vlog -reportprogress 300 ./regstim.sv 
-# -- Compiling module regstim
-# 
-# Top level modules:
-# 	regstim
-# End time: 17:06:10 on Apr 15,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:06:10 on Apr 15,2026
-# vlog -reportprogress 300 ./register.sv 
-# -- Compiling module register
-# -- Compiling module register_tb
-# 
-# Top level modules:
-# 	register_tb
-# End time: 17:06:10 on Apr 15,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:06:10 on Apr 15,2026
-# vlog -reportprogress 300 ./loopedthirtytwo_mux.sv 
-# -- Compiling module loopedthirtytwo_mux
-# 
-# Top level modules:
-# 	loopedthirtytwo_mux
-# End time: 17:06:10 on Apr 15,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:06:10 on Apr 15,2026
-# vlog -reportprogress 300 ./five_thirtytwodecoder.sv 
-# -- Compiling module one_twodecoder
-# -- Compiling module two_fourdecoder
-# -- Compiling module three_eightdecoder
-# -- Compiling module four_sixteendecoder
-# -- Compiling module five_thirtytwodecoder
-# -- Compiling module one_two_tb
-# -- Compiling module five_thirtytwo_tb
-# -- Compiling module three_eight_tb
-# 
-# Top level modules:
-# 	one_two_tb
-# 	five_thirtytwo_tb
-# 	three_eight_tb
-# End time: 17:06:11 on Apr 15,2026, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:06:11 on Apr 15,2026
-# vlog -reportprogress 300 ./D_FF.sv 
-# -- Compiling module D_FF
-# 
-# Top level modules:
-# 	D_FF
-# End time: 17:06:11 on Apr 15,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:06:11 on Apr 15,2026
-# vlog -reportprogress 300 ./regfile.sv 
-# -- Compiling module regfile
-# 
-# Top level modules:
-# 	regfile
-# End time: 17:06:11 on Apr 15,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 17:06:15 on Apr 15,2026, Elapsed time: 0:04:28
-# Errors: 0, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work three_eight_tb 
-# Start time: 17:06:15 on Apr 15,2026
-# Loading sv_std.std
-# Loading work.three_eight_tb
-# Loading work.three_eightdecoder
-# Loading work.one_twodecoder
-# Loading work.two_fourdecoder
-# ** Error: Cannot open macro file: oentwodecodertest.do
-# Error in macro ./runlab.do line 23
-# Cannot open macro file: oentwodecodertest.do
+# ** Error: (vlog-13069) ./five_thirtytwodecoder.sv(182): near ".": syntax error, unexpected '.', expecting ')'.
+# End time: 14:41:22 on Apr 15,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 11
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
 #     while executing
-# "do oentwodecodertest.do"
+# "vlog "./five_thirtytwodecoder.sv""
 do runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:06:47 on Apr 15,2026
+# Start time: 14:41:49 on Apr 15,2026
 # vlog -reportprogress 300 ./thirtytwo_1_mux.sv 
 # -- Compiling module two_onemux
 # -- Compiling module four_onemux
@@ -202,38 +76,38 @@ do runlab.do
 # Top level modules:
 # 	sixteen_onemux
 # 	thirtytwo_1_mux
-# End time: 17:06:47 on Apr 15,2026, Elapsed time: 0:00:00
+# End time: 14:41:49 on Apr 15,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:06:48 on Apr 15,2026
+# Start time: 14:41:49 on Apr 15,2026
 # vlog -reportprogress 300 ./regstim.sv 
 # -- Compiling module regstim
 # 
 # Top level modules:
 # 	regstim
-# End time: 17:06:48 on Apr 15,2026, Elapsed time: 0:00:00
+# End time: 14:41:49 on Apr 15,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:06:48 on Apr 15,2026
+# Start time: 14:41:49 on Apr 15,2026
 # vlog -reportprogress 300 ./register.sv 
 # -- Compiling module register
 # -- Compiling module register_tb
 # 
 # Top level modules:
 # 	register_tb
-# End time: 17:06:48 on Apr 15,2026, Elapsed time: 0:00:00
+# End time: 14:41:49 on Apr 15,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:06:48 on Apr 15,2026
+# Start time: 14:41:49 on Apr 15,2026
 # vlog -reportprogress 300 ./loopedthirtytwo_mux.sv 
 # -- Compiling module loopedthirtytwo_mux
 # 
 # Top level modules:
 # 	loopedthirtytwo_mux
-# End time: 17:06:48 on Apr 15,2026, Elapsed time: 0:00:00
+# End time: 14:41:49 on Apr 15,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:06:48 on Apr 15,2026
+# Start time: 14:41:49 on Apr 15,2026
 # vlog -reportprogress 300 ./five_thirtytwodecoder.sv 
 # -- Compiling module one_twodecoder
 # -- Compiling module two_fourdecoder
@@ -248,54 +122,250 @@ do runlab.do
 # 	one_two_tb
 # 	five_thirtytwo_tb
 # 	three_eight_tb
-# End time: 17:06:48 on Apr 15,2026, Elapsed time: 0:00:00
+# End time: 14:41:49 on Apr 15,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:06:48 on Apr 15,2026
+# Start time: 14:41:49 on Apr 15,2026
 # vlog -reportprogress 300 ./D_FF.sv 
 # -- Compiling module D_FF
 # 
 # Top level modules:
 # 	D_FF
-# End time: 17:06:48 on Apr 15,2026, Elapsed time: 0:00:00
+# End time: 14:41:49 on Apr 15,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:06:48 on Apr 15,2026
+# Start time: 14:41:49 on Apr 15,2026
 # vlog -reportprogress 300 ./regfile.sv 
 # -- Compiling module regfile
 # 
 # Top level modules:
 # 	regfile
-# End time: 17:06:48 on Apr 15,2026, Elapsed time: 0:00:00
+# End time: 14:41:49 on Apr 15,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# End time: 17:06:51 on Apr 15,2026, Elapsed time: 0:00:36
+# vsim -voptargs=""+acc"" -t 1ps -lib work three_eight_tb 
+# Start time: 14:41:49 on Apr 15,2026
+# Loading sv_std.std
+# Loading work.three_eight_tb
+# Loading work.three_eightdecoder
+# Loading work.one_twodecoder
+# Loading work.two_fourdecoder
+# ** Error: Cannot open macro file: threeeighttest.do
+# Error in macro ./runlab.do line 23
+# Cannot open macro file: threeeighttest.do
+#     while executing
+# "do threeeighttest.do"
+add wave -position end  sim:/three_eight_tb/En
+add wave -position end  sim:/three_eight_tb/input_test
+add wave -position end  sim:/three_eight_tb/y
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/texan/Desktop/CPU-EE469/register_file/threeeighttest.do
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:42:43 on Apr 15,2026
+# vlog -reportprogress 300 ./thirtytwo_1_mux.sv 
+# -- Compiling module two_onemux
+# -- Compiling module four_onemux
+# -- Compiling module eight_onemux
+# -- Compiling module sixteen_onemux
+# -- Compiling module thirtytwo_1_mux
+# 
+# Top level modules:
+# 	sixteen_onemux
+# 	thirtytwo_1_mux
+# End time: 14:42:43 on Apr 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:42:43 on Apr 15,2026
+# vlog -reportprogress 300 ./regstim.sv 
+# -- Compiling module regstim
+# 
+# Top level modules:
+# 	regstim
+# End time: 14:42:43 on Apr 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:42:43 on Apr 15,2026
+# vlog -reportprogress 300 ./register.sv 
+# -- Compiling module register
+# -- Compiling module register_tb
+# 
+# Top level modules:
+# 	register_tb
+# End time: 14:42:43 on Apr 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:42:43 on Apr 15,2026
+# vlog -reportprogress 300 ./loopedthirtytwo_mux.sv 
+# -- Compiling module loopedthirtytwo_mux
+# 
+# Top level modules:
+# 	loopedthirtytwo_mux
+# End time: 14:42:43 on Apr 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:42:43 on Apr 15,2026
+# vlog -reportprogress 300 ./five_thirtytwodecoder.sv 
+# -- Compiling module one_twodecoder
+# -- Compiling module two_fourdecoder
+# -- Compiling module three_eightdecoder
+# -- Compiling module four_sixteendecoder
+# -- Compiling module five_thirtytwodecoder
+# -- Compiling module one_two_tb
+# -- Compiling module five_thirtytwo_tb
+# -- Compiling module three_eight_tb
+# 
+# Top level modules:
+# 	one_two_tb
+# 	five_thirtytwo_tb
+# 	three_eight_tb
+# End time: 14:42:43 on Apr 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:42:43 on Apr 15,2026
+# vlog -reportprogress 300 ./D_FF.sv 
+# -- Compiling module D_FF
+# 
+# Top level modules:
+# 	D_FF
+# End time: 14:42:43 on Apr 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:42:43 on Apr 15,2026
+# vlog -reportprogress 300 ./regfile.sv 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 14:42:43 on Apr 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 14:42:44 on Apr 15,2026, Elapsed time: 0:00:55
 # Errors: 3, Warnings: 0
 # vsim -voptargs=""+acc"" -t 1ps -lib work three_eight_tb 
-# Start time: 17:06:51 on Apr 15,2026
+# Start time: 14:42:44 on Apr 15,2026
 # Loading sv_std.std
 # Loading work.three_eight_tb
 # Loading work.three_eightdecoder
 # Loading work.one_twodecoder
 # Loading work.two_fourdecoder
-# ** Error: (vish-4014) No objects found matching '/one_two_tb/En'.
-# Executing ONERROR command at macro ./onetwodecodertest.do line 3
-# ** Error: (vish-4014) No objects found matching '/one_two_tb/A'.
-# Executing ONERROR command at macro ./onetwodecodertest.do line 4
-# ** Error: (vish-4014) No objects found matching '/one_two_tb/y'.
-# Executing ONERROR command at macro ./onetwodecodertest.do line 5
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
 # Testing all cases without enable (Should be all 0)
 # Testing all cases with enable
+# ** Error: Test failed: Expected 00000010 Got: 00010000
+#    Time: 4 ns  Scope: three_eight_tb.#anonblk#5518514#195#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 197
+# ** Note: $stop    : ./five_thirtytwodecoder.sv(200)
+#    Time: 4800 ps  Iteration: 0  Instance: /three_eight_tb
+# Break in Module three_eight_tb at ./five_thirtytwodecoder.sv line 200
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:44:08 on Apr 15,2026
+# vlog -reportprogress 300 ./thirtytwo_1_mux.sv 
+# -- Compiling module two_onemux
+# -- Compiling module four_onemux
+# -- Compiling module eight_onemux
+# -- Compiling module sixteen_onemux
+# -- Compiling module thirtytwo_1_mux
+# 
+# Top level modules:
+# 	sixteen_onemux
+# 	thirtytwo_1_mux
+# End time: 14:44:08 on Apr 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:44:08 on Apr 15,2026
+# vlog -reportprogress 300 ./regstim.sv 
+# -- Compiling module regstim
+# 
+# Top level modules:
+# 	regstim
+# End time: 14:44:08 on Apr 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:44:08 on Apr 15,2026
+# vlog -reportprogress 300 ./register.sv 
+# -- Compiling module register
+# -- Compiling module register_tb
+# 
+# Top level modules:
+# 	register_tb
+# End time: 14:44:08 on Apr 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:44:08 on Apr 15,2026
+# vlog -reportprogress 300 ./loopedthirtytwo_mux.sv 
+# -- Compiling module loopedthirtytwo_mux
+# 
+# Top level modules:
+# 	loopedthirtytwo_mux
+# End time: 14:44:08 on Apr 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:44:08 on Apr 15,2026
+# vlog -reportprogress 300 ./five_thirtytwodecoder.sv 
+# -- Compiling module one_twodecoder
+# -- Compiling module two_fourdecoder
+# -- Compiling module three_eightdecoder
+# -- Compiling module four_sixteendecoder
+# -- Compiling module five_thirtytwodecoder
+# -- Compiling module one_two_tb
+# -- Compiling module five_thirtytwo_tb
+# -- Compiling module three_eight_tb
+# 
+# Top level modules:
+# 	one_two_tb
+# 	five_thirtytwo_tb
+# 	three_eight_tb
+# End time: 14:44:08 on Apr 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:44:08 on Apr 15,2026
+# vlog -reportprogress 300 ./D_FF.sv 
+# -- Compiling module D_FF
+# 
+# Top level modules:
+# 	D_FF
+# End time: 14:44:08 on Apr 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:44:08 on Apr 15,2026
+# vlog -reportprogress 300 ./regfile.sv 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 14:44:08 on Apr 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 14:44:09 on Apr 15,2026, Elapsed time: 0:01:25
+# Errors: 1, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work three_eight_tb 
+# Start time: 14:44:09 on Apr 15,2026
+# Loading sv_std.std
+# Loading work.three_eight_tb
+# Loading work.three_eightdecoder
+# Loading work.one_twodecoder
+# Loading work.two_fourdecoder
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Testing all cases without enable (Should be all 0)
+# Testing all cases with enable
+# ** Error: Test failed: Expected 00000010 Got: 00010000
+#    Time: 8 ns  Scope: three_eight_tb.#anonblk#5518514#195#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 197
+# ** Error: Test failed: Expected 00001000 Got: 01000000
+#    Time: 9600 ps  Scope: three_eight_tb.#anonblk#5518514#195#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 197
+# ** Error: Test failed: Expected 00010000 Got: 00000010
+#    Time: 10400 ps  Scope: three_eight_tb.#anonblk#5518514#195#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 197
+# ** Error: Test failed: Expected 01000000 Got: 00001000
+#    Time: 12 ns  Scope: three_eight_tb.#anonblk#5518514#195#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 197
 # ** Note: $stop    : ./five_thirtytwodecoder.sv(200)
 #    Time: 12800 ps  Iteration: 0  Instance: /three_eight_tb
 # Break in Module three_eight_tb at ./five_thirtytwodecoder.sv line 200
-add wave -position end  sim:/three_eight_tb/y
 do runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:08:29 on Apr 15,2026
+# Start time: 14:48:37 on Apr 15,2026
 # vlog -reportprogress 300 ./thirtytwo_1_mux.sv 
 # -- Compiling module two_onemux
 # -- Compiling module four_onemux
@@ -306,38 +376,38 @@ do runlab.do
 # Top level modules:
 # 	sixteen_onemux
 # 	thirtytwo_1_mux
-# End time: 17:08:30 on Apr 15,2026, Elapsed time: 0:00:01
+# End time: 14:48:37 on Apr 15,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:08:30 on Apr 15,2026
+# Start time: 14:48:37 on Apr 15,2026
 # vlog -reportprogress 300 ./regstim.sv 
 # -- Compiling module regstim
 # 
 # Top level modules:
 # 	regstim
-# End time: 17:08:30 on Apr 15,2026, Elapsed time: 0:00:00
+# End time: 14:48:37 on Apr 15,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:08:31 on Apr 15,2026
+# Start time: 14:48:37 on Apr 15,2026
 # vlog -reportprogress 300 ./register.sv 
 # -- Compiling module register
 # -- Compiling module register_tb
 # 
 # Top level modules:
 # 	register_tb
-# End time: 17:08:31 on Apr 15,2026, Elapsed time: 0:00:00
+# End time: 14:48:37 on Apr 15,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:08:31 on Apr 15,2026
+# Start time: 14:48:37 on Apr 15,2026
 # vlog -reportprogress 300 ./loopedthirtytwo_mux.sv 
 # -- Compiling module loopedthirtytwo_mux
 # 
 # Top level modules:
 # 	loopedthirtytwo_mux
-# End time: 17:08:31 on Apr 15,2026, Elapsed time: 0:00:00
+# End time: 14:48:37 on Apr 15,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:08:31 on Apr 15,2026
+# Start time: 14:48:37 on Apr 15,2026
 # vlog -reportprogress 300 ./five_thirtytwodecoder.sv 
 # -- Compiling module one_twodecoder
 # -- Compiling module two_fourdecoder
@@ -352,225 +422,30 @@ do runlab.do
 # 	one_two_tb
 # 	five_thirtytwo_tb
 # 	three_eight_tb
-# End time: 17:08:31 on Apr 15,2026, Elapsed time: 0:00:00
+# End time: 14:48:37 on Apr 15,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:08:32 on Apr 15,2026
+# Start time: 14:48:37 on Apr 15,2026
 # vlog -reportprogress 300 ./D_FF.sv 
 # -- Compiling module D_FF
 # 
 # Top level modules:
 # 	D_FF
-# End time: 17:08:32 on Apr 15,2026, Elapsed time: 0:00:00
+# End time: 14:48:37 on Apr 15,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:08:32 on Apr 15,2026
+# Start time: 14:48:37 on Apr 15,2026
 # vlog -reportprogress 300 ./regfile.sv 
 # -- Compiling module regfile
 # 
 # Top level modules:
 # 	regfile
-# End time: 17:08:32 on Apr 15,2026, Elapsed time: 0:00:00
+# End time: 14:48:37 on Apr 15,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# End time: 17:08:39 on Apr 15,2026, Elapsed time: 0:01:48
-# Errors: 9, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work one_two_tb 
-# Start time: 17:08:39 on Apr 15,2026
-# Loading sv_std.std
-# Loading work.one_two_tb
-# Loading work.one_twodecoder
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Testing Enable
-# Testing output Line 0
-# Testing output Line 1
-# ** Note: $stop    : ./five_thirtytwodecoder.sv(141)
-#    Time: 800 ps  Iteration: 0  Instance: /one_two_tb
-# Break in Module one_two_tb at ./five_thirtytwodecoder.sv line 141
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:15:37 on Apr 15,2026
-# vlog -reportprogress 300 ./thirtytwo_1_mux.sv 
-# -- Compiling module two_onemux
-# -- Compiling module four_onemux
-# -- Compiling module eight_onemux
-# -- Compiling module sixteen_onemux
-# -- Compiling module thirtytwo_1_mux
-# 
-# Top level modules:
-# 	sixteen_onemux
-# 	thirtytwo_1_mux
-# End time: 17:15:37 on Apr 15,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:15:39 on Apr 15,2026
-# vlog -reportprogress 300 ./regstim.sv 
-# -- Compiling module regstim
-# 
-# Top level modules:
-# 	regstim
-# End time: 17:15:39 on Apr 15,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:15:40 on Apr 15,2026
-# vlog -reportprogress 300 ./register.sv 
-# -- Compiling module register
-# -- Compiling module register_tb
-# 
-# Top level modules:
-# 	register_tb
-# End time: 17:15:40 on Apr 15,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:15:40 on Apr 15,2026
-# vlog -reportprogress 300 ./loopedthirtytwo_mux.sv 
-# -- Compiling module loopedthirtytwo_mux
-# 
-# Top level modules:
-# 	loopedthirtytwo_mux
-# End time: 17:15:40 on Apr 15,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:15:41 on Apr 15,2026
-# vlog -reportprogress 300 ./five_thirtytwodecoder.sv 
-# -- Compiling module one_twodecoder
-# -- Compiling module two_fourdecoder
-# -- Compiling module three_eightdecoder
-# -- Compiling module four_sixteendecoder
-# -- Compiling module five_thirtytwodecoder
-# -- Compiling module one_two_tb
-# -- Compiling module five_thirtytwo_tb
-# -- Compiling module three_eight_tb
-# 
-# Top level modules:
-# 	one_two_tb
-# 	five_thirtytwo_tb
-# 	three_eight_tb
-# End time: 17:15:41 on Apr 15,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:15:42 on Apr 15,2026
-# vlog -reportprogress 300 ./D_FF.sv 
-# -- Compiling module D_FF
-# 
-# Top level modules:
-# 	D_FF
-# End time: 17:15:42 on Apr 15,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:15:43 on Apr 15,2026
-# vlog -reportprogress 300 ./regfile.sv 
-# -- Compiling module regfile
-# 
-# Top level modules:
-# 	regfile
-# End time: 17:15:43 on Apr 15,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 17:15:51 on Apr 15,2026, Elapsed time: 0:07:12
-# Errors: 0, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work five_thirtytwo_tb 
-# Start time: 17:15:51 on Apr 15,2026
-# Loading sv_std.std
-# Loading work.five_thirtytwo_tb
-# Loading work.five_thirtytwodecoder
-# Loading work.one_twodecoder
-# Loading work.four_sixteendecoder
-# Loading work.three_eightdecoder
-# Loading work.two_fourdecoder
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Testing all cases without enable (Should be all 0)
-# Testing all cases with enable
-# ** Note: $stop    : ./five_thirtytwodecoder.sv(186)
-#    Time: 51200 ps  Iteration: 0  Instance: /five_thirtytwo_tb
-# Break in Module five_thirtytwo_tb at ./five_thirtytwodecoder.sv line 186
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:23:34 on Apr 15,2026
-# vlog -reportprogress 300 ./thirtytwo_1_mux.sv 
-# -- Compiling module two_onemux
-# -- Compiling module four_onemux
-# -- Compiling module eight_onemux
-# -- Compiling module sixteen_onemux
-# -- Compiling module thirtytwo_1_mux
-# 
-# Top level modules:
-# 	sixteen_onemux
-# 	thirtytwo_1_mux
-# End time: 17:23:34 on Apr 15,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:23:35 on Apr 15,2026
-# vlog -reportprogress 300 ./regstim.sv 
-# -- Compiling module regstim
-# 
-# Top level modules:
-# 	regstim
-# End time: 17:23:35 on Apr 15,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:23:35 on Apr 15,2026
-# vlog -reportprogress 300 ./register.sv 
-# -- Compiling module register
-# -- Compiling module register_tb
-# 
-# Top level modules:
-# 	register_tb
-# End time: 17:23:35 on Apr 15,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:23:35 on Apr 15,2026
-# vlog -reportprogress 300 ./loopedthirtytwo_mux.sv 
-# -- Compiling module loopedthirtytwo_mux
-# 
-# Top level modules:
-# 	loopedthirtytwo_mux
-# End time: 17:23:35 on Apr 15,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:23:36 on Apr 15,2026
-# vlog -reportprogress 300 ./five_thirtytwodecoder.sv 
-# -- Compiling module one_twodecoder
-# -- Compiling module two_fourdecoder
-# -- Compiling module three_eightdecoder
-# -- Compiling module four_sixteendecoder
-# -- Compiling module five_thirtytwodecoder
-# -- Compiling module one_two_tb
-# -- Compiling module five_thirtytwo_tb
-# -- Compiling module three_eight_tb
-# 
-# Top level modules:
-# 	one_two_tb
-# 	five_thirtytwo_tb
-# 	three_eight_tb
-# End time: 17:23:36 on Apr 15,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:23:36 on Apr 15,2026
-# vlog -reportprogress 300 ./D_FF.sv 
-# -- Compiling module D_FF
-# 
-# Top level modules:
-# 	D_FF
-# End time: 17:23:36 on Apr 15,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:23:37 on Apr 15,2026
-# vlog -reportprogress 300 ./regfile.sv 
-# -- Compiling module regfile
-# 
-# Top level modules:
-# 	regfile
-# End time: 17:23:37 on Apr 15,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 17:23:43 on Apr 15,2026, Elapsed time: 0:07:52
-# Errors: 0, Warnings: 0
+# End time: 14:48:38 on Apr 15,2026, Elapsed time: 0:04:29
+# Errors: 4, Warnings: 0
 # vsim -voptargs=""+acc"" -t 1ps -lib work three_eight_tb 
-# Start time: 17:23:43 on Apr 15,2026
+# Start time: 14:48:38 on Apr 15,2026
 # Loading sv_std.std
 # Loading work.three_eight_tb
 # Loading work.three_eightdecoder
@@ -581,6 +456,20 @@ do runlab.do
 # .main_pane.objects.interior.cs.body.tree
 # Testing all cases without enable (Should be all 0)
 # Testing all cases with enable
-# ** Note: $stop    : ./five_thirtytwodecoder.sv(216)
+# ** Error: Test failed: Expected 00000010 Got: 00010000
+#    Time: 8 ns  Scope: three_eight_tb.#anonblk#5518514#195#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 197
+# ** Error: Test failed: Expected 00000100 Got: 00000010
+#    Time: 8800 ps  Scope: three_eight_tb.#anonblk#5518514#195#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 197
+# ** Error: Test failed: Expected 00001000 Got: 00100000
+#    Time: 9600 ps  Scope: three_eight_tb.#anonblk#5518514#195#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 197
+# ** Error: Test failed: Expected 00010000 Got: 00000100
+#    Time: 10400 ps  Scope: three_eight_tb.#anonblk#5518514#195#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 197
+# ** Error: Test failed: Expected 00100000 Got: 01000000
+#    Time: 11200 ps  Scope: three_eight_tb.#anonblk#5518514#195#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 197
+# ** Error: Test failed: Expected 01000000 Got: 00001000
+#    Time: 12 ns  Scope: three_eight_tb.#anonblk#5518514#195#4#.second_testloop File: ./five_thirtytwodecoder.sv Line: 197
+# ** Note: $stop    : ./five_thirtytwodecoder.sv(200)
 #    Time: 12800 ps  Iteration: 0  Instance: /three_eight_tb
-# Break in Module three_eight_tb at ./five_thirtytwodecoder.sv line 216
+# Break in Module three_eight_tb at ./five_thirtytwodecoder.sv line 200
+# End time: 17:40:22 on Apr 15,2026, Elapsed time: 2:51:44
+# Errors: 6, Warnings: 0
