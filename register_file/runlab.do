@@ -16,12 +16,12 @@ vlog "./mux_32_1_tb.sv"
 # Call vsim to invoke simulator
 #     Make sure the last item on the line is the name of the
 #     testbench module you want to execute.
-vsim -voptargs="+acc" -t 1ps -lib work mux_4_1_tb
+vsim -voptargs="+acc" -t 1ps -lib work mux_32_1_tb
 
 # Source the wave do file
 #     This should be the file that sets up the signal window for
 #     the module you are testing.
-do fouronemuxtest.do
+do thirtytwoonemuxtest.do
 
 # Set the window types
 view wave

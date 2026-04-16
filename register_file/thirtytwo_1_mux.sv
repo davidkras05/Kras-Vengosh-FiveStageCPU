@@ -54,10 +54,13 @@ module eight_onemux(
 
 	logic [1:0] first_layer_out;
 	
+	logic s_2_buf;
+	buf #(300) (s_2_buf, s[2]);
+	
 	four_onemux first (.in(in[3:0]), .s(s[1:0]), .y(first_layer_out[0]));
 	four_onemux second (.in(in[7:4]), .s(s[1:0]), .y(first_layer_out[1]));
 	
-	two_onemux sec_layer (.in(first_layer_out), .s(s[2]), .y(y));
+	two_onemux sec_layer (.in(first_layer_out), .s(s_2_buf), .y(y));
 
 endmodule
 
@@ -69,10 +72,13 @@ module sixteen_onemux(
 
 	logic [1:0] first_layer_out;
 	
+	logic s_3_buf;
+	buf #(450) (s_3_buf, s[3]);
+	
 	eight_onemux first (.in(in[7:0]), .s(s[2:0]), .y(first_layer_out[0]));
 	eight_onemux second (.in(in[15:8]), .s(s[2:0]), .y(first_layer_out[1]));
 	
-	two_onemux sec_layer (.in(first_layer_out), .s(s[3]), .y(y));
+	two_onemux sec_layer (.in(first_layer_out), .s(s_3_buf), .y(y));
 
 endmodule
 
@@ -82,14 +88,16 @@ module thirtytwo_1_mux(
 	output logic y
 );
 
-	logic [3:0] first_layer_out;
-	
-	eight_onemux first (.in(in[7:0]), .s(s[2:0]), .y(first_layer_out[0]));
-	eight_onemux second (.in(in[15:8]), .s(s[2:0]), .y(first_layer_out[1]));
-	eight_onemux third (.in(in[23:16]), .s(s[2:0]), .y(first_layer_out[2]));
-	eight_onemux fourth (.in(in[31:24]), .s(s[2:0]), .y(first_layer_out[3]));
+	logic [1:0] first_layer_out;
 	
 	
-	four_onemux sec_layer (.in(first_layer_out), .s(s[4:3]), .y(y));
+	
+	sixteen_onemux first (.in(in[15:0]), .s(s[3:0]), .y(first_layer_out[0]));
+	sixteen_onemux second (.in(in[31:16]), .s(s[3:0]), .y(first_layer_out[1]));
+	
+	logic s_4_buf;
+	buf #(600) (s_4_buf, s[4]);
+	
+	two_onemux sec_layer (.in(first_layer_out), .s(s_4_buf), .y(y));
 
 endmodule

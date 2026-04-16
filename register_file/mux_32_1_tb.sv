@@ -51,6 +51,66 @@ module mux_4_1_tb();
 
 endmodule 
 
+module mux_8_1_tb();
+
+	logic [7:0] in;
+	logic [2:0] s;
+	logic y;
+	
+	eight_onemux dut (.in, .s, .y);
+	
+	initial begin
+	
+		// output should always be 1
+		for (int i = 0; i < 8; i++) begin
+			in = '0;
+			in[i] = 1'b1;
+			s = i;
+			#500;
+		end
+		
+		// output should always be 0
+		for (int i = 0; i < 8; i++) begin
+			in = '1;
+			in[i] = 1'b0;
+			s = i;
+			#500;
+		end
+		$stop;
+	end
+
+endmodule 
+
+module mux_16_1_tb();
+
+	logic [15:0] in;
+	logic [3:0] s;
+	logic y;
+	
+	sixteen_onemux dut (.in, .s, .y);
+	
+	initial begin
+	
+		// output should always be 1
+		for (int i = 0; i < 16; i++) begin
+			in = '0;
+			in[i] = 1'b1;
+			s = i;
+			#500;
+		end
+		
+		// output should always be 0
+		for (int i = 0; i < 16; i++) begin
+			in = '1;
+			in[i] = 1'b0;
+			s = i;
+			#500;
+		end
+		$stop;
+	end
+
+endmodule 
+
 module mux_32_1_tb();
 
 	logic [31:0] in;
