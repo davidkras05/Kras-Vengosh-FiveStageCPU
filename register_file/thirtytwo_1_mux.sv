@@ -1,6 +1,6 @@
 `timescale 1ps/1ps
 
-module two_onemux(
+module two_onemux( // 150 ps delay
 	input logic [1:0] in,
 	input logic s,
 	output logic y
