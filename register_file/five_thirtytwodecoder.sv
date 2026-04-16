@@ -33,15 +33,15 @@ module two_fourdecoder( //250ps DELAY
 	
 	parameter delay = 50;
 	
-	one_twodecoder en_dec (.A(B), .En(En), .y(onetwo_out));
+	one_twodecoder en_dec (.A(A), .En(En), .y(onetwo_out));
 	
 	logic first_en, second_en;
 	
 	and #(delay) (first_en, onetwo_out[0], En);
 	and #(delay) (second_en, onetwo_out[1], En);
 
-	one_twodecoder first (.A(A), .En(first_en), .y(y[1:0]));
-	one_twodecoder second (.A(A), .En(second_en), .y(y[3:2]));
+	one_twodecoder first (.A(B), .En(first_en), .y(y[1:0]));
+	one_twodecoder second (.A(B), .En(second_en), .y(y[3:2]));
 	
 endmodule
 
@@ -53,7 +53,7 @@ module three_eightdecoder( //400ps DELAY
 );
 	logic[1:0] onetwo_out;
 	
-	one_twodecoder en_dec (.A(C), .En(En), .y(onetwo_out));
+	one_twodecoder en_dec (.A(A), .En(En), .y(onetwo_out));
 	
 	logic first_en, second_en;
 	
@@ -62,8 +62,8 @@ module three_eightdecoder( //400ps DELAY
 	and #(delay) (first_en, onetwo_out[0], En);
 	and #(delay) (second_en, onetwo_out[1], En);
 	
-	two_fourdecoder first (.A(A), .B(B), .En(first_en), .y(y[3:0]));
-	two_fourdecoder second (.A(A), .B(B), .En(second_en), .y(y[7:4]));
+	two_fourdecoder first (.A(B), .B(C), .En(first_en), .y(y[3:0]));
+	two_fourdecoder second (.A(B), .B(C), .En(second_en), .y(y[7:4]));
 	
 endmodule
 
@@ -75,7 +75,7 @@ module four_sixteendecoder( //550ps DELAY
 
 	logic[1:0] onetwo_out;
 	
-	one_twodecoder en_dec (.A(D), .En(En), .y(onetwo_out));
+	one_twodecoder en_dec (.A(A), .En(En), .y(onetwo_out));
 	
 	logic first_en, second_en;
 	
@@ -84,8 +84,8 @@ module four_sixteendecoder( //550ps DELAY
 	and #(delay) (first_en, onetwo_out[0], En);
 	and #(delay) (second_en, onetwo_out[1], En);
 	
-	three_eightdecoder first (.A(A), .B(B), .C(C), .En(first_en), .y(y[7:0]));
-	three_eightdecoder second (.A(A), .B(B), .C(C), .En(second_en), .y(y[15:8]));
+	three_eightdecoder first (.A(B), .B(C), .C(D), .En(first_en), .y(y[7:0]));
+	three_eightdecoder second (.A(B), .B(C), .C(D), .En(second_en), .y(y[15:8]));
 	
 endmodule
 
@@ -97,7 +97,7 @@ module five_thirtytwodecoder( // 700ps DELAY
 
 	logic[1:0] onetwo_out;
 	
-	one_twodecoder en_dec (.A(E), .En(En), .y(onetwo_out));
+	one_twodecoder en_dec (.A(A), .En(En), .y(onetwo_out));
 	
 	logic first_en, second_en;
 	
@@ -106,8 +106,8 @@ module five_thirtytwodecoder( // 700ps DELAY
 	and #(delay) (first_en, onetwo_out[0], En); //first_en delay: 50ps
 	and #(delay) (second_en, onetwo_out[1], En); //Second_en delay: 50ps
 	
-	four_sixteendecoder first (.A(A), .B(B), .C(C), .D(D), .En(first_en), .y(y[15:0]));
-	four_sixteendecoder second (.A(A), .B(B), .C(C), .D(D), .En(second_en), .y(y[31:16]));
+	four_sixteendecoder first (.A(B), .B(C), .C(D), .D(E), .En(first_en), .y(y[15:0]));
+	four_sixteendecoder second (.A(B), .B(C), .C(D), .D(E), .En(second_en), .y(y[31:16]));
 
 endmodule
 
