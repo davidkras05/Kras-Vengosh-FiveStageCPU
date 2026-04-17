@@ -410,3 +410,41 @@ do runlab.do
 # 	eight_onemux
 # End time: 18:03:52 on Apr 16,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
+# End time: 18:03:53 on Apr 16,2026, Elapsed time: 0:07:25
+# Errors: 6, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alustim 
+# Start time: 18:03:53 on Apr 16,2026
+# Loading sv_std.std
+# Loading work.alustim
+# Loading work.ALU
+# Loading work.bitsliceALU
+# Loading work.full_adder
+# Loading work.eight_onemux
+# Loading work.four_onemux
+# Loading work.two_onemux
+# Loading work.flags
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+#    0.00 ns testing PASS_A operations
+# 10000000.00 ns testing addition
+# ** Error: Test failed expected: result 0000000000000000000000000000000000000000000000000000000000000002 and all 0s on the flags. Got: result 000000000000000000000000000000000000000000000000xxxxxxxxxxxxxxxX carryout x overflow x negative x zero x
+#    Time: 10100 us  Scope: alustim File: ./alustim.sv Line: 54
+# 10100000.00 ns testing subtration
+# ** Error: Test failed expected: result 0000000000000000000000000000000000000000000000000000000000000002 and all 0s on the flags. Got: result 000000000000000000000000000000000000000000000000xxxxxxxxxxxxxxxX carryout x overflow x negative x zero 0
+#    Time: 10200 us  Scope: alustim File: ./alustim.sv Line: 61
+# 10200000.00 ns testing AND
+# ** Error: Test failed expected: result 0000000000000000000000000000000000000000000000000000000000000001 and all 0s on flags. Got: result 0000000000000000000000000000000000000000000000000000000000000001 carryout x overflow x negative 0 zero 0
+#    Time: 10300 us  Scope: alustim File: ./alustim.sv Line: 68
+# 10300000.00 ns testing OR
+# ** Error: Test failed expected: result 0000000000000000000000000000000000000000000000000000000000000001 and all 0s on flags. Got: result 0000000000000000000000000000000000000000000000000000000000000001 carryout x overflow x negative 0 zero 0
+#    Time: 10400 us  Scope: alustim File: ./alustim.sv Line: 75
+# 10400000.00 ns testing XOR
+# ** Error: Test failed expected: result 0000000000000000000000000000000000000000000000000000000000000000 and all 0s on flags except zero. Got: result 0000000000000000000000000000000000000000000000000000000000000000 carryout x overflow x negative 0 zero 1
+#    Time: 10500 us  Scope: alustim File: ./alustim.sv Line: 82
+# 10500000.00 ns testing negative flag
+# ** Error: Test failed expected: result 000000000000000000000000000000000000000000000000fffffffffffffffe and 0s on all flags except negative. Got: result 000000000000000000000000000000000000000000000000xxxxxxxxxxxxxxxX carryout x overflow x negative x zero 0
+#    Time: 10600 us  Scope: alustim File: ./alustim.sv Line: 96
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/texan/Desktop/CPU-EE469/ALU/alutest.do
+# End time: 18:08:30 on Apr 16,2026, Elapsed time: 0:04:37
+# Errors: 6, Warnings: 0
