@@ -1,3 +1,6 @@
+`timescale 1ns/10ps
+
+
 module two_onemux(
 	input logic [1:0] in,
 	input logic s,
