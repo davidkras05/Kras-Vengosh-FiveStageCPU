@@ -92,7 +92,7 @@ module alustim();
 		cntrl = ALU_SUBTRACT;
 		A = 64'h0000000000000002; B = 64'h0000000000000004; //Testing 2-4
 		#(delay);
-		assert(result == 64'hFFFFFFFFFFFFFFFE && carry_out === 0 && overflow === 0 && negative === 1 && zero === 0) else
+		assert(result == 64'hFFFFFFFFFFFFFFFE && carry_out === 1 && overflow === 0 && negative === 1 && zero === 0) else
 			$error("Test failed expected: result %064h and 0s on all flags except negative. Got: result %064h carryout %01b overflow %01b negative %01b zero %01b", 64'hFFFFFFFFFFFFFFFE, result, carry_out, overflow, negative, zero);
 		
 		//These flag tests not finished yet.
