@@ -50,35 +50,35 @@ module alustim();
 		cntrl = ALU_ADD;
 		A = 64'h0000000000000001; B = 64'h0000000000000001;
 		#(delay);
-		assert(result == 64'h0000000000000002 && carry_out == 0 && overflow == 0 && negative == 0 && zero == 0) else
+		assert(result == 64'h0000000000000002 && carry_out === 0 && overflow === 0 && negative === 0 && zero === 0) else
 			$error("Test failed expected: result %064h and all 0s on the flags. Got: result %064h carryout %01b overflow %01b negative %01b zero %01b", 64'h2, result, carry_out, overflow, negative, zero);
 		
 		$display("%t testing subtration", $time);
 		cntrl = ALU_SUBTRACT;
 		A = 64'h0000000000000004; B = 64'h0000000000000002; //Testing 4-2
 		#(delay);
-		assert(result == 64'h0000000000000002 && carry_out == 0 && overflow == 0 && negative == 0 && zero == 0) else
+		assert(result == 64'h0000000000000002 && carry_out === 0 && overflow === 0 && negative === 0 && zero === 0) else
 			$error("Test failed expected: result %064h and all 0s on the flags. Got: result %064h carryout %01b overflow %01b negative %01b zero %01b", 64'h2, result, carry_out, overflow, negative, zero);
 		
 		$display("%t testing AND", $time);
 		cntrl = ALU_AND;
 		A = 64'h1; B = 64'h1; //Testing AND, 64'h1 is just 64'h0000000000000001
 		#(delay);
-		assert(result == 64'h0000000000000001 && carry_out == 0 && overflow == 0 && negative == 0 && zero == 0) else
+		assert(result == 64'h0000000000000001 && carry_out === 0 && overflow === 0 && negative === 0 && zero === 0) else
 			$error("Test failed expected: result %064h and all 0s on flags. Got: result %064h carryout %01b overflow %01b negative %01b zero %01b", 64'h1, result, carry_out, overflow, negative, zero);
 		
 		$display("%t testing OR", $time);
 		cntrl = ALU_OR;
 		A = 64'h1; B = 64'h0; //Testing OR
 		#(delay);
-		assert(result == 64'h0000000000000001 && carry_out == 0 && overflow == 0 && negative == 0 && zero == 0) else
+		assert(result == 64'h0000000000000001 && carry_out === 0 && overflow === 0 && negative === 0 && zero === 0) else
 			$error("Test failed expected: result %064h and all 0s on flags. Got: result %064h carryout %01b overflow %01b negative %01b zero %01b", 64'h1, result, carry_out, overflow, negative, zero);
 		
 		$display("%t testing XOR", $time);
 		cntrl = ALU_XOR;
 		A = 64'h1; B = 64'h1; //Testing XOR
 		#(delay);
-		assert(result == 64'h0000000000000000 && carry_out == 0 && overflow == 0 && negative == 0 && zero == 1) else
+		assert(result == 64'h0000000000000000 && carry_out === 0 && overflow === 0 && negative === 0 && zero === 1) else
 			$error("Test failed expected: result %064h and all 0s on flags except zero. Got: result %064h carryout %01b overflow %01b negative %01b zero %01b", 64'h0, result, carry_out, overflow, negative, zero);
 		
 		
@@ -92,7 +92,7 @@ module alustim();
 		cntrl = ALU_SUBTRACT;
 		A = 64'h0000000000000002; B = 64'h0000000000000004; //Testing 2-4
 		#(delay);
-		assert(result == 64'hFFFFFFFFFFFFFFFE && carry_out == 0 && overflow == 0 && negative == 1 && zero == 0) else
+		assert(result == 64'hFFFFFFFFFFFFFFFE && carry_out === 0 && overflow === 0 && negative === 1 && zero === 0) else
 			$error("Test failed expected: result %064h and 0s on all flags except negative. Got: result %064h carryout %01b overflow %01b negative %01b zero %01b", 64'hFFFFFFFFFFFFFFFE, result, carry_out, overflow, negative, zero);
 		
 		//These flag tests not finished yet.

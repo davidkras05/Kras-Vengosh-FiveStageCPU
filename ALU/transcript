@@ -352,3 +352,61 @@ do runlab.do
 # 10500000.00 ns testing negative flag
 # ** Error: Test failed expected: result 000000000000000000000000000000000000000000000000fffffffffffffffe and 0s on all flags except negative. Got: result 000000000000000000000000000000000000000000000000xxxxxxxxxxxxxxxX carryout x overflow x negative x zero 0
 #    Time: 10600 us  Scope: alustim File: ./alustim.sv Line: 96
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:03:52 on Apr 16,2026
+# vlog -reportprogress 300 ./ALU.sv 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 18:03:52 on Apr 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:03:52 on Apr 16,2026
+# vlog -reportprogress 300 ./bitsliceALU.sv 
+# -- Compiling module bitsliceALU
+# 
+# Top level modules:
+# 	bitsliceALU
+# End time: 18:03:52 on Apr 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:03:52 on Apr 16,2026
+# vlog -reportprogress 300 ./full_adder.sv 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 18:03:52 on Apr 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:03:52 on Apr 16,2026
+# vlog -reportprogress 300 ./flags.sv 
+# -- Compiling module flags
+# 
+# Top level modules:
+# 	flags
+# End time: 18:03:52 on Apr 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:03:52 on Apr 16,2026
+# vlog -reportprogress 300 ./alustim.sv 
+# -- Compiling module alustim
+# 
+# Top level modules:
+# 	alustim
+# End time: 18:03:52 on Apr 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:03:52 on Apr 16,2026
+# vlog -reportprogress 300 eight_onemux.sv 
+# -- Compiling module two_onemux
+# -- Compiling module four_onemux
+# -- Compiling module eight_onemux
+# 
+# Top level modules:
+# 	eight_onemux
+# End time: 18:03:52 on Apr 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

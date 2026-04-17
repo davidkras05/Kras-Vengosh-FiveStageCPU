@@ -9,8 +9,8 @@ add wave -noupdate -label {negative FLAG} /alustim/negative
 add wave -noupdate -label {overflow FLAG} /alustim/overflow
 add wave -noupdate -label {zero FLAG} /alustim/zero
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {0 ps} 0}
-quietly wave cursor active 0
+WaveRestoreCursors {{Cursor 1} {336536216 ps} 0}
+quietly wave cursor active 1
 configure wave -namecolwidth 150
 configure wave -valuecolwidth 100
 configure wave -justifyvalue left
@@ -25,4 +25,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ps
 update
-WaveRestoreZoom {0 ps} {1 ns}
+WaveRestoreZoom {0 ps} {1048576 ns}
