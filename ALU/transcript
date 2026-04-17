@@ -296,3 +296,98 @@ do runlab.do
 #    Time: 10400 ns  Scope: alustim File: ./alustim.sv Line: 75
 # 10400.00 ps testing XOR
 # 10500.00 ps testing negative flag (2-4)
+add wave -position end  sim:/alustim/dut/flag/overflow_in
+restart -f
+run -all
+#    0.00 ps testing PASS_A operations
+# 10000.00 ps testing addition
+# 10100.00 ps testing subtration (4-2)
+# ** Error: Test failed expected: result 0000000000000000000000000000000000000000000000000000000000000002 and all 0s on the flags. Got: result 0000000000000000000000000000000000000000000000000000000000000002 carryout 1 overflow 0 negative 0 zero 0
+#    Time: 10200 ns  Scope: alustim File: ./alustim.sv Line: 61
+# 10200.00 ps testing AND
+# 10300.00 ps testing OR
+# ** Error: Test failed expected: result 0000000000000000000000000000000000000000000000000000000000000001 and all 0s on flags. Got: result 0000000000000000000000000000000000000000000000000000000000000001 carryout 1 overflow 0 negative 0 zero 0
+#    Time: 10400 ns  Scope: alustim File: ./alustim.sv Line: 75
+# 10400.00 ps testing XOR
+# 10500.00 ps testing negative flag (2-4)
+add wave -position end  sim:/alustim/dut/flag/carryout
+restart -f
+run -all
+#    0.00 ps testing PASS_A operations
+# 10000.00 ps testing addition
+# 10100.00 ps testing subtration (4-2)
+# ** Error: Test failed expected: result 0000000000000000000000000000000000000000000000000000000000000002 and all 0s on the flags. Got: result 0000000000000000000000000000000000000000000000000000000000000002 carryout 1 overflow 0 negative 0 zero 0
+#    Time: 10200 ns  Scope: alustim File: ./alustim.sv Line: 61
+# 10200.00 ps testing AND
+# 10300.00 ps testing OR
+# ** Error: Test failed expected: result 0000000000000000000000000000000000000000000000000000000000000001 and all 0s on flags. Got: result 0000000000000000000000000000000000000000000000000000000000000001 carryout 1 overflow 0 negative 0 zero 0
+#    Time: 10400 ns  Scope: alustim File: ./alustim.sv Line: 75
+# 10400.00 ps testing XOR
+# 10500.00 ps testing negative flag (2-4)
+add wave -position end  sim:/alustim/dut/A
+add wave -position end  sim:/alustim/dut/B
+add wave -position end  sim:/alustim/dut/cntrl
+add wave -position end  sim:/alustim/dut/result
+restart -f
+run -all
+#    0.00 ps testing PASS_A operations
+# 10000.00 ps testing addition
+# 10100.00 ps testing subtration (4-2)
+# ** Error: Test failed expected: result 0000000000000000000000000000000000000000000000000000000000000002 and all 0s on the flags. Got: result 0000000000000000000000000000000000000000000000000000000000000002 carryout 1 overflow 0 negative 0 zero 0
+#    Time: 10200 ns  Scope: alustim File: ./alustim.sv Line: 61
+# 10200.00 ps testing AND
+# 10300.00 ps testing OR
+# ** Error: Test failed expected: result 0000000000000000000000000000000000000000000000000000000000000001 and all 0s on flags. Got: result 0000000000000000000000000000000000000000000000000000000000000001 carryout 1 overflow 0 negative 0 zero 0
+#    Time: 10400 ns  Scope: alustim File: ./alustim.sv Line: 75
+# 10400.00 ps testing XOR
+# 10500.00 ps testing negative flag (2-4)
+add wave -position end  sim:/alustim/dut/body_ALUs[63]/body/A
+add wave -position end  sim:/alustim/dut/body_ALUs[63]/body/B
+add wave -position end  sim:/alustim/dut/body_ALUs[63]/body/Cin
+add wave -position end  sim:/alustim/dut/body_ALUs[63]/body/cntrl
+add wave -position end  sim:/alustim/dut/body_ALUs[63]/body/result
+restart -f
+run -all
+#    0.00 ps testing PASS_A operations
+# 10000.00 ps testing addition
+# 10100.00 ps testing subtration (4-2)
+# ** Error: Test failed expected: result 0000000000000000000000000000000000000000000000000000000000000002 and all 0s on the flags. Got: result 0000000000000000000000000000000000000000000000000000000000000002 carryout 1 overflow 0 negative 0 zero 0
+#    Time: 10200 ns  Scope: alustim File: ./alustim.sv Line: 61
+# 10200.00 ps testing AND
+# 10300.00 ps testing OR
+# ** Error: Test failed expected: result 0000000000000000000000000000000000000000000000000000000000000001 and all 0s on flags. Got: result 0000000000000000000000000000000000000000000000000000000000000001 carryout 1 overflow 0 negative 0 zero 0
+#    Time: 10400 ns  Scope: alustim File: ./alustim.sv Line: 75
+# 10400.00 ps testing XOR
+# 10500.00 ps testing negative flag (2-4)
+add wave -position end  sim:/alustim/dut/body_ALUs[63]/body/Cout
+restart -f
+run -all
+#    0.00 ps testing PASS_A operations
+# 10000.00 ps testing addition
+# 10100.00 ps testing subtration (4-2)
+# ** Error: Test failed expected: result 0000000000000000000000000000000000000000000000000000000000000002 and all 0s on the flags. Got: result 0000000000000000000000000000000000000000000000000000000000000002 carryout 1 overflow 0 negative 0 zero 0
+#    Time: 10200 ns  Scope: alustim File: ./alustim.sv Line: 61
+# 10200.00 ps testing AND
+# 10300.00 ps testing OR
+# ** Error: Test failed expected: result 0000000000000000000000000000000000000000000000000000000000000001 and all 0s on flags. Got: result 0000000000000000000000000000000000000000000000000000000000000001 carryout 1 overflow 0 negative 0 zero 0
+#    Time: 10400 ns  Scope: alustim File: ./alustim.sv Line: 75
+# 10400.00 ps testing XOR
+# 10500.00 ps testing negative flag (2-4)
+add wave -position end  sim:/alustim/dut/body_ALUs[63]/body/f_a/Cout
+add wave -position 15  sim:/alustim/dut/body_ALUs[63]/body/f_a/A
+add wave -position 16  sim:/alustim/dut/body_ALUs[63]/body/f_a/B
+add wave -position 17  sim:/alustim/dut/body_ALUs[63]/body/f_a/Cin
+restart -f
+run -all
+#    0.00 ps testing PASS_A operations
+# 10000.00 ps testing addition
+# 10100.00 ps testing subtration (4-2)
+# ** Error: Test failed expected: result 0000000000000000000000000000000000000000000000000000000000000002 and all 0s on the flags. Got: result 0000000000000000000000000000000000000000000000000000000000000002 carryout 1 overflow 0 negative 0 zero 0
+#    Time: 10200 ns  Scope: alustim File: ./alustim.sv Line: 61
+# 10200.00 ps testing AND
+# 10300.00 ps testing OR
+# ** Error: Test failed expected: result 0000000000000000000000000000000000000000000000000000000000000001 and all 0s on flags. Got: result 0000000000000000000000000000000000000000000000000000000000000001 carryout 1 overflow 0 negative 0 zero 0
+#    Time: 10400 ns  Scope: alustim File: ./alustim.sv Line: 75
+# 10400.00 ps testing XOR
+# 10500.00 ps testing negative flag (2-4)
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/aveng/469/CPU-EE469/ALU/alutest.do
