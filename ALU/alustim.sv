@@ -32,7 +32,7 @@ module alustim();
 	ALU dut (.A, .B, .cntrl, .result, .negative, .zero, .overflow, .carry_out);
 
 	// Force %t's to print in a nice format.
-	initial $timeformat(-9, 2, " ns", 10);
+	initial $timeformat(-9, 2, " ps", 10);
 
 	integer i;
 	logic [63:0] test_val;
