@@ -15,6 +15,11 @@ module ALU (
 	
 	generate
 		for (i = 1; i<64; i++) begin: body_ALUs
+			logic a_buf, b_buf, cntrl_buf;
+			buf #() (a_buf, A);
+			buf #() (b_buf, B);
+			buf #() (cntrl_buf, cntrl);
+			
 			bitsliceALU body (.A(A[i]), .B(B[i]), .Cin(Couts[i-1]), .cntrl(cntrl), .result(result[i]), .Cout(Couts[i]));
 		end
 	endgenerate

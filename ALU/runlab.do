@@ -10,6 +10,7 @@ vlog "./full_adder.sv"
 vlog "./flags.sv"
 vlog "./alustim.sv"
 vlog "eight_onemux.sv"
+vlog "full_adder_tb.sv"
 
 # Call vsim to invoke simulator
 #     Make sure the last item on the line is the name of the
