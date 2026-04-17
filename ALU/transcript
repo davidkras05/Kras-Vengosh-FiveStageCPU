@@ -168,3 +168,1428 @@ do runlab.do
 # 10500000.00 ns testing negative flag
 # ** Error: Test failed expected: result 000000000000000000000000000000000000000000000000fffffffffffffffe and 0s on all flags except negative. Got: result 000000000000000000000000000000000000000000000000xxxxxxxxxxxxxxxX carryout x overflow x negative x zero 0
 #    Time: 10600 us  Scope: alustim File: ./alustim.sv Line: 96
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/aveng/469/CPU-EE469/ALU/alutest.do
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:27:39 on Apr 17,2026
+# vlog -reportprogress 300 ./ALU.sv 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 12:27:39 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:27:39 on Apr 17,2026
+# vlog -reportprogress 300 ./bitsliceALU.sv 
+# -- Compiling module bitsliceALU
+# 
+# Top level modules:
+# 	bitsliceALU
+# End time: 12:27:39 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:27:39 on Apr 17,2026
+# vlog -reportprogress 300 ./full_adder.sv 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 12:27:39 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:27:39 on Apr 17,2026
+# vlog -reportprogress 300 ./flags.sv 
+# -- Compiling module flags
+# 
+# Top level modules:
+# 	flags
+# End time: 12:27:39 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:27:39 on Apr 17,2026
+# vlog -reportprogress 300 ./alustim.sv 
+# -- Compiling module alustim
+# 
+# Top level modules:
+# 	alustim
+# End time: 12:27:39 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:27:39 on Apr 17,2026
+# vlog -reportprogress 300 eight_onemux.sv 
+# -- Compiling module two_onemux
+# -- Compiling module four_onemux
+# -- Compiling module eight_onemux
+# 
+# Top level modules:
+# 	eight_onemux
+# End time: 12:27:39 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:27:39 on Apr 17,2026
+# vlog -reportprogress 300 full_adder_tb.sv 
+# -- Compiling module full_adder_tb
+# 
+# Top level modules:
+# 	full_adder_tb
+# End time: 12:27:39 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:27:40 on Apr 17,2026, Elapsed time: 0:34:22
+# Errors: 6, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alustim 
+# Start time: 12:27:40 on Apr 17,2026
+# Loading sv_std.std
+# Loading work.alustim
+# Loading work.ALU
+# ** Error (suppressible): (vsim-3009) [TSCALE] - Module 'ALU' does not have a timeunit/timeprecision specification in effect, but other modules do.
+#    Time: 0 ps  Iteration: 0  Instance: /alustim/dut File: ./ALU.sv
+# Loading work.bitsliceALU
+# Loading work.full_adder
+# Loading work.eight_onemux
+# Loading work.four_onemux
+# Loading work.two_onemux
+# Loading work.flags
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./runlab.do PAUSED at line 18
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:28:18 on Apr 17,2026
+# vlog -reportprogress 300 ./ALU.sv 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 12:28:18 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:28:18 on Apr 17,2026
+# vlog -reportprogress 300 ./bitsliceALU.sv 
+# -- Compiling module bitsliceALU
+# 
+# Top level modules:
+# 	bitsliceALU
+# End time: 12:28:18 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:28:18 on Apr 17,2026
+# vlog -reportprogress 300 ./full_adder.sv 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 12:28:18 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:28:18 on Apr 17,2026
+# vlog -reportprogress 300 ./flags.sv 
+# -- Compiling module flags
+# 
+# Top level modules:
+# 	flags
+# End time: 12:28:19 on Apr 17,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:28:19 on Apr 17,2026
+# vlog -reportprogress 300 ./alustim.sv 
+# -- Compiling module alustim
+# 
+# Top level modules:
+# 	alustim
+# End time: 12:28:19 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:28:19 on Apr 17,2026
+# vlog -reportprogress 300 eight_onemux.sv 
+# -- Compiling module two_onemux
+# -- Compiling module four_onemux
+# -- Compiling module eight_onemux
+# 
+# Top level modules:
+# 	eight_onemux
+# End time: 12:28:19 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:28:19 on Apr 17,2026
+# vlog -reportprogress 300 full_adder_tb.sv 
+# -- Compiling module full_adder_tb
+# 
+# Top level modules:
+# 	full_adder_tb
+# End time: 12:28:19 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alustim 
+# Start time: 12:27:40 on Apr 17,2026
+# Loading sv_std.std
+# Loading work.alustim
+# Loading work.ALU
+# Loading work.bitsliceALU
+# Loading work.full_adder
+# Loading work.eight_onemux
+# Loading work.four_onemux
+# Loading work.two_onemux
+# Loading work.flags
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+#    0.00 ns testing PASS_A operations
+# 10000000.00 ns testing addition
+# ** Error: Test failed expected: result 0000000000000000000000000000000000000000000000000000000000000002 and all 0s on the flags. Got: result 000000000000000000000000000000000000000000000000xxxxxxxxxxxxxxxX carryout x overflow x negative x zero x
+#    Time: 10100 us  Scope: alustim File: ./alustim.sv Line: 54
+# 10100000.00 ns testing subtration
+# ** Error: Test failed expected: result 0000000000000000000000000000000000000000000000000000000000000002 and all 0s on the flags. Got: result 000000000000000000000000000000000000000000000000xxxxxxxxxxxxxxxX carryout x overflow x negative x zero 0
+#    Time: 10200 us  Scope: alustim File: ./alustim.sv Line: 61
+# 10200000.00 ns testing AND
+# ** Error: Test failed expected: result 0000000000000000000000000000000000000000000000000000000000000001 and all 0s on flags. Got: result 0000000000000000000000000000000000000000000000000000000000000001 carryout x overflow x negative 0 zero 0
+#    Time: 10300 us  Scope: alustim File: ./alustim.sv Line: 68
+# 10300000.00 ns testing OR
+# ** Error: Test failed expected: result 0000000000000000000000000000000000000000000000000000000000000001 and all 0s on flags. Got: result 0000000000000000000000000000000000000000000000000000000000000001 carryout x overflow x negative 0 zero 0
+#    Time: 10400 us  Scope: alustim File: ./alustim.sv Line: 75
+# 10400000.00 ns testing XOR
+# ** Error: Test failed expected: result 0000000000000000000000000000000000000000000000000000000000000000 and all 0s on flags except zero. Got: result 0000000000000000000000000000000000000000000000000000000000000000 carryout x overflow x negative 0 zero 1
+#    Time: 10500 us  Scope: alustim File: ./alustim.sv Line: 82
+# 10500000.00 ns testing negative flag
+# ** Error: Test failed expected: result 000000000000000000000000000000000000000000000000fffffffffffffffe and 0s on all flags except negative. Got: result 000000000000000000000000000000000000000000000000xxxxxxxxxxxxxxxX carryout x overflow x negative x zero 0
+#    Time: 10600 us  Scope: alustim File: ./alustim.sv Line: 96
+add wave -position end  sim:/alustim/dut/head/A
+add wave -position end  sim:/alustim/dut/head/B
+add wave -position end  sim:/alustim/dut/head/Cin
+add wave -position end  sim:/alustim/dut/head/cntrl
+add wave -position end  sim:/alustim/dut/head/result
+add wave -position end  sim:/alustim/dut/head/Cout
+restart -f
+run -all
+#    0.00 ns testing PASS_A operations
+# 10000000.00 ns testing addition
+# ** Error: Test failed expected: result 0000000000000000000000000000000000000000000000000000000000000002 and all 0s on the flags. Got: result 000000000000000000000000000000000000000000000000xxxxxxxxxxxxxxxX carryout x overflow x negative x zero x
+#    Time: 10100 us  Scope: alustim File: ./alustim.sv Line: 54
+# 10100000.00 ns testing subtration
+# ** Error: Test failed expected: result 0000000000000000000000000000000000000000000000000000000000000002 and all 0s on the flags. Got: result 000000000000000000000000000000000000000000000000xxxxxxxxxxxxxxxX carryout x overflow x negative x zero 0
+#    Time: 10200 us  Scope: alustim File: ./alustim.sv Line: 61
+# 10200000.00 ns testing AND
+# ** Error: Test failed expected: result 0000000000000000000000000000000000000000000000000000000000000001 and all 0s on flags. Got: result 0000000000000000000000000000000000000000000000000000000000000001 carryout x overflow x negative 0 zero 0
+#    Time: 10300 us  Scope: alustim File: ./alustim.sv Line: 68
+# 10300000.00 ns testing OR
+# ** Error: Test failed expected: result 0000000000000000000000000000000000000000000000000000000000000001 and all 0s on flags. Got: result 0000000000000000000000000000000000000000000000000000000000000001 carryout x overflow x negative 0 zero 0
+#    Time: 10400 us  Scope: alustim File: ./alustim.sv Line: 75
+# 10400000.00 ns testing XOR
+# ** Error: Test failed expected: result 0000000000000000000000000000000000000000000000000000000000000000 and all 0s on flags except zero. Got: result 0000000000000000000000000000000000000000000000000000000000000000 carryout x overflow x negative 0 zero 1
+#    Time: 10500 us  Scope: alustim File: ./alustim.sv Line: 82
+# 10500000.00 ns testing negative flag
+# ** Error: Test failed expected: result 000000000000000000000000000000000000000000000000fffffffffffffffe and 0s on all flags except negative. Got: result 000000000000000000000000000000000000000000000000xxxxxxxxxxxxxxxX carryout x overflow x negative x zero 0
+#    Time: 10600 us  Scope: alustim File: ./alustim.sv Line: 96
+add wave -position end  sim:/alustim/dut/head/f_a/A
+add wave -position end  sim:/alustim/dut/head/f_a/B
+add wave -position end  sim:/alustim/dut/head/f_a/Cin
+add wave -position end  sim:/alustim/dut/head/f_a/Cout
+add wave -position end  sim:/alustim/dut/head/f_a/S
+restart -f
+run -all
+#    0.00 ns testing PASS_A operations
+# 10000000.00 ns testing addition
+# ** Error: Test failed expected: result 0000000000000000000000000000000000000000000000000000000000000002 and all 0s on the flags. Got: result 000000000000000000000000000000000000000000000000xxxxxxxxxxxxxxxX carryout x overflow x negative x zero x
+#    Time: 10100 us  Scope: alustim File: ./alustim.sv Line: 54
+# 10100000.00 ns testing subtration
+# ** Error: Test failed expected: result 0000000000000000000000000000000000000000000000000000000000000002 and all 0s on the flags. Got: result 000000000000000000000000000000000000000000000000xxxxxxxxxxxxxxxX carryout x overflow x negative x zero 0
+#    Time: 10200 us  Scope: alustim File: ./alustim.sv Line: 61
+# 10200000.00 ns testing AND
+# ** Error: Test failed expected: result 0000000000000000000000000000000000000000000000000000000000000001 and all 0s on flags. Got: result 0000000000000000000000000000000000000000000000000000000000000001 carryout x overflow x negative 0 zero 0
+#    Time: 10300 us  Scope: alustim File: ./alustim.sv Line: 68
+# 10300000.00 ns testing OR
+# ** Error: Test failed expected: result 0000000000000000000000000000000000000000000000000000000000000001 and all 0s on flags. Got: result 0000000000000000000000000000000000000000000000000000000000000001 carryout x overflow x negative 0 zero 0
+#    Time: 10400 us  Scope: alustim File: ./alustim.sv Line: 75
+# 10400000.00 ns testing XOR
+# ** Error: Test failed expected: result 0000000000000000000000000000000000000000000000000000000000000000 and all 0s on flags except zero. Got: result 0000000000000000000000000000000000000000000000000000000000000000 carryout x overflow x negative 0 zero 1
+#    Time: 10500 us  Scope: alustim File: ./alustim.sv Line: 82
+# 10500000.00 ns testing negative flag
+# ** Error: Test failed expected: result 000000000000000000000000000000000000000000000000fffffffffffffffe and 0s on all flags except negative. Got: result 000000000000000000000000000000000000000000000000xxxxxxxxxxxxxxxX carryout x overflow x negative x zero 0
+#    Time: 10600 us  Scope: alustim File: ./alustim.sv Line: 96
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:32:22 on Apr 17,2026
+# vlog -reportprogress 300 ./ALU.sv 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 12:32:22 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:32:22 on Apr 17,2026
+# vlog -reportprogress 300 ./bitsliceALU.sv 
+# -- Compiling module bitsliceALU
+# 
+# Top level modules:
+# 	bitsliceALU
+# End time: 12:32:22 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:32:22 on Apr 17,2026
+# vlog -reportprogress 300 ./full_adder.sv 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 12:32:22 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:32:22 on Apr 17,2026
+# vlog -reportprogress 300 ./flags.sv 
+# -- Compiling module flags
+# 
+# Top level modules:
+# 	flags
+# End time: 12:32:22 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:32:22 on Apr 17,2026
+# vlog -reportprogress 300 ./alustim.sv 
+# -- Compiling module alustim
+# 
+# Top level modules:
+# 	alustim
+# End time: 12:32:22 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:32:22 on Apr 17,2026
+# vlog -reportprogress 300 eight_onemux.sv 
+# -- Compiling module two_onemux
+# -- Compiling module four_onemux
+# -- Compiling module eight_onemux
+# 
+# Top level modules:
+# 	eight_onemux
+# End time: 12:32:22 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:32:22 on Apr 17,2026
+# vlog -reportprogress 300 full_adder_tb.sv 
+# -- Compiling module full_adder_tb
+# 
+# Top level modules:
+# 	full_adder_tb
+# End time: 12:32:22 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:32:23 on Apr 17,2026, Elapsed time: 0:04:43
+# Errors: 19, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work full_adder_tb 
+# Start time: 12:32:23 on Apr 17,2026
+# Loading sv_std.std
+# Loading work.full_adder_tb
+# Loading work.full_adder
+# ** Error (suppressible): (vsim-3009) [TSCALE] - Module 'full_adder_tb' does not have a timeunit/timeprecision specification in effect, but other modules do.
+#    Time: 0 ps  Iteration: 0  Instance: /full_adder_tb/dut File: ./full_adder.sv
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./runlab.do PAUSED at line 18
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:32:37 on Apr 17,2026
+# vlog -reportprogress 300 ./ALU.sv 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 12:32:37 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:32:37 on Apr 17,2026
+# vlog -reportprogress 300 ./bitsliceALU.sv 
+# -- Compiling module bitsliceALU
+# 
+# Top level modules:
+# 	bitsliceALU
+# End time: 12:32:37 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:32:37 on Apr 17,2026
+# vlog -reportprogress 300 ./full_adder.sv 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 12:32:37 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:32:37 on Apr 17,2026
+# vlog -reportprogress 300 ./flags.sv 
+# -- Compiling module flags
+# 
+# Top level modules:
+# 	flags
+# End time: 12:32:37 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:32:38 on Apr 17,2026
+# vlog -reportprogress 300 ./alustim.sv 
+# -- Compiling module alustim
+# 
+# Top level modules:
+# 	alustim
+# End time: 12:32:38 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:32:38 on Apr 17,2026
+# vlog -reportprogress 300 eight_onemux.sv 
+# -- Compiling module two_onemux
+# -- Compiling module four_onemux
+# -- Compiling module eight_onemux
+# 
+# Top level modules:
+# 	eight_onemux
+# End time: 12:32:38 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:32:38 on Apr 17,2026
+# vlog -reportprogress 300 full_adder_tb.sv 
+# -- Compiling module full_adder_tb
+# 
+# Top level modules:
+# 	full_adder_tb
+# End time: 12:32:38 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work full_adder_tb 
+# Start time: 12:32:23 on Apr 17,2026
+# Loading sv_std.std
+# Loading work.full_adder_tb
+# Loading work.full_adder
+# ** Error: (vsim-3389) full_adder_tb.sv(7): Port 'SUB' not found in the connected module (4th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /full_adder_tb/dut File: ./full_adder.sv
+# ** Fatal: (vsim-3365) full_adder_tb.sv(7): Too many port connections. Expected 5, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /full_adder_tb/dut File: ./full_adder.sv
+# FATAL ERROR while loading design
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./runlab.do PAUSED at line 18
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:33:05 on Apr 17,2026
+# vlog -reportprogress 300 ./ALU.sv 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 12:33:05 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:33:05 on Apr 17,2026
+# vlog -reportprogress 300 ./bitsliceALU.sv 
+# -- Compiling module bitsliceALU
+# 
+# Top level modules:
+# 	bitsliceALU
+# End time: 12:33:05 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:33:05 on Apr 17,2026
+# vlog -reportprogress 300 ./full_adder.sv 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 12:33:05 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:33:05 on Apr 17,2026
+# vlog -reportprogress 300 ./flags.sv 
+# -- Compiling module flags
+# 
+# Top level modules:
+# 	flags
+# End time: 12:33:05 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:33:05 on Apr 17,2026
+# vlog -reportprogress 300 ./alustim.sv 
+# -- Compiling module alustim
+# 
+# Top level modules:
+# 	alustim
+# End time: 12:33:05 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:33:05 on Apr 17,2026
+# vlog -reportprogress 300 eight_onemux.sv 
+# -- Compiling module two_onemux
+# -- Compiling module four_onemux
+# -- Compiling module eight_onemux
+# 
+# Top level modules:
+# 	eight_onemux
+# End time: 12:33:05 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:33:06 on Apr 17,2026
+# vlog -reportprogress 300 full_adder_tb.sv 
+# -- Compiling module full_adder_tb
+# 
+# Top level modules:
+# 	full_adder_tb
+# End time: 12:33:06 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work full_adder_tb 
+# Start time: 12:32:23 on Apr 17,2026
+# Loading sv_std.std
+# Loading work.full_adder_tb
+# Loading work.full_adder
+# ** Warning: (vsim-3839) full_adder_tb.sv(13): Variable '/full_adder_tb/S', driven via a port connection, is multiply driven. See full_adder_tb.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /full_adder_tb File: full_adder_tb.sv
+# ** Error: (vish-4014) No objects found matching '/alustim/cntrl'.
+# Executing ONERROR command at macro ./alutest.do line 3
+# ** Error: (vish-4014) No objects found matching '/alustim/A'.
+# Executing ONERROR command at macro ./alutest.do line 4
+# ** Error: (vish-4014) No objects found matching '/alustim/B'.
+# Executing ONERROR command at macro ./alutest.do line 5
+# ** Error: (vish-4014) No objects found matching '/alustim/result'.
+# Executing ONERROR command at macro ./alutest.do line 6
+# ** Error: (vish-4014) No objects found matching '/alustim/negative'.
+# Executing ONERROR command at macro ./alutest.do line 7
+# ** Error: (vish-4014) No objects found matching '/alustim/zero'.
+# Executing ONERROR command at macro ./alutest.do line 8
+# ** Error: (vish-4014) No objects found matching '/alustim/carry_out'.
+# Executing ONERROR command at macro ./alutest.do line 9
+# ** Error: (vish-4014) No objects found matching '/alustim/overflow'.
+# Executing ONERROR command at macro ./alutest.do line 10
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+add wave -position end  sim:/full_adder_tb/A
+add wave -position end  sim:/full_adder_tb/B
+add wave -position end  sim:/full_adder_tb/Cin
+add wave -position end  sim:/full_adder_tb/Cout
+add wave -position end  sim:/full_adder_tb/S
+restart -f
+# ** Warning: (vsim-3839) full_adder_tb.sv(13): Variable '/full_adder_tb/S', driven via a port connection, is multiply driven. See full_adder_tb.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /full_adder_tb File: full_adder_tb.sv
+run -all
+add wave -position end  sim:/full_adder_tb/dut/Cout_term_1
+add wave -position end  sim:/full_adder_tb/dut/Cout_term2
+add wave -position end  sim:/full_adder_tb/dut/Cout_term1
+add wave -position end  sim:/full_adder_tb/dut/Cin_buf
+add wave -position end  sim:/full_adder_tb/dut/Cout_term_3
+add wave -position end  sim:/full_adder_tb/dut/Cout_term_2
+add wave -position end  sim:/full_adder_tb/dut/Cout_term_1_buf
+restart -f
+# ** Warning: (vsim-3839) full_adder_tb.sv(13): Variable '/full_adder_tb/S', driven via a port connection, is multiply driven. See full_adder_tb.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /full_adder_tb File: full_adder_tb.sv
+run -all
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/aveng/469/CPU-EE469/ALU/FAtest.do
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:35:07 on Apr 17,2026
+# vlog -reportprogress 300 ./ALU.sv 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 12:35:07 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:35:07 on Apr 17,2026
+# vlog -reportprogress 300 ./bitsliceALU.sv 
+# -- Compiling module bitsliceALU
+# 
+# Top level modules:
+# 	bitsliceALU
+# End time: 12:35:07 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:35:07 on Apr 17,2026
+# vlog -reportprogress 300 ./full_adder.sv 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 12:35:07 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:35:07 on Apr 17,2026
+# vlog -reportprogress 300 ./flags.sv 
+# -- Compiling module flags
+# 
+# Top level modules:
+# 	flags
+# End time: 12:35:07 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:35:07 on Apr 17,2026
+# vlog -reportprogress 300 ./alustim.sv 
+# -- Compiling module alustim
+# 
+# Top level modules:
+# 	alustim
+# End time: 12:35:07 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:35:07 on Apr 17,2026
+# vlog -reportprogress 300 eight_onemux.sv 
+# -- Compiling module two_onemux
+# -- Compiling module four_onemux
+# -- Compiling module eight_onemux
+# 
+# Top level modules:
+# 	eight_onemux
+# End time: 12:35:07 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:35:07 on Apr 17,2026
+# vlog -reportprogress 300 full_adder_tb.sv 
+# -- Compiling module full_adder_tb
+# 
+# Top level modules:
+# 	full_adder_tb
+# End time: 12:35:07 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:35:08 on Apr 17,2026, Elapsed time: 0:02:45
+# Errors: 27, Warnings: 3
+# vsim -voptargs=""+acc"" -t 1ps -lib work full_adder_tb 
+# Start time: 12:35:08 on Apr 17,2026
+# Loading sv_std.std
+# Loading work.full_adder_tb
+# Loading work.full_adder
+# ** Warning: (vsim-3839) full_adder_tb.sv(13): Variable '/full_adder_tb/S', driven via a port connection, is multiply driven. See full_adder_tb.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /full_adder_tb File: full_adder_tb.sv
+# ** Error: (vish-4014) No objects found matching '/full_adder_tb/dut/Cout_term2'.
+# Executing ONERROR command at macro ./FAtest.do line 9
+# ** Error: (vish-4014) No objects found matching '/full_adder_tb/dut/Cout_term1'.
+# Executing ONERROR command at macro ./FAtest.do line 10
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:35:36 on Apr 17,2026
+# vlog -reportprogress 300 ./ALU.sv 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 12:35:36 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:35:36 on Apr 17,2026
+# vlog -reportprogress 300 ./bitsliceALU.sv 
+# -- Compiling module bitsliceALU
+# 
+# Top level modules:
+# 	bitsliceALU
+# End time: 12:35:36 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:35:36 on Apr 17,2026
+# vlog -reportprogress 300 ./full_adder.sv 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 12:35:36 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:35:36 on Apr 17,2026
+# vlog -reportprogress 300 ./flags.sv 
+# -- Compiling module flags
+# 
+# Top level modules:
+# 	flags
+# End time: 12:35:36 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:35:36 on Apr 17,2026
+# vlog -reportprogress 300 ./alustim.sv 
+# -- Compiling module alustim
+# 
+# Top level modules:
+# 	alustim
+# End time: 12:35:36 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:35:36 on Apr 17,2026
+# vlog -reportprogress 300 eight_onemux.sv 
+# -- Compiling module two_onemux
+# -- Compiling module four_onemux
+# -- Compiling module eight_onemux
+# 
+# Top level modules:
+# 	eight_onemux
+# End time: 12:35:36 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:35:36 on Apr 17,2026
+# vlog -reportprogress 300 full_adder_tb.sv 
+# -- Compiling module full_adder_tb
+# 
+# Top level modules:
+# 	full_adder_tb
+# End time: 12:35:36 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:35:37 on Apr 17,2026, Elapsed time: 0:00:29
+# Errors: 6, Warnings: 1
+# vsim -voptargs=""+acc"" -t 1ps -lib work full_adder_tb 
+# Start time: 12:35:37 on Apr 17,2026
+# Loading sv_std.std
+# Loading work.full_adder_tb
+# Loading work.full_adder
+# ** Warning: (vsim-3839) full_adder_tb.sv(13): Variable '/full_adder_tb/S', driven via a port connection, is multiply driven. See full_adder_tb.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /full_adder_tb File: full_adder_tb.sv
+# ** Error: (vish-4014) No objects found matching '/full_adder_tb/dut/Cout_term2'.
+# Executing ONERROR command at macro ./FAtest.do line 9
+# ** Error: (vish-4014) No objects found matching '/full_adder_tb/dut/Cout_term1'.
+# Executing ONERROR command at macro ./FAtest.do line 10
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:36:45 on Apr 17,2026
+# vlog -reportprogress 300 ./ALU.sv 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 12:36:45 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:36:45 on Apr 17,2026
+# vlog -reportprogress 300 ./bitsliceALU.sv 
+# -- Compiling module bitsliceALU
+# 
+# Top level modules:
+# 	bitsliceALU
+# End time: 12:36:45 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:36:45 on Apr 17,2026
+# vlog -reportprogress 300 ./full_adder.sv 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 12:36:45 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:36:45 on Apr 17,2026
+# vlog -reportprogress 300 ./flags.sv 
+# -- Compiling module flags
+# 
+# Top level modules:
+# 	flags
+# End time: 12:36:45 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:36:45 on Apr 17,2026
+# vlog -reportprogress 300 ./alustim.sv 
+# -- Compiling module alustim
+# 
+# Top level modules:
+# 	alustim
+# End time: 12:36:45 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:36:45 on Apr 17,2026
+# vlog -reportprogress 300 eight_onemux.sv 
+# -- Compiling module two_onemux
+# -- Compiling module four_onemux
+# -- Compiling module eight_onemux
+# 
+# Top level modules:
+# 	eight_onemux
+# End time: 12:36:45 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:36:45 on Apr 17,2026
+# vlog -reportprogress 300 full_adder_tb.sv 
+# -- Compiling module full_adder_tb
+# 
+# Top level modules:
+# 	full_adder_tb
+# End time: 12:36:45 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:36:46 on Apr 17,2026, Elapsed time: 0:01:09
+# Errors: 6, Warnings: 1
+# vsim -voptargs=""+acc"" -t 1ps -lib work full_adder_tb 
+# Start time: 12:36:46 on Apr 17,2026
+# Loading sv_std.std
+# Loading work.full_adder_tb
+# Loading work.full_adder
+# ** Warning: (vsim-3839) full_adder_tb.sv(13): Variable '/full_adder_tb/S', driven via a port connection, is multiply driven. See full_adder_tb.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /full_adder_tb File: full_adder_tb.sv
+# ** Error: (vish-4014) No objects found matching '/full_adder_tb/dut/Cout_term2'.
+# Executing ONERROR command at macro ./FAtest.do line 9
+# ** Error: (vish-4014) No objects found matching '/full_adder_tb/dut/Cout_term1'.
+# Executing ONERROR command at macro ./FAtest.do line 10
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:39:44 on Apr 17,2026
+# vlog -reportprogress 300 ./ALU.sv 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 12:39:44 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:39:44 on Apr 17,2026
+# vlog -reportprogress 300 ./bitsliceALU.sv 
+# -- Compiling module bitsliceALU
+# 
+# Top level modules:
+# 	bitsliceALU
+# End time: 12:39:45 on Apr 17,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:39:45 on Apr 17,2026
+# vlog -reportprogress 300 ./full_adder.sv 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 12:39:45 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:39:45 on Apr 17,2026
+# vlog -reportprogress 300 ./flags.sv 
+# -- Compiling module flags
+# 
+# Top level modules:
+# 	flags
+# End time: 12:39:45 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:39:45 on Apr 17,2026
+# vlog -reportprogress 300 ./alustim.sv 
+# -- Compiling module alustim
+# 
+# Top level modules:
+# 	alustim
+# End time: 12:39:45 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:39:45 on Apr 17,2026
+# vlog -reportprogress 300 eight_onemux.sv 
+# -- Compiling module two_onemux
+# -- Compiling module four_onemux
+# -- Compiling module eight_onemux
+# 
+# Top level modules:
+# 	eight_onemux
+# End time: 12:39:45 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:39:45 on Apr 17,2026
+# vlog -reportprogress 300 full_adder_tb.sv 
+# -- Compiling module full_adder_tb
+# 
+# Top level modules:
+# 	full_adder_tb
+# End time: 12:39:45 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:39:45 on Apr 17,2026, Elapsed time: 0:02:59
+# Errors: 6, Warnings: 1
+# vsim -voptargs=""+acc"" -t 1ps -lib work full_adder_tb 
+# Start time: 12:39:45 on Apr 17,2026
+# Loading sv_std.std
+# Loading work.full_adder_tb
+# Loading work.full_adder
+# ** Warning: (vsim-3839) full_adder_tb.sv(14): Variable '/full_adder_tb/S', driven via a port connection, is multiply driven. See full_adder_tb.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /full_adder_tb File: full_adder_tb.sv
+# ** Error: (vish-4014) No objects found matching '/full_adder_tb/A'.
+# Executing ONERROR command at macro ./FAtest.do line 3
+# ** Error: (vish-4014) No objects found matching '/full_adder_tb/B'.
+# Executing ONERROR command at macro ./FAtest.do line 4
+# ** Error: (vish-4014) No objects found matching '/full_adder_tb/dut/Cout_term2'.
+# Executing ONERROR command at macro ./FAtest.do line 9
+# ** Error: (vish-4014) No objects found matching '/full_adder_tb/dut/Cout_term1'.
+# Executing ONERROR command at macro ./FAtest.do line 10
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+add wave -position 1  sim:/full_adder_tb/in
+restart -f
+# ** Warning: (vsim-3839) full_adder_tb.sv(14): Variable '/full_adder_tb/S', driven via a port connection, is multiply driven. See full_adder_tb.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /full_adder_tb File: full_adder_tb.sv
+run -all
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/aveng/469/CPU-EE469/ALU/FAtest.do
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:43:56 on Apr 17,2026
+# vlog -reportprogress 300 ./ALU.sv 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 12:43:57 on Apr 17,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:43:57 on Apr 17,2026
+# vlog -reportprogress 300 ./bitsliceALU.sv 
+# -- Compiling module bitsliceALU
+# 
+# Top level modules:
+# 	bitsliceALU
+# End time: 12:43:57 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:43:57 on Apr 17,2026
+# vlog -reportprogress 300 ./full_adder.sv 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 12:43:57 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:43:57 on Apr 17,2026
+# vlog -reportprogress 300 ./flags.sv 
+# -- Compiling module flags
+# 
+# Top level modules:
+# 	flags
+# End time: 12:43:57 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:43:57 on Apr 17,2026
+# vlog -reportprogress 300 ./alustim.sv 
+# -- Compiling module alustim
+# 
+# Top level modules:
+# 	alustim
+# End time: 12:43:57 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:43:57 on Apr 17,2026
+# vlog -reportprogress 300 eight_onemux.sv 
+# -- Compiling module two_onemux
+# -- Compiling module four_onemux
+# -- Compiling module eight_onemux
+# 
+# Top level modules:
+# 	eight_onemux
+# End time: 12:43:57 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:43:57 on Apr 17,2026
+# vlog -reportprogress 300 full_adder_tb.sv 
+# -- Compiling module full_adder_tb
+# 
+# Top level modules:
+# 	full_adder_tb
+# End time: 12:43:57 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:43:58 on Apr 17,2026, Elapsed time: 0:04:13
+# Errors: 12, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work full_adder_tb 
+# Start time: 12:43:59 on Apr 17,2026
+# Loading sv_std.std
+# Loading work.full_adder_tb
+# Loading work.full_adder
+# ** Warning: (vsim-3839) full_adder_tb.sv(14): Variable '/full_adder_tb/S', driven via a port connection, is multiply driven. See full_adder_tb.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /full_adder_tb File: full_adder_tb.sv
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:44:59 on Apr 17,2026
+# vlog -reportprogress 300 ./ALU.sv 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 12:44:59 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:44:59 on Apr 17,2026
+# vlog -reportprogress 300 ./bitsliceALU.sv 
+# -- Compiling module bitsliceALU
+# 
+# Top level modules:
+# 	bitsliceALU
+# End time: 12:44:59 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:44:59 on Apr 17,2026
+# vlog -reportprogress 300 ./full_adder.sv 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 12:44:59 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:44:59 on Apr 17,2026
+# vlog -reportprogress 300 ./flags.sv 
+# -- Compiling module flags
+# 
+# Top level modules:
+# 	flags
+# End time: 12:44:59 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:44:59 on Apr 17,2026
+# vlog -reportprogress 300 ./alustim.sv 
+# -- Compiling module alustim
+# 
+# Top level modules:
+# 	alustim
+# End time: 12:44:59 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:44:59 on Apr 17,2026
+# vlog -reportprogress 300 eight_onemux.sv 
+# -- Compiling module two_onemux
+# -- Compiling module four_onemux
+# -- Compiling module eight_onemux
+# 
+# Top level modules:
+# 	eight_onemux
+# End time: 12:44:59 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:44:59 on Apr 17,2026
+# vlog -reportprogress 300 full_adder_tb.sv 
+# -- Compiling module full_adder_tb
+# 
+# Top level modules:
+# 	full_adder_tb
+# End time: 12:44:59 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:45:00 on Apr 17,2026, Elapsed time: 0:01:01
+# Errors: 0, Warnings: 1
+# vsim -voptargs=""+acc"" -t 1ps -lib work full_adder_tb 
+# Start time: 12:45:00 on Apr 17,2026
+# Loading sv_std.std
+# Loading work.full_adder_tb
+# Loading work.full_adder
+# ** Warning: (vsim-3839) full_adder_tb.sv(14): Variable '/full_adder_tb/S', driven via a port connection, is multiply driven. See full_adder_tb.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /full_adder_tb File: full_adder_tb.sv
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:46:50 on Apr 17,2026
+# vlog -reportprogress 300 ./ALU.sv 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 12:46:51 on Apr 17,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:46:51 on Apr 17,2026
+# vlog -reportprogress 300 ./bitsliceALU.sv 
+# -- Compiling module bitsliceALU
+# 
+# Top level modules:
+# 	bitsliceALU
+# End time: 12:46:51 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:46:51 on Apr 17,2026
+# vlog -reportprogress 300 ./full_adder.sv 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 12:46:51 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:46:51 on Apr 17,2026
+# vlog -reportprogress 300 ./flags.sv 
+# -- Compiling module flags
+# 
+# Top level modules:
+# 	flags
+# End time: 12:46:51 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:46:51 on Apr 17,2026
+# vlog -reportprogress 300 ./alustim.sv 
+# -- Compiling module alustim
+# 
+# Top level modules:
+# 	alustim
+# End time: 12:46:51 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:46:51 on Apr 17,2026
+# vlog -reportprogress 300 eight_onemux.sv 
+# -- Compiling module two_onemux
+# -- Compiling module four_onemux
+# -- Compiling module eight_onemux
+# 
+# Top level modules:
+# 	eight_onemux
+# End time: 12:46:51 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:46:51 on Apr 17,2026
+# vlog -reportprogress 300 full_adder_tb.sv 
+# -- Compiling module full_adder_tb
+# 
+# Top level modules:
+# 	full_adder_tb
+# End time: 12:46:51 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:46:51 on Apr 17,2026, Elapsed time: 0:01:51
+# Errors: 0, Warnings: 1
+# vsim -voptargs=""+acc"" -t 1ps -lib work full_adder_tb 
+# Start time: 12:46:51 on Apr 17,2026
+# Loading sv_std.std
+# Loading work.full_adder_tb
+# Loading work.full_adder
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:47:14 on Apr 17,2026
+# vlog -reportprogress 300 ./ALU.sv 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 12:47:14 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:47:14 on Apr 17,2026
+# vlog -reportprogress 300 ./bitsliceALU.sv 
+# -- Compiling module bitsliceALU
+# 
+# Top level modules:
+# 	bitsliceALU
+# End time: 12:47:14 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:47:14 on Apr 17,2026
+# vlog -reportprogress 300 ./full_adder.sv 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 12:47:14 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:47:14 on Apr 17,2026
+# vlog -reportprogress 300 ./flags.sv 
+# -- Compiling module flags
+# 
+# Top level modules:
+# 	flags
+# End time: 12:47:14 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:47:14 on Apr 17,2026
+# vlog -reportprogress 300 ./alustim.sv 
+# -- Compiling module alustim
+# 
+# Top level modules:
+# 	alustim
+# End time: 12:47:14 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:47:14 on Apr 17,2026
+# vlog -reportprogress 300 eight_onemux.sv 
+# -- Compiling module two_onemux
+# -- Compiling module four_onemux
+# -- Compiling module eight_onemux
+# 
+# Top level modules:
+# 	eight_onemux
+# End time: 12:47:14 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:47:14 on Apr 17,2026
+# vlog -reportprogress 300 full_adder_tb.sv 
+# -- Compiling module full_adder_tb
+# 
+# Top level modules:
+# 	full_adder_tb
+# End time: 12:47:14 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:47:15 on Apr 17,2026, Elapsed time: 0:00:24
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work full_adder_tb 
+# Start time: 12:47:15 on Apr 17,2026
+# Loading sv_std.std
+# Loading work.full_adder_tb
+# Loading work.full_adder
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/aveng/469/CPU-EE469/ALU/FAtest.do
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:50:50 on Apr 17,2026
+# vlog -reportprogress 300 ./ALU.sv 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 12:50:50 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:50:50 on Apr 17,2026
+# vlog -reportprogress 300 ./bitsliceALU.sv 
+# -- Compiling module bitsliceALU
+# 
+# Top level modules:
+# 	bitsliceALU
+# End time: 12:50:50 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:50:50 on Apr 17,2026
+# vlog -reportprogress 300 ./full_adder.sv 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 12:50:50 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:50:50 on Apr 17,2026
+# vlog -reportprogress 300 ./flags.sv 
+# -- Compiling module flags
+# 
+# Top level modules:
+# 	flags
+# End time: 12:50:50 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:50:50 on Apr 17,2026
+# vlog -reportprogress 300 ./alustim.sv 
+# -- Compiling module alustim
+# 
+# Top level modules:
+# 	alustim
+# End time: 12:50:50 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:50:50 on Apr 17,2026
+# vlog -reportprogress 300 eight_onemux.sv 
+# -- Compiling module two_onemux
+# -- Compiling module four_onemux
+# -- Compiling module eight_onemux
+# 
+# Top level modules:
+# 	eight_onemux
+# End time: 12:50:50 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:50:50 on Apr 17,2026
+# vlog -reportprogress 300 full_adder_tb.sv 
+# -- Compiling module full_adder_tb
+# 
+# Top level modules:
+# 	full_adder_tb
+# End time: 12:50:50 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:50:51 on Apr 17,2026, Elapsed time: 0:03:36
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alustim 
+# Start time: 12:50:51 on Apr 17,2026
+# Loading sv_std.std
+# Loading work.alustim
+# Loading work.ALU
+# Loading work.bitsliceALU
+# Loading work.full_adder
+# Loading work.eight_onemux
+# Loading work.four_onemux
+# Loading work.two_onemux
+# Loading work.flags
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+#    0.00 ns testing PASS_A operations
+# 10000000.00 ns testing addition
+# 10100000.00 ns testing subtration
+# ** Error: Test failed expected: result 0000000000000000000000000000000000000000000000000000000000000002 and all 0s on the flags. Got: result 0000000000000000000000000000000000000000000000000000000000000007 carryout 0 overflow 0 negative 0 zero 0
+#    Time: 10200 us  Scope: alustim File: ./alustim.sv Line: 61
+# 10200000.00 ns testing AND
+# 10300000.00 ns testing OR
+# 10400000.00 ns testing XOR
+# 10500000.00 ns testing negative flag
+# ** Error: Test failed expected: result 000000000000000000000000000000000000000000000000fffffffffffffffe and 0s on all flags except negative. Got: result 0000000000000000000000000000000000000000000000000000000000000007 carryout 0 overflow 0 negative 0 zero 0
+#    Time: 10600 us  Scope: alustim File: ./alustim.sv Line: 96
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:51:40 on Apr 17,2026
+# vlog -reportprogress 300 ./ALU.sv 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 12:51:40 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:51:40 on Apr 17,2026
+# vlog -reportprogress 300 ./bitsliceALU.sv 
+# -- Compiling module bitsliceALU
+# 
+# Top level modules:
+# 	bitsliceALU
+# End time: 12:51:40 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:51:40 on Apr 17,2026
+# vlog -reportprogress 300 ./full_adder.sv 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 12:51:40 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:51:40 on Apr 17,2026
+# vlog -reportprogress 300 ./flags.sv 
+# -- Compiling module flags
+# 
+# Top level modules:
+# 	flags
+# End time: 12:51:40 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:51:40 on Apr 17,2026
+# vlog -reportprogress 300 ./alustim.sv 
+# -- Compiling module alustim
+# 
+# Top level modules:
+# 	alustim
+# End time: 12:51:40 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:51:40 on Apr 17,2026
+# vlog -reportprogress 300 eight_onemux.sv 
+# -- Compiling module two_onemux
+# -- Compiling module four_onemux
+# -- Compiling module eight_onemux
+# 
+# Top level modules:
+# 	eight_onemux
+# End time: 12:51:40 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:51:40 on Apr 17,2026
+# vlog -reportprogress 300 full_adder_tb.sv 
+# -- Compiling module full_adder_tb
+# 
+# Top level modules:
+# 	full_adder_tb
+# End time: 12:51:40 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:51:41 on Apr 17,2026, Elapsed time: 0:00:50
+# Errors: 2, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alustim 
+# Start time: 12:51:41 on Apr 17,2026
+# Loading sv_std.std
+# Loading work.alustim
+# Loading work.ALU
+# Loading work.bitsliceALU
+# Loading work.full_adder
+# Loading work.eight_onemux
+# Loading work.four_onemux
+# Loading work.two_onemux
+# Loading work.flags
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+#    0.00 ns testing PASS_A operations
+# 100000.00 ns testing addition
+# 101000.00 ns testing subtration
+# ** Error: Test failed expected: result 0000000000000000000000000000000000000000000000000000000000000002 and all 0s on the flags. Got: result 0000000000000000000000000000000000000000000000000000000000000007 carryout 0 overflow 0 negative 0 zero 0
+#    Time: 102 us  Scope: alustim File: ./alustim.sv Line: 61
+# 102000.00 ns testing AND
+# 103000.00 ns testing OR
+# 104000.00 ns testing XOR
+# 105000.00 ns testing negative flag
+# ** Error: Test failed expected: result 000000000000000000000000000000000000000000000000fffffffffffffffe and 0s on all flags except negative. Got: result 0000000000000000000000000000000000000000000000000000000000000007 carryout 0 overflow 0 negative 0 zero 0
+#    Time: 106 us  Scope: alustim File: ./alustim.sv Line: 96
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:52:04 on Apr 17,2026
+# vlog -reportprogress 300 ./ALU.sv 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 12:52:04 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:52:04 on Apr 17,2026
+# vlog -reportprogress 300 ./bitsliceALU.sv 
+# -- Compiling module bitsliceALU
+# 
+# Top level modules:
+# 	bitsliceALU
+# End time: 12:52:04 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:52:04 on Apr 17,2026
+# vlog -reportprogress 300 ./full_adder.sv 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 12:52:04 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:52:04 on Apr 17,2026
+# vlog -reportprogress 300 ./flags.sv 
+# -- Compiling module flags
+# 
+# Top level modules:
+# 	flags
+# End time: 12:52:04 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:52:04 on Apr 17,2026
+# vlog -reportprogress 300 ./alustim.sv 
+# -- Compiling module alustim
+# 
+# Top level modules:
+# 	alustim
+# End time: 12:52:04 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:52:04 on Apr 17,2026
+# vlog -reportprogress 300 eight_onemux.sv 
+# -- Compiling module two_onemux
+# -- Compiling module four_onemux
+# -- Compiling module eight_onemux
+# 
+# Top level modules:
+# 	eight_onemux
+# End time: 12:52:04 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:52:04 on Apr 17,2026
+# vlog -reportprogress 300 full_adder_tb.sv 
+# -- Compiling module full_adder_tb
+# 
+# Top level modules:
+# 	full_adder_tb
+# End time: 12:52:04 on Apr 17,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

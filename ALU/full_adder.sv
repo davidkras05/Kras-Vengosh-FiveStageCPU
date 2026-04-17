@@ -1,4 +1,4 @@
-`timescale 1ns/10ps
+`timescale 1ns/1ps
 
 // DELAYS:
 //  - S: 50 ps
@@ -14,9 +14,9 @@ module full_adder(
 	xor #(delay) (S, A, B, Cin); // sum is A ^ B ^ Cin
 
 
-	logic Cout_term_1, Cout_term2; // Cout = AB + Cin(A + B), term_1 is AB, term_2 is (A + B)
-	and #(delay) (Cout_term1, A, B); // Make AB
-	or #(delay) (Cout_term2, A, B); // Make A + B
+	logic Cout_term_1, Cout_term_2; // Cout = AB + Cin(A + B), term_1 is AB, term_2 is (A + B)
+	and #(delay) (Cout_term_1, A, B); // Make AB
+	or #(delay) (Cout_term_2, A, B); // Make A + B
 
 	logic Cin_buf; 
 	buf #(delay) (Cin_buf, Cin); // Cin needs to be buffered again since it is multiplying (A + B), which is now delayed
