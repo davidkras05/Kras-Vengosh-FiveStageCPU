@@ -1,4 +1,4 @@
-`timescale 1ns/10ps
+`timescale 1ps/1ps
 
 //DELAYS:
 // - zero: 200 ps

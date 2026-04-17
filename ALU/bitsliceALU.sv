@@ -1,5 +1,5 @@
 
-`timescale 1ns/1ps
+`timescale 1ps/1ps
 
 // ALU_PASS_B=3'b000, ALU_ADD=3'b010, ALU_SUBTRACT=3'b011, ALU_AND=3'b100, ALU_OR=3'b101, ALU_XOR=3'b110
 module bitsliceALU(
