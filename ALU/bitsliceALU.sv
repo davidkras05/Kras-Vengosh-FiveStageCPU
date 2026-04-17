@@ -18,7 +18,7 @@ module bitsliceALU(
 	buf #(delay) (A_buf, A);
 
 	logic S; // delayed by 50 ps
-	full_adder f_a (.A, .B, .Cin, .Cout, .S); // Cout has 100 ps delay
+	full_adder f_a (.A, .B(B_add_sub), .Cin, .Cout, .S); // Cout has 100 ps delay
 
 
 	logic and_res, or_res, xor_res;
