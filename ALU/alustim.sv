@@ -57,8 +57,10 @@ module alustim();
 		cntrl = ALU_SUBTRACT;
 		A = 64'h0000000000000004; B = 64'h0000000000000002; //Testing 4-2
 		#(delay);
-		assert(result == 64'h0000000000000002 && carry_out === 0 && overflow === 0 && negative === 0 && zero === 0) else
+		assert(result == 64'h0000000000000002 && carry_out === 1 && overflow === 0 && negative === 0 && zero === 0) else
 			$error("Test failed expected: result %064h and all 0s on the flags. Got: result %064h carryout %01b overflow %01b negative %01b zero %01b", 64'h2, result, carry_out, overflow, negative, zero);
+		
+		//Testing AND
 		
 		$display("%t testing AND", $time);
 		cntrl = ALU_AND;
@@ -67,51 +69,62 @@ module alustim();
 		assert(result == 64'h0000000000000001 && carry_out === 0 && overflow === 0 && negative === 0 && zero === 0) else
 			$error("Test failed expected: result %064h and all 0s on flags. Got: result %064h carryout %01b overflow %01b negative %01b zero %01b", 64'h1, result, carry_out, overflow, negative, zero);
 		
+		//Testing OR
+		
 		$display("%t testing OR", $time);
 		cntrl = ALU_OR;
 		A = 64'h1; B = 64'h0; //Testing OR
 		#(delay);
-		assert(result == 64'h0000000000000001 && carry_out === 0 && overflow === 0 && negative === 0 && zero === 0) else
+		assert(result == 64'h0000000000000001 && carry_out == 'x && overflow === 0 && negative === 0 && zero === 0) else
 			$error("Test failed expected: result %064h and all 0s on flags. Got: result %064h carryout %01b overflow %01b negative %01b zero %01b", 64'h1, result, carry_out, overflow, negative, zero);
+		
+		//Testing XOR
 		
 		$display("%t testing XOR", $time);
 		cntrl = ALU_XOR;
 		A = 64'h1; B = 64'h1; //Testing XOR
 		#(delay);
-		assert(result == 64'h0000000000000000 && carry_out === 0 && overflow === 0 && negative === 0 && zero === 1) else
+		assert(result == 64'h0 && carry_out === 0 && overflow === 0 && negative === 0 && zero === 1) else
 			$error("Test failed expected: result %064h and all 0s on flags except zero. Got: result %064h carryout %01b overflow %01b negative %01b zero %01b", 64'h0, result, carry_out, overflow, negative, zero);
 		
-		
-		//Okay I added tests for subtration, AND, OR, and XOR. They are all to check if the operation works 
-		// properly. we can add negative checks for AND and OR if you want to see if OR will respond with a 0
-		// if you do OR 64'h0 and 64'h0. also we can test more bits'higher numbers if you like since they are 
-		// bitwise. We should also probably write tests for the flags. the XOR test also already tests the zero
-		// flag too but we should test carryout, overflow, and negative as well I think.
+		//Testing negative flag
 		
 		$display("%t testing negative flag (2-4)", $time);
 		cntrl = ALU_SUBTRACT;
 		A = 64'h0000000000000002; B = 64'h0000000000000004; //Testing 2-4
 		#(delay);
-		assert(result == 64'hFFFFFFFFFFFFFFFE && carry_out === 1 && overflow === 0 && negative === 1 && zero === 0) else
-			$error("Test failed expected: result %064h and 0s on all flags except negative. Got: result %064h carryout %01b overflow %01b negative %01b zero %01b", 64'hFFFFFFFFFFFFFFFE, result, carry_out, overflow, negative, zero);
+		assert(result == 64'hFFFFFFFFFFFFFFFE && carry_out === 0 && overflow === 0 && negative === 1 && zero === 0) else
+			$error("Test failed expected: result %064h and 0s on all flags except negative & carryout. Got: result %064h carryout %01b overflow %01b negative %01b zero %01b", 64'hFFFFFFFFFFFFFFFE, result, carry_out, overflow, negative, zero);
 		
-		//These flag tests not finished yet.
+		//Overflow tests
 		
-		/*$display("%t testing overflow flag", $time);
-		cntrl = ALU_SUBTRACT
-		A = 64'h0000000000000002; B = 64'h0000000000000004; //Testing 2-4
+		$display("%t testing overflow flag on addition (max positive + 1)", $time);
+		cntrl = ALU_ADD;
+		A = 64'h7FFFFFFFFFFFFFFF; B = 64'h0000000000000001; //  max positive + 1
 		#(delay);
-		assert(result == 64'h0000000000000002 && carry_out == 0 && overflow == 0 && negative == 1 && zero == 0) else
-			$error("Test failed expected: result %064h and 0s on all flags except negative. Got: result %064h carryout %01b overflow %01b negative %01b zero %01b", 64'h2, result, carry_out, overflow, negative, zero);
-			
-		$display("%t testing carry_out flag", $time);
-		cntrl = ALU_SUBTRACT
-		A = 64'h0000000000000002; B = 64'h0000000000000004; //Testing 2-4
-		#(delay);
-		assert(result == 64'h0000000000000002 && carry_out == 0 && overflow == 0 && negative == 1 && zero == 0) else
-			$error("Test failed expected: result %064h and 0s on all flags except negative. Got: result %064h carryout %01b overflow %01b negative %01b zero %01b", 64'h2, result, carry_out, overflow, negative, zero);
-		*/
+		assert(result == 64'h8000000000000000 && carry_out === 0 && overflow === 1 && negative === 1 && zero === 0) else
+			$error("Test failed expected: result %064h carryout 0 overflow 1 negative 1 zero 0. Got: result %064h carryout %01b overflow %01b negative %01b zero %01b",64'h8000000000000000, result, carry_out, overflow, negative, zero);
 		
+		$display("%t testing overflow flag on addition (most negative + most negative)", $time);
+		cntrl = ALU_ADD;
+		A = 64'h8000000000000000; B = 64'h8000000000000000; // min negative + min negative
+		#(delay);
+		assert(result == 64'h0000000000000000 && carry_out === 1 && overflow === 1 && negative === 0 && zero === 1) else
+			$error("Test failed expected: result %064h carryout 1 overflow 1 negative 0 zero 1. Got: result %064h carryout %01b overflow %01b negative %01b zero %01b",64'h0000000000000000, result, carry_out, overflow, negative, zero);
+
+		$display("%t testing overflow flag on subtraction (max positive - -1)", $time);
+		cntrl = ALU_SUBTRACT;
+		A = 64'h7FFFFFFFFFFFFFFF; B = 64'hFFFFFFFFFFFFFFFF; // max positive - (-1)
+		#(delay);
+		assert(result == 64'h8000000000000000 && carry_out === 0 && overflow === 1 && negative === 1 && zero === 0) else
+			$error("Test failed expected: result %064h carryout 0 overflow 1 negative 1 zero 0. Got: result %064h carryout %01b overflow %01b negative %01b zero %01b",64'h8000000000000000, result, carry_out, overflow, negative, zero);
+
+		$display("%t testing overflow flag on subtraction (most negative - 1)", $time);
+		cntrl = ALU_SUBTRACT;
+		A = 64'h8000000000000000; B = 64'h0000000000000001; // min negative - 1
+		#(delay);
+		assert(result == 64'h7FFFFFFFFFFFFFFF && carry_out === 1 && overflow === 1 && negative === 0 && zero === 0) else
+			$error("Test failed expected: result %064h carryout 1 overflow 1 negative 0 zero 0. Got: result %064h carryout %01b overflow %01b negative %01b zero %01b",64'h7FFFFFFFFFFFFFFF, result, carry_out, overflow, negative, zero);
 		
 		
 	end
