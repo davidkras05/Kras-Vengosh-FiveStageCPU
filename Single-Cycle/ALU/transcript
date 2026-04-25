@@ -1366,3 +1366,5 @@ do runlab.do
 # 10700.00 ps testing overflow flag on addition (most negative + most negative)
 # 10800.00 ps testing overflow flag on subtraction (max positive - -1)
 # 10900.00 ps testing overflow flag on subtraction (most negative - 1)
+# End time: 21:11:43 on Apr 17,2026, Elapsed time: 3:33:10
+# Errors: 1, Warnings: 0

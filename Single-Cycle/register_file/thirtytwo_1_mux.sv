@@ -1,0 +1,103 @@
+`timescale 1ps/1ps
+
+module two_onemux( // 150 ps delay
+	input logic [1:0] in,
+	input logic s,
+	output logic y
+);
+	
+	parameter delay = 50;
+	
+	logic not_s, A_line, B_line;
+	
+	not #(delay) (not_s, s); 
+	
+	logic bit_0_in_buf;
+	
+	buf #(delay) (bit_0_in_buf, in[0]);
+	
+	and #(delay) (A_line, bit_0_in_buf, not_s); // 50 ps delay
+	and #(delay) (B_line, in[1], s); // 0 ps delay
+	
+	logic B_line_buf; 
+	
+	buf #(delay) (B_line_buf, B_line); // 50 ps delay
+
+	or #(delay) (y, A_line, B_line_buf); // 100 ps delay
+
+endmodule
+
+module four_onemux(
+	input logic [3:0] in,
+	input logic [1:0] s,
+	output logic y
+);
+	
+	logic [1:0] first_layer_out;
+	
+	two_onemux first (.in(in[1:0]), .s(s[0]), .y(first_layer_out[0])); 
+	two_onemux second (.in(in[3:2]), .s(s[0]), .y(first_layer_out[1]));
+	
+	logic s_1_buf;
+	buf #(150) (s_1_buf, s[1]);
+	
+	
+	two_onemux sec_layer (.in(first_layer_out), .s(s_1_buf), .y(y));
+
+endmodule
+
+module eight_onemux(
+	input logic [7:0] in,
+	input logic [2:0] s,
+	output logic y
+);
+
+	logic [1:0] first_layer_out;
+	
+	logic s_2_buf;
+	buf #(300) (s_2_buf, s[2]);
+	
+	four_onemux first (.in(in[3:0]), .s(s[1:0]), .y(first_layer_out[0]));
+	four_onemux second (.in(in[7:4]), .s(s[1:0]), .y(first_layer_out[1]));
+	
+	two_onemux sec_layer (.in(first_layer_out), .s(s_2_buf), .y(y));
+
+endmodule
+
+module sixteen_onemux(
+	input logic [15:0] in,
+	input logic [3:0] s,
+	output logic y
+);
+
+	logic [1:0] first_layer_out;
+	
+	logic s_3_buf;
+	buf #(450) (s_3_buf, s[3]);
+	
+	eight_onemux first (.in(in[7:0]), .s(s[2:0]), .y(first_layer_out[0]));
+	eight_onemux second (.in(in[15:8]), .s(s[2:0]), .y(first_layer_out[1]));
+	
+	two_onemux sec_layer (.in(first_layer_out), .s(s_3_buf), .y(y));
+
+endmodule
+
+module thirtytwo_1_mux(
+	input logic [31:0] in,
+	input logic [4:0] s,
+	output logic y
+);
+
+	logic [1:0] first_layer_out;
+	
+	
+	
+	sixteen_onemux first (.in(in[15:0]), .s(s[3:0]), .y(first_layer_out[0]));
+	sixteen_onemux second (.in(in[31:16]), .s(s[3:0]), .y(first_layer_out[1]));
+	
+	logic s_4_buf;
+	buf #(600) (s_4_buf, s[4]);
+	
+	two_onemux sec_layer (.in(first_layer_out), .s(s_4_buf), .y(y));
+
+endmodule
