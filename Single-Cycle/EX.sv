@@ -22,7 +22,7 @@ module EX (
 
 	logic [63:0] BrLoc_unshifted;
 
-	n_bit_2to1 #(.BITS(64)) (.data_line_1(BrAddr64), .data_line_0(CondAddr64), .s(UncondBr), .mux_out(BrLoc_unshifted))
+	n_bit_2to1 #(.BITS(64)) (.data_line1(BrAddr64), .data_line0(CondAddr64), .s(UncondBr), .mux_out(BrLoc_unshifted))
 
 	assign BrLoc = BrLoc_unshifted << 2;
 
