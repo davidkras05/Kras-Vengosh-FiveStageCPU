@@ -1,5 +1,5 @@
 module ID (
-	input logic clk, Reg2Loc, ALUSrc, RegWrite, reset,
+	input logic clk, reset, Reg2Loc, ALUSrc, RegWrite,
 	input logic[4:0] WriteBck, //From writeback
 	input logic[63:0] DataWrite,
 	input logic[31:0] instruction,
