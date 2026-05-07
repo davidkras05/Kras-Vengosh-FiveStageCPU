@@ -4,21 +4,38 @@ module singleCycleTop(
 );
 	logic Reg2Locwire, ALUSrcwire, Mem2Regwire, RegWritewire, MemWritewire, BrTakenwire, UncondBrwire, SetFlagswire;
 	//Need an ALUOp wire. figure out how many bits needed for it and place it here
+	
+	// flags (for now only zero flag, might need others later though):
+	logic ZeroFlag;
 
-	control_unit control (.op_code(), .zero_flag(), .Reg2Loc(Reg2Locwire), .ALUSrc(ALUSrcwire), .Mem2Reg(Mem2Regwire), 
+	control_unit control (.op_code(instruction[31:21]), .ZeroFlag(ZeroFlag), .Reg2Loc(Reg2Locwire), .ALUSrc(ALUSrcwire), .Mem2Reg(Mem2Regwire), 
 								.RegWrite(RegWritewire), .MemWrite(MemWritewire), .BrTaken(BrTakenwire), 
 								.UncondBr(UncondBrwire), .SetFlags(SetFlagswire), .ALUOp());
+								
+	logic [31:0] instruction;
 	
-	IF instructionFetch (.clk(clk), .reset(reset), .BrLoc(), .BrTaken(BrTakenwire), .instruction_output());
+	IF instructionFetch (.clk(clk), .reset(reset), .BrLoc(BrLoc), .BrTaken(BrTakenwire), .instruction_output(instruction));
+	
+	logic [63:0] Da, Db, ALUInput, ALURes, BrLoc, WriteBck, MEMData;
 	
 	ID instructionDecode(.clk(clk), .reset(reset), .Reg2Loc(Reg2Locwire), .ALUSrc(ALUSrcwire), 
-								.RegWrite(RegWritewire), .WriteBck(), .DataWrite(), .instruction(), .Da(), .ALUInput());
+								.RegWrite(RegWritewire), .WriteBck(WriteBck), .instruction(instruction), .Da(Da), .Db(Db) .ALUInput(ALUInput));
+								
 	
-	EX execution (.UncondBr(UncondBrwire), .ALUOp(), .instruction(), .ALUIn0(), .ALUIn1(), .ALURes(), .BrLoc(), .Zeroflag());
 	
-	instructmem MEM (.address(), .instruction(), .clk(clk));
+	EX execution (.UncondBr(UncondBrwire), .ALUOp(), .instruction(instruction), .ALUIn0(Da), .ALUIn1(ALUInput), 
+	              .ALURes(ALURes), .BrLoc(BrLoc), .ZeroFlag(ZeroFlag));
 	
-	WB writeBack (.ALURes(), .MEMData(), .Mem2Reg(Mem2Regwire), .WriteBck());
+	// This feels like it should be in the ID submodule, no? Also like 90% sure MEM is actually datamem.sv, not instructmem
+	// Pretty sure instructmem is the instruction memory in the IF module.
+	instructmem MEM (.address(), .instruction(instruction), .clk(clk));
+	
+	
+	// Super not sure what xfer_size is
+	datamem MEM (.address(ALURes), .write_enable(MemWritewire), .read_enable(MEmReadwire), .write_data(Db), .clk(clk), 
+	             .xfer_size(), .read_data(MEMData))
+	
+	WB writeBack (.ALURes(ALURes), .MEMData(MEMData), .Mem2Reg(Mem2Regwire), .WriteBck(WriteBck));
 	
 endmodule
 	

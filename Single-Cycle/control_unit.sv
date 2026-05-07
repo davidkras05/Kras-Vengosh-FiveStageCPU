@@ -1,12 +1,12 @@
 module control_unit (
 	input logic [10:0] op_code,
-	input logic zero_flag,
+	input logic ZeroFlag,
 	output logic Reg2Loc, ALUSrc, Mem2Reg, RegWrite, MemWrite, BrTaken, UncondBr, SetFlags,
-	output logic [1:0] ALUOp
+	output logic [2:0] ALUOp
 );
 
 	logic [11:0] extended_op = {1'b0, op_code}
-	
+	// ALU_PASS_B=3'b000, ALU_ADD=3'b010, ALU_SUBTRACT=3'b011, ALU_AND=3'b100, ALU_OR=3'b101, ALU_XOR=3'b110
 	always_comb begin 
 		if (extended_op == 12'h458) begin //ADD
 			Reg2Loc = 1'b1;
@@ -16,7 +16,7 @@ module control_unit (
 			MemWrite = 1'b0;
 			BrTaken = 1'b0;
 			UncondBr = 1'bx;
-			ALUOp = 2'bxx; //ADD, change later
+			ALUOp = 3'b010; //ADD
 			SetFlags = 1'b0;
 		end
 		
@@ -28,7 +28,7 @@ module control_unit (
 			MemWrite = 1'b0;
 			BrTaken = 1'b0;
 			UncondBr = 1'bx;
-			ALUOp = 2'bxx; //ADD, change later
+			ALUOp = 3'b010; //ADD
 			SetFlags = 1'b0;
 		end
 		
@@ -40,7 +40,7 @@ module control_unit (
 			MemWrite = 1'b0;
 			BrTaken = 1'b0;
 			UncondBr = 1'bx;
-			ALUOp = 2'bxx; //ADD, change later
+			ALUOp = 3'b010; //ADD
 			SetFlags = 1'b1;
 		end
 		
@@ -52,7 +52,7 @@ module control_unit (
 			MemWrite = 1'b0;
 			BrTaken = 1'b0;
 			UncondBr = 1'bx;
-			ALUOp = 2'bxx; //SUB, change later
+			ALUOp = 3'b011; //SUB
 			SetFlags = 1'b0;
 		end
 		
@@ -64,7 +64,7 @@ module control_unit (
 			MemWrite = 1'b0;
 			BrTaken = 1'b0;
 			UncondBr = 1'bx;
-			ALUOp = 2'bxx; //SUB, change later
+			ALUOp = 3'b011; //SUB
 			SetFlags = 1'b0;
 		end
 		
@@ -76,7 +76,7 @@ module control_unit (
 			MemWrite = 1'b0;
 			BrTaken = 1'b0;
 			UncondBr = 1'bx;
-			ALUOp = 2'bxx; //SUB, change later
+			ALUOp = 3'b011; //SUB
 			SetFlags = 1'b1;
 		end
 		
@@ -100,7 +100,7 @@ module control_unit (
 			MemWrite = 1'b1;
 			BrTaken = 1'b0;
 			UncondBr = 1'bx;
-			ALUOp = 2'bxx; //ADD, change later
+			ALUOp = 3'b010; //ADD, change later
 			SetFlags = 1'b0;
 		end
 			
@@ -112,7 +112,7 @@ module control_unit (
 			MemWrite = 1'b0;
 			BrTaken = 1'b1;
 			UncondBr = 1'b1;
-			ALUOp = 2'bxx; //Don't care
+			ALUOp = 3'bxxx; //Don't care
 			SetFlags = 1'b0;
 		end
 		
@@ -124,7 +124,7 @@ module control_unit (
 			MemWrite = 1'b0;
 			BrTaken = zero_flag; // NEED FLAGS
 			UncondBr = 1'b0;
-			ALUOp = 2'bxx; //PASS, change later
+			ALUOp = 3'b000; //PASS, change later
 			SetFlags = 1'b0;
 		end
 		
@@ -136,7 +136,7 @@ module control_unit (
 			MemWrite = 1'b0;
 			BrTaken = 1'b1;
 			UncondBr = 1'b1;
-			ALUOp = 2'bxx; //NOT SURE, change later
+			ALUOp = 3'bxxx; //NOT SURE, change later
 			SetFlags = 1'b0;
 		end
 		
@@ -148,7 +148,7 @@ module control_unit (
 			MemWrite = 1'b0;
 			BrTaken = 1'b0;
 			UncondBr = 1'bx;
-			ALUOp = 2'bxx; //ADD, change later
+			ALUOp = 3'b010; //ADD, change later
 			SetFlags = 1'b0;
 		end
 		
@@ -161,7 +161,7 @@ module control_unit (
 			MemWrite = 1'bx;
 			BrTaken = 1'bx;
 			UncondBr = 1'bx;
-			ALUOp = 2'bxx; //ADD, change later
+			ALUOp = 3'bxxx; //DON'T CARE, change later
 			SetFlags = 1'bx;
 		end
 	end

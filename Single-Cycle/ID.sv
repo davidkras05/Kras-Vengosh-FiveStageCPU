@@ -1,12 +1,10 @@
 module ID (
 	input logic clk, reset, Reg2Loc, ALUSrc, RegWrite,
-	input logic[4:0] WriteBck, //From writeback
-	input logic[63:0] DataWrite,
+	input logic[63:0] WriteBck, //From writeback
 	input logic[31:0] instruction,
-	output logic[63:0] Da, ALUInput
+	output logic[63:0] Da, Db, ALUInput
 );
 
-	logic[63:0] Db;
 	logic[4:0] Rd, Rm, Rn;
 	
 	assign Rm = instruction[20:16];
@@ -15,10 +13,13 @@ module ID (
 	
 	logic[4:0] splitout;
 	
-	n_bit_2to1 ldurstur_mux #(.BITS(5))(.data_line1(Rd), .data_line0(Rm), .s(Reg2Loc), .mux_out(splitout)); //MAKE THIS A 5 BIT 2 to 1 MUX!!!!!! Can use parameters
+	n_bit_2to1 ldurstur_mux #(.BITS(5))(.data_line1(Rd), .data_line0(Rm), .s(Reg2Loc), .mux_out(splitout));
 	
-	regfile registerFile (.ReadData1(Da), .ReadData2(Db), .WriteData(DataWrite), 
-								.ReadRegister1(Rn), .ReadRegister2(splitout), .WriteRegister(WriteBack), 
+	// Made changes here. WriteRegister is the register that's being written into, which is always Rd
+	// Additionally, WriteData is the actual data, which comes from WB. Also, the input WriteBck had only 5 bits when it needed 64.
+	// Finally, DataWrite was redundant to WriteBck
+	regfile registerFile (.ReadData1(Da), .ReadData2(Db), .WriteData(WriteBck), 
+								.ReadRegister1(Rn), .ReadRegister2(splitout), .WriteRegister(Rd), 
 								.RegWrite(RegWrite), .clk(clk), .reset(reset));
 								
 	logic[11:0] Immediate;
