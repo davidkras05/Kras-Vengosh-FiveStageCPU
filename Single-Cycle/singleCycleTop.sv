@@ -3,14 +3,21 @@ module singleCycleTop(
 	input logic reset,
 );
 	logic Reg2Locwire, ALUSrcwire, Mem2Regwire, RegWritewire, MemWritewire, BrTakenwire, UncondBrwire, SetFlagswire;
+	
 	//Need an ALUOp wire. figure out how many bits needed for it and place it here
 	
+	// Quick note on the ALU and flags. I think we may need the negative flag for the B.LT command since it being *True* means that the second
+   // argument was less than the first, right?
+	// Also we still need BR but I'll need to work on that tmr between my classes
+	logic [2:0] ALUOpwire;
+	
 	// flags (for now only zero flag, might need others later though):
-	logic ZeroFlag;
+	logic ZeroFlag, NegativeFlag;
 
-	control_unit control (.op_code(instruction[31:21]), .ZeroFlag(ZeroFlag), .Reg2Loc(Reg2Locwire), .ALUSrc(ALUSrcwire), .Mem2Reg(Mem2Regwire), 
-								.RegWrite(RegWritewire), .MemWrite(MemWritewire), .BrTaken(BrTakenwire), 
-								.UncondBr(UncondBrwire), .SetFlags(SetFlagswire), .ALUOp());
+	control_unit control (.instructions(instruction), .ZeroFlag(ZeroFlag), .NegativeFlag(NegativeFlag), 
+	                      .Reg2Loc(Reg2Locwire), .ALUSrc(ALUSrcwire), .Mem2Reg(Mem2Regwire), 
+								 .RegWrite(RegWritewire), .MemWrite(MemWritewire), .BrTaken(BrTakenwire), 
+								 .UncondBr(UncondBrwire), .SetFlags(SetFlagswire), .ALUOp(ALUOp));
 								
 	logic [31:0] instruction;
 	
@@ -23,8 +30,8 @@ module singleCycleTop(
 								
 	
 	
-	EX execution (.UncondBr(UncondBrwire), .ALUOp(), .instruction(instruction), .ALUIn0(Da), .ALUIn1(ALUInput), 
-	              .ALURes(ALURes), .BrLoc(BrLoc), .ZeroFlag(ZeroFlag));
+	EX execution (.UncondBr(UncondBrwire), .ALUOp(ALUOpwite), .instruction(instruction), .ALUIn0(Da), .ALUIn1(ALUInput), 
+	              .ALURes(ALURes), .BrLoc(BrLoc), .ZeroFlag(ZeroFlag), .NegativeFlag(NegativeFlag));
 	
 	// This feels like it should be in the ID submodule, no? Also like 90% sure MEM is actually datamem.sv, not instructmem
 	// Pretty sure instructmem is the instruction memory in the IF module.

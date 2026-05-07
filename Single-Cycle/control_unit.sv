@@ -1,11 +1,12 @@
 module control_unit (
-	input logic [10:0] op_code,
-	input logic ZeroFlag,
+	input logic [31:0] instruction,
+	input logic ZeroFlag, NegativeFlag,
 	output logic Reg2Loc, ALUSrc, Mem2Reg, RegWrite, MemWrite, BrTaken, UncondBr, SetFlags,
 	output logic [2:0] ALUOp
 );
 
-	logic [11:0] extended_op = {1'b0, op_code}
+	logic [11:0] extended_op = {1'b0, instruction[31:21]};
+	logic [7:0] branch_conditional = {3'b0, instruction[4:0]};
 	// ALU_PASS_B=3'b000, ALU_ADD=3'b010, ALU_SUBTRACT=3'b011, ALU_AND=3'b100, ALU_OR=3'b101, ALU_XOR=3'b110
 	always_comb begin 
 		if (extended_op == 12'h458) begin //ADD
@@ -149,6 +150,18 @@ module control_unit (
 			BrTaken = 1'b0;
 			UncondBr = 1'bx;
 			ALUOp = 3'b010; //ADD, change later
+			SetFlags = 1'b0;
+		end
+		
+		else if (extended_op inside {[12'h2A0:12'h2A7}] && branch_conditional == 12'h0B) begin // B.LT
+			Reg2Loc = 1'b0;
+			ALUSrc = 1'b0;
+			Mem2Reg = 1'bx;
+			RegWrite = 1'b0;
+			MemWrite = 1'b0;
+			BrTaken = NegativeFlag;
+			UncondBr = 1'b0;
+			ALUOp = 3'b000; //PASS, change later
 			SetFlags = 1'b0;
 		end
 		

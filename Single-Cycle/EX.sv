@@ -1,13 +1,13 @@
 module EX (
 	input logic UncondBr,
-	input logic [3:0] ALUOp,
+	input logic [2:0] ALUOp,
 	input logic [31:0] instruction,
 	input logic [63:0] ALUIn0, ALUIn1,
 	output logic [63:0] ALURes, BrLoc,
-	output logic ZeroFlag
+	output logic ZeroFlag, NegativeFlag
 );
 
-	ALU ALU (.A(ALUIn0), .B(ALUIn1), .cntrl(), .result(ALURes), .negative(), .zero(ZeroFlag), .overflow(), .carry_out()) //NEED TO FIGURE OUT CNTRL
+	ALU ALU (.A(ALUIn0), .B(ALUIn1), .cntrl(ALUOp), .result(ALURes), .negative(NegativeFlag), .zero(ZeroFlag), .overflow(), .carry_out())
 
 	logic [18:0] CondAddr19;
 	logic [25:0] BrAddr26;
