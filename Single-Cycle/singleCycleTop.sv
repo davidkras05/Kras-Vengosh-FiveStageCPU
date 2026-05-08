@@ -33,10 +33,6 @@ module singleCycleTop(
 	EX execution (.UncondBr(UncondBrwire), .ALUOp(ALUOpwite), .instruction(instruction), .ALUIn0(Da), .ALUIn1(ALUInput), 
 	              .ALURes(ALURes), .BrLoc(BrLoc), .ZeroFlag(ZeroFlag), .NegativeFlag(NegativeFlag));
 	
-	// This feels like it should be in the ID submodule, no? Also like 90% sure MEM is actually datamem.sv, not instructmem
-	// Pretty sure instructmem is the instruction memory in the IF module.
-	instructmem MEM (.address(), .instruction(instruction), .clk(clk));
-	
 	
 	// Super not sure what xfer_size is
 	datamem MEM (.address(ALURes), .write_enable(MemWritewire), .read_enable(MEmReadwire), .write_data(Db), .clk(clk), 
