@@ -1,7 +1,7 @@
 module control_unit (
 	input logic [31:0] instruction,
 	input logic ZeroFlag, NegativeFlag,
-	output logic Reg2Loc, ALUSrc, Mem2Reg, RegWrite, MemWrite, BrTaken, UncondBr, SetFlags,
+	output logic Reg2Loc, ALUSrc, Mem2Reg, RegWrite, MemWrite, BrTaken, UncondBr, SetFlags, IsBL, IsBR,
 	output logic [2:0] ALUOp
 );
 
@@ -19,6 +19,8 @@ module control_unit (
 			UncondBr = 1'bx;
 			ALUOp = 3'b010; //ADD
 			SetFlags = 1'b0;
+			IsBL = 1'b0;
+			IsBR = 1'b0;
 		end
 		
 		else if (extended_op inside {[12'488:12'h489]}) begin // ADDI
@@ -31,6 +33,8 @@ module control_unit (
 			UncondBr = 1'bx;
 			ALUOp = 3'b010; //ADD
 			SetFlags = 1'b0;
+			IsBL = 1'b0;
+			IsBR = 1'b0;
 		end
 		
 		else if (extended_op == 12'h558) begin //ADDS
@@ -43,6 +47,8 @@ module control_unit (
 			UncondBr = 1'bx;
 			ALUOp = 3'b010; //ADD
 			SetFlags = 1'b1;
+			IsBL = 1'b0;
+			IsBR = 1'b0;
 		end
 		
 		else if (extended_op == 12'h658) begin //SUB
@@ -55,6 +61,8 @@ module control_unit (
 			UncondBr = 1'bx;
 			ALUOp = 3'b011; //SUB
 			SetFlags = 1'b0;
+			IsBL = 1'b0;
+			IsBR = 1'b0;
 		end
 		
 		else if (extended_op inside {[12'688:12'h689]}) begin // SUBI
@@ -67,6 +75,8 @@ module control_unit (
 			UncondBr = 1'bx;
 			ALUOp = 3'b011; //SUB
 			SetFlags = 1'b0;
+			IsBL = 1'b0;
+			IsBR = 1'b0;
 		end
 		
 		else if (extended_op == 12'h758) begin //SUBS
@@ -79,6 +89,8 @@ module control_unit (
 			UncondBr = 1'bx;
 			ALUOp = 3'b011; //SUB
 			SetFlags = 1'b1;
+			IsBL = 1'b0;
+			IsBR = 1'b0;
 		end
 		
 		else if (extended_op == 12'h7C2) begin //LDUR
@@ -91,6 +103,8 @@ module control_unit (
 			UncondBr = 1'bx;
 			ALUOp = 2'bxx; //ADD, change later
 			SetFlags = 1'b0;
+			IsBL = 1'b0;
+			IsBR = 1'b0;
 		end
 		
 		else if (extended_op == 12'h7C0) begin //STUR
@@ -103,6 +117,8 @@ module control_unit (
 			UncondBr = 1'bx;
 			ALUOp = 3'b010; //ADD, change later
 			SetFlags = 1'b0;
+			IsBL = 1'b0;
+			IsBR = 1'b0;
 		end
 			
 		else if (extended_op inside {[12'h0A0:12'h0BF]}) begin //B
@@ -115,6 +131,8 @@ module control_unit (
 			UncondBr = 1'b1;
 			ALUOp = 3'bxxx; //Don't care
 			SetFlags = 1'b0;
+			IsBL = 1'b0;
+			IsBR = 1'b0;
 		end
 		
 		else if (extended_op inside {[12'h5A0:12'h5A7]}) begin // CBZ
@@ -127,6 +145,8 @@ module control_unit (
 			UncondBr = 1'b0;
 			ALUOp = 3'b000; //PASS, change later
 			SetFlags = 1'b0;
+			IsBL = 1'b0;
+			IsBR = 1'b0;
 		end
 		
 		else if (extended_op == 12'h6B0) begin // BR, should double check
@@ -137,20 +157,24 @@ module control_unit (
 			MemWrite = 1'b0;
 			BrTaken = 1'b1;
 			UncondBr = 1'b1;
-			ALUOp = 3'bxxx; //NOT SURE, change later
+			ALUOp = 3'b000; //PASS, (double check)
 			SetFlags = 1'b0;
+			IsBL = 1'b0;
+			IsBR = 1'b1;
 		end
 		
-		else if (extended_op inside {[12'h4A0:12'h4BF}]) begin // BL, NOT COMPLETE
-			Reg2Loc = 1'b1;
-			ALUSrc = 1'b1;
+		else if (extended_op inside {[12'h4A0:12'h4BF}]) begin // BL, should double check
+			Reg2Loc = 1'bx;
+			ALUSrc = 1'bx;
 			Mem2Reg = 1'b0;
 			RegWrite = 1'b1;
 			MemWrite = 1'b0;
-			BrTaken = 1'b0;
-			UncondBr = 1'bx;
-			ALUOp = 3'b010; //ADD, change later
+			BrTaken = 1'b1;
+			UncondBr = 1'b1;
+			ALUOp = 3'bxxx; //Don't Care
 			SetFlags = 1'b0;
+			IsBL = 1'b1;
+			IsBR = 1'b0;
 		end
 		
 		else if (extended_op inside {[12'h2A0:12'h2A7}] && branch_conditional == 12'h0B) begin // B.LT
@@ -163,6 +187,8 @@ module control_unit (
 			UncondBr = 1'b0;
 			ALUOp = 3'b000; //PASS, change later
 			SetFlags = 1'b0;
+			IsBL = 1'b0;
+			IsBR = 1'b0;
 		end
 		
 		else begin // Invalid opcode
@@ -176,6 +202,8 @@ module control_unit (
 			UncondBr = 1'bx;
 			ALUOp = 3'bxxx; //DON'T CARE, change later
 			SetFlags = 1'bx;
+			IsBL = 1'bx;
+			IsBR = 1'bx;
 		end
 	end
 

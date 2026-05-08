@@ -2,7 +2,7 @@ module singleCycleTop(
 	input logic clk,
 	input logic reset,
 );
-	logic Reg2Locwire, ALUSrcwire, Mem2Regwire, RegWritewire, MemWritewire, BrTakenwire, UncondBrwire, SetFlagswire;
+	logic Reg2Locwire, ALUSrcwire, Mem2Regwire, RegWritewire, MemWritewire, BrTakenwire, UncondBrwire, SetFlagswire, IsBLwire, IsBRwire;
 	
 	//Need an ALUOp wire. figure out how many bits needed for it and place it here
 	
@@ -11,32 +11,36 @@ module singleCycleTop(
 	// Also we still need BR but I'll need to work on that tmr between my classes
 	logic [2:0] ALUOpwire;
 	
-	// flags (for now only zero flag, might need others later though):
+	// flags (for now only zero flag and negative flag might need others later though):
 	logic ZeroFlag, NegativeFlag;
 
+	logic [31:0] instruction;
 	control_unit control (.instructions(instruction), .ZeroFlag(ZeroFlag), .NegativeFlag(NegativeFlag), 
 	                      .Reg2Loc(Reg2Locwire), .ALUSrc(ALUSrcwire), .Mem2Reg(Mem2Regwire), 
 								 .RegWrite(RegWritewire), .MemWrite(MemWritewire), .BrTaken(BrTakenwire), 
-								 .UncondBr(UncondBrwire), .SetFlags(SetFlagswire), .ALUOp(ALUOp));
+								 .UncondBr(UncondBrwire), .SetFlags(SetFlagswire), .IsBL(IsBLwire), .IsBR(IsBRwire), 
+								 .ALUOp(ALUOp));
 								
-	logic [31:0] instruction;
 	
-	IF instructionFetch (.clk(clk), .reset(reset), .BrLoc(BrLoc), .BrTaken(BrTakenwire), .instruction_output(instruction));
+	logic [63:0] PCp4;
+	IF instructionFetch (.clk(clk), .reset(reset), .BrLoc(BrLoc), .BrTaken(BrTakenwire), .IsBR(IsBRwire), 
+	                     .instruction_output(instruction), .PCp4(PCp4));
 	
 	logic [63:0] Da, Db, ALUInput, ALURes, BrLoc, WriteBck, MEMData;
 	
 	ID instructionDecode(.clk(clk), .reset(reset), .Reg2Loc(Reg2Locwire), .ALUSrc(ALUSrcwire), 
-								.RegWrite(RegWritewire), .WriteBck(WriteBck), .instruction(instruction), .Da(Da), .Db(Db) .ALUInput(ALUInput));
+								.RegWrite(RegWritewire), .WriteBck(WriteBck), .PCp4(PCp4), 
+								.instruction(instruction), .Da(Da), .Db(Db) .ALUInput(ALUInput));
 								
 	
 	
-	EX execution (.UncondBr(UncondBrwire), .ALUOp(ALUOpwite), .instruction(instruction), .ALUIn0(Da), .ALUIn1(ALUInput), 
+	EX execution (.UncondBr(UncondBrwire), .ALUOp(ALUOpwire), .instruction(instruction), .ALUIn0(Da), .ALUIn1(ALUInput), 
 	              .ALURes(ALURes), .BrLoc(BrLoc), .ZeroFlag(ZeroFlag), .NegativeFlag(NegativeFlag));
 	
 	
-	// Super not sure what xfer_size is
+	// ngl i think that its always 64 bits, since its the amount that goes into memory
 	datamem MEM (.address(ALURes), .write_enable(MemWritewire), .read_enable(MEmReadwire), .write_data(Db), .clk(clk), 
-	             .xfer_size(), .read_data(MEMData))
+	             .xfer_size(7'd64), .read_data(MEMData))
 	
 	WB writeBack (.ALURes(ALURes), .MEMData(MEMData), .Mem2Reg(Mem2Regwire), .WriteBck(WriteBck));
 	

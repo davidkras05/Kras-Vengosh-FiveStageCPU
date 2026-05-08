@@ -1,18 +1,25 @@
 module IF (
 	input clk, reset,
-	input logic[63:0] BrLoc, //64 bits because PC register is 64 bits
-	input logic BrTaken,
-	output logic[31:0] instruction_output;
+	input logic [63:0] BrLoc, Db, //64 bits because PC register is 64 bits
+	input logic BrTaken, IsBR,
+	output logic [31:0] instruction_output,
+	output logic [63:0] PCp4
 );
 
-	logic[63:0] adderwire, curr_PC, next_PC;
-
-	n_bit_2to1 #(.BITS(64)) branchMux (.data_line1(BrLoc), .data_line0(64'b4), .s(BrTaken), .mux_out(adder_wire));
-		
-	sixtyfourbit_fulladder PCadd (.A(adder_wire), .B(curr_PC), .Cin(1'b0), .S(next_PC));
+	logic [63:0] CurrPC;
+	register PC (.clk(clk), .write(NextPC), .reset(reset), .En(1'b1), .q(CurrPC));
 	
-	register PC (.clk(clk), .write(next_PC), .reset(reset), .En(1'b1), .q(curr_PC));
+	sixtyfourbit_fulladder PCplus4add (.A(64'd4), .B(CurrPC), .Cin(1'b0), .S(PCp4)); // Devoted PC + 4 adder. Needs to be an output for BL instruction
 	
-	instructmem instructionMemory (address(.curr_PC), .instruction(instruction_output), .clk(clk));
+	logic [63:0] B_instr_add;
+	sixtyfourbit_fulladder BPCadd (.A(BrLoc), .B(CurrPC), .Cin(1'b0), .S(B_instr_add));
+	
+	logic [63:0] BrMux_noBR;
+	n_bit_2to1 #(.BITS(64)) branchMux (.data_line1(B_instr_add), .data_line0(PCp4), .s(BrTaken), .mux_out(BrMux_noBR));
+	
+	logic [63:0] NextPC;
+	n_bit_2to1 #(.BITS(64)) BRMux (.data_line1(Db), .data_line0(BrMux_noBR), .s(IsBR), .mux_out(NextPC)); //Allows for BR instruction
+	
+	instructmem instructionMemory (address(.CurrPC), .instruction(instruction_output), .clk(clk));
 	
 endmodule
