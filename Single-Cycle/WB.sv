@@ -4,6 +4,6 @@ module WB (
 	output logic [63:0] WriteBck //goes to ID registerfile datawrite
 );
 
-	n_bit_2to1 writeBackMux #(.BITS(64)) (.data_line1(MEMData), .data_line0(ALURes), .s(Mem2Reg), .mux_out(WriteBck));
+	n_bit_2to1 #(.BITS(64)) writeBackMux (.data_line1(MEMData), .data_line0(ALURes), .s(Mem2Reg), .mux_out(WriteBck));
 
 endmodule

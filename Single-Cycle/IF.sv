@@ -20,6 +20,6 @@ module IF (
 	logic [63:0] NextPC;
 	n_bit_2to1 #(.BITS(64)) BRMux (.data_line1(Db), .data_line0(BrMux_noBR), .s(IsBR), .mux_out(NextPC)); //Allows for BR instruction
 	
-	instructmem instructionMemory (address(.CurrPC), .instruction(instruction_output), .clk(clk));
+	instructmem instructionMemory (.address(CurrPC), .instruction(instruction_output), .clk(clk));
 	
 endmodule

@@ -13,12 +13,12 @@ module ID (
 	
 	logic[4:0] splitout, Aw_in;
 	
-	n_bit_2to1 ldurstur_mux #(.BITS(5))(.data_line1(Rd), .data_line0(Rm), .s(Reg2Loc), .mux_out(splitout));
+	n_bit_2to1 #(.BITS(5)) ldurstur_mux (.data_line1(Rd), .data_line0(Rm), .s(Reg2Loc), .mux_out(splitout));
 	
-	n_bit_2to1 aw_mux #(.BITS(5))(.data_line1(5'b11110), .data_line0(Rd), .s(IsBL), .mux_out(Aw_in));
+	n_bit_2to1 #(.BITS(5)) aw_mux (.data_line1(5'b11110), .data_line0(Rd), .s(IsBL), .mux_out(Aw_in));
 	
 	logic [63:0] Dw_in;
-	n_bit_2to1 aw_mux #(.BITS(64))(.data_line1(PCp4), .data_line0(WriteBck), .s(IsBL), .mux_out(Dw_in));
+	n_bit_2to1 #(.BITS(64)) dw_mux (.data_line1(PCp4), .data_line0(WriteBck), .s(IsBL), .mux_out(Dw_in));
 	
 	// Made changes here. WriteRegister is the register that's being written into, which is always Rd
 	// Additionally, WriteData is the actual data, which comes from WB. Also, the input WriteBck had only 5 bits when it needed 64.
@@ -35,7 +35,7 @@ module ID (
 	
 	assign Immediate64 = {{52{Immediate[11]}}, Immediate}; //Sign extend the immediate to 64 bits
 	
-	n_bit_2to1 ALUchoose #(.BITS(64))(.data_line1(Immediate64), .data_line0(Db), .s(ALUSrc), .mux_out(ALUInput));
+	n_bit_2to1 #(.BITS(64)) ALUchoose (.data_line1(Immediate64), .data_line0(Db), .s(ALUSrc), .mux_out(ALUInput));
 	
 endmodule
 								

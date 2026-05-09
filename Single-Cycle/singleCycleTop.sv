@@ -1,15 +1,12 @@
 module singleCycleTop(
 	input logic clk,
-	input logic reset,
+	input logic reset
 );
-	logic Reg2Locwire, ALUSrcwire, Mem2Regwire, RegWritewire, MemWritewire, BrTakenwire, UncondBrwire, SetFlagswire, IsBLwire, IsBRwire;
+	logic Reg2Locwire, ALUSrcwire, Mem2Regwire, RegWritewire, MemWritewire, MemReadwire, BrTakenwire, UncondBrwire, SetFlagswire, IsBLwire, IsBRwire;
 	
-	//Need an ALUOp wire. figure out how many bits needed for it and place it here
-	
-	// Quick note on the ALU and flags. I think we may need the negative flag for the B.LT command since it being *True* means that the second
-   // argument was less than the first, right?
-	// Also we still need BR but I'll need to work on that tmr between my classes
 	logic [2:0] ALUOpwire;
+	
+	logic [3:0] xfer_size;
 	
 	// flags (for now only zero flag and negative flag might need others later though):
 	logic ZeroFlag, NegativeFlag;
@@ -17,9 +14,9 @@ module singleCycleTop(
 	logic [31:0] instruction;
 	control_unit control (.instructions(instruction), .ZeroFlag(ZeroFlag), .NegativeFlag(NegativeFlag), 
 	                      .Reg2Loc(Reg2Locwire), .ALUSrc(ALUSrcwire), .Mem2Reg(Mem2Regwire), 
-								 .RegWrite(RegWritewire), .MemWrite(MemWritewire), .BrTaken(BrTakenwire), 
+								 .RegWrite(RegWritewire), .MemWrite(MemWritewire), .MemRead(MemReadwire), .BrTaken(BrTakenwire), 
 								 .UncondBr(UncondBrwire), .SetFlags(SetFlagswire), .IsBL(IsBLwire), .IsBR(IsBRwire), 
-								 .ALUOp(ALUOp));
+								 .ALUOp(ALUOpwire), .xfer_size(xfer_size));
 								
 	
 	logic [63:0] PCp4;
@@ -30,7 +27,7 @@ module singleCycleTop(
 	
 	ID instructionDecode(.clk(clk), .reset(reset), .Reg2Loc(Reg2Locwire), .ALUSrc(ALUSrcwire), 
 								.RegWrite(RegWritewire), .WriteBck(WriteBck), .PCp4(PCp4), 
-								.instruction(instruction), .Da(Da), .Db(Db) .ALUInput(ALUInput));
+								.instruction(instruction), .Da(Da), .Db(Db), .ALUInput(ALUInput));
 								
 	
 	
@@ -39,8 +36,8 @@ module singleCycleTop(
 	
 	
 	// ngl i think that its always 64 bits, since its the amount that goes into memory
-	datamem MEM (.address(ALURes), .write_enable(MemWritewire), .read_enable(MEmReadwire), .write_data(Db), .clk(clk), 
-	             .xfer_size(7'd64), .read_data(MEMData))
+	datamem MEM (.address(ALURes), .write_enable(MemWritewire), .read_enable(MemReadwire), .write_data(Db), .clk(clk), 
+	             .xfer_size(xfer_size), .read_data(MEMData));
 	
 	WB writeBack (.ALURes(ALURes), .MEMData(MEMData), .Mem2Reg(Mem2Regwire), .WriteBck(WriteBck));
 	
