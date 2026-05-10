@@ -1,5 +1,5 @@
 module ID (
-	input logic clk, reset, Reg2Loc, ALUSrc, RegWrite, IsBL,
+	input logic clk, reset, Reg2Loc, ALUSrc, RegWrite, IsBL, isDType,
 	input logic[63:0] WriteBck, PCp4, //From writeback
 	input logic[31:0] instruction,
 	output logic[63:0] Da, Db, ALUInput
@@ -29,14 +29,21 @@ module ID (
 								.clk(clk), .reset(reset));
 								
 	logic[11:0] Immediate;
-	
 	assign Immediate = instruction[21:10];
 	
-	logic[63:0] Immediate64;
+	logic [8:0] DT_address;
 	
-	assign Immediate64 = {{52{Immediate[11]}}, Immediate}; //Sign extend the immediate to 64 bits
+	assign DT_address = instruction[20:12];
 	
-	n_bit_2to1 #(.BITS(64)) ALUchoose (.data_line1(Immediate64), .data_line0(Db), .s(ALUSrc), .mux_out(ALUInput));
+	logic[63:0] Immediate64, DT_address64, shift;
+	
+	assign Immediate64 = {{52{1'b0}}, Immediate}; //Sign extend the immediate to 64 bits
+	
+	assign DT_address64 = {{55{DT_address[8]}}, DT_address}; //Sign extend the immediate to 64 bits
+	
+	n_bit_2to1 #(.BITS(64)) ImmChoose (.data_line1(DT_address64), .data_line0(Immediate64), .s(isDType), .mux_out(shift));
+	
+	n_bit_2to1 #(.BITS(64)) ALUchoose (.data_line1(shift), .data_line0(Db), .s(ALUSrc), .mux_out(ALUInput));
 	
 endmodule
 								

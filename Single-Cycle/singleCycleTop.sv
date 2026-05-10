@@ -2,7 +2,8 @@ module singleCycleTop(
 	input logic clk,
 	input logic reset
 );
-	logic Reg2Locwire, ALUSrcwire, Mem2Regwire, RegWritewire, MemWritewire, MemReadwire, BrTakenwire, UncondBrwire, SetFlagswire, IsBLwire, IsBRwire;
+	logic Reg2Locwire, ALUSrcwire, Mem2Regwire, RegWritewire, MemWritewire, isDTypewire;
+	logic MemReadwire, BrTakenwire, UncondBrwire, SetFlagswire, IsBLwire, IsBRwire;
 	
 	logic [2:0] ALUOpwire;
 	logic [63:0] Da, Db, ALUInput, ALURes, BrLoc, WriteBck, MEMData;
@@ -17,7 +18,7 @@ module singleCycleTop(
 	                      .Reg2Loc(Reg2Locwire), .ALUSrc(ALUSrcwire), .Mem2Reg(Mem2Regwire), 
 								 .RegWrite(RegWritewire), .MemWrite(MemWritewire), .MemRead(MemReadwire), .BrTaken(BrTakenwire), 
 								 .UncondBr(UncondBrwire), .SetFlags(SetFlagswire), .IsBL(IsBLwire), .IsBR(IsBRwire), 
-								 .ALUOp(ALUOpwire));
+								 .isDType(isDTypewire), .ALUOp(ALUOpwire));
 								
 	
 	
@@ -27,16 +28,15 @@ module singleCycleTop(
 	
 	
 	ID instructionDecode(.clk(clk), .reset(reset), .Reg2Loc(Reg2Locwire), .ALUSrc(ALUSrcwire), 
-								.RegWrite(RegWritewire), .IsBL(IsBLwire), .WriteBck(WriteBck), .PCp4(PCp4), 
-								.instruction(instruction), .Da(Da), .Db(Db), .ALUInput(ALUInput));
+								.RegWrite(RegWritewire), .IsBL(IsBLwire), .isDType(isDTypewire), 
+								.WriteBck(WriteBck), .PCp4(PCp4), .instruction(instruction), .Da(Da), 
+								.Db(Db), .ALUInput(ALUInput));
 								
 	
 	
 	EX execution (.UncondBr(UncondBrwire), .ALUOp(ALUOpwire), .instruction(instruction), .ALUIn0(Da), .ALUIn1(ALUInput), 
 	              .ALURes(ALURes), .BrLoc(BrLoc), .ZeroFlag(ZeroFlag), .NegativeFlag(NegativeFlag));
 	
-	
-	// ngl i think that its always 64 bits, since its the amount that goes into memory
 	datamem MEM (.address(ALURes), .write_enable(MemWritewire), .read_enable(MemReadwire), 
 					.write_data(Db), .clk(clk), .read_data(MEMData));
 	
@@ -46,7 +46,7 @@ module singleCycleTop(
 	
 	two_onemux zeromux (.in({ZeroFlag, ZeroFlaghold}), .s(SetFlagswire), .y(ZeroFlagmuxout));
 	
-	D_FF zeroreg (.q(Zeroflaghold), .d(ZeroFlagmuxout), .reset(reset), .clk(clk));
+	D_FF zeroreg (.q(ZeroFlaghold), .d(ZeroFlagmuxout), .reset(reset), .clk(clk));
 	
 	two_onemux negativemux (.in({NegativeFlag, NegativeFlaghold}), .s(SetFlagswire), .y(NegativeFlagmuxout));
 	

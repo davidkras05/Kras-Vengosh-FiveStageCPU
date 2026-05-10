@@ -36,7 +36,7 @@ vsim -voptargs="+acc" -t 1ps -lib work singleCycle_tb
 # Source the wave do file
 #     This should be the file that sets up the signal window for
 #     the module you are testing.
-do singleCycle.do
+do benchmark5.do
 
 # Set the window types
 view wave
