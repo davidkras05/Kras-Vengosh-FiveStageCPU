@@ -26,7 +26,6 @@ module control_unit (
 			SetFlags = 1'b0;
 			IsBL = 1'b0;
 			IsBR = 1'b0;
-			xfer_size = 4'bxxxx;
 		end
 		
 		else if (extended_op >= 12'h488 && extended_op <= 12'h489) begin // ADDI
@@ -42,7 +41,6 @@ module control_unit (
 			SetFlags = 1'b0;
 			IsBL = 1'b0;
 			IsBR = 1'b0;
-			xfer_size = 4'bxxxx;
 		end
 		
 		else if (extended_op == 12'h558) begin //ADDS
@@ -58,7 +56,6 @@ module control_unit (
 			SetFlags = 1'b1;
 			IsBL = 1'b0;
 			IsBR = 1'b0;
-			xfer_size = 4'bxxxx;
 		end
 		
 		else if (extended_op == 12'h658) begin //SUB
@@ -74,7 +71,6 @@ module control_unit (
 			SetFlags = 1'b0;
 			IsBL = 1'b0;
 			IsBR = 1'b0;
-			xfer_size = 4'bxxxx;
 		end
 		
 		else if (extended_op >= 12'h688 && extended_op <= 12'h689) begin // SUBI
@@ -90,7 +86,6 @@ module control_unit (
 			SetFlags = 1'b0;
 			IsBL = 1'b0;
 			IsBR = 1'b0;
-			xfer_size = 4'bxxxx;
 		end
 		
 		else if (extended_op == 12'h758) begin //SUBS
@@ -106,7 +101,6 @@ module control_unit (
 			SetFlags = 1'b1;
 			IsBL = 1'b0;
 			IsBR = 1'b0;
-			xfer_size = 4'bxxxx;
 		end
 		
 		else if (extended_op == 12'h7C2) begin //LDUR
@@ -122,7 +116,6 @@ module control_unit (
 			SetFlags = 1'b0;
 			IsBL = 1'b0;
 			IsBR = 1'b0;
-			xfer_size = 4'b1000;
 		end
 		
 		else if (extended_op == 12'h7C0) begin //STUR
@@ -138,7 +131,6 @@ module control_unit (
 			SetFlags = 1'b0;
 			IsBL = 1'b0;
 			IsBR = 1'b0;
-			xfer_size = 4'b1000;
 		end
 			
 		else if (extended_op >= 12'h0A0 && extended_op <= 12'h0BF) begin //B
@@ -154,7 +146,6 @@ module control_unit (
 			SetFlags = 1'b0;
 			IsBL = 1'b0;
 			IsBR = 1'b0;
-			xfer_size = 4'bxxxx;
 		end
 		
 		else if (extended_op >= 12'h5A0 && extended_op <= 12'h5A7) begin // CBZ
@@ -170,7 +161,6 @@ module control_unit (
 			SetFlags = 1'b0;
 			IsBL = 1'b0;
 			IsBR = 1'b0;
-			xfer_size = 4'bxxxx;
 		end
 		
 		else if (extended_op == 12'h6B0) begin // BR, should double check
@@ -186,7 +176,6 @@ module control_unit (
 			SetFlags = 1'b0;
 			IsBL = 1'b0;
 			IsBR = 1'b1;
-			xfer_size = 4'bxxxx;
 		end
 		
 		else if (extended_op >= 12'h4A0 && extended_op <= 12'h4BF) begin // BL, should double check
@@ -202,7 +191,6 @@ module control_unit (
 			SetFlags = 1'b0;
 			IsBL = 1'b1;
 			IsBR = 1'b0;
-			xfer_size = 4'bxxxx;
 		end
 		
 		else if (extended_op >= 12'h2A0 && extended_op <= 12'h2A7 && branch_conditional == 12'h0B) begin // B.LT
@@ -218,7 +206,6 @@ module control_unit (
 			SetFlags = 1'b0;
 			IsBL = 1'b0;
 			IsBR = 1'b0;
-			xfer_size = 4'bxxxx;
 		end
 		
 		else begin // Invalid opcode
@@ -235,7 +222,6 @@ module control_unit (
 			SetFlags = 1'bx;
 			IsBL = 1'bx;
 			IsBR = 1'bx;
-			xfer_size = 4'bxxxx;
 		end
 	end
 
