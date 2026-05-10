@@ -160,7 +160,7 @@ module control_unit (
 		end
 		
 		else if (extended_op >= 12'h5A0 && extended_op <= 12'h5A7) begin // CBZ
-			Reg2Loc = 1'b0;
+			Reg2Loc = 1'b1;
 			ALUSrc = 1'b0;
 			Mem2Reg = 1'bx;
 			RegWrite = 1'b0;
