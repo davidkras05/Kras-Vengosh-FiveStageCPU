@@ -9,11 +9,11 @@ module singleCycle_tb ();
 	
 	//CLK setup
 	
-	parameter CLKdelay = 10000;
+	parameter CLKdelay = 5000;
 	
 	initial begin
 		clk = 0;
-		forever #5000 clk = ~clk;
+		forever #(CLKdelay/2) clk = ~clk;
 	end
 	
 	initial begin

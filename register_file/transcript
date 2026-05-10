@@ -2,7 +2,7 @@
 do runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:02:03 on Apr 17,2026
+# Start time: 18:58:35 on May 09,2026
 # vlog -reportprogress 300 ./thirtytwo_1_mux.sv 
 # -- Compiling module two_onemux
 # -- Compiling module four_onemux
@@ -12,38 +12,38 @@ do runlab.do
 # 
 # Top level modules:
 # 	thirtytwo_1_mux
-# End time: 13:02:03 on Apr 17,2026, Elapsed time: 0:00:00
+# End time: 18:58:36 on May 09,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:02:03 on Apr 17,2026
+# Start time: 18:58:36 on May 09,2026
 # vlog -reportprogress 300 ./regstim.sv 
 # -- Compiling module regstim
 # 
 # Top level modules:
 # 	regstim
-# End time: 13:02:03 on Apr 17,2026, Elapsed time: 0:00:00
+# End time: 18:58:36 on May 09,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:02:03 on Apr 17,2026
+# Start time: 18:58:36 on May 09,2026
 # vlog -reportprogress 300 ./register.sv 
 # -- Compiling module register
 # -- Compiling module register_tb
 # 
 # Top level modules:
 # 	register_tb
-# End time: 13:02:03 on Apr 17,2026, Elapsed time: 0:00:00
+# End time: 18:58:36 on May 09,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:02:03 on Apr 17,2026
+# Start time: 18:58:36 on May 09,2026
 # vlog -reportprogress 300 ./loopedthirtytwo_mux.sv 
 # -- Compiling module loopedthirtytwo_mux
 # 
 # Top level modules:
 # 	loopedthirtytwo_mux
-# End time: 13:02:03 on Apr 17,2026, Elapsed time: 0:00:00
+# End time: 18:58:36 on May 09,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:02:03 on Apr 17,2026
+# Start time: 18:58:36 on May 09,2026
 # vlog -reportprogress 300 ./five_thirtytwodecoder.sv 
 # -- Compiling module one_twodecoder
 # -- Compiling module two_fourdecoder
@@ -60,28 +60,28 @@ do runlab.do
 # 	five_thirtytwo_tb
 # 	three_eight_tb
 # 	two_four_tb
-# End time: 13:02:03 on Apr 17,2026, Elapsed time: 0:00:00
+# End time: 18:58:36 on May 09,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:02:03 on Apr 17,2026
+# Start time: 18:58:36 on May 09,2026
 # vlog -reportprogress 300 ./D_FF.sv 
 # -- Compiling module D_FF
 # 
 # Top level modules:
 # 	D_FF
-# End time: 13:02:03 on Apr 17,2026, Elapsed time: 0:00:00
+# End time: 18:58:36 on May 09,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:02:03 on Apr 17,2026
+# Start time: 18:58:36 on May 09,2026
 # vlog -reportprogress 300 ./regfile.sv 
 # -- Compiling module regfile
 # 
 # Top level modules:
 # 	regfile
-# End time: 13:02:03 on Apr 17,2026, Elapsed time: 0:00:00
+# End time: 18:58:36 on May 09,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:02:03 on Apr 17,2026
+# Start time: 18:58:36 on May 09,2026
 # vlog -reportprogress 300 ./mux_32_1_tb.sv 
 # -- Compiling module mux_2_1_tb
 # -- Compiling module mux_4_1_tb
@@ -95,10 +95,10 @@ do runlab.do
 # 	mux_8_1_tb
 # 	mux_16_1_tb
 # 	mux_32_1_tb
-# End time: 13:02:03 on Apr 17,2026, Elapsed time: 0:00:00
+# End time: 18:58:36 on May 09,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -voptargs=""+acc"" -t 1ps -lib work regstim 
-# Start time: 13:02:03 on Apr 17,2026
+# Start time: 18:58:38 on May 09,2026
 # Loading sv_std.std
 # Loading work.regstim
 # Loading work.regfile
@@ -130,5 +130,5 @@ do runlab.do
 # ** Note: $stop    : ./regstim.sv(69)
 #    Time: 477500 ps  Iteration: 1  Instance: /regstim
 # Break in Module regstim at ./regstim.sv line 69
-# End time: 13:18:30 on Apr 17,2026, Elapsed time: 0:16:27
+# End time: 18:58:54 on May 09,2026, Elapsed time: 0:00:16
 # Errors: 0, Warnings: 3
