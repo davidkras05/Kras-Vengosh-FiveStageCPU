@@ -15,9 +15,11 @@ module datamem (
 	input logic					read_enable,
 	input logic		[63:0]	write_data,
 	input logic					clk,
-	input logic		[3:0]		xfer_size,
+	
 	output logic	[63:0]	read_data
 	);
+	
+	parameter [3:0] xfer_size = 4'd8;
 
 	// Force %t's to print in a nice format.
 	initial $timeformat(-9, 2, " ns", 10);
@@ -50,8 +52,8 @@ module datamem (
 	end
 	
 	// Handle the reads.
-	integer i;
 	always_comb begin
+		automatic int i;
 		read_data = 'x;
 		if (read_enable == 1)
 			for(i=0; i<xfer_size; i++)
@@ -59,8 +61,8 @@ module datamem (
 	end
 	
 	// Handle the writes.
-	integer j;
 	always_ff @(posedge clk) begin
+		automatic int j;
 		if (write_enable)
 			for(j=0; j<xfer_size; j++)
 				mem[aligned_address + j] <= write_data[8*j+7 -: 8]; 
@@ -76,10 +78,9 @@ module datamem_testbench ();
 	logic					read_enable;
 	logic		[63:0]	write_data;
 	logic					clk;
-	logic		[3:0]		xfer_size;
 	logic		[63:0]	read_data;
 	
-	datamem dut (.address, .write_enable, .write_data, .clk, .xfer_size, .read_data);
+	datamem dut (.address, .write_enable, .write_data, .clk, .read_data);
 	
 	initial begin // Set up the clock
 		clk <= 0;
@@ -95,7 +96,7 @@ module datamem_testbench ();
 	logic				rand_we;
 	
 	initial begin
-		address <= '0; read_enable <= '0; write_enable <= '0; write_data <= 'x; xfer_size <= 4'd8;
+		address <= '0; read_enable <= '0; write_enable <= '0; write_data <= 'x;
 		@(posedge clk);
 		for(i=0; i<1024*`DATA_MEM_SIZE; i++) begin
 			// Set up transfer in rand_*, then send to outputs.
@@ -106,7 +107,6 @@ module datamem_testbench ();
 		
 			write_enable	<= rand_we;
 			read_enable		<= ~rand_we;
-			xfer_size		<= rand_size;
 			address			<= rand_addr;
 			write_data		<= rand_data;
 			

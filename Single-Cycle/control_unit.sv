@@ -2,8 +2,7 @@ module control_unit (
 	input logic [31:0] instruction,
 	input logic ZeroFlag, NegativeFlag,
 	output logic Reg2Loc, ALUSrc, Mem2Reg, RegWrite, MemWrite, MemRead, BrTaken, UncondBr, SetFlags, IsBL, IsBR,
-	output logic [2:0] ALUOp,
-	output logic xfer_size
+	output logic [2:0] ALUOp
 );
 
 	logic [11:0] extended_op;
