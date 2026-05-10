@@ -13,7 +13,7 @@ module singleCycleTop(
 	logic ZeroFlag, NegativeFlag, ZeroFlaghold, ZeroFlagmuxout, NegativeFlaghold, NegativeFlagmuxout;
 
 	
-	control_unit control (.instruction(instruction), .ZeroFlag(ZeroFlaghold), .NegativeFlag(NegativeFlaghold), 
+	control_unit control (.instruction(instruction), .Db(Db), .ZeroFlag(ZeroFlaghold), .NegativeFlag(NegativeFlaghold), 
 	                      .Reg2Loc(Reg2Locwire), .ALUSrc(ALUSrcwire), .Mem2Reg(Mem2Regwire), 
 								 .RegWrite(RegWritewire), .MemWrite(MemWritewire), .MemRead(MemReadwire), .BrTaken(BrTakenwire), 
 								 .UncondBr(UncondBrwire), .SetFlags(SetFlagswire), .IsBL(IsBLwire), .IsBR(IsBRwire), 
@@ -21,7 +21,7 @@ module singleCycleTop(
 								
 	
 	
-	IF instructionFetch (.clk(clk), .reset(reset), .BrLoc(BrLoc), .BrTaken(BrTakenwire), .IsBR(IsBRwire), 
+	IF instructionFetch (.clk(clk), .reset(reset), .BrLoc(BrLoc), .Db(Db), .BrTaken(BrTakenwire), .IsBR(IsBRwire), 
 	                     .instruction_output(instruction), .PCp4(PCp4));
 	
 	

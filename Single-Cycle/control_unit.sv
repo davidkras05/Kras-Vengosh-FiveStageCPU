@@ -1,5 +1,6 @@
 module control_unit (
 	input logic [31:0] instruction,
+	input logic [63:0] Db,
 	input logic ZeroFlag, NegativeFlag,
 	output logic Reg2Loc, ALUSrc, Mem2Reg, RegWrite, MemWrite, MemRead, BrTaken, UncondBr, SetFlags, IsBL, IsBR,
 	output logic [2:0] ALUOp
@@ -155,7 +156,14 @@ module control_unit (
 			RegWrite = 1'b0;
 			MemWrite = 1'b0;
 			MemRead = 1'b0;
-			BrTaken = ZeroFlag; // NEED FLAGS
+			if (Db == 64'b0) begin
+				BrTaken = 1'b1; // NEED FLAGS
+			end 
+			
+			else begin
+				BrTaken = 1'b0;
+			end
+			
 			UncondBr = 1'b0;
 			ALUOp = 3'b000; //PASS, change later
 			SetFlags = 1'b0;

@@ -9,7 +9,7 @@ module singleCycle_tb ();
 	
 	//CLK setup
 	
-	parameter CLKdelay = 5000;
+	parameter CLKdelay = 100000;
 	
 	initial begin
 		clk = 0;
