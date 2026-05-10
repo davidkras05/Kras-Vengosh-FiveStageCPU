@@ -25,8 +25,8 @@ module ID (
 	// Finally, DataWrite was redundant to WriteBck
 	regfile registerFile (.ReadData1(Da), .ReadData2(Db), .WriteData(Dw_in), 
 								.ReadRegister1(Rn), .ReadRegister2(splitout), .WriteRegister(Aw_in), 
-								.RegWrite(RegWrite), .
-								(clk), .reset(reset));
+								.RegWrite(RegWrite),
+								.clk(clk), .reset(reset));
 								
 	logic[11:0] Immediate;
 	
