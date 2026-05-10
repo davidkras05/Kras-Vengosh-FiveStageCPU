@@ -1,0 +1,33 @@
+`timescale 1ps/1ps
+
+
+module singleCycle_tb ();
+
+	logic clk, reset;
+	
+	singleCycleTop DUT (.clk(clk), .reset(reset));
+	
+	//CLK setup
+	
+	parameter CLKdelay = 10000;
+	
+	initial begin
+		clk = 0;
+		forever #5000 clk = ~clk;
+	end
+	
+	initial begin
+		reset = 1;
+		repeat (2) @(posedge clk);
+		reset = 0;
+	
+		repeat (50) begin
+			@(posedge clk);
+			$display("time=%0t instruction=%h ALURes=%h Writebck=%h", $time, DUT.instruction, DUT.ALURes, DUT.WriteBck);
+			
+		end
+		
+		$stop;
+	end
+endmodule
+	

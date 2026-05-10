@@ -6,6 +6,7 @@ module IF (
 	output logic [63:0] PCp4
 );
 
+	logic [63:0] NextPC;
 	logic [63:0] CurrPC;
 	register PC (.clk(clk), .write(NextPC), .reset(reset), .En(1'b1), .q(CurrPC));
 	
@@ -17,7 +18,7 @@ module IF (
 	logic [63:0] BrMux_noBR;
 	n_bit_2to1 #(.BITS(64)) branchMux (.data_line1(B_instr_add), .data_line0(PCp4), .s(BrTaken), .mux_out(BrMux_noBR));
 	
-	logic [63:0] NextPC;
+	
 	n_bit_2to1 #(.BITS(64)) BRMux (.data_line1(Db), .data_line0(BrMux_noBR), .s(IsBR), .mux_out(NextPC)); //Allows for BR instruction
 	
 	instructmem instructionMemory (.address(CurrPC), .instruction(instruction_output), .clk(clk));
