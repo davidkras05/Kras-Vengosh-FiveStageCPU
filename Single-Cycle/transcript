@@ -1,34 +1,35 @@
 # Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
 do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:59:29 on May 09,2026
+# Start time: 19:34:48 on May 09,2026
 # vlog -reportprogress 300 ./n_bit_2to1.sv 
 # -- Compiling module n_bit_2to1
 # 
 # Top level modules:
 # 	n_bit_2to1
-# End time: 18:59:29 on May 09,2026, Elapsed time: 0:00:00
+# End time: 19:34:48 on May 09,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:59:29 on May 09,2026
+# Start time: 19:34:48 on May 09,2026
 # vlog -reportprogress 300 ./EX.sv 
 # -- Compiling module EX
 # 
 # Top level modules:
 # 	EX
-# End time: 18:59:29 on May 09,2026, Elapsed time: 0:00:00
+# End time: 19:34:48 on May 09,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:59:29 on May 09,2026
+# Start time: 19:34:48 on May 09,2026
 # vlog -reportprogress 300 ./control_unit.sv 
 # -- Compiling module control_unit
 # 
 # Top level modules:
 # 	control_unit
-# End time: 18:59:29 on May 09,2026, Elapsed time: 0:00:00
+# End time: 19:34:48 on May 09,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:59:29 on May 09,2026
+# Start time: 19:34:48 on May 09,2026
 # vlog -reportprogress 300 ./math.sv 
 # -- Compiling module mult
 # -- Compiling module shifter
@@ -38,30 +39,30 @@ do runlab.do
 # Top level modules:
 # 	shifter_testbench
 # 	mult_testbench
-# End time: 18:59:29 on May 09,2026, Elapsed time: 0:00:00
+# End time: 19:34:48 on May 09,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:59:29 on May 09,2026
+# Start time: 19:34:48 on May 09,2026
 # vlog -reportprogress 300 ./instructmem.sv 
 # -- Compiling module instructmem
 # -- Compiling module instructmem_testbench
 # 
 # Top level modules:
 # 	instructmem_testbench
-# End time: 18:59:29 on May 09,2026, Elapsed time: 0:00:00
+# End time: 19:34:48 on May 09,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:59:29 on May 09,2026
+# Start time: 19:34:48 on May 09,2026
 # vlog -reportprogress 300 ./datamem.sv 
 # -- Compiling module datamem
 # -- Compiling module datamem_testbench
 # 
 # Top level modules:
 # 	datamem_testbench
-# End time: 18:59:29 on May 09,2026, Elapsed time: 0:00:00
+# End time: 19:34:48 on May 09,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:59:29 on May 09,2026
+# Start time: 19:34:48 on May 09,2026
 # vlog -reportprogress 300 ./register_file/thirtytwo_1_mux.sv 
 # -- Compiling module two_onemux
 # -- Compiling module four_onemux
@@ -71,38 +72,38 @@ do runlab.do
 # 
 # Top level modules:
 # 	thirtytwo_1_mux
-# End time: 18:59:29 on May 09,2026, Elapsed time: 0:00:00
+# End time: 19:34:48 on May 09,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:59:29 on May 09,2026
+# Start time: 19:34:49 on May 09,2026
 # vlog -reportprogress 300 ./register_file/register.sv 
 # -- Compiling module register
 # -- Compiling module register_tb
 # 
 # Top level modules:
 # 	register_tb
-# End time: 18:59:29 on May 09,2026, Elapsed time: 0:00:00
+# End time: 19:34:49 on May 09,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:59:29 on May 09,2026
+# Start time: 19:34:49 on May 09,2026
 # vlog -reportprogress 300 ./register_file/regfile.sv 
 # -- Compiling module regfile
 # 
 # Top level modules:
 # 	regfile
-# End time: 18:59:29 on May 09,2026, Elapsed time: 0:00:00
+# End time: 19:34:49 on May 09,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:59:29 on May 09,2026
+# Start time: 19:34:49 on May 09,2026
 # vlog -reportprogress 300 ./register_file/loopedthirtytwo_mux.sv 
 # -- Compiling module loopedthirtytwo_mux
 # 
 # Top level modules:
 # 	loopedthirtytwo_mux
-# End time: 18:59:29 on May 09,2026, Elapsed time: 0:00:00
+# End time: 19:34:49 on May 09,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:59:29 on May 09,2026
+# Start time: 19:34:49 on May 09,2026
 # vlog -reportprogress 300 ./register_file/five_thirtytwodecoder.sv 
 # -- Compiling module one_twodecoder
 # -- Compiling module two_fourdecoder
@@ -119,109 +120,109 @@ do runlab.do
 # 	five_thirtytwo_tb
 # 	three_eight_tb
 # 	two_four_tb
-# End time: 18:59:29 on May 09,2026, Elapsed time: 0:00:00
+# End time: 19:34:49 on May 09,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:59:30 on May 09,2026
+# Start time: 19:34:49 on May 09,2026
 # vlog -reportprogress 300 ./register_file/D_FF.sv 
 # -- Compiling module D_FF
 # 
 # Top level modules:
 # 	D_FF
-# End time: 18:59:30 on May 09,2026, Elapsed time: 0:00:00
+# End time: 19:34:49 on May 09,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:59:30 on May 09,2026
+# Start time: 19:34:49 on May 09,2026
 # vlog -reportprogress 300 ./ALU/full_adder.sv 
 # -- Compiling module full_adder
 # 
 # Top level modules:
 # 	full_adder
-# End time: 18:59:30 on May 09,2026, Elapsed time: 0:00:00
+# End time: 19:34:49 on May 09,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:59:30 on May 09,2026
+# Start time: 19:34:49 on May 09,2026
 # vlog -reportprogress 300 ./ALU/flags.sv 
 # -- Compiling module flags
 # 
 # Top level modules:
 # 	flags
-# End time: 18:59:30 on May 09,2026, Elapsed time: 0:00:00
+# End time: 19:34:49 on May 09,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:59:30 on May 09,2026
+# Start time: 19:34:49 on May 09,2026
 # vlog -reportprogress 300 ./ALU/bitsliceALU.sv 
 # -- Compiling module bitsliceALU
 # 
 # Top level modules:
 # 	bitsliceALU
-# End time: 18:59:30 on May 09,2026, Elapsed time: 0:00:00
+# End time: 19:34:49 on May 09,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:59:30 on May 09,2026
+# Start time: 19:34:49 on May 09,2026
 # vlog -reportprogress 300 ./ALU/ALU.sv 
 # -- Compiling module ALU
 # 
 # Top level modules:
 # 	ALU
-# End time: 18:59:30 on May 09,2026, Elapsed time: 0:00:00
+# End time: 19:34:49 on May 09,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:59:30 on May 09,2026
+# Start time: 19:34:49 on May 09,2026
 # vlog -reportprogress 300 ./IF.sv 
 # -- Compiling module IF
 # 
 # Top level modules:
 # 	IF
-# End time: 18:59:30 on May 09,2026, Elapsed time: 0:00:00
+# End time: 19:34:49 on May 09,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:59:30 on May 09,2026
+# Start time: 19:34:49 on May 09,2026
 # vlog -reportprogress 300 ./sixtyfourbit_fulladder.sv 
 # -- Compiling module sixtyfourbit_fulladder
 # 
 # Top level modules:
 # 	sixtyfourbit_fulladder
-# End time: 18:59:30 on May 09,2026, Elapsed time: 0:00:00
+# End time: 19:34:49 on May 09,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:59:30 on May 09,2026
+# Start time: 19:34:49 on May 09,2026
 # vlog -reportprogress 300 ./ID.sv 
 # -- Compiling module ID
 # 
 # Top level modules:
 # 	ID
-# End time: 18:59:30 on May 09,2026, Elapsed time: 0:00:00
+# End time: 19:34:50 on May 09,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:59:30 on May 09,2026
+# Start time: 19:34:50 on May 09,2026
 # vlog -reportprogress 300 ./WB.sv 
 # -- Compiling module WB
 # 
 # Top level modules:
 # 	WB
-# End time: 18:59:30 on May 09,2026, Elapsed time: 0:00:00
+# End time: 19:34:50 on May 09,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:59:30 on May 09,2026
+# Start time: 19:34:50 on May 09,2026
 # vlog -reportprogress 300 ./singleCycleTop.sv 
 # -- Compiling module singleCycleTop
 # 
 # Top level modules:
 # 	singleCycleTop
-# End time: 18:59:30 on May 09,2026, Elapsed time: 0:00:00
+# End time: 19:34:50 on May 09,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:59:30 on May 09,2026
+# Start time: 19:34:50 on May 09,2026
 # vlog -reportprogress 300 ./singleCycle_tb.sv 
 # -- Compiling module singleCycle_tb
 # 
 # Top level modules:
 # 	singleCycle_tb
-# End time: 18:59:30 on May 09,2026, Elapsed time: 0:00:00
+# End time: 19:34:50 on May 09,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -voptargs=""+acc"" -t 1ps -lib work singleCycle_tb 
-# Start time: 18:59:30 on May 09,2026
+# Start time: 19:34:50 on May 09,2026
 # Loading sv_std.std
 # Loading work.singleCycle_tb
 # Loading work.singleCycleTop
@@ -261,1779 +262,6 @@ do runlab.do
 # ** Warning: Design size of 11505 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
 # This may because you are loading cell libraries which are not recommended with
 # the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
-# ** Error: (vish-4014) No objects found matching '/singleCycle_tb/DUT/control/xfer_size'.
-# Executing ONERROR command at macro ./singleCycle.do line 19
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# ** Warning: (vsim-7) Failed to open readmem file "../benchmarks/test01_AddiB.arm" in read mode.
-# No such file or directory. (errno = ENOENT)    : ./instructmem.sv(42)
-#    Time: 0 ps  Iteration: 0  Instance: /singleCycle_tb/DUT/instructionFetch/instructionMemory
-# Running benchmark: ../benchmarks/test01_AddiB.arm
-# ** Error: Invalid opcode: Xxx
-#    Time: 0 ps  Scope: singleCycle_tb.DUT.control File: ./control_unit.sv Line: 212
-# time=25.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=35.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=45.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=55.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=65.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=75.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=85.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=95.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=105.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=115.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=125.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=135.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=145.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=155.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=165.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=175.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=185.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=195.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=205.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=215.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=225.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=235.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=245.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=255.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=265.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=275.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=285.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=295.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=305.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=315.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=325.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=335.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=345.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=355.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=365.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=375.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=385.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=395.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=405.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=415.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=425.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=435.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=445.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=455.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=465.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=475.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=485.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=495.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=505.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=515.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# ** Note: $stop    : ./singleCycle_tb.sv(30)
-#    Time: 515 ns  Iteration: 1  Instance: /singleCycle_tb
-# Break in Module singleCycle_tb at ./singleCycle_tb.sv line 30
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:00:37 on May 09,2026
-# vlog -reportprogress 300 ./n_bit_2to1.sv 
-# -- Compiling module n_bit_2to1
-# 
-# Top level modules:
-# 	n_bit_2to1
-# End time: 19:00:37 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:00:38 on May 09,2026
-# vlog -reportprogress 300 ./EX.sv 
-# -- Compiling module EX
-# 
-# Top level modules:
-# 	EX
-# End time: 19:00:38 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:00:38 on May 09,2026
-# vlog -reportprogress 300 ./control_unit.sv 
-# -- Compiling module control_unit
-# 
-# Top level modules:
-# 	control_unit
-# End time: 19:00:38 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:00:38 on May 09,2026
-# vlog -reportprogress 300 ./math.sv 
-# -- Compiling module mult
-# -- Compiling module shifter
-# -- Compiling module shifter_testbench
-# -- Compiling module mult_testbench
-# 
-# Top level modules:
-# 	shifter_testbench
-# 	mult_testbench
-# End time: 19:00:38 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:00:38 on May 09,2026
-# vlog -reportprogress 300 ./instructmem.sv 
-# -- Compiling module instructmem
-# -- Compiling module instructmem_testbench
-# 
-# Top level modules:
-# 	instructmem_testbench
-# End time: 19:00:38 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:00:38 on May 09,2026
-# vlog -reportprogress 300 ./datamem.sv 
-# -- Compiling module datamem
-# -- Compiling module datamem_testbench
-# 
-# Top level modules:
-# 	datamem_testbench
-# End time: 19:00:38 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:00:38 on May 09,2026
-# vlog -reportprogress 300 ./register_file/thirtytwo_1_mux.sv 
-# -- Compiling module two_onemux
-# -- Compiling module four_onemux
-# -- Compiling module eight_onemux
-# -- Compiling module sixteen_onemux
-# -- Compiling module thirtytwo_1_mux
-# 
-# Top level modules:
-# 	thirtytwo_1_mux
-# End time: 19:00:38 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:00:38 on May 09,2026
-# vlog -reportprogress 300 ./register_file/register.sv 
-# -- Compiling module register
-# -- Compiling module register_tb
-# 
-# Top level modules:
-# 	register_tb
-# End time: 19:00:38 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:00:38 on May 09,2026
-# vlog -reportprogress 300 ./register_file/regfile.sv 
-# -- Compiling module regfile
-# 
-# Top level modules:
-# 	regfile
-# End time: 19:00:38 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:00:38 on May 09,2026
-# vlog -reportprogress 300 ./register_file/loopedthirtytwo_mux.sv 
-# -- Compiling module loopedthirtytwo_mux
-# 
-# Top level modules:
-# 	loopedthirtytwo_mux
-# End time: 19:00:38 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:00:38 on May 09,2026
-# vlog -reportprogress 300 ./register_file/five_thirtytwodecoder.sv 
-# -- Compiling module one_twodecoder
-# -- Compiling module two_fourdecoder
-# -- Compiling module three_eightdecoder
-# -- Compiling module four_sixteendecoder
-# -- Compiling module five_thirtytwodecoder
-# -- Compiling module one_two_tb
-# -- Compiling module five_thirtytwo_tb
-# -- Compiling module three_eight_tb
-# -- Compiling module two_four_tb
-# 
-# Top level modules:
-# 	one_two_tb
-# 	five_thirtytwo_tb
-# 	three_eight_tb
-# 	two_four_tb
-# End time: 19:00:38 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:00:38 on May 09,2026
-# vlog -reportprogress 300 ./register_file/D_FF.sv 
-# -- Compiling module D_FF
-# 
-# Top level modules:
-# 	D_FF
-# End time: 19:00:38 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:00:38 on May 09,2026
-# vlog -reportprogress 300 ./ALU/full_adder.sv 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 19:00:38 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:00:38 on May 09,2026
-# vlog -reportprogress 300 ./ALU/flags.sv 
-# -- Compiling module flags
-# 
-# Top level modules:
-# 	flags
-# End time: 19:00:38 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:00:38 on May 09,2026
-# vlog -reportprogress 300 ./ALU/bitsliceALU.sv 
-# -- Compiling module bitsliceALU
-# 
-# Top level modules:
-# 	bitsliceALU
-# End time: 19:00:38 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:00:39 on May 09,2026
-# vlog -reportprogress 300 ./ALU/ALU.sv 
-# -- Compiling module ALU
-# 
-# Top level modules:
-# 	ALU
-# End time: 19:00:39 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:00:39 on May 09,2026
-# vlog -reportprogress 300 ./IF.sv 
-# -- Compiling module IF
-# 
-# Top level modules:
-# 	IF
-# End time: 19:00:39 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:00:39 on May 09,2026
-# vlog -reportprogress 300 ./sixtyfourbit_fulladder.sv 
-# -- Compiling module sixtyfourbit_fulladder
-# 
-# Top level modules:
-# 	sixtyfourbit_fulladder
-# End time: 19:00:39 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:00:39 on May 09,2026
-# vlog -reportprogress 300 ./ID.sv 
-# -- Compiling module ID
-# 
-# Top level modules:
-# 	ID
-# End time: 19:00:39 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:00:39 on May 09,2026
-# vlog -reportprogress 300 ./WB.sv 
-# -- Compiling module WB
-# 
-# Top level modules:
-# 	WB
-# End time: 19:00:39 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:00:39 on May 09,2026
-# vlog -reportprogress 300 ./singleCycleTop.sv 
-# -- Compiling module singleCycleTop
-# 
-# Top level modules:
-# 	singleCycleTop
-# End time: 19:00:39 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:00:39 on May 09,2026
-# vlog -reportprogress 300 ./singleCycle_tb.sv 
-# -- Compiling module singleCycle_tb
-# ** Error: (vlog-13069) ./singleCycle_tb.sv(16): near "/": syntax error, unexpected '/'.
-# End time: 19:00:39 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./runlab.do line 28
-# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog "./singleCycle_tb.sv""
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:01:31 on May 09,2026
-# vlog -reportprogress 300 ./n_bit_2to1.sv 
-# -- Compiling module n_bit_2to1
-# 
-# Top level modules:
-# 	n_bit_2to1
-# End time: 19:01:31 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:01:31 on May 09,2026
-# vlog -reportprogress 300 ./EX.sv 
-# -- Compiling module EX
-# 
-# Top level modules:
-# 	EX
-# End time: 19:01:31 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:01:31 on May 09,2026
-# vlog -reportprogress 300 ./control_unit.sv 
-# -- Compiling module control_unit
-# 
-# Top level modules:
-# 	control_unit
-# End time: 19:01:31 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:01:32 on May 09,2026
-# vlog -reportprogress 300 ./math.sv 
-# -- Compiling module mult
-# -- Compiling module shifter
-# -- Compiling module shifter_testbench
-# -- Compiling module mult_testbench
-# 
-# Top level modules:
-# 	shifter_testbench
-# 	mult_testbench
-# End time: 19:01:32 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:01:32 on May 09,2026
-# vlog -reportprogress 300 ./instructmem.sv 
-# -- Compiling module instructmem
-# -- Compiling module instructmem_testbench
-# 
-# Top level modules:
-# 	instructmem_testbench
-# End time: 19:01:32 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:01:32 on May 09,2026
-# vlog -reportprogress 300 ./datamem.sv 
-# -- Compiling module datamem
-# -- Compiling module datamem_testbench
-# 
-# Top level modules:
-# 	datamem_testbench
-# End time: 19:01:32 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:01:32 on May 09,2026
-# vlog -reportprogress 300 ./register_file/thirtytwo_1_mux.sv 
-# -- Compiling module two_onemux
-# -- Compiling module four_onemux
-# -- Compiling module eight_onemux
-# -- Compiling module sixteen_onemux
-# -- Compiling module thirtytwo_1_mux
-# 
-# Top level modules:
-# 	thirtytwo_1_mux
-# End time: 19:01:32 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:01:32 on May 09,2026
-# vlog -reportprogress 300 ./register_file/register.sv 
-# -- Compiling module register
-# -- Compiling module register_tb
-# 
-# Top level modules:
-# 	register_tb
-# End time: 19:01:32 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:01:32 on May 09,2026
-# vlog -reportprogress 300 ./register_file/regfile.sv 
-# -- Compiling module regfile
-# 
-# Top level modules:
-# 	regfile
-# End time: 19:01:32 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:01:32 on May 09,2026
-# vlog -reportprogress 300 ./register_file/loopedthirtytwo_mux.sv 
-# -- Compiling module loopedthirtytwo_mux
-# 
-# Top level modules:
-# 	loopedthirtytwo_mux
-# End time: 19:01:32 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:01:32 on May 09,2026
-# vlog -reportprogress 300 ./register_file/five_thirtytwodecoder.sv 
-# -- Compiling module one_twodecoder
-# -- Compiling module two_fourdecoder
-# -- Compiling module three_eightdecoder
-# -- Compiling module four_sixteendecoder
-# -- Compiling module five_thirtytwodecoder
-# -- Compiling module one_two_tb
-# -- Compiling module five_thirtytwo_tb
-# -- Compiling module three_eight_tb
-# -- Compiling module two_four_tb
-# 
-# Top level modules:
-# 	one_two_tb
-# 	five_thirtytwo_tb
-# 	three_eight_tb
-# 	two_four_tb
-# End time: 19:01:32 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:01:32 on May 09,2026
-# vlog -reportprogress 300 ./register_file/D_FF.sv 
-# -- Compiling module D_FF
-# 
-# Top level modules:
-# 	D_FF
-# End time: 19:01:32 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:01:32 on May 09,2026
-# vlog -reportprogress 300 ./ALU/full_adder.sv 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 19:01:32 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:01:32 on May 09,2026
-# vlog -reportprogress 300 ./ALU/flags.sv 
-# -- Compiling module flags
-# 
-# Top level modules:
-# 	flags
-# End time: 19:01:32 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:01:32 on May 09,2026
-# vlog -reportprogress 300 ./ALU/bitsliceALU.sv 
-# -- Compiling module bitsliceALU
-# 
-# Top level modules:
-# 	bitsliceALU
-# End time: 19:01:32 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:01:32 on May 09,2026
-# vlog -reportprogress 300 ./ALU/ALU.sv 
-# -- Compiling module ALU
-# 
-# Top level modules:
-# 	ALU
-# End time: 19:01:32 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:01:32 on May 09,2026
-# vlog -reportprogress 300 ./IF.sv 
-# -- Compiling module IF
-# 
-# Top level modules:
-# 	IF
-# End time: 19:01:32 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:01:32 on May 09,2026
-# vlog -reportprogress 300 ./sixtyfourbit_fulladder.sv 
-# -- Compiling module sixtyfourbit_fulladder
-# 
-# Top level modules:
-# 	sixtyfourbit_fulladder
-# End time: 19:01:33 on May 09,2026, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:01:33 on May 09,2026
-# vlog -reportprogress 300 ./ID.sv 
-# -- Compiling module ID
-# 
-# Top level modules:
-# 	ID
-# End time: 19:01:33 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:01:33 on May 09,2026
-# vlog -reportprogress 300 ./WB.sv 
-# -- Compiling module WB
-# 
-# Top level modules:
-# 	WB
-# End time: 19:01:33 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:01:33 on May 09,2026
-# vlog -reportprogress 300 ./singleCycleTop.sv 
-# -- Compiling module singleCycleTop
-# 
-# Top level modules:
-# 	singleCycleTop
-# End time: 19:01:33 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:01:33 on May 09,2026
-# vlog -reportprogress 300 ./singleCycle_tb.sv 
-# -- Compiling module singleCycle_tb
-# 
-# Top level modules:
-# 	singleCycle_tb
-# End time: 19:01:33 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 19:01:34 on May 09,2026, Elapsed time: 0:02:04
-# Errors: 8, Warnings: 6
-# vsim -voptargs=""+acc"" -t 1ps -lib work singleCycle_tb 
-# Start time: 19:01:34 on May 09,2026
-# Loading sv_std.std
-# Loading work.singleCycle_tb
-# Loading work.singleCycleTop
-# Loading work.control_unit
-# Loading work.IF
-# Loading work.register
-# Loading work.sixtyfourbit_fulladder
-# Loading work.full_adder
-# Loading work.n_bit_2to1
-# Loading work.instructmem
-# Loading work.ID
-# Loading work.regfile
-# Loading work.five_thirtytwodecoder
-# Loading work.one_twodecoder
-# Loading work.four_sixteendecoder
-# Loading work.three_eightdecoder
-# Loading work.two_fourdecoder
-# Loading work.loopedthirtytwo_mux
-# Loading work.EX
-# Loading work.ALU
-# Loading work.bitsliceALU
-# Loading work.eight_onemux
-# Loading work.four_onemux
-# Loading work.two_onemux
-# Loading work.flags
-# Loading work.datamem
-# Loading work.WB
-# Loading work.D_FF
-# Loading work.thirtytwo_1_mux
-# Loading work.sixteen_onemux
-# ** Warning: (vsim-3017) ./singleCycleTop.sv(24): [TFMPC] - Too few port connections. Expected 8, found 7.
-#    Time: 0 ps  Iteration: 0  Instance: /singleCycle_tb/DUT/instructionFetch File: ./IF.sv
-# ** Warning: (vsim-3722) ./singleCycleTop.sv(24): [TFMPC] - Missing connection for port 'Db'.
-# ** Warning: (vsim-3017) ./singleCycleTop.sv(29): [TFMPC] - Too few port connections. Expected 12, found 11.
-#    Time: 0 ps  Iteration: 0  Instance: /singleCycle_tb/DUT/instructionDecode File: ./ID.sv
-# ** Warning: (vsim-3722) ./singleCycleTop.sv(29): [TFMPC] - Missing connection for port 'IsBL'.
-# ** Warning: Design size of 11505 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
-# This may because you are loading cell libraries which are not recommended with
-# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
-# ** Error: (vish-4014) No objects found matching '/singleCycle_tb/DUT/control/xfer_size'.
-# Executing ONERROR command at macro ./singleCycle.do line 19
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# ** Warning: (vsim-7) Failed to open readmem file "../benchmarks/test01_AddiB.arm" in read mode.
-# No such file or directory. (errno = ENOENT)    : ./instructmem.sv(42)
-#    Time: 0 ps  Iteration: 0  Instance: /singleCycle_tb/DUT/instructionFetch/instructionMemory
-# Running benchmark: ../benchmarks/test01_AddiB.arm
-# ** Error: Invalid opcode: Xxx
-#    Time: 0 ps  Scope: singleCycle_tb.DUT.control File: ./control_unit.sv Line: 212
-# time=250.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=350.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=450.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=550.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=650.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=750.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=850.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=950.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=1050.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=1150.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=1250.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=1350.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=1450.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=1550.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=1650.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=1750.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=1850.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=1950.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=2050.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=2150.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=2250.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=2350.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=2450.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=2550.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=2650.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=2750.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=2850.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=2950.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=3050.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=3150.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=3250.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=3350.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=3450.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=3550.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=3650.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=3750.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=3850.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=3950.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=4050.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=4150.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=4250.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=4350.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=4450.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=4550.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=4650.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=4750.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=4850.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=4950.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=5050.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=5150.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# ** Note: $stop    : ./singleCycle_tb.sv(30)
-#    Time: 5150 ns  Iteration: 1  Instance: /singleCycle_tb
-# Break in Module singleCycle_tb at ./singleCycle_tb.sv line 30
-add wave -position end  sim:/singleCycle_tb/DUT/instructionFetch/instructionMemory/address
-add wave -position end  sim:/singleCycle_tb/DUT/instructionFetch/instructionMemory/instruction
-restart -f
-# ** Warning: (vsim-3017) ./singleCycleTop.sv(24): [TFMPC] - Too few port connections. Expected 8, found 7.
-#    Time: 0 ps  Iteration: 0  Instance: /singleCycle_tb/DUT/instructionFetch File: ./IF.sv
-# ** Warning: (vsim-3722) ./singleCycleTop.sv(24): [TFMPC] - Missing connection for port 'Db'.
-# ** Warning: (vsim-3017) ./singleCycleTop.sv(29): [TFMPC] - Too few port connections. Expected 12, found 11.
-#    Time: 0 ps  Iteration: 0  Instance: /singleCycle_tb/DUT/instructionDecode File: ./ID.sv
-# ** Warning: (vsim-3722) ./singleCycleTop.sv(29): [TFMPC] - Missing connection for port 'IsBL'.
-# ** Warning: Design size of 11505 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
-# This may because you are loading cell libraries which are not recommended with
-# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
-run -all
-# ** Warning: (vsim-7) Failed to open readmem file "../benchmarks/test01_AddiB.arm" in read mode.
-# No such file or directory. (errno = ENOENT)    : ./instructmem.sv(42)
-#    Time: 0 ps  Iteration: 0  Instance: /singleCycle_tb/DUT/instructionFetch/instructionMemory
-# Running benchmark: ../benchmarks/test01_AddiB.arm
-# ** Error: Invalid opcode: Xxx
-#    Time: 0 ps  Scope: singleCycle_tb.DUT.control File: ./control_unit.sv Line: 212
-# time=250.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=350.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=450.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=550.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=650.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=750.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=850.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=950.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=1050.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=1150.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=1250.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=1350.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=1450.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=1550.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=1650.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=1750.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=1850.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=1950.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=2050.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=2150.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=2250.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=2350.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=2450.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=2550.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=2650.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=2750.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=2850.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=2950.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=3050.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=3150.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=3250.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=3350.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=3450.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=3550.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=3650.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=3750.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=3850.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=3950.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=4050.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=4150.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=4250.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=4350.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=4450.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=4550.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=4650.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=4750.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=4850.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=4950.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=5050.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# time=5150.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
-# ** Note: $stop    : ./singleCycle_tb.sv(30)
-#    Time: 5150 ns  Iteration: 1  Instance: /singleCycle_tb
-# Break in Module singleCycle_tb at ./singleCycle_tb.sv line 30
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:10:40 on May 09,2026
-# vlog -reportprogress 300 ./n_bit_2to1.sv 
-# -- Compiling module n_bit_2to1
-# 
-# Top level modules:
-# 	n_bit_2to1
-# End time: 19:10:40 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:10:40 on May 09,2026
-# vlog -reportprogress 300 ./EX.sv 
-# -- Compiling module EX
-# 
-# Top level modules:
-# 	EX
-# End time: 19:10:40 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:10:40 on May 09,2026
-# vlog -reportprogress 300 ./control_unit.sv 
-# -- Compiling module control_unit
-# 
-# Top level modules:
-# 	control_unit
-# End time: 19:10:40 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:10:40 on May 09,2026
-# vlog -reportprogress 300 ./math.sv 
-# -- Compiling module mult
-# -- Compiling module shifter
-# -- Compiling module shifter_testbench
-# -- Compiling module mult_testbench
-# 
-# Top level modules:
-# 	shifter_testbench
-# 	mult_testbench
-# End time: 19:10:40 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:10:40 on May 09,2026
-# vlog -reportprogress 300 ./instructmem.sv 
-# -- Compiling module instructmem
-# -- Compiling module instructmem_testbench
-# 
-# Top level modules:
-# 	instructmem_testbench
-# End time: 19:10:40 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:10:40 on May 09,2026
-# vlog -reportprogress 300 ./datamem.sv 
-# -- Compiling module datamem
-# -- Compiling module datamem_testbench
-# 
-# Top level modules:
-# 	datamem_testbench
-# End time: 19:10:40 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:10:40 on May 09,2026
-# vlog -reportprogress 300 ./register_file/thirtytwo_1_mux.sv 
-# -- Compiling module two_onemux
-# -- Compiling module four_onemux
-# -- Compiling module eight_onemux
-# -- Compiling module sixteen_onemux
-# -- Compiling module thirtytwo_1_mux
-# 
-# Top level modules:
-# 	thirtytwo_1_mux
-# End time: 19:10:40 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:10:40 on May 09,2026
-# vlog -reportprogress 300 ./register_file/register.sv 
-# -- Compiling module register
-# -- Compiling module register_tb
-# 
-# Top level modules:
-# 	register_tb
-# End time: 19:10:40 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:10:40 on May 09,2026
-# vlog -reportprogress 300 ./register_file/regfile.sv 
-# -- Compiling module regfile
-# 
-# Top level modules:
-# 	regfile
-# End time: 19:10:40 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:10:40 on May 09,2026
-# vlog -reportprogress 300 ./register_file/loopedthirtytwo_mux.sv 
-# -- Compiling module loopedthirtytwo_mux
-# 
-# Top level modules:
-# 	loopedthirtytwo_mux
-# End time: 19:10:40 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:10:40 on May 09,2026
-# vlog -reportprogress 300 ./register_file/five_thirtytwodecoder.sv 
-# -- Compiling module one_twodecoder
-# -- Compiling module two_fourdecoder
-# -- Compiling module three_eightdecoder
-# -- Compiling module four_sixteendecoder
-# -- Compiling module five_thirtytwodecoder
-# -- Compiling module one_two_tb
-# -- Compiling module five_thirtytwo_tb
-# -- Compiling module three_eight_tb
-# -- Compiling module two_four_tb
-# 
-# Top level modules:
-# 	one_two_tb
-# 	five_thirtytwo_tb
-# 	three_eight_tb
-# 	two_four_tb
-# End time: 19:10:40 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:10:40 on May 09,2026
-# vlog -reportprogress 300 ./register_file/D_FF.sv 
-# -- Compiling module D_FF
-# 
-# Top level modules:
-# 	D_FF
-# End time: 19:10:40 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:10:40 on May 09,2026
-# vlog -reportprogress 300 ./ALU/full_adder.sv 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 19:10:40 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:10:40 on May 09,2026
-# vlog -reportprogress 300 ./ALU/flags.sv 
-# -- Compiling module flags
-# 
-# Top level modules:
-# 	flags
-# End time: 19:10:40 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:10:41 on May 09,2026
-# vlog -reportprogress 300 ./ALU/bitsliceALU.sv 
-# -- Compiling module bitsliceALU
-# 
-# Top level modules:
-# 	bitsliceALU
-# End time: 19:10:41 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:10:41 on May 09,2026
-# vlog -reportprogress 300 ./ALU/ALU.sv 
-# -- Compiling module ALU
-# 
-# Top level modules:
-# 	ALU
-# End time: 19:10:41 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:10:41 on May 09,2026
-# vlog -reportprogress 300 ./IF.sv 
-# -- Compiling module IF
-# 
-# Top level modules:
-# 	IF
-# End time: 19:10:41 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:10:41 on May 09,2026
-# vlog -reportprogress 300 ./sixtyfourbit_fulladder.sv 
-# -- Compiling module sixtyfourbit_fulladder
-# 
-# Top level modules:
-# 	sixtyfourbit_fulladder
-# End time: 19:10:41 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:10:41 on May 09,2026
-# vlog -reportprogress 300 ./ID.sv 
-# -- Compiling module ID
-# 
-# Top level modules:
-# 	ID
-# End time: 19:10:41 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:10:41 on May 09,2026
-# vlog -reportprogress 300 ./WB.sv 
-# -- Compiling module WB
-# 
-# Top level modules:
-# 	WB
-# End time: 19:10:41 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:10:41 on May 09,2026
-# vlog -reportprogress 300 ./singleCycleTop.sv 
-# -- Compiling module singleCycleTop
-# 
-# Top level modules:
-# 	singleCycleTop
-# End time: 19:10:41 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:10:41 on May 09,2026
-# vlog -reportprogress 300 ./singleCycle_tb.sv 
-# -- Compiling module singleCycle_tb
-# 
-# Top level modules:
-# 	singleCycle_tb
-# End time: 19:10:41 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 19:10:42 on May 09,2026, Elapsed time: 0:09:08
-# Errors: 5, Warnings: 12
-# vsim -voptargs=""+acc"" -t 1ps -lib work instructmem_testbench 
-# Start time: 19:10:42 on May 09,2026
-# Loading sv_std.std
-# Loading work.instructmem_testbench
-# Loading work.instructmem
-# ** Error: (vish-4014) No objects found matching '/singleCycle_tb/clk'.
-# Executing ONERROR command at macro ./singleCycle.do line 3
-# ** Error: (vish-4014) No objects found matching '/singleCycle_tb/reset'.
-# Executing ONERROR command at macro ./singleCycle.do line 4
-# ** Error: (vish-4014) No objects found matching '/singleCycle_tb/DUT/control/ALUOp'.
-# Executing ONERROR command at macro ./singleCycle.do line 5
-# ** Error: (vish-4014) No objects found matching '/singleCycle_tb/DUT/control/ALUSrc'.
-# Executing ONERROR command at macro ./singleCycle.do line 6
-# ** Error: (vish-4014) No objects found matching '/singleCycle_tb/DUT/control/BrTaken'.
-# Executing ONERROR command at macro ./singleCycle.do line 7
-# ** Error: (vish-4014) No objects found matching '/singleCycle_tb/DUT/control/IsBL'.
-# Executing ONERROR command at macro ./singleCycle.do line 8
-# ** Error: (vish-4014) No objects found matching '/singleCycle_tb/DUT/control/IsBR'.
-# Executing ONERROR command at macro ./singleCycle.do line 9
-# ** Error: (vish-4014) No objects found matching '/singleCycle_tb/DUT/control/Mem2Reg'.
-# Executing ONERROR command at macro ./singleCycle.do line 10
-# ** Error: (vish-4014) No objects found matching '/singleCycle_tb/DUT/control/MemRead'.
-# Executing ONERROR command at macro ./singleCycle.do line 11
-# ** Error: (vish-4014) No objects found matching '/singleCycle_tb/DUT/control/MemWrite'.
-# Executing ONERROR command at macro ./singleCycle.do line 12
-# ** Error: (vish-4014) No objects found matching '/singleCycle_tb/DUT/control/NegativeFlag'.
-# Executing ONERROR command at macro ./singleCycle.do line 13
-# ** Error: (vish-4014) No objects found matching '/singleCycle_tb/DUT/control/Reg2Loc'.
-# Executing ONERROR command at macro ./singleCycle.do line 14
-# ** Error: (vish-4014) No objects found matching '/singleCycle_tb/DUT/control/RegWrite'.
-# Executing ONERROR command at macro ./singleCycle.do line 15
-# ** Error: (vish-4014) No objects found matching '/singleCycle_tb/DUT/control/SetFlags'.
-# Executing ONERROR command at macro ./singleCycle.do line 16
-# ** Error: (vish-4014) No objects found matching '/singleCycle_tb/DUT/control/UncondBr'.
-# Executing ONERROR command at macro ./singleCycle.do line 17
-# ** Error: (vish-4014) No objects found matching '/singleCycle_tb/DUT/control/ZeroFlag'.
-# Executing ONERROR command at macro ./singleCycle.do line 18
-# ** Error: (vish-4014) No objects found matching '/singleCycle_tb/DUT/control/xfer_size'.
-# Executing ONERROR command at macro ./singleCycle.do line 19
-# ** Error: (vish-4014) No objects found matching '/singleCycle_tb/DUT/instructionFetch/CurrPC'.
-# Executing ONERROR command at macro ./singleCycle.do line 20
-# ** Error: (vish-4014) No objects found matching '/singleCycle_tb/DUT/instruction'.
-# Executing ONERROR command at macro ./singleCycle.do line 21
-# ** Error: (vish-4014) No objects found matching '/singleCycle_tb/DUT/instructionDecode/Rd'.
-# Executing ONERROR command at macro ./singleCycle.do line 22
-# ** Error: (vish-4014) No objects found matching '/singleCycle_tb/DUT/instructionDecode/Rm'.
-# Executing ONERROR command at macro ./singleCycle.do line 23
-# ** Error: (vish-4014) No objects found matching '/singleCycle_tb/DUT/instructionDecode/Rn'.
-# Executing ONERROR command at macro ./singleCycle.do line 24
-# ** Error: (vish-4014) No objects found matching '/singleCycle_tb/DUT/instructionDecode/Aw_in'.
-# Executing ONERROR command at macro ./singleCycle.do line 25
-# ** Error: (vish-4014) No objects found matching '/singleCycle_tb/DUT/instructionDecode/Dw_in'.
-# Executing ONERROR command at macro ./singleCycle.do line 26
-# ** Error: (vish-4014) No objects found matching '/singleCycle_tb/DUT/execution/ALUIn0'.
-# Executing ONERROR command at macro ./singleCycle.do line 27
-# ** Error: (vish-4014) No objects found matching '/singleCycle_tb/DUT/execution/ALUIn1'.
-# Executing ONERROR command at macro ./singleCycle.do line 28
-# ** Error: (vish-4014) No objects found matching '/singleCycle_tb/DUT/execution/NegativeFlag'.
-# Executing ONERROR command at macro ./singleCycle.do line 29
-# ** Error: (vish-4014) No objects found matching '/singleCycle_tb/DUT/execution/ZeroFlag'.
-# Executing ONERROR command at macro ./singleCycle.do line 30
-# ** Error: (vish-4014) No objects found matching '/singleCycle_tb/DUT/execution/BrAddr26'.
-# Executing ONERROR command at macro ./singleCycle.do line 31
-# ** Error: (vish-4014) No objects found matching '/singleCycle_tb/DUT/execution/CondAddr19'.
-# Executing ONERROR command at macro ./singleCycle.do line 32
-# ** Error: (vish-4014) No objects found matching '/singleCycle_tb/DUT/MEM/address'.
-# Executing ONERROR command at macro ./singleCycle.do line 33
-# ** Error: (vish-4014) No objects found matching '/singleCycle_tb/DUT/MEM/write_data'.
-# Executing ONERROR command at macro ./singleCycle.do line 34
-# ** Error: (vish-4014) No objects found matching '/singleCycle_tb/DUT/writeBack/ALURes'.
-# Executing ONERROR command at macro ./singleCycle.do line 35
-# ** Error: (vish-4014) No objects found matching '/singleCycle_tb/DUT/writeBack/MEMData'.
-# Executing ONERROR command at macro ./singleCycle.do line 36
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# ** Warning: (vsim-7) Failed to open readmem file "../benchmarks/test01_AddiB.arm" in read mode.
-# No such file or directory. (errno = ENOENT)    : ./instructmem.sv(42)
-#    Time: 0 ps  Iteration: 0  Instance: /instructmem_testbench/dut
-# Running benchmark: ../benchmarks/test01_AddiB.arm
-# ** Error: Assertion error.
-#    Time: 1282500 ps  Scope: instructmem_testbench.dut File: ./instructmem.sv Line: 33
-# ** Note: $stop    : ./instructmem.sv(79)
-#    Time: 1282500 ps  Iteration: 1  Instance: /instructmem_testbench
-# Break in Module instructmem_testbench at ./instructmem.sv line 79
-add wave -position end  sim:/instructmem_testbench/address
-add wave -position end  sim:/instructmem_testbench/instruction
-add wave -position 0  sim:/instructmem_testbench/clk
-restart -f
-run -all
-# ** Warning: (vsim-7) Failed to open readmem file "../benchmarks/test01_AddiB.arm" in read mode.
-# No such file or directory. (errno = ENOENT)    : ./instructmem.sv(42)
-#    Time: 0 ps  Iteration: 0  Instance: /instructmem_testbench/dut
-# Running benchmark: ../benchmarks/test01_AddiB.arm
-# ** Error: Assertion error.
-#    Time: 1282500 ps  Scope: instructmem_testbench.dut File: ./instructmem.sv Line: 33
-# ** Note: $stop    : ./instructmem.sv(79)
-#    Time: 1282500 ps  Iteration: 1  Instance: /instructmem_testbench
-# Break in Module instructmem_testbench at ./instructmem.sv line 79
-add wave -position end  sim:/instructmem_testbench/dut/mem
-restart -f
-add wave -position end  sim:/instructmem_testbench/dut/mem
-run -all
-# ** Warning: (vsim-7) Failed to open readmem file "../benchmarks/test01_AddiB.arm" in read mode.
-# No such file or directory. (errno = ENOENT)    : ./instructmem.sv(42)
-#    Time: 0 ps  Iteration: 0  Instance: /instructmem_testbench/dut
-# Running benchmark: ../benchmarks/test01_AddiB.arm
-# ** Error: Assertion error.
-#    Time: 1282500 ps  Scope: instructmem_testbench.dut File: ./instructmem.sv Line: 33
-# ** Note: $stop    : ./instructmem.sv(79)
-#    Time: 1282500 ps  Iteration: 1  Instance: /instructmem_testbench
-# Break in Module instructmem_testbench at ./instructmem.sv line 79
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/aveng/469/CPU-EE469/Single-Cycle/instructmem.do
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:16:18 on May 09,2026
-# vlog -reportprogress 300 ./n_bit_2to1.sv 
-# -- Compiling module n_bit_2to1
-# 
-# Top level modules:
-# 	n_bit_2to1
-# End time: 19:16:18 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:16:18 on May 09,2026
-# vlog -reportprogress 300 ./EX.sv 
-# -- Compiling module EX
-# 
-# Top level modules:
-# 	EX
-# End time: 19:16:18 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:16:18 on May 09,2026
-# vlog -reportprogress 300 ./control_unit.sv 
-# -- Compiling module control_unit
-# 
-# Top level modules:
-# 	control_unit
-# End time: 19:16:18 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:16:18 on May 09,2026
-# vlog -reportprogress 300 ./math.sv 
-# -- Compiling module mult
-# -- Compiling module shifter
-# -- Compiling module shifter_testbench
-# -- Compiling module mult_testbench
-# 
-# Top level modules:
-# 	shifter_testbench
-# 	mult_testbench
-# End time: 19:16:18 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:16:18 on May 09,2026
-# vlog -reportprogress 300 ./instructmem.sv 
-# -- Compiling module instructmem
-# -- Compiling module instructmem_testbench
-# 
-# Top level modules:
-# 	instructmem_testbench
-# End time: 19:16:18 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:16:18 on May 09,2026
-# vlog -reportprogress 300 ./datamem.sv 
-# -- Compiling module datamem
-# -- Compiling module datamem_testbench
-# 
-# Top level modules:
-# 	datamem_testbench
-# End time: 19:16:18 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:16:18 on May 09,2026
-# vlog -reportprogress 300 ./register_file/thirtytwo_1_mux.sv 
-# -- Compiling module two_onemux
-# -- Compiling module four_onemux
-# -- Compiling module eight_onemux
-# -- Compiling module sixteen_onemux
-# -- Compiling module thirtytwo_1_mux
-# 
-# Top level modules:
-# 	thirtytwo_1_mux
-# End time: 19:16:18 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:16:18 on May 09,2026
-# vlog -reportprogress 300 ./register_file/register.sv 
-# -- Compiling module register
-# -- Compiling module register_tb
-# 
-# Top level modules:
-# 	register_tb
-# End time: 19:16:18 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:16:18 on May 09,2026
-# vlog -reportprogress 300 ./register_file/regfile.sv 
-# -- Compiling module regfile
-# 
-# Top level modules:
-# 	regfile
-# End time: 19:16:18 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:16:18 on May 09,2026
-# vlog -reportprogress 300 ./register_file/loopedthirtytwo_mux.sv 
-# -- Compiling module loopedthirtytwo_mux
-# 
-# Top level modules:
-# 	loopedthirtytwo_mux
-# End time: 19:16:18 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:16:18 on May 09,2026
-# vlog -reportprogress 300 ./register_file/five_thirtytwodecoder.sv 
-# -- Compiling module one_twodecoder
-# -- Compiling module two_fourdecoder
-# -- Compiling module three_eightdecoder
-# -- Compiling module four_sixteendecoder
-# -- Compiling module five_thirtytwodecoder
-# -- Compiling module one_two_tb
-# -- Compiling module five_thirtytwo_tb
-# -- Compiling module three_eight_tb
-# -- Compiling module two_four_tb
-# 
-# Top level modules:
-# 	one_two_tb
-# 	five_thirtytwo_tb
-# 	three_eight_tb
-# 	two_four_tb
-# End time: 19:16:19 on May 09,2026, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:16:19 on May 09,2026
-# vlog -reportprogress 300 ./register_file/D_FF.sv 
-# -- Compiling module D_FF
-# 
-# Top level modules:
-# 	D_FF
-# End time: 19:16:19 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:16:19 on May 09,2026
-# vlog -reportprogress 300 ./ALU/full_adder.sv 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 19:16:19 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:16:19 on May 09,2026
-# vlog -reportprogress 300 ./ALU/flags.sv 
-# -- Compiling module flags
-# 
-# Top level modules:
-# 	flags
-# End time: 19:16:19 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:16:19 on May 09,2026
-# vlog -reportprogress 300 ./ALU/bitsliceALU.sv 
-# -- Compiling module bitsliceALU
-# 
-# Top level modules:
-# 	bitsliceALU
-# End time: 19:16:19 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:16:19 on May 09,2026
-# vlog -reportprogress 300 ./ALU/ALU.sv 
-# -- Compiling module ALU
-# 
-# Top level modules:
-# 	ALU
-# End time: 19:16:19 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:16:19 on May 09,2026
-# vlog -reportprogress 300 ./IF.sv 
-# -- Compiling module IF
-# 
-# Top level modules:
-# 	IF
-# End time: 19:16:19 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:16:19 on May 09,2026
-# vlog -reportprogress 300 ./sixtyfourbit_fulladder.sv 
-# -- Compiling module sixtyfourbit_fulladder
-# 
-# Top level modules:
-# 	sixtyfourbit_fulladder
-# End time: 19:16:19 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:16:19 on May 09,2026
-# vlog -reportprogress 300 ./ID.sv 
-# -- Compiling module ID
-# 
-# Top level modules:
-# 	ID
-# End time: 19:16:19 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:16:19 on May 09,2026
-# vlog -reportprogress 300 ./WB.sv 
-# -- Compiling module WB
-# 
-# Top level modules:
-# 	WB
-# End time: 19:16:19 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:16:19 on May 09,2026
-# vlog -reportprogress 300 ./singleCycleTop.sv 
-# -- Compiling module singleCycleTop
-# 
-# Top level modules:
-# 	singleCycleTop
-# End time: 19:16:19 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:16:19 on May 09,2026
-# vlog -reportprogress 300 ./singleCycle_tb.sv 
-# -- Compiling module singleCycle_tb
-# 
-# Top level modules:
-# 	singleCycle_tb
-# End time: 19:16:19 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 19:16:20 on May 09,2026, Elapsed time: 0:05:38
-# Errors: 105, Warnings: 3
-# vsim -voptargs=""+acc"" -t 1ps -lib work instructmem_testbench 
-# Start time: 19:16:20 on May 09,2026
-# Loading sv_std.std
-# Loading work.instructmem_testbench
-# Loading work.instructmem
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# ** Warning: (vsim-7) Failed to open readmem file ".benchmarks	est01_AddiB.arm" in read mode.
-# Invalid argument. (errno = EINVAL)    : ./instructmem.sv(42)
-#    Time: 0 ps  Iteration: 0  Instance: /instructmem_testbench/dut
-# Running benchmark: .benchmarks	est01_AddiB.arm
-# ** Error: Assertion error.
-#    Time: 1282500 ps  Scope: instructmem_testbench.dut File: ./instructmem.sv Line: 33
-# ** Note: $stop    : ./instructmem.sv(79)
-#    Time: 1282500 ps  Iteration: 1  Instance: /instructmem_testbench
-# Break in Module instructmem_testbench at ./instructmem.sv line 79
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:16:42 on May 09,2026
-# vlog -reportprogress 300 ./n_bit_2to1.sv 
-# -- Compiling module n_bit_2to1
-# 
-# Top level modules:
-# 	n_bit_2to1
-# End time: 19:16:42 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:16:42 on May 09,2026
-# vlog -reportprogress 300 ./EX.sv 
-# -- Compiling module EX
-# 
-# Top level modules:
-# 	EX
-# End time: 19:16:42 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:16:42 on May 09,2026
-# vlog -reportprogress 300 ./control_unit.sv 
-# -- Compiling module control_unit
-# 
-# Top level modules:
-# 	control_unit
-# End time: 19:16:42 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:16:42 on May 09,2026
-# vlog -reportprogress 300 ./math.sv 
-# -- Compiling module mult
-# -- Compiling module shifter
-# -- Compiling module shifter_testbench
-# -- Compiling module mult_testbench
-# 
-# Top level modules:
-# 	shifter_testbench
-# 	mult_testbench
-# End time: 19:16:42 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:16:42 on May 09,2026
-# vlog -reportprogress 300 ./instructmem.sv 
-# -- Compiling module instructmem
-# -- Compiling module instructmem_testbench
-# 
-# Top level modules:
-# 	instructmem_testbench
-# End time: 19:16:42 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:16:42 on May 09,2026
-# vlog -reportprogress 300 ./datamem.sv 
-# -- Compiling module datamem
-# -- Compiling module datamem_testbench
-# 
-# Top level modules:
-# 	datamem_testbench
-# End time: 19:16:42 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:16:42 on May 09,2026
-# vlog -reportprogress 300 ./register_file/thirtytwo_1_mux.sv 
-# -- Compiling module two_onemux
-# -- Compiling module four_onemux
-# -- Compiling module eight_onemux
-# -- Compiling module sixteen_onemux
-# -- Compiling module thirtytwo_1_mux
-# 
-# Top level modules:
-# 	thirtytwo_1_mux
-# End time: 19:16:42 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:16:42 on May 09,2026
-# vlog -reportprogress 300 ./register_file/register.sv 
-# -- Compiling module register
-# -- Compiling module register_tb
-# 
-# Top level modules:
-# 	register_tb
-# End time: 19:16:42 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:16:42 on May 09,2026
-# vlog -reportprogress 300 ./register_file/regfile.sv 
-# -- Compiling module regfile
-# 
-# Top level modules:
-# 	regfile
-# End time: 19:16:42 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:16:42 on May 09,2026
-# vlog -reportprogress 300 ./register_file/loopedthirtytwo_mux.sv 
-# -- Compiling module loopedthirtytwo_mux
-# 
-# Top level modules:
-# 	loopedthirtytwo_mux
-# End time: 19:16:42 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:16:42 on May 09,2026
-# vlog -reportprogress 300 ./register_file/five_thirtytwodecoder.sv 
-# -- Compiling module one_twodecoder
-# -- Compiling module two_fourdecoder
-# -- Compiling module three_eightdecoder
-# -- Compiling module four_sixteendecoder
-# -- Compiling module five_thirtytwodecoder
-# -- Compiling module one_two_tb
-# -- Compiling module five_thirtytwo_tb
-# -- Compiling module three_eight_tb
-# -- Compiling module two_four_tb
-# 
-# Top level modules:
-# 	one_two_tb
-# 	five_thirtytwo_tb
-# 	three_eight_tb
-# 	two_four_tb
-# End time: 19:16:42 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:16:42 on May 09,2026
-# vlog -reportprogress 300 ./register_file/D_FF.sv 
-# -- Compiling module D_FF
-# 
-# Top level modules:
-# 	D_FF
-# End time: 19:16:43 on May 09,2026, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:16:43 on May 09,2026
-# vlog -reportprogress 300 ./ALU/full_adder.sv 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 19:16:43 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:16:43 on May 09,2026
-# vlog -reportprogress 300 ./ALU/flags.sv 
-# -- Compiling module flags
-# 
-# Top level modules:
-# 	flags
-# End time: 19:16:43 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:16:43 on May 09,2026
-# vlog -reportprogress 300 ./ALU/bitsliceALU.sv 
-# -- Compiling module bitsliceALU
-# 
-# Top level modules:
-# 	bitsliceALU
-# End time: 19:16:43 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:16:43 on May 09,2026
-# vlog -reportprogress 300 ./ALU/ALU.sv 
-# -- Compiling module ALU
-# 
-# Top level modules:
-# 	ALU
-# End time: 19:16:43 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:16:43 on May 09,2026
-# vlog -reportprogress 300 ./IF.sv 
-# -- Compiling module IF
-# 
-# Top level modules:
-# 	IF
-# End time: 19:16:43 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:16:43 on May 09,2026
-# vlog -reportprogress 300 ./sixtyfourbit_fulladder.sv 
-# -- Compiling module sixtyfourbit_fulladder
-# 
-# Top level modules:
-# 	sixtyfourbit_fulladder
-# End time: 19:16:43 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:16:43 on May 09,2026
-# vlog -reportprogress 300 ./ID.sv 
-# -- Compiling module ID
-# 
-# Top level modules:
-# 	ID
-# End time: 19:16:43 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:16:43 on May 09,2026
-# vlog -reportprogress 300 ./WB.sv 
-# -- Compiling module WB
-# 
-# Top level modules:
-# 	WB
-# End time: 19:16:43 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:16:43 on May 09,2026
-# vlog -reportprogress 300 ./singleCycleTop.sv 
-# -- Compiling module singleCycleTop
-# 
-# Top level modules:
-# 	singleCycleTop
-# End time: 19:16:43 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:16:43 on May 09,2026
-# vlog -reportprogress 300 ./singleCycle_tb.sv 
-# -- Compiling module singleCycle_tb
-# 
-# Top level modules:
-# 	singleCycle_tb
-# End time: 19:16:43 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 19:16:44 on May 09,2026, Elapsed time: 0:00:24
-# Errors: 1, Warnings: 1
-# vsim -voptargs=""+acc"" -t 1ps -lib work instructmem_testbench 
-# Start time: 19:16:44 on May 09,2026
-# Loading sv_std.std
-# Loading work.instructmem_testbench
-# Loading work.instructmem
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Running benchmark: .\benchmarks\test01_AddiB.arm
-# ** Error: Assertion error.
-#    Time: 1282500 ps  Scope: instructmem_testbench.dut File: ./instructmem.sv Line: 33
-# ** Note: $stop    : ./instructmem.sv(79)
-#    Time: 1282500 ps  Iteration: 1  Instance: /instructmem_testbench
-# Break in Module instructmem_testbench at ./instructmem.sv line 79
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:17:40 on May 09,2026
-# vlog -reportprogress 300 ./n_bit_2to1.sv 
-# -- Compiling module n_bit_2to1
-# 
-# Top level modules:
-# 	n_bit_2to1
-# End time: 19:17:40 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:17:40 on May 09,2026
-# vlog -reportprogress 300 ./EX.sv 
-# -- Compiling module EX
-# 
-# Top level modules:
-# 	EX
-# End time: 19:17:40 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:17:40 on May 09,2026
-# vlog -reportprogress 300 ./control_unit.sv 
-# -- Compiling module control_unit
-# 
-# Top level modules:
-# 	control_unit
-# End time: 19:17:40 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:17:41 on May 09,2026
-# vlog -reportprogress 300 ./math.sv 
-# -- Compiling module mult
-# -- Compiling module shifter
-# -- Compiling module shifter_testbench
-# -- Compiling module mult_testbench
-# 
-# Top level modules:
-# 	shifter_testbench
-# 	mult_testbench
-# End time: 19:17:41 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:17:41 on May 09,2026
-# vlog -reportprogress 300 ./instructmem.sv 
-# -- Compiling module instructmem
-# -- Compiling module instructmem_testbench
-# 
-# Top level modules:
-# 	instructmem_testbench
-# End time: 19:17:41 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:17:41 on May 09,2026
-# vlog -reportprogress 300 ./datamem.sv 
-# -- Compiling module datamem
-# -- Compiling module datamem_testbench
-# 
-# Top level modules:
-# 	datamem_testbench
-# End time: 19:17:41 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:17:41 on May 09,2026
-# vlog -reportprogress 300 ./register_file/thirtytwo_1_mux.sv 
-# -- Compiling module two_onemux
-# -- Compiling module four_onemux
-# -- Compiling module eight_onemux
-# -- Compiling module sixteen_onemux
-# -- Compiling module thirtytwo_1_mux
-# 
-# Top level modules:
-# 	thirtytwo_1_mux
-# End time: 19:17:41 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:17:41 on May 09,2026
-# vlog -reportprogress 300 ./register_file/register.sv 
-# -- Compiling module register
-# -- Compiling module register_tb
-# 
-# Top level modules:
-# 	register_tb
-# End time: 19:17:41 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:17:41 on May 09,2026
-# vlog -reportprogress 300 ./register_file/regfile.sv 
-# -- Compiling module regfile
-# 
-# Top level modules:
-# 	regfile
-# End time: 19:17:41 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:17:41 on May 09,2026
-# vlog -reportprogress 300 ./register_file/loopedthirtytwo_mux.sv 
-# -- Compiling module loopedthirtytwo_mux
-# 
-# Top level modules:
-# 	loopedthirtytwo_mux
-# End time: 19:17:41 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:17:41 on May 09,2026
-# vlog -reportprogress 300 ./register_file/five_thirtytwodecoder.sv 
-# -- Compiling module one_twodecoder
-# -- Compiling module two_fourdecoder
-# -- Compiling module three_eightdecoder
-# -- Compiling module four_sixteendecoder
-# -- Compiling module five_thirtytwodecoder
-# -- Compiling module one_two_tb
-# -- Compiling module five_thirtytwo_tb
-# -- Compiling module three_eight_tb
-# -- Compiling module two_four_tb
-# 
-# Top level modules:
-# 	one_two_tb
-# 	five_thirtytwo_tb
-# 	three_eight_tb
-# 	two_four_tb
-# End time: 19:17:41 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:17:41 on May 09,2026
-# vlog -reportprogress 300 ./register_file/D_FF.sv 
-# -- Compiling module D_FF
-# 
-# Top level modules:
-# 	D_FF
-# End time: 19:17:41 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:17:41 on May 09,2026
-# vlog -reportprogress 300 ./ALU/full_adder.sv 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 19:17:41 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:17:41 on May 09,2026
-# vlog -reportprogress 300 ./ALU/flags.sv 
-# -- Compiling module flags
-# 
-# Top level modules:
-# 	flags
-# End time: 19:17:41 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:17:41 on May 09,2026
-# vlog -reportprogress 300 ./ALU/bitsliceALU.sv 
-# -- Compiling module bitsliceALU
-# 
-# Top level modules:
-# 	bitsliceALU
-# End time: 19:17:41 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:17:41 on May 09,2026
-# vlog -reportprogress 300 ./ALU/ALU.sv 
-# -- Compiling module ALU
-# 
-# Top level modules:
-# 	ALU
-# End time: 19:17:41 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:17:41 on May 09,2026
-# vlog -reportprogress 300 ./IF.sv 
-# -- Compiling module IF
-# 
-# Top level modules:
-# 	IF
-# End time: 19:17:42 on May 09,2026, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:17:42 on May 09,2026
-# vlog -reportprogress 300 ./sixtyfourbit_fulladder.sv 
-# -- Compiling module sixtyfourbit_fulladder
-# 
-# Top level modules:
-# 	sixtyfourbit_fulladder
-# End time: 19:17:42 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:17:42 on May 09,2026
-# vlog -reportprogress 300 ./ID.sv 
-# -- Compiling module ID
-# 
-# Top level modules:
-# 	ID
-# End time: 19:17:42 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:17:42 on May 09,2026
-# vlog -reportprogress 300 ./WB.sv 
-# -- Compiling module WB
-# 
-# Top level modules:
-# 	WB
-# End time: 19:17:42 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:17:42 on May 09,2026
-# vlog -reportprogress 300 ./singleCycleTop.sv 
-# -- Compiling module singleCycleTop
-# 
-# Top level modules:
-# 	singleCycleTop
-# End time: 19:17:42 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:17:42 on May 09,2026
-# vlog -reportprogress 300 ./singleCycle_tb.sv 
-# -- Compiling module singleCycle_tb
-# 
-# Top level modules:
-# 	singleCycle_tb
-# End time: 19:17:42 on May 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 19:17:43 on May 09,2026, Elapsed time: 0:00:59
-# Errors: 1, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work singleCycle_tb 
-# Start time: 19:17:43 on May 09,2026
-# Loading sv_std.std
-# Loading work.singleCycle_tb
-# Loading work.singleCycleTop
-# Loading work.control_unit
-# Loading work.IF
-# Loading work.register
-# Loading work.sixtyfourbit_fulladder
-# Loading work.full_adder
-# Loading work.n_bit_2to1
-# Loading work.instructmem
-# Loading work.ID
-# Loading work.regfile
-# Loading work.five_thirtytwodecoder
-# Loading work.one_twodecoder
-# Loading work.four_sixteendecoder
-# Loading work.three_eightdecoder
-# Loading work.two_fourdecoder
-# Loading work.loopedthirtytwo_mux
-# Loading work.EX
-# Loading work.ALU
-# Loading work.bitsliceALU
-# Loading work.eight_onemux
-# Loading work.four_onemux
-# Loading work.two_onemux
-# Loading work.flags
-# Loading work.datamem
-# Loading work.WB
-# Loading work.D_FF
-# Loading work.thirtytwo_1_mux
-# Loading work.sixteen_onemux
-# ** Warning: (vsim-3017) ./singleCycleTop.sv(24): [TFMPC] - Too few port connections. Expected 8, found 7.
-#    Time: 0 ps  Iteration: 0  Instance: /singleCycle_tb/DUT/instructionFetch File: ./IF.sv
-# ** Warning: (vsim-3722) ./singleCycleTop.sv(24): [TFMPC] - Missing connection for port 'Db'.
-# ** Warning: (vsim-3017) ./singleCycleTop.sv(29): [TFMPC] - Too few port connections. Expected 12, found 11.
-#    Time: 0 ps  Iteration: 0  Instance: /singleCycle_tb/DUT/instructionDecode File: ./ID.sv
-# ** Warning: (vsim-3722) ./singleCycleTop.sv(29): [TFMPC] - Missing connection for port 'IsBL'.
-# ** Warning: Design size of 11505 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
-# This may because you are loading cell libraries which are not recommended with
-# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
-# ** Error: (vish-4014) No objects found matching '/singleCycle_tb/DUT/control/xfer_size'.
-# Executing ONERROR command at macro ./singleCycle.do line 19
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
@@ -2045,6 +273,789 @@ do runlab.do
 # time=22.50 ns instruction=91000422 ALURes=000000000000000x Writebck=000000000000000x
 # time=27.50 ns instruction=91000823 ALURes=000000000000000X Writebck=000000000000000X
 # time=32.50 ns instruction=91001004 ALURes=00000000000000Xx Writebck=00000000000000Xx
+# time=37.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=42.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=47.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=52.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=57.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=62.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=67.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=72.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=77.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=82.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=87.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=92.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=97.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=102.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=107.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=112.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=117.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=122.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=127.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=132.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=137.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=142.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=147.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=152.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=157.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=162.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=167.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=172.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=177.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=182.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=187.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=192.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=197.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=202.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=207.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=212.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=217.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=222.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=227.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=232.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=237.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=242.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=247.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=252.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=257.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Note: $stop    : ./singleCycle_tb.sv(30)
+#    Time: 257500 ps  Iteration: 1  Instance: /singleCycle_tb
+# Break in Module singleCycle_tb at ./singleCycle_tb.sv line 30
+add wave -position end  sim:/singleCycle_tb/DUT/instructionDecode/aw_mux/data_line0
+add wave -position end  sim:/singleCycle_tb/DUT/instructionDecode/aw_mux/data_line1
+restart -f
+# ** Warning: (vsim-3017) ./singleCycleTop.sv(24): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /singleCycle_tb/DUT/instructionFetch File: ./IF.sv
+# ** Warning: (vsim-3722) ./singleCycleTop.sv(24): [TFMPC] - Missing connection for port 'Db'.
+# ** Warning: (vsim-3017) ./singleCycleTop.sv(29): [TFMPC] - Too few port connections. Expected 12, found 11.
+#    Time: 0 ps  Iteration: 0  Instance: /singleCycle_tb/DUT/instructionDecode File: ./ID.sv
+# ** Warning: (vsim-3722) ./singleCycleTop.sv(29): [TFMPC] - Missing connection for port 'IsBL'.
+# ** Warning: Design size of 11505 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+run -all
+# Running benchmark: .\benchmarks\test01_AddiB.arm
+# ** Error: Invalid opcode: Xxx
+#    Time: 0 ps  Scope: singleCycle_tb.DUT.control File: ./control_unit.sv Line: 212
+# time=12.50 ns instruction=910003e0 ALURes=0000000000000000 Writebck=0000000000000000
+# time=17.50 ns instruction=91000401 ALURes=000000000000000X Writebck=000000000000000X
+# time=22.50 ns instruction=91000422 ALURes=000000000000000x Writebck=000000000000000x
+# time=27.50 ns instruction=91000823 ALURes=000000000000000X Writebck=000000000000000X
+# time=32.50 ns instruction=91001004 ALURes=00000000000000Xx Writebck=00000000000000Xx
+# time=37.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=42.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=47.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=52.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=57.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=62.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=67.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=72.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=77.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=82.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=87.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=92.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=97.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=102.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=107.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=112.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=117.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=122.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=127.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=132.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=137.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=142.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=147.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=152.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=157.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=162.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=167.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=172.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=177.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=182.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=187.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=192.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=197.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=202.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=207.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=212.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=217.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=222.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=227.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=232.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=237.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=242.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=247.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=252.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=257.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Note: $stop    : ./singleCycle_tb.sv(30)
+#    Time: 257500 ps  Iteration: 1  Instance: /singleCycle_tb
+# Break in Module singleCycle_tb at ./singleCycle_tb.sv line 30
+add wave -position end  sim:/singleCycle_tb/DUT/instructionDecode/aw_mux/s
+add wave -position 13  sim:/singleCycle_tb/DUT/instructionDecode/aw_mux/mux_out
+restart -f
+# ** Warning: (vsim-3017) ./singleCycleTop.sv(24): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /singleCycle_tb/DUT/instructionFetch File: ./IF.sv
+# ** Warning: (vsim-3722) ./singleCycleTop.sv(24): [TFMPC] - Missing connection for port 'Db'.
+# ** Warning: (vsim-3017) ./singleCycleTop.sv(29): [TFMPC] - Too few port connections. Expected 12, found 11.
+#    Time: 0 ps  Iteration: 0  Instance: /singleCycle_tb/DUT/instructionDecode File: ./ID.sv
+# ** Warning: (vsim-3722) ./singleCycleTop.sv(29): [TFMPC] - Missing connection for port 'IsBL'.
+# ** Warning: Design size of 11505 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+run -all
+# Running benchmark: .\benchmarks\test01_AddiB.arm
+# ** Error: Invalid opcode: Xxx
+#    Time: 0 ps  Scope: singleCycle_tb.DUT.control File: ./control_unit.sv Line: 212
+# time=12.50 ns instruction=910003e0 ALURes=0000000000000000 Writebck=0000000000000000
+# time=17.50 ns instruction=91000401 ALURes=000000000000000X Writebck=000000000000000X
+# time=22.50 ns instruction=91000422 ALURes=000000000000000x Writebck=000000000000000x
+# time=27.50 ns instruction=91000823 ALURes=000000000000000X Writebck=000000000000000X
+# time=32.50 ns instruction=91001004 ALURes=00000000000000Xx Writebck=00000000000000Xx
+# time=37.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=42.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=47.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=52.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=57.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=62.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=67.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=72.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=77.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=82.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=87.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=92.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=97.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=102.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=107.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=112.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=117.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=122.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=127.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=132.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=137.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=142.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=147.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=152.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=157.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=162.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=167.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=172.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=177.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=182.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=187.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=192.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=197.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=202.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=207.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=212.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=217.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=222.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=227.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=232.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=237.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=242.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=247.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=252.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=257.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Note: $stop    : ./singleCycle_tb.sv(30)
+#    Time: 257500 ps  Iteration: 1  Instance: /singleCycle_tb
+# Break in Module singleCycle_tb at ./singleCycle_tb.sv line 30
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/texan/Desktop/CPU-EE469/Single-Cycle/singleCycle.do
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:41:03 on May 09,2026
+# vlog -reportprogress 300 ./n_bit_2to1.sv 
+# -- Compiling module n_bit_2to1
+# 
+# Top level modules:
+# 	n_bit_2to1
+# End time: 19:41:03 on May 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:41:03 on May 09,2026
+# vlog -reportprogress 300 ./EX.sv 
+# -- Compiling module EX
+# 
+# Top level modules:
+# 	EX
+# End time: 19:41:03 on May 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:41:03 on May 09,2026
+# vlog -reportprogress 300 ./control_unit.sv 
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# End time: 19:41:03 on May 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:41:03 on May 09,2026
+# vlog -reportprogress 300 ./math.sv 
+# -- Compiling module mult
+# -- Compiling module shifter
+# -- Compiling module shifter_testbench
+# -- Compiling module mult_testbench
+# 
+# Top level modules:
+# 	shifter_testbench
+# 	mult_testbench
+# End time: 19:41:03 on May 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:41:03 on May 09,2026
+# vlog -reportprogress 300 ./instructmem.sv 
+# -- Compiling module instructmem
+# -- Compiling module instructmem_testbench
+# 
+# Top level modules:
+# 	instructmem_testbench
+# End time: 19:41:03 on May 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:41:03 on May 09,2026
+# vlog -reportprogress 300 ./datamem.sv 
+# -- Compiling module datamem
+# -- Compiling module datamem_testbench
+# 
+# Top level modules:
+# 	datamem_testbench
+# End time: 19:41:03 on May 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:41:03 on May 09,2026
+# vlog -reportprogress 300 ./register_file/thirtytwo_1_mux.sv 
+# -- Compiling module two_onemux
+# -- Compiling module four_onemux
+# -- Compiling module eight_onemux
+# -- Compiling module sixteen_onemux
+# -- Compiling module thirtytwo_1_mux
+# 
+# Top level modules:
+# 	thirtytwo_1_mux
+# End time: 19:41:03 on May 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:41:04 on May 09,2026
+# vlog -reportprogress 300 ./register_file/register.sv 
+# -- Compiling module register
+# -- Compiling module register_tb
+# 
+# Top level modules:
+# 	register_tb
+# End time: 19:41:04 on May 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:41:04 on May 09,2026
+# vlog -reportprogress 300 ./register_file/regfile.sv 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 19:41:04 on May 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:41:04 on May 09,2026
+# vlog -reportprogress 300 ./register_file/loopedthirtytwo_mux.sv 
+# -- Compiling module loopedthirtytwo_mux
+# 
+# Top level modules:
+# 	loopedthirtytwo_mux
+# End time: 19:41:04 on May 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:41:04 on May 09,2026
+# vlog -reportprogress 300 ./register_file/five_thirtytwodecoder.sv 
+# -- Compiling module one_twodecoder
+# -- Compiling module two_fourdecoder
+# -- Compiling module three_eightdecoder
+# -- Compiling module four_sixteendecoder
+# -- Compiling module five_thirtytwodecoder
+# -- Compiling module one_two_tb
+# -- Compiling module five_thirtytwo_tb
+# -- Compiling module three_eight_tb
+# -- Compiling module two_four_tb
+# 
+# Top level modules:
+# 	one_two_tb
+# 	five_thirtytwo_tb
+# 	three_eight_tb
+# 	two_four_tb
+# End time: 19:41:04 on May 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:41:04 on May 09,2026
+# vlog -reportprogress 300 ./register_file/D_FF.sv 
+# -- Compiling module D_FF
+# 
+# Top level modules:
+# 	D_FF
+# End time: 19:41:04 on May 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:41:04 on May 09,2026
+# vlog -reportprogress 300 ./ALU/full_adder.sv 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 19:41:04 on May 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:41:04 on May 09,2026
+# vlog -reportprogress 300 ./ALU/flags.sv 
+# -- Compiling module flags
+# 
+# Top level modules:
+# 	flags
+# End time: 19:41:04 on May 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:41:04 on May 09,2026
+# vlog -reportprogress 300 ./ALU/bitsliceALU.sv 
+# -- Compiling module bitsliceALU
+# 
+# Top level modules:
+# 	bitsliceALU
+# End time: 19:41:04 on May 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:41:04 on May 09,2026
+# vlog -reportprogress 300 ./ALU/ALU.sv 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 19:41:04 on May 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:41:04 on May 09,2026
+# vlog -reportprogress 300 ./IF.sv 
+# -- Compiling module IF
+# 
+# Top level modules:
+# 	IF
+# End time: 19:41:04 on May 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:41:04 on May 09,2026
+# vlog -reportprogress 300 ./sixtyfourbit_fulladder.sv 
+# -- Compiling module sixtyfourbit_fulladder
+# 
+# Top level modules:
+# 	sixtyfourbit_fulladder
+# End time: 19:41:04 on May 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:41:04 on May 09,2026
+# vlog -reportprogress 300 ./ID.sv 
+# -- Compiling module ID
+# 
+# Top level modules:
+# 	ID
+# End time: 19:41:05 on May 09,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:41:05 on May 09,2026
+# vlog -reportprogress 300 ./WB.sv 
+# -- Compiling module WB
+# 
+# Top level modules:
+# 	WB
+# End time: 19:41:05 on May 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:41:05 on May 09,2026
+# vlog -reportprogress 300 ./singleCycleTop.sv 
+# -- Compiling module singleCycleTop
+# 
+# Top level modules:
+# 	singleCycleTop
+# End time: 19:41:05 on May 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:41:05 on May 09,2026
+# vlog -reportprogress 300 ./singleCycle_tb.sv 
+# -- Compiling module singleCycle_tb
+# 
+# Top level modules:
+# 	singleCycle_tb
+# End time: 19:41:05 on May 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 19:41:06 on May 09,2026, Elapsed time: 0:06:16
+# Errors: 3, Warnings: 15
+# vsim -voptargs=""+acc"" -t 1ps -lib work singleCycle_tb 
+# Start time: 19:41:06 on May 09,2026
+# Loading sv_std.std
+# Loading work.singleCycle_tb
+# Loading work.singleCycleTop
+# Loading work.control_unit
+# Loading work.IF
+# Loading work.register
+# Loading work.sixtyfourbit_fulladder
+# Loading work.full_adder
+# Loading work.n_bit_2to1
+# Loading work.instructmem
+# Loading work.ID
+# Loading work.regfile
+# Loading work.five_thirtytwodecoder
+# Loading work.one_twodecoder
+# Loading work.four_sixteendecoder
+# Loading work.three_eightdecoder
+# Loading work.two_fourdecoder
+# Loading work.loopedthirtytwo_mux
+# Loading work.EX
+# Loading work.ALU
+# Loading work.bitsliceALU
+# Loading work.eight_onemux
+# Loading work.four_onemux
+# Loading work.two_onemux
+# Loading work.flags
+# Loading work.datamem
+# Loading work.WB
+# Loading work.D_FF
+# Loading work.thirtytwo_1_mux
+# Loading work.sixteen_onemux
+# ** Warning: (vsim-3017) ./singleCycleTop.sv(24): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /singleCycle_tb/DUT/instructionFetch File: ./IF.sv
+# ** Warning: (vsim-3722) ./singleCycleTop.sv(24): [TFMPC] - Missing connection for port 'Db'.
+# ** Warning: Design size of 11505 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Running benchmark: .\benchmarks\test01_AddiB.arm
+# ** Error: Invalid opcode: Xxx
+#    Time: 0 ps  Scope: singleCycle_tb.DUT.control File: ./control_unit.sv Line: 212
+# time=12.50 ns instruction=910003e0 ALURes=0000000000000000 Writebck=0000000000000000
+# time=17.50 ns instruction=91000401 ALURes=0000000000000001 Writebck=0000000000000001
+# time=22.50 ns instruction=91000422 ALURes=0000000000000002 Writebck=0000000000000002
+# time=27.50 ns instruction=91000823 ALURes=0000000000000003 Writebck=0000000000000003
+# time=32.50 ns instruction=91001004 ALURes=0000000000000004 Writebck=0000000000000004
+# time=37.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=42.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=47.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=52.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=57.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=62.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=67.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=72.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=77.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=82.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=87.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=92.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=97.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=102.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=107.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=112.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=117.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=122.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=127.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=132.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=137.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=142.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=147.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=152.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=157.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=162.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=167.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=172.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=177.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=182.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=187.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=192.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=197.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=202.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=207.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=212.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=217.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=222.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=227.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=232.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=237.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=242.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=247.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=252.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# time=257.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Note: $stop    : ./singleCycle_tb.sv(30)
+#    Time: 257500 ps  Iteration: 1  Instance: /singleCycle_tb
+# Break in Module singleCycle_tb at ./singleCycle_tb.sv line 30
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:50:32 on May 09,2026
+# vlog -reportprogress 300 ./n_bit_2to1.sv 
+# -- Compiling module n_bit_2to1
+# 
+# Top level modules:
+# 	n_bit_2to1
+# End time: 19:50:32 on May 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:50:32 on May 09,2026
+# vlog -reportprogress 300 ./EX.sv 
+# -- Compiling module EX
+# 
+# Top level modules:
+# 	EX
+# End time: 19:50:32 on May 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:50:32 on May 09,2026
+# vlog -reportprogress 300 ./control_unit.sv 
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# End time: 19:50:32 on May 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:50:32 on May 09,2026
+# vlog -reportprogress 300 ./math.sv 
+# -- Compiling module mult
+# -- Compiling module shifter
+# -- Compiling module shifter_testbench
+# -- Compiling module mult_testbench
+# 
+# Top level modules:
+# 	shifter_testbench
+# 	mult_testbench
+# End time: 19:50:32 on May 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:50:32 on May 09,2026
+# vlog -reportprogress 300 ./instructmem.sv 
+# -- Compiling module instructmem
+# -- Compiling module instructmem_testbench
+# 
+# Top level modules:
+# 	instructmem_testbench
+# End time: 19:50:32 on May 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:50:32 on May 09,2026
+# vlog -reportprogress 300 ./datamem.sv 
+# -- Compiling module datamem
+# -- Compiling module datamem_testbench
+# 
+# Top level modules:
+# 	datamem_testbench
+# End time: 19:50:32 on May 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:50:32 on May 09,2026
+# vlog -reportprogress 300 ./register_file/thirtytwo_1_mux.sv 
+# -- Compiling module two_onemux
+# -- Compiling module four_onemux
+# -- Compiling module eight_onemux
+# -- Compiling module sixteen_onemux
+# -- Compiling module thirtytwo_1_mux
+# 
+# Top level modules:
+# 	thirtytwo_1_mux
+# End time: 19:50:32 on May 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:50:32 on May 09,2026
+# vlog -reportprogress 300 ./register_file/register.sv 
+# -- Compiling module register
+# -- Compiling module register_tb
+# 
+# Top level modules:
+# 	register_tb
+# End time: 19:50:32 on May 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:50:32 on May 09,2026
+# vlog -reportprogress 300 ./register_file/regfile.sv 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 19:50:32 on May 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:50:32 on May 09,2026
+# vlog -reportprogress 300 ./register_file/loopedthirtytwo_mux.sv 
+# -- Compiling module loopedthirtytwo_mux
+# 
+# Top level modules:
+# 	loopedthirtytwo_mux
+# End time: 19:50:32 on May 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:50:32 on May 09,2026
+# vlog -reportprogress 300 ./register_file/five_thirtytwodecoder.sv 
+# -- Compiling module one_twodecoder
+# -- Compiling module two_fourdecoder
+# -- Compiling module three_eightdecoder
+# -- Compiling module four_sixteendecoder
+# -- Compiling module five_thirtytwodecoder
+# -- Compiling module one_two_tb
+# -- Compiling module five_thirtytwo_tb
+# -- Compiling module three_eight_tb
+# -- Compiling module two_four_tb
+# 
+# Top level modules:
+# 	one_two_tb
+# 	five_thirtytwo_tb
+# 	three_eight_tb
+# 	two_four_tb
+# End time: 19:50:32 on May 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:50:33 on May 09,2026
+# vlog -reportprogress 300 ./register_file/D_FF.sv 
+# -- Compiling module D_FF
+# 
+# Top level modules:
+# 	D_FF
+# End time: 19:50:33 on May 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:50:33 on May 09,2026
+# vlog -reportprogress 300 ./ALU/full_adder.sv 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 19:50:33 on May 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:50:33 on May 09,2026
+# vlog -reportprogress 300 ./ALU/flags.sv 
+# -- Compiling module flags
+# 
+# Top level modules:
+# 	flags
+# End time: 19:50:33 on May 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:50:33 on May 09,2026
+# vlog -reportprogress 300 ./ALU/bitsliceALU.sv 
+# -- Compiling module bitsliceALU
+# 
+# Top level modules:
+# 	bitsliceALU
+# End time: 19:50:33 on May 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:50:33 on May 09,2026
+# vlog -reportprogress 300 ./ALU/ALU.sv 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 19:50:33 on May 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:50:33 on May 09,2026
+# vlog -reportprogress 300 ./IF.sv 
+# -- Compiling module IF
+# 
+# Top level modules:
+# 	IF
+# End time: 19:50:33 on May 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:50:33 on May 09,2026
+# vlog -reportprogress 300 ./sixtyfourbit_fulladder.sv 
+# -- Compiling module sixtyfourbit_fulladder
+# 
+# Top level modules:
+# 	sixtyfourbit_fulladder
+# End time: 19:50:33 on May 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:50:33 on May 09,2026
+# vlog -reportprogress 300 ./ID.sv 
+# -- Compiling module ID
+# 
+# Top level modules:
+# 	ID
+# End time: 19:50:33 on May 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:50:33 on May 09,2026
+# vlog -reportprogress 300 ./WB.sv 
+# -- Compiling module WB
+# 
+# Top level modules:
+# 	WB
+# End time: 19:50:33 on May 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:50:33 on May 09,2026
+# vlog -reportprogress 300 ./singleCycleTop.sv 
+# -- Compiling module singleCycleTop
+# 
+# Top level modules:
+# 	singleCycleTop
+# End time: 19:50:33 on May 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:50:33 on May 09,2026
+# vlog -reportprogress 300 ./singleCycle_tb.sv 
+# -- Compiling module singleCycle_tb
+# 
+# Top level modules:
+# 	singleCycle_tb
+# End time: 19:50:33 on May 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 19:50:34 on May 09,2026, Elapsed time: 0:09:28
+# Errors: 1, Warnings: 3
+# vsim -voptargs=""+acc"" -t 1ps -lib work singleCycle_tb 
+# Start time: 19:50:34 on May 09,2026
+# Loading sv_std.std
+# Loading work.singleCycle_tb
+# Loading work.singleCycleTop
+# Loading work.control_unit
+# Loading work.IF
+# Loading work.register
+# Loading work.sixtyfourbit_fulladder
+# Loading work.full_adder
+# Loading work.n_bit_2to1
+# Loading work.instructmem
+# Loading work.ID
+# Loading work.regfile
+# Loading work.five_thirtytwodecoder
+# Loading work.one_twodecoder
+# Loading work.four_sixteendecoder
+# Loading work.three_eightdecoder
+# Loading work.two_fourdecoder
+# Loading work.loopedthirtytwo_mux
+# Loading work.EX
+# Loading work.ALU
+# Loading work.bitsliceALU
+# Loading work.eight_onemux
+# Loading work.four_onemux
+# Loading work.two_onemux
+# Loading work.flags
+# Loading work.datamem
+# Loading work.WB
+# Loading work.D_FF
+# Loading work.thirtytwo_1_mux
+# Loading work.sixteen_onemux
+# ** Warning: (vsim-3017) ./singleCycleTop.sv(24): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /singleCycle_tb/DUT/instructionFetch File: ./IF.sv
+# ** Warning: (vsim-3722) ./singleCycleTop.sv(24): [TFMPC] - Missing connection for port 'Db'.
+# ** Warning: Design size of 11509 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Running benchmark: .\benchmarks\test01_AddiB.arm
+# ** Error: Invalid opcode: Xxx
+#    Time: 0 ps  Scope: singleCycle_tb.DUT.control File: ./control_unit.sv Line: 212
+# ** Error: Invalid opcode: Xxx
+#    Time: 2500 ps  Scope: singleCycle_tb.DUT.control File: ./control_unit.sv Line: 212
+# time=12.50 ns instruction=910003e0 ALURes=0000000000000000 Writebck=0000000000000000
+# time=17.50 ns instruction=91000401 ALURes=0000000000000001 Writebck=0000000000000001
+# time=22.50 ns instruction=91000422 ALURes=0000000000000002 Writebck=0000000000000002
+# time=27.50 ns instruction=91000823 ALURes=0000000000000003 Writebck=0000000000000003
+# time=32.50 ns instruction=91001004 ALURes=0000000000000004 Writebck=0000000000000004
 # time=37.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
 # time=42.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
 # time=47.50 ns instruction=14000000 ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx

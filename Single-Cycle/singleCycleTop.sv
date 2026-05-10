@@ -10,10 +10,10 @@ module singleCycleTop(
 	logic [31:0] instruction;
 	
 	// flags (for now only zero flag and negative flag might need others later though):
-	logic ZeroFlag, NegativeFlag;
+	logic ZeroFlag, NegativeFlag, ZeroFlaghold, ZeroFlagmuxout, NegativeFlaghold, NegativeFlagmuxout;
 
 	
-	control_unit control (.instruction(instruction), .ZeroFlag(ZeroFlag), .NegativeFlag(NegativeFlag), 
+	control_unit control (.instruction(instruction), .ZeroFlag(ZeroFlaghold), .NegativeFlag(NegativeFlaghold), 
 	                      .Reg2Loc(Reg2Locwire), .ALUSrc(ALUSrcwire), .Mem2Reg(Mem2Regwire), 
 								 .RegWrite(RegWritewire), .MemWrite(MemWritewire), .MemRead(MemReadwire), .BrTaken(BrTakenwire), 
 								 .UncondBr(UncondBrwire), .SetFlags(SetFlagswire), .IsBL(IsBLwire), .IsBR(IsBRwire), 
@@ -27,7 +27,7 @@ module singleCycleTop(
 	
 	
 	ID instructionDecode(.clk(clk), .reset(reset), .Reg2Loc(Reg2Locwire), .ALUSrc(ALUSrcwire), 
-								.RegWrite(RegWritewire), .WriteBck(WriteBck), .PCp4(PCp4), 
+								.RegWrite(RegWritewire), .IsBL(IsBLwire), .WriteBck(WriteBck), .PCp4(PCp4), 
 								.instruction(instruction), .Da(Da), .Db(Db), .ALUInput(ALUInput));
 								
 	
@@ -41,6 +41,18 @@ module singleCycleTop(
 					.write_data(Db), .clk(clk), .read_data(MEMData));
 	
 	WB writeBack (.ALURes(ALURes), .MEMData(MEMData), .Mem2Reg(Mem2Regwire), .WriteBck(WriteBck));
+	
+	//Flag hold registers
+	
+	two_onemux zeromux (.in({ZeroFlag, ZeroFlaghold}), .s(SetFlagswire), .y(ZeroFlagmuxout));
+	
+	D_FF zeroreg (.q(Zeroflaghold), .d(ZeroFlagmuxout), .reset(reset), .clk(clk));
+	
+	two_onemux negativemux (.in({NegativeFlag, NegativeFlaghold}), .s(SetFlagswire), .y(NegativeFlagmuxout));
+	
+	D_FF negativereg (.q(NegativeFlaghold), .d(NegativeFlagmuxout), .reset(reset), .clk(clk));
+	
+	
 	
 endmodule
 
