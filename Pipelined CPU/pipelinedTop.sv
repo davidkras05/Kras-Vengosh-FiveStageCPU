@@ -25,20 +25,28 @@ module singleCycleTop(
 	IF instructionFetch (.clk(clk), .reset(reset), .BrLoc(BrLoc), .Db(Db), .BrTaken(BrTakenwire), .IsBR(IsBRwire), 
 	                     .instruction_output(instruction), .PCp4(PCp4));
 	
+	//IF_ID MODULE HERE
 	
 	
 	ID instructionDecode(.clk(clk), .reset(reset), .Reg2Loc(Reg2Locwire), .ALUSrc(ALUSrcwire), 
 								.RegWrite(RegWritewire), .IsBL(IsBLwire), .isDType(isDTypewire), 
 								.WriteBck(WriteBck), .PCp4(PCp4), .instruction(instruction), .Da(Da), 
 								.Db(Db), .ALUInput(ALUInput));
-								
+	
+	//ID_EX MODULE HERE
 	
 	
 	EX execution (.UncondBr(UncondBrwire), .ALUOp(ALUOpwire), .instruction(instruction), .ALUIn0(Da), .ALUIn1(ALUInput), 
 	              .ALURes(ALURes), .BrLoc(BrLoc), .ZeroFlag(ZeroFlag), .NegativeFlag(NegativeFlag));
+					  
+	//EX_MEM MODULE HERE
+	
 	
 	datamem MEM (.address(ALURes), .write_enable(MemWritewire), .read_enable(MemReadwire), 
 					.write_data(Db), .clk(clk), .read_data(MEMData));
+					
+	//MEM_WB MODULE HERE
+	
 	
 	WB writeBack (.ALURes(ALURes), .MEMData(MEMData), .Mem2Reg(Mem2Regwire), .WriteBck(WriteBck));
 	
