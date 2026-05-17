@@ -3,11 +3,11 @@ module IF (
 	input logic [63:0] BrLoc, Db, //64 bits because PC register is 64 bits
 	input logic BrTaken, IsBR,
 	output logic [31:0] instruction_output,
-	output logic [63:0] PCp4
+	output logic [63:0] PCp4, CurrPC //Added CurrPC as an output since the IF_ID pipeline needs access to the CurrPC
 );
 
 	logic [63:0] NextPC;
-	logic [63:0] CurrPC;
+	
 	register PC (.clk(clk), .write(NextPC), .reset(reset), .En(1'b1), .q(CurrPC));
 	
 	sixtyfourbit_fulladder PCplus4add (.A(64'd4), .B(CurrPC), .Cin(1'b0), .S(PCp4)); // Devoted PC + 4 adder. Needs to be an output for BL instruction
