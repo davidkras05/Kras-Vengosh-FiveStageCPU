@@ -166,14 +166,7 @@ module control_unit (
 			RegWrite = 1'b0;
 			MemWrite = 1'b0;
 			MemRead = 1'b0;
-			if (Db == 64'b0) begin
-				BrTaken = 1'b1; // NEED FLAGS
-			end 
-			
-			else begin
-				BrTaken = 1'b0;
-			end
-			
+			BrTaken = ZeroFlag;
 			UncondBr = 1'b0;
 			ALUOp = 3'b000; //PASS, change later
 			SetFlags = 1'b0;
