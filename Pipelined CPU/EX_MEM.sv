@@ -1,4 +1,5 @@
 module EX_MEM (
+	input logic clk, reset,
 	input logic[63:0] ALURes, ReadData2, Branch,
 	input logic[4:0] Rd,
 	input logic MemtoReg, RegWrite, MemRead, MemWrite, BrTaken,

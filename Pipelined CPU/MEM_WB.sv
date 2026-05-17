@@ -1,4 +1,5 @@
 module MEM_WB (
+	input logic clk, reset,
 	input logic[63:0] readMemData, ALURes,
 	input logic MemtoReg, RegWrite,
 	

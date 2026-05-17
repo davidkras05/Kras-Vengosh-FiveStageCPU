@@ -1,4 +1,5 @@
 module ID_EX (
+	input logic clk, reset,
 	input logic[63:0] readData1, readData2, immediate, currPC,
 	input logic[31:0] instruction,
 	input logic[3:0] ALUop,
