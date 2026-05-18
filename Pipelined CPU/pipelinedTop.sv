@@ -9,6 +9,7 @@ module singleCycleTop(
 	logic [63:0] Da, Db, ALUInput, ALURes, BrLoc, WriteBck, MEMData;
 	logic [63:0] PCp4, CurrPC;
 	logic [31:0] instruction;
+	logic[4:0] Rd, Rm, Rn;
 	
 	// flags (for now only zero flag and negative flag might need others later though):
 	logic ZeroFlag, NegativeFlag, ZeroFlaghold, ZeroFlagmuxout, NegativeFlaghold, NegativeFlagmuxout;
@@ -45,8 +46,11 @@ module singleCycleTop(
 	ID instructionDecode(.clk(clk), .reset(reset), .Reg2Loc(Reg2Locwire), .ALUSrc(ALUSrcwire), 
 								.RegWrite(RegWritewire), .IsBL(IsBLwire), .isDType(isDTypewire), 
 								.WriteBck(WriteBck), .PCp4(IF_ID_PCp4Out), .instruction(IF_ID_instructionOut), .Da(Da), 
-								.Db(Db), .ALUInput(ALUInput)); //Since we are using PCp4 here, I am not sure if we have to add it to the pipeline
-																		// we also need to add outputs of Rd, Rn, Rm.
+								.Db(Db), .ALUInput(ALUInput), .Rd(Rd), .Rm(Rm), .Rn(Rn)); 
+								
+								//Since we are using PCp4 here, I am not sure if we have to add it to the pipeline
+								// we also need to add outputs of Rd, Rn, Rm.
+								// I think we also need to add the immediate as an output
 	
 	//ID_EX PIPELINE HERE ----------------------------------------------------------------------------------------------
 	
@@ -55,8 +59,8 @@ module singleCycleTop(
 	logic ID_EX_MemtoRegOut, ID_EX_RegWriteOut, ID_EX_MemReadOut, ID_EX_MemWriteOut, ID_EX_BrTakenOut, ID_EX_ALUSrcOut;
 	logic[2:0] ID_EX_ALUOpOut;
 	
-	ID_EX secondpipeline (.clk(clk), .reset(reset), .readData1(), .readData2(), .immediate(), .currPC(), 
-								 .Rd(), .Rn(), .Rm(), .instruction(), .ALUOp(), .MemtoReg(), .RegWrite(), .MemRead(),
+	ID_EX secondpipeline (.clk(clk), .reset(reset), .readData1(Da), .readData2(Db), .immediate(), .currPC(IF_ID_currPCOut), 
+								 .Rd(Rd), .Rn(Rn), .Rm(Rm), .instruction(/*check if this is needed*/), .ALUOp(), .MemtoReg(), .RegWrite(), .MemRead(),
 								 .MemWrite(), .BrTaken(), .ALUSrc(), 
 								 .readData1Out(ID_EX_readData1Out), .readData2Out(ID_EX_readData2Out), 
 								 .immediateOut(ID_EX_immediateOut), .currPCOut(ID_EX_currPCOut),
@@ -69,6 +73,7 @@ module singleCycleTop(
 								 //  add those too. Like "isDtype" or "IsBR" or "IsBL" So I am skipping wiring the inputs here for now
 								 //  also I think we don't have to pass BRTaken here I think what we actually need to pass is BrLoc since
 								 //  BrTaken is only used in IF so I don't see why that would have to be pipelined to here.
+								 //  might need to add PCp4 here as well depending on BR and BL
 	
 	//------------------------------------------------------------------------------------------------------------------
 	

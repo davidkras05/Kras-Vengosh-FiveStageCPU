@@ -2,10 +2,10 @@ module ID (
 	input logic clk, reset, Reg2Loc, ALUSrc, RegWrite, IsBL, isDType,
 	input logic[63:0] WriteBck, PCp4, //From writeback
 	input logic[31:0] instruction,
+	
 	output logic[63:0] Da, Db, ALUInput
+	output logic[4:0] Rd, Rm, Rn
 );
-
-	logic[4:0] Rd, Rm, Rn;
 	
 	assign Rm = instruction[20:16];
 	assign Rd = instruction[4:0];
