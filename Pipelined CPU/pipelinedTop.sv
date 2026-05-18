@@ -33,18 +33,18 @@ module singleCycleTop(
 	
 	//IF_ID PIPELINE HERE ---------------------------------------------------------------------------------------------
 	
-	logic[63:0] IF_ID_currPCOut;
+	logic[63:0] IF_ID_currPCOut, IF_ID_PCp4Out;
 	logic[31:0] IF_ID_instructionOut;
 	
-	IF_ID firstpipeline (.clk(clk), .reset(reset), .instruction(instruction), .currPC(CurrPC), 
-								.instructionOut(IF_ID_instructionOut), .currPCOut(IF_ID_currPCOut));
+	IF_ID firstpipeline (.clk(clk), .reset(reset), .instruction(instruction), .currPC(CurrPC), .PCp4(PCp4),
+								.instructionOut(IF_ID_instructionOut), .currPCOut(IF_ID_currPCOut), .PCp4(IF_ID_PCp4Out));
 	
 	//-----------------------------------------------------------------------------------------------------------------
 	
 	
 	ID instructionDecode(.clk(clk), .reset(reset), .Reg2Loc(Reg2Locwire), .ALUSrc(ALUSrcwire), 
 								.RegWrite(RegWritewire), .IsBL(IsBLwire), .isDType(isDTypewire), 
-								.WriteBck(WriteBck), .PCp4(PCp4), .instruction(IF_ID_instructionOutput), .Da(Da), 
+								.WriteBck(WriteBck), .PCp4(IF_ID_PCp4Out), .instruction(IF_ID_instructionOut), .Da(Da), 
 								.Db(Db), .ALUInput(ALUInput)); //Since we are using PCp4 here, I am not sure if we have to add it to the pipeline
 																		// we also need to add outputs of Rd, Rn, Rm.
 	
