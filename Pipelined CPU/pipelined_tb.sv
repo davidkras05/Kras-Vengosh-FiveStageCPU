@@ -5,7 +5,7 @@ module pipelined_tb ();
 
 	logic clk, reset;
 	
-	singleCycleTop DUT (.clk(clk), .reset(reset));
+	pipelinedTop DUT (.clk(clk), .reset(reset));
 	
 	//CLK setup
 	
