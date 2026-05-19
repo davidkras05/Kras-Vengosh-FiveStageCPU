@@ -24,19 +24,25 @@ vlog "./IF.sv"
 vlog "./sixtyfourbit_fulladder.sv"
 vlog "./ID.sv"
 vlog "./WB.sv"
-vlog "./singleCycleTop.sv"
-vlog "./singleCycle_tb.sv"
+vlog "./pipelinedTop.sv"
+vlog "./pipelined_tb.sv"
+vlog "./IF_ID.sv"
+vlog "./ID_EX.sv"
+vlog "./EX_MEM.sv"
+vlog "./MEM_WB.sv"
+vlog "./forwardingUnit.sv"
+vlog "./nbit_register.sv"
 
 
 # Call vsim to invoke simulator
 #     Make sure the last item on the line is the name of the
 #     testbench module you want to execute.
-vsim -voptargs="+acc" -t 1ps -lib work singleCycle_tb
+vsim -voptargs="+acc" -t 1ps -lib work pipelined_tb
 
 # Source the wave do file
 #     This should be the file that sets up the signal window for
 #     the module you are testing.
-do benchmark5.do
+do benchmark1pipeline.do
 
 # Set the window types
 view wave
