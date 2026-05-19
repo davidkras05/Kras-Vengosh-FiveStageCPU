@@ -152,7 +152,7 @@ module pipelinedTop(
 	//FORWARDING UNIT HERE ---------------------------------------------------------------------------------------------
 	
 	
-	forwardingUnit fwding_unit (.RnIDEX(ID_EX_RnOut), .RmIDEX(ID_EX_RmOut), .RdEXMEM(ID_EX_RdOut), .RdMEMWB(EX_MEM_RnOut),
+	forwardingUnit fwding_unit (.RnIDEX(ID_EX_RnOut), .RmIDEX(ID_EX_RmOut), .RdEXMEM(ID_EX_RdOut), .RdMEMWB(EX_MEM_RdOut),
 	                            .RegWriteEXMEM(EX_MEM_RegWriteOut), .RegWriteMEMWB(MEM_WB_RegWriteOut),
 										 .ForwardA(FwdA), .ForwardB(FwdB));
 	//------------------------------------------------------------------------------------------------------------------
