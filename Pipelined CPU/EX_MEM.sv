@@ -1,12 +1,12 @@
 module EX_MEM (
 	input logic clk, reset,
-	input logic[63:0] ALURes, ReadData2, Branch,
+	input logic[63:0] ALURes, ReadData2,
 	input logic[4:0] Rd,
-	input logic MemtoReg, RegWrite, MemRead, MemWrite, BrTaken, zeroFlag,
+	input logic MemtoReg, RegWrite, MemRead, MemWrite, 
 	
 	output logic[63:0] address, writeMemData, BranchOut,
 	output logic[4:0] RdOut,
-	output logic zeroFlagOut, MemtoRegOut, RegWriteOut, MemReadOut, MemWriteOut, BrTakenOut
+	output logic MemtoRegOut, RegWriteOut, MemReadOut, MemWriteOut
 );
 
 	//Pass 64 bit ALU Result
@@ -21,10 +21,6 @@ module EX_MEM (
 	
 	nbit_register #(.BITS(64)) passBranch (.clk(clk), .reset(reset), .write(Branch), .q(BranchOut));
 	
-	//Pass ZeroFlag
-	
-	D_FF passzero (.q(zeroFlagOut), .d(zeroFlag), .reset(reset), .clk(clk));
-	
 	//Pass Rd (instruction[4:0])
 	
 	nbit_register #(.BITS(5)) passRd (.clk(clk), .reset(reset), .write(Rd), .q(RdOut));
@@ -38,8 +34,6 @@ module EX_MEM (
 	D_FF passMemReadOut (.q(MemReadOut), .d(MemRead), .reset(reset), .clk(clk));
 	
 	D_FF passMemWriteOut (.q(MemWriteOut), .d(MemWrite), .reset(reset), .clk(clk));
-	
-	D_FF passBrTaken (.q(BrTakenOut), .d(BrTaken), .reset(reset), .clk(clk));
 
 
 endmodule

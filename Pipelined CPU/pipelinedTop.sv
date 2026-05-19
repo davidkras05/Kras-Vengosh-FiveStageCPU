@@ -31,6 +31,9 @@ module singleCycleTop(
 	
 	IF instructionFetch (.clk(clk), .reset(reset), .BrLoc(BrLoc), .Db(Db), .BrTaken(BrTakenwire), .IsBR(IsBRwire), 
 	                     .instruction_output(instruction), .PCp4(PCp4), .CurrPC(CurrPC));
+								
+								// BrTaken, still an input IsBr still an input. pipeline BrTaken and IsBr to ID_EX and then write them 
+								// back as inputs to IF.
 	
 	//IF_ID PIPELINE HERE ---------------------------------------------------------------------------------------------
 	
@@ -52,6 +55,8 @@ module singleCycleTop(
 								
 								// Control signals generated here. Need to pipeline signals that are used after this.
 								
+								//Note* Pipeline Brtaken and IsBR through here
+								
 	
 	//ID_EX PIPELINE HERE ----------------------------------------------------------------------------------------------
 	
@@ -63,7 +68,7 @@ module singleCycleTop(
 	ID_EX secondpipeline (.clk(clk), .reset(reset), .readData1(Da), .readData2(Db), .currPC(IF_ID_currPCOut), 
 								 .Rd(Rd), .Rn(Rn), .Rm(Rm), .ALUOp(ALUOpwire), .MemtoReg(MemtoRegwire), .RegWrite(RegWritewire), 
 								 .MemRead(MemReadwire), .MemWrite(MemWritewire), .BrTaken(), .IsBr(), /* ADD THESE ONCE BRTAKEN AND ISBR IS MOVED TO EX*/
-								 .readData1Out(ID_EX_readData1Out), 
+								 .readData1Out(ID_EX_readData1Out), .readData2Out(ID_EX_readData2Out),
 								 .ALUInput(ID_EX_ALUInputOut), .currPCOut(ID_EX_currPCOut),
 								 .RdOut(ID_EX_RdOut), RnOut(ID_EX_RnOut), .RmOut(ID_EX_RmOut), 
 								 .MemtoRegOut(ID_EX_MemtoRegOut), .RegWriteOut(ID_EX_RegWriteOut), 
@@ -71,7 +76,8 @@ module singleCycleTop(
 								 .IsBrOut(ID_EX_IsBrOut), 
 								 .ALUSrcOut(ID_EX_ALUSrcOut), .ALUOpOut(ID_EX_ALUOpOut));
 								 
-								 // Pipeline IsBR and BrTaken through here since we are moving them from IF to EX
+								 // Pipeline IsBR and BrTaken through here since we are moving them from IF to EX. wire their outputs back
+								 // to inputs of IF (BrTaken and IsBr)
 								 
 	
 	//------------------------------------------------------------------------------------------------------------------
@@ -84,13 +90,16 @@ module singleCycleTop(
 					  
 	//EX_MEM PIPELINE HERE ---------------------------------------------------------------------------------------------
 	
-	logic[63:0] EX_MEM_address, EX_MEM_writeMemData, EX_MEM_BranchOut;
+	logic[63:0] EX_MEM_address, EX_MEM_writeMemData;
 	logic[4:0] EX_MEM_RdOut;
-	logic EX_MEM_zeroFlagOut, EX_MEM_MemtoRegOut, EX_MEM_RegWriteOut, EX_MEM_MemReadOut, EX_MEM_MemWriteOut, EX_MEM_BrTakenOut;
+	logic  EX_MEM_MemtoRegOut, EX_MEM_RegWriteOut, EX_MEM_MemReadOut, EX_MEM_MemWriteOut;
 	
-	EX_MEM thirdpipeline (.clk(clk), .reset(reset), .ALURes(ALURes), .ReadData2(), .Branch(), .Rd(), .MemtoReg(), .RegWrite(),
-								 .MemRead(), .MemWrite(), .BrTaken(), .zeroFlag(), .address(), .writeMemData(), .BranchOut(), .RdOut(),
-								 .zeroFlagOut(), .MemtoRegOut(), .RegWriteOut(), .MemReadOut(), .MemWriteOut(), .BrTakenOut());
+	EX_MEM thirdpipeline (.clk(clk), .reset(reset), .ALURes(ALURes), .ReadData2(ID_EX_readData2Out), 
+								 .Rd(ID_EX_RdOut), .MemtoReg(ID_EX_MemtoRegOut), .RegWrite(ID_EX_RegWriteOut),
+								 .MemRead(ID_EX_MemReadOut), .MemWrite(ID_EX_MemWriteOut), .address(EX_MEM_address), 
+								 .writeMemData(ID_EX_readData2Out), .RdOut(EX_MEM_RdOut),
+								 .MemtoRegOut(EX_MEM_MemtoRegOut), .RegWriteOut(EX_MEM_RegWriteOut), .MemReadOut(EX_MEM_MemReadOut), 
+								 .MemWriteOut(EX_MEM_MemWriteOut));
 	
 	//------------------------------------------------------------------------------------------------------------------
 	

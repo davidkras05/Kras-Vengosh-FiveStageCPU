@@ -1,11 +1,11 @@
 module ID_EX (
 	input logic clk, reset,
-	input logic[63:0] readData1, ALUInput, currPC, 
+	input logic[63:0] readData1, readData2, ALUInput, currPC, 
 	input logic[4:0] Rd, Rn, Rm,
 	input logic[2:0] ALUOp,
 	input logic MemtoReg, RegWrite, MemRead, MemWrite, BrTaken, IsBr
 	
-	output logic[63:0] readData1Out, ALUInputOut, currPCOut,
+	output logic[63:0] readData1Out, readData2Out, ALUInputOut, currPCOut,
 	output logic[4:0] RdOut, RnOut, RmOut,
 	output logic MemtoRegOut, RegWriteOut, MemReadOut, MemWriteOut, BrTakenOut, IsBrOut
 	output logic[2:0] ALUOpOut
@@ -15,6 +15,9 @@ module ID_EX (
 
 	//Pass 64 bit read data 1
 	nbit_register #(.BITS(64)) rd1_reg (.clk(clk), .reset(reset), .write(readData1), .q(readData1Out));
+	
+	//Pass the 64 bit read data 2
+	nbit_register #(.BITS(64)) rd2_reg (.clk(clk), .reset(reset), .write(readData2), .q(readData2Out));
 	
 	//Pass 64 bit ALUInput
 	nbit_register #(.BITS(64)) ALUInput_reg (.clk(clk), .reset(reset), .write(ALUInput), .q(ALUInputOut));
