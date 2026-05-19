@@ -48,7 +48,7 @@
 			and #(DELAY) (RdMEMWB_eq_Rn, RdMEMWB_eq_Rn, eq_store[i+10], x31_store[i+10]);
 			
 			//15-19
-			xnor #(DELAY) (eq_store_[i+15], RdMEMWB[i+15], RmIDEX[i]);
+			xnor #(DELAY) (eq_store[i+15], RdMEMWB[i+15], RmIDEX[i]);
 			not #(DELAY) (x31_store[i+15], RdMEMWB[i+15]);
 			and #(DELAY) (RdMEMWB_eq_Rm, RdMEMWB_eq_Rm, eq_store[i+15], x31_store[i+15]);
 		end
