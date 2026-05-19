@@ -46,11 +46,10 @@ module EX (
 	assign BrAddr64 = {{38{BrAddr26[25]}}, BrAddr26};
 	assign CondAddr64 = {{45{CondAddr19[18]}}, CondAddr19};
 
-	logic [63:0] BrLoc_unshifted;
+	logic [63:0] BrLoc_unshifted, BrLoc_not_pcrel;
 
 	n_bit_2to1 #(.BITS(64)) UncondMux (.data_line1(BrAddr64), .data_line0(CondAddr64), .s(UncondBr), .mux_out(BrLoc_unshifted));
 
-	logic[63:0] BrLoc_not_pcrel;
 	assign BrLoc_not_pcrel = {BrLoc_unshifted[61:0], 2'b00}; //New shift (without RTL version)
 	
 	
