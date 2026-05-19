@@ -1,10 +1,10 @@
 module MEM_WB (
 	input logic clk, reset,
 	input logic[63:0] readMemData, ALURes,
-	input logic MemtoReg, RegWrite,
+	input logic MemtoReg, RegWrite, IsBL,
 	
 	output logic[63:0] ALUResOut, readMemDataOut,
-	output logic MemtoRegOut, RegWriteOut
+	output logic MemtoRegOut, RegWriteOut, IsBLOut
 );
 
 	//Pass 64 bit Memory read data
@@ -20,5 +20,7 @@ module MEM_WB (
 	D_FF passMemtoReg (.q(MemtoRegOut), .d(MemtoReg), .reset(reset), .clk(clk));
 	
 	D_FF passRegWrite (.q(RegWriteOut), .d(RegWrite), .reset(reset), .clk(clk));
+	
+	D_FF passIsBL (.q(IsBLOut), .d(IsBL), .reset(reset), .clk(clk));
 	
 endmodule

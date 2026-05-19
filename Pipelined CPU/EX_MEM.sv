@@ -2,11 +2,11 @@ module EX_MEM (
 	input logic clk, reset,
 	input logic[63:0] ALURes, ReadData2,
 	input logic[4:0] Rd,
-	input logic MemtoReg, RegWrite, MemRead, MemWrite, 
+	input logic MemtoReg, RegWrite, MemRead, MemWrite, IsBL,
 	
 	output logic[63:0] address, writeMemData, BranchOut,
 	output logic[4:0] RdOut,
-	output logic MemtoRegOut, RegWriteOut, MemReadOut, MemWriteOut
+	output logic MemtoRegOut, RegWriteOut, MemReadOut, MemWriteOut, IsBLOut
 );
 
 	//Pass 64 bit ALU Result
@@ -34,6 +34,8 @@ module EX_MEM (
 	D_FF passMemReadOut (.q(MemReadOut), .d(MemRead), .reset(reset), .clk(clk));
 	
 	D_FF passMemWriteOut (.q(MemWriteOut), .d(MemWrite), .reset(reset), .clk(clk));
+	
+	D_FF passIsBL (.q(IsBLOut), .d(IsBL), .reset(reset), .clk(clk));
 
 
 endmodule
