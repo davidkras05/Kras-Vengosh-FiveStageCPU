@@ -81,7 +81,7 @@ module pipelinedTop(
 								 .instructionOut(ID_EX_instructionOut),
 								 .readData1Out(ID_EX_readData1Out), .readData2Out(ID_EX_readData2Out), .ALUInputOut(ID_EX_ALUInputOut), 
 								 .currPCOut(ID_EX_currPCOut),
-								 .RdOut(ID_EX_RdOut), RnOut(ID_EX_RnOut), .RmOut(ID_EX_RmOut),
+								 .RdOut(ID_EX_RdOut), .RnOut(ID_EX_RnOut), .RmOut(ID_EX_RmOut),
 								 .ALUOpOut(ID_EX_ALUOpOut), .MemtoRegOut(ID_EX_MemtoRegOut), .RegWriteOut(ID_EX_RegWriteOut), 
 								 .MemReadOut(ID_EX_MemReadOut), .MemWriteOut(ID_EX_MemWriteOut), .BrTakenOut(ID_EX_BrTakenOut), 
 								 .UncondBrOut(ID_EX_UncondBrOut), .IsBLOut(ID_EX_IsBLOut), .IsBROut(ID_EX_IsBROut));
