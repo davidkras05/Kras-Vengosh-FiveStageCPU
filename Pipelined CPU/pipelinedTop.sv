@@ -15,6 +15,10 @@ module pipelinedTop(
 	logic ZeroFlag, NegativeFlag, ZeroFlaghold, ZeroFlagmuxout, NegativeFlaghold, NegativeFlagmuxout;
 
 	
+	logic[31:0] IF_ID_instructionOut;
+	logic[63:0] ID_EX_readData2Out;
+	logic ID_EX_BrTakenOut, ID_EX_IsBROut;
+	
 	control_unit control (.instruction(IF_ID_instructionOut), .Db(Db), .ZeroFlag(ZeroFlaghold), .NegativeFlag(NegativeFlaghold), 
 	                      .Reg2Loc(Reg2Locwire), .ALUSrc(ALUSrcwire), .Mem2Reg(Mem2Regwire), 
 								 .RegWrite(RegWritewire), .MemWrite(MemWritewire), .MemRead(MemReadwire), .BrTaken(BrTakenwire), 
@@ -38,7 +42,7 @@ module pipelinedTop(
 	//IF_ID PIPELINE HERE ---------------------------------------------------------------------------------------------
 	
 	logic[63:0] IF_ID_currPCOut, IF_ID_PCp4Out;
-	logic[31:0] IF_ID_instructionOut;
+	
 	
 	IF_ID firstpipeline (.clk(clk), .reset(reset), .instruction(instruction), .currPC(CurrPC), .PCp4(PCp4),
 								.instructionOut(IF_ID_instructionOut), .currPCOut(IF_ID_currPCOut), .PCp4Out(IF_ID_PCp4Out));
@@ -56,11 +60,11 @@ module pipelinedTop(
 	
 	//ID_EX PIPELINE HERE ----------------------------------------------------------------------------------------------
 	
-	logic[63:0] ID_EX_readData1Out, ID_EX_readData2Out, ID_EX_ALUInputOut, ID_EX_currPCOut;
+	logic[63:0] ID_EX_readData1Out, ID_EX_ALUInputOut, ID_EX_currPCOut;
 	logic[31:0] instructionOut;
 	logic[4:0] ID_EX_RdOut, ID_EX_RnOut, ID_EX_RmOut;
-	logic ID_EX_MemtoRegOut, ID_EX_RegWriteOut, ID_EX_MemReadOut, ID_EX_MemWriteOut, ID_EX_ALUSrcOut, ID_EX_BrTakenOut;
-	logic ID_EX_UncondBrOut, ID_EX_ISBLOut, ID_EX_IsBROut;
+	logic ID_EX_MemtoRegOut, ID_EX_RegWriteOut, ID_EX_MemReadOut, ID_EX_MemWriteOut, ID_EX_ALUSrcOut;
+	logic ID_EX_UncondBrOut, ID_EX_ISBLOut;
 	logic[2:0] ID_EX_ALUOpOut;
 	
 	ID_EX secondpipeline (.clk(clk), .reset(reset), 
