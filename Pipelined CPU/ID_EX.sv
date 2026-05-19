@@ -35,8 +35,12 @@ module ID_EX (
 	D_FF M2R_dff (.q(MemtoRegOut), .d(MemtoReg), .reset(reset), .clk(clk));
 	D_FF RegWr_dff (.q(RegWriteOut), .d(RegWrite), .reset(reset), .clk(clk));
 	
+
 	//Pass MEM control bits MemRead, MemWrite, BrTaken, IsBrOut
 	D_FF MemRe_dff (.q(MemReadOut), .d(MemRead), .reset(reset), .clk(clk));
+
+	//Pass MEM control bits MemRead, MemWrite, BrTaken
+	D_FF MemRd_dff (.q(MemReadOut), .d(MemRead), .reset(reset), .clk(clk));
 	D_FF MemWr_dff (.q(MemWriteOut), .d(MemWrite), .reset(reset), .clk(clk));
 	D_FF BrT_dff (.q(BrTakenOut), .d(BrTaken), .reset(reset), .clk(clk));
 	D_FF IsBR_dff (.q(IsBrOut), .d(IsBr), .reset(reset), .clk(clk));
