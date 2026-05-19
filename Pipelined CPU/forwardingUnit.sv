@@ -1,3 +1,6 @@
+`timescale 1ps/1ps
+
+ 
  module forwardingUnit (
 	input logic[4:0] RnIDEX, RmIDEX, RdEXMEM, RdMEMWB,
 	input logic RegWriteEXMEM, RegWriteMEMWB,
