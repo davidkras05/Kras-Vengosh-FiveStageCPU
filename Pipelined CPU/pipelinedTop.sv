@@ -77,13 +77,13 @@ module singleCycleTop(
 								 .ALUSrcOut(ID_EX_ALUSrcOut), .ALUOpOut(ID_EX_ALUOpOut));
 								 
 								 // Pipeline IsBR and BrTaken through here since we are moving them from IF to EX. wire their outputs back
-								 // to inputs of IF (BrTaken and IsBr)
+								 // to inputs of IF (BrTaken and IsBr) also, wire DB back to IF from the ID_EX pipeline
 								 
 	
 	//------------------------------------------------------------------------------------------------------------------
 	
 	
-	EX execution (.UncondBr(UncondBrwire), .ALUOp(ALUOpwire), .instruction(instruction), .ALUIn0(Da), .ALUIn1(ALUInput), 
+	EX execution (.UncondBr(UncondBrwire), .ALUOp(ALUOpwire), .instruction(instruction), .CurrPC(ID_EX_currPCOut), .ALUIn0(Da), .ALUIn1(ALUInput), 
 	              .ALURes(ALURes), .BrLoc(BrLoc), .ZeroFlag(ZeroFlag), .NegativeFlag(NegativeFlag));
 					  
 					  // ADD IsBr AND BrTaken HERE IN EX
@@ -97,29 +97,30 @@ module singleCycleTop(
 	EX_MEM thirdpipeline (.clk(clk), .reset(reset), .ALURes(ALURes), .ReadData2(ID_EX_readData2Out), 
 								 .Rd(ID_EX_RdOut), .MemtoReg(ID_EX_MemtoRegOut), .RegWrite(ID_EX_RegWriteOut),
 								 .MemRead(ID_EX_MemReadOut), .MemWrite(ID_EX_MemWriteOut), .address(EX_MEM_address), 
-								 .writeMemData(ID_EX_readData2Out), .RdOut(EX_MEM_RdOut),
+								 .writeMemData(EX_MEM_writeMemData), .RdOut(EX_MEM_RdOut),
 								 .MemtoRegOut(EX_MEM_MemtoRegOut), .RegWriteOut(EX_MEM_RegWriteOut), .MemReadOut(EX_MEM_MemReadOut), 
 								 .MemWriteOut(EX_MEM_MemWriteOut));
 	
 	//------------------------------------------------------------------------------------------------------------------
 	
 	
-	datamem MEM (.address(ALURes), .write_enable(MemWritewire), .read_enable(MemReadwire), 
-					.write_data(Db), .clk(clk), .read_data(MEMData));
+	datamem MEM (.address(EX_MEM_address), .write_enable(EX_MEM_MemWriteOut), .read_enable(EX_MEM_MemReadOut), 
+					.write_data(EX_MEM_writeMemData), .clk(clk), .read_data(MEMData));
 					
 	//MEM_WB PIPELINE HERE ---------------------------------------------------------------------------------------------
 	
 	logic[63:0] MEM_WB_ALUResOut, MEM_WB_readMemDataOut;
 	logic MEM_WB_MemtoRegOut, MEM_WB_RegWriteOut;
 	
-	MEM_WB fourthpipeline (.clk(clk), .reset(reset), .readMemData(), .ALURes(), .MemtoReg(), .RegWrite(),
+	MEM_WB fourthpipeline (.clk(clk), .reset(reset), .readMemData(MEMData), .ALURes(EX_MEM_address), 
+								  .MemtoReg(EX_MEM_MemtoRegOut),.RegWrite(EX_MEM_RegWriteOut),
 								  .ALUResOut(MEM_WB_ALUResOut), .readMemDataOut(MEM_WB_readMemDataOut), 
 								  .MemtoRegOut(MEM_WB_MemtoRegOut), .RegWriteOut(MEM_WB_RegWriteOut));
 	
 	//------------------------------------------------------------------------------------------------------------------
 	
 	
-	WB writeBack (.ALURes(ALURes), .MEMData(MEMData), .Mem2Reg(Mem2Regwire), .WriteBck(WriteBck));
+	WB writeBack (.ALURes(MEM_WB_ALUResOut), .MEMData(MEM_WB_readMemDataOut), .Mem2Reg(MEM_WB_MemtoRegOut), .WriteBck(WriteBck));
 	
 	//Flag hold registers
 	
