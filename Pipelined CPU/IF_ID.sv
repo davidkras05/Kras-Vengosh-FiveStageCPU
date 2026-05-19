@@ -3,10 +3,11 @@ module IF_ID (
 	input logic[31:0] instruction,
 	input logic[63:0] currPC,
 	input logic[63:0] PCp4,
+	input logic isDType;
 	
 	output logic[31:0] instructionOut,
-	output logic[63:0] currPCOut,
-	output logic[63:0] PCp4Out
+	output logic[63:0] currPCOut, Pcp4Out,
+	output logic isDTypeOut
 );
 
 	//Pass the 32 bit instructions
@@ -20,5 +21,9 @@ module IF_ID (
 	//Pass the PC + 4 for BR and BL
 	
 	nbit_register #(.BITS(64)) Pcp4hold (.clk(clk), .reset(reset), .write(PCp4), .q(PCp4Out));
+	
+	//Pass the isDtype signal
+	
+	D_FF isDtypehold (.q(isDTypeOut), .d(isDType), .reset(reset), .clk(clk));
 
 endmodule

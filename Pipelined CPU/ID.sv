@@ -3,7 +3,7 @@ module ID (
 	input logic[63:0] WriteBck, PCp4, //From writeback
 	input logic[31:0] instruction,
 	
-	output logic[63:0] Da, Db, ALUInput
+	output logic[63:0] Da, Db, ALUInput,
 	output logic[4:0] Rd, Rm, Rn
 );
 	
@@ -37,7 +37,7 @@ module ID (
 	
 	logic[63:0] Immediate64, DT_address64, shift;
 	
-	assign Immediate64 = {{52{1'b0}}, Immediate}; //Sign extend the immediate to 64 bits
+	assign Immediate64 = {{52{1'b0}}, Immediate}; //Zero extend the immediate to 64 bits
 	
 	assign DT_address64 = {{55{DT_address[8]}}, DT_address}; //Sign extend the immediate to 64 bits
 	

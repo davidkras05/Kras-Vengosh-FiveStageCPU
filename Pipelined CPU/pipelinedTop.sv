@@ -36,44 +36,43 @@ module singleCycleTop(
 	
 	logic[63:0] IF_ID_currPCOut, IF_ID_PCp4Out;
 	logic[31:0] IF_ID_instructionOut;
+	logic IF_ID_isDTypeOut;
 	
-	IF_ID firstpipeline (.clk(clk), .reset(reset), .instruction(instruction), .currPC(CurrPC), .PCp4(PCp4),
-								.instructionOut(IF_ID_instructionOut), .currPCOut(IF_ID_currPCOut), .PCp4(IF_ID_PCp4Out));
+	IF_ID firstpipeline (.clk(clk), .reset(reset), .instruction(instruction), .currPC(CurrPC), .PCp4(PCp4), .isDType(isDTypewire)
+								.instructionOut(IF_ID_instructionOut), .currPCOut(IF_ID_currPCOut), .PCp4Out(IF_ID_PCp4Out), 
+								.isDTypeOut(IF_ID_isDTypeOut));
 	
 	//-----------------------------------------------------------------------------------------------------------------
 	
 	
 	ID instructionDecode(.clk(clk), .reset(reset), .Reg2Loc(Reg2Locwire), .ALUSrc(ALUSrcwire), 
-								.RegWrite(RegWritewire), .IsBL(IsBLwire), .isDType(isDTypewire), 
+								.RegWrite(RegWritewire), .IsBL(IsBLwire), .isDType(IF_ID_isDTypeOut), 
 								.WriteBck(WriteBck), .PCp4(IF_ID_PCp4Out), .instruction(IF_ID_instructionOut), .Da(Da), 
 								.Db(Db), .ALUInput(ALUInput), .Rd(Rd), .Rm(Rm), .Rn(Rn)); 
 								
-								//Since we are using PCp4 here, I am not sure if we have to add it to the pipeline
-								// we also need to add outputs of Rd, Rn, Rm.
-								// I think we also need to add the immediate as an output
+								// Control signals generated here. Need to pipeline signals that are used after this.
+								
 	
 	//ID_EX PIPELINE HERE ----------------------------------------------------------------------------------------------
 	
-	logic[63:0] ID_EX_readData1Out, ID_EX_readData2Out, ID_EX_immediateOut, ID_EX_currPCOut;
+	logic[63:0] ID_EX_readData1Out, ID_EX_ALUInputOut, ID_EX_currPCOut;
 	logic[4:0] ID_EX_RdOut, ID_EX_RnOut, ID_EX_RmOut;
-	logic ID_EX_MemtoRegOut, ID_EX_RegWriteOut, ID_EX_MemReadOut, ID_EX_MemWriteOut, ID_EX_BrTakenOut, ID_EX_ALUSrcOut;
+	logic ID_EX_MemtoRegOut, ID_EX_RegWriteOut, ID_EX_MemReadOut, ID_EX_MemWriteOut, ID_EX_ALUSrcOut, ID_EX_BrTakenOut, ID_EX_IsBrOut;
 	logic[2:0] ID_EX_ALUOpOut;
 	
-	ID_EX secondpipeline (.clk(clk), .reset(reset), .readData1(Da), .readData2(Db), .immediate(), .currPC(IF_ID_currPCOut), 
-								 .Rd(Rd), .Rn(Rn), .Rm(Rm), .instruction(/*check if this is needed*/), .ALUOp(), .MemtoReg(), .RegWrite(), .MemRead(),
-								 .MemWrite(), .BrTaken(), .ALUSrc(), 
-								 .readData1Out(ID_EX_readData1Out), .readData2Out(ID_EX_readData2Out), 
-								 .immediateOut(ID_EX_immediateOut), .currPCOut(ID_EX_currPCOut),
+	ID_EX secondpipeline (.clk(clk), .reset(reset), .readData1(Da), .readData2(Db), .currPC(IF_ID_currPCOut), 
+								 .Rd(Rd), .Rn(Rn), .Rm(Rm), .ALUOp(ALUOpwire), .MemtoReg(MemtoRegwire), .RegWrite(RegWritewire), 
+								 .MemRead(MemReadwire), .MemWrite(MemWritewire), .BrTaken(), .IsBr(), /* ADD THESE ONCE BRTAKEN AND ISBR IS MOVED TO EX*/
+								 .readData1Out(ID_EX_readData1Out), 
+								 .ALUInput(ID_EX_ALUInputOut), .currPCOut(ID_EX_currPCOut),
 								 .RdOut(ID_EX_RdOut), RnOut(ID_EX_RnOut), .RmOut(ID_EX_RmOut), 
 								 .MemtoRegOut(ID_EX_MemtoRegOut), .RegWriteOut(ID_EX_RegWriteOut), 
-								 .MemReadOut(ID_EX_MemReadOut), .MemWriteOut(ID_EX_MemWriteOut), 
-								 .BrTakenOut(ID_EX_BrTakenOut), .ALUSrcOut(ID_EX_ALUSrcOut), .ALUOpOut(ID_EX_ALUOpOut));
+								 .MemReadOut(ID_EX_MemReadOut), .MemWriteOut(ID_EX_MemWriteOut), .BrTakenOut(ID_EX_BrTakenOut), 
+								 .IsBrOut(ID_EX_IsBrOut), 
+								 .ALUSrcOut(ID_EX_ALUSrcOut), .ALUOpOut(ID_EX_ALUOpOut));
 								 
-								 // Since we added more control signals, we should figure out if we need to 
-								 //  add those too. Like "isDtype" or "IsBR" or "IsBL" So I am skipping wiring the inputs here for now
-								 //  also I think we don't have to pass BRTaken here I think what we actually need to pass is BrLoc since
-								 //  BrTaken is only used in IF so I don't see why that would have to be pipelined to here.
-								 //  might need to add PCp4 here as well depending on BR and BL
+								 // Pipeline IsBR and BrTaken through here since we are moving them from IF to EX
+								 
 	
 	//------------------------------------------------------------------------------------------------------------------
 	
@@ -81,13 +80,15 @@ module singleCycleTop(
 	EX execution (.UncondBr(UncondBrwire), .ALUOp(ALUOpwire), .instruction(instruction), .ALUIn0(Da), .ALUIn1(ALUInput), 
 	              .ALURes(ALURes), .BrLoc(BrLoc), .ZeroFlag(ZeroFlag), .NegativeFlag(NegativeFlag));
 					  
+					  // ADD IsBr AND BrTaken HERE IN EX
+					  
 	//EX_MEM PIPELINE HERE ---------------------------------------------------------------------------------------------
 	
 	logic[63:0] EX_MEM_address, EX_MEM_writeMemData, EX_MEM_BranchOut;
 	logic[4:0] EX_MEM_RdOut;
 	logic EX_MEM_zeroFlagOut, EX_MEM_MemtoRegOut, EX_MEM_RegWriteOut, EX_MEM_MemReadOut, EX_MEM_MemWriteOut, EX_MEM_BrTakenOut;
 	
-	EX_MEM thirdpipeline (.clk(clk), .reset(reset), .ALURes(), .ReadData2(), .Branch(), .Rd(), .MemtoReg(), .RegWrite(),
+	EX_MEM thirdpipeline (.clk(clk), .reset(reset), .ALURes(ALURes), .ReadData2(), .Branch(), .Rd(), .MemtoReg(), .RegWrite(),
 								 .MemRead(), .MemWrite(), .BrTaken(), .zeroFlag(), .address(), .writeMemData(), .BranchOut(), .RdOut(),
 								 .zeroFlagOut(), .MemtoRegOut(), .RegWriteOut(), .MemReadOut(), .MemWriteOut(), .BrTakenOut());
 	
