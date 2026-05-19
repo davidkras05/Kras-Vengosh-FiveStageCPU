@@ -23,16 +23,18 @@
 	assign RdMEMWB_eq_Rm = RegWriteMEMWB;
 	
 	//Create intermediate wires (signal_store is for the equality checking bit, signal_store_1 is for checking that Rd is not X31)
-	logic eq_store_0, x31_store_0;
-	logic eq_store_1, x31_store_1;
-	logic eq_store_2, x31_store_2;
-	logic eq_store_3, x31_store_3;
+	
 	
 	genvar i;
 	
 	
 	generate
 		for (i = 0; i < 5; i++) begin : eq_loop
+			logic eq_store_0, x31_store_0;
+			logic eq_store_1, x31_store_1;
+			logic eq_store_2, x31_store_2;
+			logic eq_store_3, x31_store_3;
+		
 			xnor #(DELAY) (eq_store_0, RdEXMEM[i], RnIDEX[i]);
 			not #(DELAY) (x31_store_0, RdEXMEM[i]);
 			and #(DELAY) (RdEXMEM_eq_Rn, RdEXMEM_eq_Rn, eq_store_0, x31_store_0);
