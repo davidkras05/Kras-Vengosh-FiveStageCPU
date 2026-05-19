@@ -89,8 +89,10 @@ module singleCycleTop(
 	
 	
 	EX execution (.UncondBr(ID_EX_UncondBrOut), .ALUOp(ID_EX_ALUOpOut), .instruction(ID_EX_instructionOut), 
-					  .CurrPC(ID_EX_currPCOut), 
-					  .ALUIn0(ID_EX_readData1Out), .ALUIn1(ID_EX_ALUInputOut), 
+					  .CurrPC(ID_EX_currPCOut),
+					  .ALUIn0(ID_EX_readData1Out), .ALUIn1(ID_EX_ALUInputOut),
+					  .ALUIn_WB(WriteBck), .ALUIn_EXMEM(EX_MEM_address),
+					  .FwdA(FwdA), .FwdB(FwdB),
 					  .ALURes(ALURes), .BrLoc(BrLoc), .ZeroFlag(ZeroFlag), .NegativeFlag(NegativeFlag));
 					  
 	//Flag hold registers
@@ -142,8 +144,13 @@ module singleCycleTop(
 								  .ALUResOut(MEM_WB_ALUResOut), .readMemDataOut(MEM_WB_readMemDataOut), 
 								  .MemtoRegOut(MEM_WB_MemtoRegOut), .RegWriteOut(MEM_WB_RegWriteOut), .IsBLOut(MEM_WB_IsBLOut));
 	
-	//------------------------------------------------------------------------------------------------------------------
+	//FORWARDING UNIT HERE ---------------------------------------------------------------------------------------------
+	logic [1:0] FwdA, FwdB;
 	
+	forwardingUnit fwding_unit (.RnIDEX(ID_EX_RnOut), .RmIDEX(ID_EX_RmOut), .RdEXMEM(ID_EX_RdOut), .RdMEMWB(EX_MEM_RnOut),
+	                            .RegWriteEXMEM(EX_MEM_RegWriteOut), .RegWriteMEMWB(MEM_WB_RegWriteOut),
+										 .ForwardA(FwdA), .ForwardB(FwdB));
+	//------------------------------------------------------------------------------------------------------------------
 	
 	WB writeBack (.ALURes(MEM_WB_ALUResOut), .MEMData(MEM_WB_readMemDataOut), .Mem2Reg(MEM_WB_MemtoRegOut), .WriteBck(WriteBck));
 	

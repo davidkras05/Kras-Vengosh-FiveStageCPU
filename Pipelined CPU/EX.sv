@@ -2,11 +2,18 @@ module EX (
 	input logic UncondBr,
 	input logic [2:0] ALUOp,
 	input logic [31:0] instruction,
-	input logic [63:0] CurrPC, ALUIn0, ALUIn1,
+	input logic [63:0] CurrPC, ALUIn0, ALUIn1, ALUIn_WB, ALUIn_EXMEM, //Normal into 00, WB into 01, EXMEM into 10, X in 11
+	input logic [1:0] FwdA, FwdB,
 	output logic [63:0] ALURes, BrLoc,
 	output logic ZeroFlag, NegativeFlag
 );
 
+	logic [63:0] A, B;
+	
+	// 64-bit 3:1 MUX needed, outputs are A and B (ALUIn0, ALUIn1, respectively)
+	
+	
+	// Then change ALU inputs to A and B
 	ALU ALU (.A(ALUIn0), .B(ALUIn1), .cntrl(ALUOp), .result(ALURes), .negative(NegativeFlag), .zero(ZeroFlag), .overflow(), .carry_out());
 
 	logic [18:0] CondAddr19;
