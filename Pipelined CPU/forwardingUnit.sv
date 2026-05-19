@@ -27,29 +27,30 @@
 	
 	genvar i;
 	
+	logic[19:0] eq_store, x31_store;
 	
 	generate
 		for (i = 0; i < 5; i++) begin : eq_loop
-			logic eq_store_0, x31_store_0;
-			logic eq_store_1, x31_store_1;
-			logic eq_store_2, x31_store_2;
-			logic eq_store_3, x31_store_3;
-		
-			xnor #(DELAY) (eq_store_0, RdEXMEM[i], RnIDEX[i]);
-			not #(DELAY) (x31_store_0, RdEXMEM[i]);
-			and #(DELAY) (RdEXMEM_eq_Rn, RdEXMEM_eq_Rn, eq_store_0, x31_store_0);
 			
-			xnor #(DELAY) (eq_store_1, RdEXMEM[i], RmIDEX[i]);
-			not #(DELAY) (x31_store_1, RdEXMEM[i]);
-			and #(DELAY) (RdEXMEM_eq_Rm, RdEXMEM_eq_Rm, eq_store_1, x31_store_1);
+		   //0-4
+			xnor #(DELAY) (eq_store[i], RdEXMEM[i], RnIDEX[i]);
+			not #(DELAY) (x31_store[i], RdEXMEM[i]);
+			and #(DELAY) (RdEXMEM_eq_Rn, RdEXMEM_eq_Rn, eq_store[i], x31_store[i]);
 			
-			xnor #(DELAY) (eq_store_2, RdMEMWB[i], RnIDEX[i]);
-			not #(DELAY) (x31_store_2, RdMEMWB[i]);
-			and #(DELAY) (RdMEMWB_eq_Rn, RdMEMWB_eq_Rn, eq_store_2, x31_store_2);
+			//5-9
+			xnor #(DELAY) (eq_store[i+5], RdEXMEM[i+5], RmIDEX[i]);
+			not #(DELAY) (x31_store[i+5], RdEXMEM[i+5]);
+			and #(DELAY) (RdEXMEM_eq_Rm, RdEXMEM_eq_Rm, eq_store[i+5], x31_store[i+5]);
 			
-			xnor #(DELAY) (eq_store_3, RdMEMWB[i], RmIDEX[i]);
-			not #(DELAY) (x31_store_3, RdMEMWB[i]);
-			and #(DELAY) (RdMEMWB_eq_Rm, RdMEMWB_eq_Rm, eq_store_3, x31_store_3);
+			//10-14
+			xnor #(DELAY) (eq_store[i+10], RdMEMWB[i+10], RnIDEX[i]);
+			not #(DELAY) (x31_store[i+10], RdMEMWB[i+10]);
+			and #(DELAY) (RdMEMWB_eq_Rn, RdMEMWB_eq_Rn, eq_store[i+10], x31_store[i+10]);
+			
+			//15-19
+			xnor #(DELAY) (eq_store_[i+15], RdMEMWB[i+15], RmIDEX[i]);
+			not #(DELAY) (x31_store[i+15], RdMEMWB[i+15]);
+			and #(DELAY) (RdMEMWB_eq_Rm, RdMEMWB_eq_Rm, eq_store[i+15], x31_store[i+15]);
 		end
 	endgenerate
 	
