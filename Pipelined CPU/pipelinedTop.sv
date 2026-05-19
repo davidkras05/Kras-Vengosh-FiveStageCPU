@@ -2,7 +2,7 @@ module pipelinedTop(
 	input logic clk,
 	input logic reset
 );
-	logic Reg2Locwire, ALUSrcwire, Mem2Regwire, RegWritewire, MemWritewire, isDTypewire;
+	logic Reg2Locwire, ALUSrcwire, MemtoRegwire, RegWritewire, MemWritewire, isDTypewire;
 	logic MemReadwire, BrTakenwire, UncondBrwire, SetFlagswire, IsBLwire, IsBRwire;
 	
 	logic [2:0] ALUOpwire;
@@ -21,7 +21,7 @@ module pipelinedTop(
 	logic [1:0] FwdA, FwdB;
 	
 	control_unit control (.instruction(IF_ID_instructionOut), .Db(Db), .ZeroFlag(ZeroFlaghold), .NegativeFlag(NegativeFlaghold), 
-	                      .Reg2Loc(Reg2Locwire), .ALUSrc(ALUSrcwire), .Mem2Reg(Mem2Regwire), 
+	                      .Reg2Loc(Reg2Locwire), .ALUSrc(ALUSrcwire), .Mem2Reg(MemtoRegwire), 
 								 .RegWrite(RegWritewire), .MemWrite(MemWritewire), .MemRead(MemReadwire), .BrTaken(BrTakenwire), 
 								 .UncondBr(UncondBrwire), .SetFlags(SetFlagswire), .IsBL(IsBLwire), .IsBR(IsBRwire), 
 								 .isDType(isDTypewire), .ALUOp(ALUOpwire));

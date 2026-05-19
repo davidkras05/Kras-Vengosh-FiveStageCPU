@@ -4,7 +4,7 @@ module EX_MEM (
 	input logic[4:0] Rd,
 	input logic MemtoReg, RegWrite, MemRead, MemWrite, IsBL,
 	
-	output logic[63:0] address, writeMemData, BranchOut,
+	output logic[63:0] address, writeMemData,
 	output logic[4:0] RdOut,
 	output logic MemtoRegOut, RegWriteOut, MemReadOut, MemWriteOut, IsBLOut
 );
@@ -17,9 +17,6 @@ module EX_MEM (
 	
 	nbit_register #(.BITS(64)) passReadData2 (.clk(clk), .reset(reset), .write(ReadData2), .q(writeMemData));
 
-	//Pass 64 bit Branch (to add when branching)
-	
-	nbit_register #(.BITS(64)) passBranch (.clk(clk), .reset(reset), .write(Branch), .q(BranchOut));
 	
 	//Pass Rd (instruction[4:0])
 	
