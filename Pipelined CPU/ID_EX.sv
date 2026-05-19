@@ -8,10 +8,8 @@ module ID_EX (
 	
 	output logic[63:0] readData1Out, readData2Out, ALUInputOut, currPCOut,
 	output logic[4:0] RdOut, RnOut, RmOut,
-	output logic[2:0] ALUOpOut
-	output logic MemtoRegOut, RegWriteOut, MemReadOut, MemWriteOut, BrTakenOut, UncondBrOut, IsBLOut, IsBROut,
-	
-	
+	output logic[2:0] ALUOpOut,
+	output logic MemtoRegOut, RegWriteOut, MemReadOut, MemWriteOut, BrTakenOut, UncondBrOut, IsBLOut, IsBROut
 	
 );
 

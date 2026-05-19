@@ -10,7 +10,7 @@ module IF_ID (
 
 	//Pass the 32 bit instructions
 	
-	nbit_register #(.BITS(32)) instructionhold (.clk(clk) .reset(reset), .write(instruction), .q(instructionOut));
+	nbit_register #(.BITS(32)) instructionhold (.clk(clk), .reset(reset), .write(instruction), .q(instructionOut));
 	
 	//Pass the current 64 bit PC
 	

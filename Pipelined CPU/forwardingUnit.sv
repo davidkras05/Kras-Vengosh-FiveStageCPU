@@ -10,8 +10,8 @@
 	//Compare next instruction with current instruction logic.
 	
 	//Equality wires:
-	logic RdEXMEM_eq_Rn, RdEXMEM_eq_Rn;
-	logic RdMEMWB_eq_Rn, RdMEMWB_eq_Rn;
+	logic RdEXMEM_eq_Rn, RdEXMEM_eq_Rm;
+	logic RdMEMWB_eq_Rn, RdMEMWB_eq_Rm;
 	
 	assign RdEXMEM_eq_Rn = RegWriteEXMEM;
 	assign RdEXMEM_eq_Rm = RegWriteEXMEM;
@@ -26,19 +26,19 @@
 	
 	generate
 		for (i = 0; i < 5; i++) begin : eq_loop
-			xnor #(DELAY) (signal_store, RdEXMEM[i], Rn[i]);
+			xnor #(DELAY) (signal_store, RdEXMEM[i], RnIDEX[i]);
 			not #(DELAY) (signal_store_1, RdEXMEM[i]);
 			and #(DELAY) (RdEXMEM_eq_Rn, RdEXMEM_eq_Rn, signal_store, signal_store_1);
 			
-			xnor #(DELAY) (signal_store, RdEXMEM[i], Rm[i]);
+			xnor #(DELAY) (signal_store, RdEXMEM[i], RmIDEX[i]);
 			not #(DELAY) (signal_store_1, RdEXMEM[i]);
 			and #(DELAY) (RdEXMEM_eq_Rm, RdEXMEM_eq_Rm, signal_store);
 			
-			xnor #(DELAY) (signal_store, RdMEMWB[i], Rn[i]);
+			xnor #(DELAY) (signal_store, RdMEMWB[i], RnIDEX[i]);
 			not #(DELAY) (signal_store_1, RdMEMWB[i]);
 			and #(DELAY) (RdMEMWB_eq_Rn, RdMEMWB_eq_Rn, signal_store);
 			
-			xnor #(DELAY) (signal_store, RdMEMWB[i], Rm[i]);
+			xnor #(DELAY) (signal_store, RdMEMWB[i], RmIDEX[i]);
 			not #(DELAY) (signal_store_1, RdMEMWB[i]);
 			and #(DELAY) (RdMEMWB_eq_Rm, RdMEMWB_eq_Rm, signal_store);
 		end

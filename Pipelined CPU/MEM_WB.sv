@@ -13,7 +13,7 @@ module MEM_WB (
 	
 	//Pass 64 bit ALU Result
 	
-	nbit_register #(.BITS(64)) passMemoryRead (.clk(clk), .reset(reset), .write(ALURes), .q(ALUResOut));
+	nbit_register #(.BITS(64)) passALURes (.clk(clk), .reset(reset), .write(ALURes), .q(ALUResOut));
 	
 	//Pass WB control signals MemtoReg, RegWrite
 	

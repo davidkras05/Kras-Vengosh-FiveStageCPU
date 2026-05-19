@@ -71,7 +71,7 @@ module pipelinedTop(
 	ID_EX secondpipeline (.clk(clk), .reset(reset), 
 	
 								 .instruction(instruction),
-	`	`						 .readData1(Da), .readData2(Db), .ALUInput(ALUInput), 
+								 .readData1(Da), .readData2(Db), .ALUInput(ALUInput), 
 							    .currPC(IF_ID_currPCOut), 
 								 .Rd(Rd), .Rn(Rn), .Rm(Rm), 
 								 .ALUOp(ALUOpwire), .MemtoReg(MemtoRegwire), .RegWrite(RegWritewire), 
