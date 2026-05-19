@@ -5,7 +5,7 @@ module IF_ID (
 	input logic[63:0] PCp4,
 	
 	output logic[31:0] instructionOut,
-	output logic[63:0] currPCOut, Pcp4Out
+	output logic[63:0] currPCOut, PCp4Out
 );
 
 	//Pass the 32 bit instructions

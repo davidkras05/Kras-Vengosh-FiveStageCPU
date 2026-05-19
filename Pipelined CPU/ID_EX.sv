@@ -6,6 +6,7 @@ module ID_EX (
 	input logic[2:0] ALUOp,
 	input logic MemtoReg, RegWrite, MemRead, MemWrite, BrTaken, UncondBr, IsBL, IsBR,
 	
+	output logic[31:0] instructionOut,
 	output logic[63:0] readData1Out, readData2Out, ALUInputOut, currPCOut,
 	output logic[4:0] RdOut, RnOut, RmOut,
 	output logic[2:0] ALUOpOut,
