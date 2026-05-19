@@ -43,10 +43,7 @@ module ID_EX (
 	D_FF RegWr_dff (.q(RegWriteOut), .d(RegWrite), .reset(reset), .clk(clk));
 	
 
-	//Pass MEM control bits MemRead, MemWrite, BrTaken, IsBrOut
-	D_FF MemRead_dff (.q(MemReadOut), .d(MemRead), .reset(reset), .clk(clk));
-
-	//Pass MEM control bits MemRead, MemWrite, BrTaken
+	//Pass MEM control bits MemRead, MemWrite, BrTaken, IsBROut, IsBLOut
 	D_FF MemRd_dff (.q(MemReadOut), .d(MemRead), .reset(reset), .clk(clk));
 	D_FF MemWr_dff (.q(MemWriteOut), .d(MemWrite), .reset(reset), .clk(clk));
 	D_FF BrT_dff (.q(BrTakenOut), .d(BrTaken), .reset(reset), .clk(clk));
@@ -54,7 +51,7 @@ module ID_EX (
 	D_FF IsBL_dff (.q(IsBLOut), .d(IsBL), .reset(reset), .clk(clk));
 	
 	//Pass EX control bits ALU code, UncondBr
-	D_FF ALUOp_dff (.q(ALUOpOut), .d(ALUOp), .reset(reset), .clk(clk));
+	nbit_register #(.BITS(3)) ALUOp_reg (.clk(clk), .reset(reset), .write(ALUOp), .q(ALUOpOut));
 	D_FF UncondBr_dff (.q(UncondBrOut), .d(UncondBr), .reset(reset), .clk(clk));
 
 

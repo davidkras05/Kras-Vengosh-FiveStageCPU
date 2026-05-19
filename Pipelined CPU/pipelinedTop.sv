@@ -62,7 +62,7 @@ module pipelinedTop(
 	//ID_EX PIPELINE HERE ----------------------------------------------------------------------------------------------
 	
 	logic[63:0] ID_EX_readData1Out, ID_EX_ALUInputOut, ID_EX_currPCOut;
-	logic[31:0] instructionOut;
+	logic[31:0] ID_EX_instructionOut;
 	logic[4:0] ID_EX_RdOut, ID_EX_RnOut, ID_EX_RmOut;
 	logic ID_EX_MemtoRegOut, ID_EX_RegWriteOut, ID_EX_MemReadOut, ID_EX_MemWriteOut, ID_EX_ALUSrcOut;
 	logic ID_EX_UncondBrOut, ID_EX_ISBLOut;

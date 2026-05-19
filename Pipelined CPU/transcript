@@ -1,35 +1,34 @@
-# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+# Reading pref.tcl
 do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:15:08 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:02:44 on May 18,2026
 # vlog -reportprogress 300 ./n_bit_2to1.sv 
 # -- Compiling module n_bit_2to1
 # 
 # Top level modules:
 # 	n_bit_2to1
-# End time: 21:15:08 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:02:45 on May 18,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:15:09 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:02:45 on May 18,2026
 # vlog -reportprogress 300 ./EX.sv 
 # -- Compiling module EX
 # 
 # Top level modules:
 # 	EX
-# End time: 21:15:09 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:02:45 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:15:09 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:02:45 on May 18,2026
 # vlog -reportprogress 300 ./control_unit.sv 
 # -- Compiling module control_unit
 # 
 # Top level modules:
 # 	control_unit
-# End time: 21:15:09 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:02:45 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:15:09 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:02:45 on May 18,2026
 # vlog -reportprogress 300 ./math.sv 
 # -- Compiling module mult
 # -- Compiling module shifter
@@ -39,30 +38,30 @@ do runlab.do
 # Top level modules:
 # 	shifter_testbench
 # 	mult_testbench
-# End time: 21:15:09 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:02:45 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:15:09 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:02:45 on May 18,2026
 # vlog -reportprogress 300 ./instructmem.sv 
 # -- Compiling module instructmem
 # -- Compiling module instructmem_testbench
 # 
 # Top level modules:
 # 	instructmem_testbench
-# End time: 21:15:09 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:02:45 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:15:09 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:02:46 on May 18,2026
 # vlog -reportprogress 300 ./datamem.sv 
 # -- Compiling module datamem
 # -- Compiling module datamem_testbench
 # 
 # Top level modules:
 # 	datamem_testbench
-# End time: 21:15:09 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:02:46 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:15:09 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:02:46 on May 18,2026
 # vlog -reportprogress 300 ./register_file/thirtytwo_1_mux.sv 
 # -- Compiling module two_onemux
 # -- Compiling module four_onemux
@@ -72,38 +71,39 @@ do runlab.do
 # 
 # Top level modules:
 # 	thirtytwo_1_mux
-# End time: 21:15:09 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:02:46 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:15:09 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:02:46 on May 18,2026
 # vlog -reportprogress 300 ./register_file/register.sv 
 # -- Compiling module register
 # -- Compiling module register_tb
 # 
 # Top level modules:
 # 	register_tb
-# End time: 21:15:09 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:02:46 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:15:09 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:02:46 on May 18,2026
 # vlog -reportprogress 300 ./register_file/regfile.sv 
 # -- Compiling module regfile
 # 
 # Top level modules:
 # 	regfile
-# End time: 21:15:09 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:02:46 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:15:09 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:02:46 on May 18,2026
 # vlog -reportprogress 300 ./register_file/loopedthirtytwo_mux.sv 
 # -- Compiling module loopedthirtytwo_mux
+# ** Warning: ./register_file/loopedthirtytwo_mux.sv(2): (vlog-13314) Defaulting port 'data_lines' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
 # 
 # Top level modules:
 # 	loopedthirtytwo_mux
-# End time: 21:15:10 on May 18,2026, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:15:10 on May 18,2026
+# End time: 22:02:47 on May 18,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:02:47 on May 18,2026
 # vlog -reportprogress 300 ./register_file/five_thirtytwodecoder.sv 
 # -- Compiling module one_twodecoder
 # -- Compiling module two_fourdecoder
@@ -120,163 +120,163 @@ do runlab.do
 # 	five_thirtytwo_tb
 # 	three_eight_tb
 # 	two_four_tb
-# End time: 21:15:10 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:02:47 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:15:10 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:02:47 on May 18,2026
 # vlog -reportprogress 300 ./register_file/D_FF.sv 
 # -- Compiling module D_FF
 # 
 # Top level modules:
 # 	D_FF
-# End time: 21:15:10 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:02:47 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:15:10 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:02:47 on May 18,2026
 # vlog -reportprogress 300 ./ALU/full_adder.sv 
 # -- Compiling module full_adder
 # 
 # Top level modules:
 # 	full_adder
-# End time: 21:15:10 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:02:47 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:15:10 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:02:47 on May 18,2026
 # vlog -reportprogress 300 ./ALU/flags.sv 
 # -- Compiling module flags
 # 
 # Top level modules:
 # 	flags
-# End time: 21:15:10 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:02:48 on May 18,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:15:10 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:02:48 on May 18,2026
 # vlog -reportprogress 300 ./ALU/bitsliceALU.sv 
 # -- Compiling module bitsliceALU
 # 
 # Top level modules:
 # 	bitsliceALU
-# End time: 21:15:10 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:02:48 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:15:10 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:02:48 on May 18,2026
 # vlog -reportprogress 300 ./ALU/ALU.sv 
 # -- Compiling module ALU
 # 
 # Top level modules:
 # 	ALU
-# End time: 21:15:10 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:02:48 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:15:10 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:02:48 on May 18,2026
 # vlog -reportprogress 300 ./IF.sv 
 # -- Compiling module IF
 # 
 # Top level modules:
 # 	IF
-# End time: 21:15:10 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:02:49 on May 18,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:15:10 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:02:49 on May 18,2026
 # vlog -reportprogress 300 ./sixtyfourbit_fulladder.sv 
 # -- Compiling module sixtyfourbit_fulladder
 # 
 # Top level modules:
 # 	sixtyfourbit_fulladder
-# End time: 21:15:10 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:02:49 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:15:10 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:02:49 on May 18,2026
 # vlog -reportprogress 300 ./ID.sv 
 # -- Compiling module ID
 # 
 # Top level modules:
 # 	ID
-# End time: 21:15:10 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:02:49 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:15:10 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:02:49 on May 18,2026
 # vlog -reportprogress 300 ./WB.sv 
 # -- Compiling module WB
 # 
 # Top level modules:
 # 	WB
-# End time: 21:15:10 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:02:50 on May 18,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:15:11 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:02:50 on May 18,2026
 # vlog -reportprogress 300 ./pipelinedTop.sv 
 # -- Compiling module pipelinedTop
 # 
 # Top level modules:
 # 	pipelinedTop
-# End time: 21:15:11 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:02:50 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:15:11 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:02:50 on May 18,2026
 # vlog -reportprogress 300 ./pipelined_tb.sv 
 # -- Compiling module pipelined_tb
 # 
 # Top level modules:
 # 	pipelined_tb
-# End time: 21:15:11 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:02:50 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:15:11 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:02:50 on May 18,2026
 # vlog -reportprogress 300 ./IF_ID.sv 
 # -- Compiling module IF_ID
 # 
 # Top level modules:
 # 	IF_ID
-# End time: 21:15:11 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:02:50 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:15:11 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:02:51 on May 18,2026
 # vlog -reportprogress 300 ./ID_EX.sv 
 # -- Compiling module ID_EX
 # 
 # Top level modules:
 # 	ID_EX
-# End time: 21:15:11 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:02:51 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:15:11 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:02:51 on May 18,2026
 # vlog -reportprogress 300 ./EX_MEM.sv 
 # -- Compiling module EX_MEM
 # 
 # Top level modules:
 # 	EX_MEM
-# End time: 21:15:11 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:02:51 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:15:11 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:02:51 on May 18,2026
 # vlog -reportprogress 300 ./MEM_WB.sv 
 # -- Compiling module MEM_WB
 # 
 # Top level modules:
 # 	MEM_WB
-# End time: 21:15:11 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:02:51 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:15:11 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:02:52 on May 18,2026
 # vlog -reportprogress 300 ./forwardingUnit.sv 
 # -- Compiling module forwardingUnit
 # 
 # Top level modules:
 # 	forwardingUnit
-# End time: 21:15:11 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:02:52 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:15:11 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:02:52 on May 18,2026
 # vlog -reportprogress 300 ./nbit_register.sv 
 # -- Compiling module nbit_register
 # 
 # Top level modules:
 # 	nbit_register
-# End time: 21:15:11 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:02:52 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -voptargs=""+acc"" -t 1ps -lib work pipelined_tb 
-# Start time: 21:15:11 on May 18,2026
+# Start time: 22:02:52 on May 18,2026
 # Loading sv_std.std
 # Loading work.pipelined_tb
 # Loading work.pipelinedTop
@@ -310,44 +310,63 @@ do runlab.do
 # Loading work.datamem
 # Loading work.MEM_WB
 # Loading work.forwardingUnit
-# ** Error (suppressible): (vsim-3009) [TSCALE] - Module 'forwardingUnit' does not have a timeunit/timeprecision specification in effect, but other modules do.
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/fwding_unit File: ./forwardingUnit.sv
 # Loading work.WB
+# Loading work.thirtytwo_1_mux
+# Loading work.sixteen_onemux
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'instructionOut'. The port definition is at: ./ID_EX.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/secondpipeline File: ./pipelinedTop.sv Line: 71
+# ** Error (suppressible): (vsim-3839) Variable '/pipelined_tb/DUT/secondpipeline/MemReadOut', driven via a port connection, is multiply driven. See ./ID_EX.sv(47).
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/secondpipeline/MemRd_dff File: ./ID_EX.sv Line: 50
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (3) for port 'q'. The port definition is at: ./register_file/D_FF.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/secondpipeline/ALUOp_dff File: ./ID_EX.sv Line: 57
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (3) for port 'd'. The port definition is at: ./register_file/D_FF.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/secondpipeline/ALUOp_dff File: ./ID_EX.sv Line: 57
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'instruction'. The port definition is at: ./EX.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/execution File: ./pipelinedTop.sv Line: 96
+# ** Warning: (vsim-3015) [PCDPC] - Port size (64) does not match connection size (1) for port 'A'. The port definition is at: ./sixtyfourbit_fulladder.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/execution/BPCadd File: ./EX.sv Line: 57
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'thirdpipeline'.  Expected 19, found 18.
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/thirdpipeline File: ./pipelinedTop.sv Line: 121
+# ** Warning: (vsim-3722) ./pipelinedTop.sv(121): [TFMPC] - Missing connection for port 'BranchOut'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (64) does not match connection size (1) for port 'write'. The port definition is at: ./nbit_register.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/thirdpipeline/passBranch File: ./EX_MEM.sv Line: 22
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdMEMWB'. The port definition is at: ./forwardingUnit.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/fwding_unit File: ./pipelinedTop.sv Line: 155
 # Error loading design
 # Error: Error loading design
 #        Pausing macro execution
 # MACRO ./runlab.do PAUSED at line 40
 do runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:16:33 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:09:29 on May 18,2026
 # vlog -reportprogress 300 ./n_bit_2to1.sv 
 # -- Compiling module n_bit_2to1
 # 
 # Top level modules:
 # 	n_bit_2to1
-# End time: 21:16:33 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:09:29 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:16:33 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:09:29 on May 18,2026
 # vlog -reportprogress 300 ./EX.sv 
 # -- Compiling module EX
 # 
 # Top level modules:
 # 	EX
-# End time: 21:16:34 on May 18,2026, Elapsed time: 0:00:01
+# End time: 22:09:29 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:16:34 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:09:29 on May 18,2026
 # vlog -reportprogress 300 ./control_unit.sv 
 # -- Compiling module control_unit
 # 
 # Top level modules:
 # 	control_unit
-# End time: 21:16:34 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:09:29 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:16:34 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:09:29 on May 18,2026
 # vlog -reportprogress 300 ./math.sv 
 # -- Compiling module mult
 # -- Compiling module shifter
@@ -357,30 +376,30 @@ do runlab.do
 # Top level modules:
 # 	shifter_testbench
 # 	mult_testbench
-# End time: 21:16:34 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:09:29 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:16:34 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:09:29 on May 18,2026
 # vlog -reportprogress 300 ./instructmem.sv 
 # -- Compiling module instructmem
 # -- Compiling module instructmem_testbench
 # 
 # Top level modules:
 # 	instructmem_testbench
-# End time: 21:16:34 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:09:29 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:16:34 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:09:30 on May 18,2026
 # vlog -reportprogress 300 ./datamem.sv 
 # -- Compiling module datamem
 # -- Compiling module datamem_testbench
 # 
 # Top level modules:
 # 	datamem_testbench
-# End time: 21:16:34 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:09:30 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:16:34 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:09:30 on May 18,2026
 # vlog -reportprogress 300 ./register_file/thirtytwo_1_mux.sv 
 # -- Compiling module two_onemux
 # -- Compiling module four_onemux
@@ -390,38 +409,39 @@ do runlab.do
 # 
 # Top level modules:
 # 	thirtytwo_1_mux
-# End time: 21:16:34 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:09:30 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:16:34 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:09:30 on May 18,2026
 # vlog -reportprogress 300 ./register_file/register.sv 
 # -- Compiling module register
 # -- Compiling module register_tb
 # 
 # Top level modules:
 # 	register_tb
-# End time: 21:16:34 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:09:30 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:16:34 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:09:30 on May 18,2026
 # vlog -reportprogress 300 ./register_file/regfile.sv 
 # -- Compiling module regfile
 # 
 # Top level modules:
 # 	regfile
-# End time: 21:16:34 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:09:30 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:16:34 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:09:30 on May 18,2026
 # vlog -reportprogress 300 ./register_file/loopedthirtytwo_mux.sv 
 # -- Compiling module loopedthirtytwo_mux
+# ** Warning: ./register_file/loopedthirtytwo_mux.sv(2): (vlog-13314) Defaulting port 'data_lines' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
 # 
 # Top level modules:
 # 	loopedthirtytwo_mux
-# End time: 21:16:34 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:16:34 on May 18,2026
+# End time: 22:09:30 on May 18,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:09:30 on May 18,2026
 # vlog -reportprogress 300 ./register_file/five_thirtytwodecoder.sv 
 # -- Compiling module one_twodecoder
 # -- Compiling module two_fourdecoder
@@ -438,163 +458,163 @@ do runlab.do
 # 	five_thirtytwo_tb
 # 	three_eight_tb
 # 	two_four_tb
-# End time: 21:16:34 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:09:30 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:16:35 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:09:30 on May 18,2026
 # vlog -reportprogress 300 ./register_file/D_FF.sv 
 # -- Compiling module D_FF
 # 
 # Top level modules:
 # 	D_FF
-# End time: 21:16:35 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:09:30 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:16:35 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:09:30 on May 18,2026
 # vlog -reportprogress 300 ./ALU/full_adder.sv 
 # -- Compiling module full_adder
 # 
 # Top level modules:
 # 	full_adder
-# End time: 21:16:35 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:09:30 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:16:35 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:09:30 on May 18,2026
 # vlog -reportprogress 300 ./ALU/flags.sv 
 # -- Compiling module flags
 # 
 # Top level modules:
 # 	flags
-# End time: 21:16:35 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:09:30 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:16:35 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:09:30 on May 18,2026
 # vlog -reportprogress 300 ./ALU/bitsliceALU.sv 
 # -- Compiling module bitsliceALU
 # 
 # Top level modules:
 # 	bitsliceALU
-# End time: 21:16:35 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:09:30 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:16:35 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:09:30 on May 18,2026
 # vlog -reportprogress 300 ./ALU/ALU.sv 
 # -- Compiling module ALU
 # 
 # Top level modules:
 # 	ALU
-# End time: 21:16:35 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:09:30 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:16:35 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:09:30 on May 18,2026
 # vlog -reportprogress 300 ./IF.sv 
 # -- Compiling module IF
 # 
 # Top level modules:
 # 	IF
-# End time: 21:16:35 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:09:30 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:16:35 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:09:30 on May 18,2026
 # vlog -reportprogress 300 ./sixtyfourbit_fulladder.sv 
 # -- Compiling module sixtyfourbit_fulladder
 # 
 # Top level modules:
 # 	sixtyfourbit_fulladder
-# End time: 21:16:35 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:09:31 on May 18,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:16:35 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:09:31 on May 18,2026
 # vlog -reportprogress 300 ./ID.sv 
 # -- Compiling module ID
 # 
 # Top level modules:
 # 	ID
-# End time: 21:16:35 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:09:31 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:16:35 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:09:31 on May 18,2026
 # vlog -reportprogress 300 ./WB.sv 
 # -- Compiling module WB
 # 
 # Top level modules:
 # 	WB
-# End time: 21:16:35 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:09:31 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:16:35 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:09:31 on May 18,2026
 # vlog -reportprogress 300 ./pipelinedTop.sv 
 # -- Compiling module pipelinedTop
 # 
 # Top level modules:
 # 	pipelinedTop
-# End time: 21:16:35 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:09:31 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:16:36 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:09:31 on May 18,2026
 # vlog -reportprogress 300 ./pipelined_tb.sv 
 # -- Compiling module pipelined_tb
 # 
 # Top level modules:
 # 	pipelined_tb
-# End time: 21:16:36 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:09:31 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:16:36 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:09:31 on May 18,2026
 # vlog -reportprogress 300 ./IF_ID.sv 
 # -- Compiling module IF_ID
 # 
 # Top level modules:
 # 	IF_ID
-# End time: 21:16:36 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:09:31 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:16:36 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:09:31 on May 18,2026
 # vlog -reportprogress 300 ./ID_EX.sv 
 # -- Compiling module ID_EX
 # 
 # Top level modules:
 # 	ID_EX
-# End time: 21:16:36 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:09:31 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:16:36 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:09:31 on May 18,2026
 # vlog -reportprogress 300 ./EX_MEM.sv 
 # -- Compiling module EX_MEM
 # 
 # Top level modules:
 # 	EX_MEM
-# End time: 21:16:36 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:09:31 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:16:36 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:09:31 on May 18,2026
 # vlog -reportprogress 300 ./MEM_WB.sv 
 # -- Compiling module MEM_WB
 # 
 # Top level modules:
 # 	MEM_WB
-# End time: 21:16:36 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:09:31 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:16:36 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:09:31 on May 18,2026
 # vlog -reportprogress 300 ./forwardingUnit.sv 
 # -- Compiling module forwardingUnit
 # 
 # Top level modules:
 # 	forwardingUnit
-# End time: 21:16:36 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:09:31 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:16:36 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:09:31 on May 18,2026
 # vlog -reportprogress 300 ./nbit_register.sv 
 # -- Compiling module nbit_register
 # 
 # Top level modules:
 # 	nbit_register
-# End time: 21:16:36 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:09:31 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -voptargs=""+acc"" -t 1ps -lib work pipelined_tb 
-# Start time: 21:15:11 on May 18,2026
+# Start time: 22:02:52 on May 18,2026
 # Loading sv_std.std
 # Loading work.pipelined_tb
 # Loading work.pipelinedTop
@@ -631,50 +651,58 @@ do runlab.do
 # Loading work.WB
 # Loading work.thirtytwo_1_mux
 # Loading work.sixteen_onemux
-# ** Error: (vsim-3063) ./pipelinedTop.sv(48): Port 'PCp4Out' not found in the connected module (8th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/firstpipeline File: ./IF_ID.sv
-# ** Warning: (vsim-3015) ./IF_ID.sv(21): [PCDPC] - Port size (64) does not match connection size (1) for port 'q'. The port definition is at: ./nbit_register.sv(7).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/firstpipeline/Pcp4hold File: ./nbit_register.sv
-# ** Error: (vsim-3389) ./pipelinedTop.sv(71): Port 'instructionOut' not found in the connected module (20th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/secondpipeline File: ./ID_EX.sv
-# ** Fatal: (vsim-3365) ./pipelinedTop.sv(71): Too many port connections. Expected 35, found 36.
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/secondpipeline File: ./ID_EX.sv
-# FATAL ERROR while loading design
+# ** Error (suppressible): (vsim-3839) Variable '/pipelined_tb/DUT/secondpipeline/MemReadOut', driven via a port connection, is multiply driven. See ./ID_EX.sv(47).
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/secondpipeline/MemRd_dff File: ./ID_EX.sv Line: 50
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (3) for port 'q'. The port definition is at: ./register_file/D_FF.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/secondpipeline/ALUOp_dff File: ./ID_EX.sv Line: 57
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (3) for port 'd'. The port definition is at: ./register_file/D_FF.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/secondpipeline/ALUOp_dff File: ./ID_EX.sv Line: 57
+# ** Warning: (vsim-3015) [PCDPC] - Port size (64) does not match connection size (1) for port 'A'. The port definition is at: ./sixtyfourbit_fulladder.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/execution/BPCadd File: ./EX.sv Line: 57
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'thirdpipeline'.  Expected 19, found 18.
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/thirdpipeline File: ./pipelinedTop.sv Line: 121
+# ** Warning: (vsim-3722) ./pipelinedTop.sv(121): [TFMPC] - Missing connection for port 'BranchOut'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (64) does not match connection size (1) for port 'write'. The port definition is at: ./nbit_register.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/thirdpipeline/passBranch File: ./EX_MEM.sv Line: 22
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdMEMWB'. The port definition is at: ./forwardingUnit.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/fwding_unit File: ./pipelinedTop.sv Line: 155
 # Error loading design
 # Error: Error loading design
 #        Pausing macro execution
 # MACRO ./runlab.do PAUSED at line 40
+# Error opening C:/Users/aveng/469/CPU-EE469/Pipelined CPU/(vsim-3839) Variable '/pipelined_tb/DUT/secondpipeline/MemReadOut', driven via a port connection, is multiply driven. See ./ID_EX.sv
+# Path name 'C:/Users/aveng/469/CPU-EE469/Pipelined CPU/(vsim-3839) Variable '/pipelined_tb/DUT/secondpipeline/MemReadOut', driven via a port connection, is multiply driven. See ./ID_EX.sv' doesn't exist.
 do runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:21:28 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:12:25 on May 18,2026
 # vlog -reportprogress 300 ./n_bit_2to1.sv 
 # -- Compiling module n_bit_2to1
 # 
 # Top level modules:
 # 	n_bit_2to1
-# End time: 21:21:28 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:12:25 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:21:28 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:12:25 on May 18,2026
 # vlog -reportprogress 300 ./EX.sv 
 # -- Compiling module EX
 # 
 # Top level modules:
 # 	EX
-# End time: 21:21:28 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:12:25 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:21:28 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:12:25 on May 18,2026
 # vlog -reportprogress 300 ./control_unit.sv 
 # -- Compiling module control_unit
 # 
 # Top level modules:
 # 	control_unit
-# End time: 21:21:28 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:12:25 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:21:28 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:12:25 on May 18,2026
 # vlog -reportprogress 300 ./math.sv 
 # -- Compiling module mult
 # -- Compiling module shifter
@@ -684,30 +712,30 @@ do runlab.do
 # Top level modules:
 # 	shifter_testbench
 # 	mult_testbench
-# End time: 21:21:28 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:12:25 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:21:28 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:12:25 on May 18,2026
 # vlog -reportprogress 300 ./instructmem.sv 
 # -- Compiling module instructmem
 # -- Compiling module instructmem_testbench
 # 
 # Top level modules:
 # 	instructmem_testbench
-# End time: 21:21:28 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:12:25 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:21:28 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:12:25 on May 18,2026
 # vlog -reportprogress 300 ./datamem.sv 
 # -- Compiling module datamem
 # -- Compiling module datamem_testbench
 # 
 # Top level modules:
 # 	datamem_testbench
-# End time: 21:21:28 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:12:26 on May 18,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:21:28 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:12:26 on May 18,2026
 # vlog -reportprogress 300 ./register_file/thirtytwo_1_mux.sv 
 # -- Compiling module two_onemux
 # -- Compiling module four_onemux
@@ -717,38 +745,39 @@ do runlab.do
 # 
 # Top level modules:
 # 	thirtytwo_1_mux
-# End time: 21:21:29 on May 18,2026, Elapsed time: 0:00:01
+# End time: 22:12:26 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:21:29 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:12:26 on May 18,2026
 # vlog -reportprogress 300 ./register_file/register.sv 
 # -- Compiling module register
 # -- Compiling module register_tb
 # 
 # Top level modules:
 # 	register_tb
-# End time: 21:21:29 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:12:26 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:21:29 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:12:26 on May 18,2026
 # vlog -reportprogress 300 ./register_file/regfile.sv 
 # -- Compiling module regfile
 # 
 # Top level modules:
 # 	regfile
-# End time: 21:21:29 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:12:26 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:21:29 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:12:26 on May 18,2026
 # vlog -reportprogress 300 ./register_file/loopedthirtytwo_mux.sv 
 # -- Compiling module loopedthirtytwo_mux
+# ** Warning: ./register_file/loopedthirtytwo_mux.sv(2): (vlog-13314) Defaulting port 'data_lines' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
 # 
 # Top level modules:
 # 	loopedthirtytwo_mux
-# End time: 21:21:29 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:21:29 on May 18,2026
+# End time: 22:12:26 on May 18,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:12:26 on May 18,2026
 # vlog -reportprogress 300 ./register_file/five_thirtytwodecoder.sv 
 # -- Compiling module one_twodecoder
 # -- Compiling module two_fourdecoder
@@ -765,163 +794,163 @@ do runlab.do
 # 	five_thirtytwo_tb
 # 	three_eight_tb
 # 	two_four_tb
-# End time: 21:21:29 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:12:26 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:21:29 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:12:26 on May 18,2026
 # vlog -reportprogress 300 ./register_file/D_FF.sv 
 # -- Compiling module D_FF
 # 
 # Top level modules:
 # 	D_FF
-# End time: 21:21:29 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:12:26 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:21:29 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:12:26 on May 18,2026
 # vlog -reportprogress 300 ./ALU/full_adder.sv 
 # -- Compiling module full_adder
 # 
 # Top level modules:
 # 	full_adder
-# End time: 21:21:29 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:12:26 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:21:29 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:12:26 on May 18,2026
 # vlog -reportprogress 300 ./ALU/flags.sv 
 # -- Compiling module flags
 # 
 # Top level modules:
 # 	flags
-# End time: 21:21:29 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:12:26 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:21:29 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:12:26 on May 18,2026
 # vlog -reportprogress 300 ./ALU/bitsliceALU.sv 
 # -- Compiling module bitsliceALU
 # 
 # Top level modules:
 # 	bitsliceALU
-# End time: 21:21:29 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:12:26 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:21:30 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:12:26 on May 18,2026
 # vlog -reportprogress 300 ./ALU/ALU.sv 
 # -- Compiling module ALU
 # 
 # Top level modules:
 # 	ALU
-# End time: 21:21:30 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:12:26 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:21:30 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:12:26 on May 18,2026
 # vlog -reportprogress 300 ./IF.sv 
 # -- Compiling module IF
 # 
 # Top level modules:
 # 	IF
-# End time: 21:21:30 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:12:26 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:21:30 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:12:27 on May 18,2026
 # vlog -reportprogress 300 ./sixtyfourbit_fulladder.sv 
 # -- Compiling module sixtyfourbit_fulladder
 # 
 # Top level modules:
 # 	sixtyfourbit_fulladder
-# End time: 21:21:30 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:12:27 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:21:30 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:12:27 on May 18,2026
 # vlog -reportprogress 300 ./ID.sv 
 # -- Compiling module ID
 # 
 # Top level modules:
 # 	ID
-# End time: 21:21:30 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:12:27 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:21:30 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:12:27 on May 18,2026
 # vlog -reportprogress 300 ./WB.sv 
 # -- Compiling module WB
 # 
 # Top level modules:
 # 	WB
-# End time: 21:21:30 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:12:27 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:21:30 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:12:27 on May 18,2026
 # vlog -reportprogress 300 ./pipelinedTop.sv 
 # -- Compiling module pipelinedTop
 # 
 # Top level modules:
 # 	pipelinedTop
-# End time: 21:21:30 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:12:27 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:21:30 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:12:27 on May 18,2026
 # vlog -reportprogress 300 ./pipelined_tb.sv 
 # -- Compiling module pipelined_tb
 # 
 # Top level modules:
 # 	pipelined_tb
-# End time: 21:21:30 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:12:27 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:21:30 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:12:27 on May 18,2026
 # vlog -reportprogress 300 ./IF_ID.sv 
 # -- Compiling module IF_ID
 # 
 # Top level modules:
 # 	IF_ID
-# End time: 21:21:30 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:12:27 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:21:30 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:12:27 on May 18,2026
 # vlog -reportprogress 300 ./ID_EX.sv 
 # -- Compiling module ID_EX
 # 
 # Top level modules:
 # 	ID_EX
-# End time: 21:21:30 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:12:27 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:21:30 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:12:27 on May 18,2026
 # vlog -reportprogress 300 ./EX_MEM.sv 
 # -- Compiling module EX_MEM
 # 
 # Top level modules:
 # 	EX_MEM
-# End time: 21:21:31 on May 18,2026, Elapsed time: 0:00:01
+# End time: 22:12:27 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:21:31 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:12:27 on May 18,2026
 # vlog -reportprogress 300 ./MEM_WB.sv 
 # -- Compiling module MEM_WB
 # 
 # Top level modules:
 # 	MEM_WB
-# End time: 21:21:31 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:12:27 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:21:31 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:12:27 on May 18,2026
 # vlog -reportprogress 300 ./forwardingUnit.sv 
 # -- Compiling module forwardingUnit
 # 
 # Top level modules:
 # 	forwardingUnit
-# End time: 21:21:31 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:12:27 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:21:31 on May 18,2026
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:12:27 on May 18,2026
 # vlog -reportprogress 300 ./nbit_register.sv 
 # -- Compiling module nbit_register
 # 
 # Top level modules:
 # 	nbit_register
-# End time: 21:21:31 on May 18,2026, Elapsed time: 0:00:00
+# End time: 22:12:27 on May 18,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -voptargs=""+acc"" -t 1ps -lib work pipelined_tb 
-# Start time: 21:15:11 on May 18,2026
+# Start time: 22:02:52 on May 18,2026
 # Loading sv_std.std
 # Loading work.pipelined_tb
 # Loading work.pipelinedTop
@@ -958,2666 +987,16 @@ do runlab.do
 # Loading work.WB
 # Loading work.thirtytwo_1_mux
 # Loading work.sixteen_onemux
-# ** Warning: (vsim-3015) ./pipelinedTop.sv(71): [PCDPC] - Port size (32) does not match connection size (1) for port 'instructionOut'. The port definition is at: ./ID_EX.sv(9).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/secondpipeline File: ./ID_EX.sv
-# ** Warning: (vsim-3839) ./ID_EX.sv(50): Variable '/pipelined_tb/DUT/secondpipeline/MemReadOut', driven via a port connection, is multiply driven. See ./ID_EX.sv(47).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/secondpipeline/MemRd_dff File: ./register_file/D_FF.sv
-# ** Warning: (vsim-3015) ./ID_EX.sv(57): [PCDPC] - Port size (1) does not match connection size (3) for port 'q'. The port definition is at: ./register_file/D_FF.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/secondpipeline/ALUOp_dff File: ./register_file/D_FF.sv
-# ** Warning: (vsim-3015) ./ID_EX.sv(57): [PCDPC] - Port size (1) does not match connection size (3) for port 'd'. The port definition is at: ./register_file/D_FF.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/secondpipeline/ALUOp_dff File: ./register_file/D_FF.sv
-# ** Warning: (vsim-3015) ./pipelinedTop.sv(96): [PCDPC] - Port size (32) does not match connection size (1) for port 'instruction'. The port definition is at: ./EX.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/execution File: ./EX.sv
-# ** Warning: (vsim-3015) ./EX.sv(57): [PCDPC] - Port size (64) does not match connection size (1) for port 'A'. The port definition is at: ./sixtyfourbit_fulladder.sv(2).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/execution/BPCadd File: ./sixtyfourbit_fulladder.sv
-# ** Warning: (vsim-3017) ./pipelinedTop.sv(121): [TFMPC] - Too few port connections. Expected 19, found 18.
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/thirdpipeline File: ./EX_MEM.sv
+# ** Warning: (vsim-3015) [PCDPC] - Port size (64) does not match connection size (1) for port 'A'. The port definition is at: ./sixtyfourbit_fulladder.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/execution/BPCadd File: ./EX.sv Line: 57
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'thirdpipeline'.  Expected 19, found 18.
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/thirdpipeline File: ./pipelinedTop.sv Line: 121
 # ** Warning: (vsim-3722) ./pipelinedTop.sv(121): [TFMPC] - Missing connection for port 'BranchOut'.
-# ** Warning: (vsim-3015) ./EX_MEM.sv(22): [PCDPC] - Port size (64) does not match connection size (1) for port 'write'. The port definition is at: ./nbit_register.sv(5).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/thirdpipeline/passBranch File: ./nbit_register.sv
-# ** Warning: (vsim-3015) ./pipelinedTop.sv(155): [PCDPC] - Port size (5) does not match connection size (1) for port 'RdMEMWB'. The port definition is at: ./forwardingUnit.sv(5).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/fwding_unit File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(46): Variable '/pipelined_tb/DUT/fwding_unit/RdMEMWB_eq_Rm' written by more than one continuous assignment. See ./forwardingUnit.sv(23).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[0] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(42): Variable '/pipelined_tb/DUT/fwding_unit/RdMEMWB_eq_Rn' written by more than one continuous assignment. See ./forwardingUnit.sv(22).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[0] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(41): Variable '/pipelined_tb/DUT/fwding_unit/signal_store_1' written by more than one continuous assignment. See ./forwardingUnit.sv(45).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[0] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(40): Variable '/pipelined_tb/DUT/fwding_unit/signal_store' written by more than one continuous assignment. See ./forwardingUnit.sv(44).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[0] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(38): Variable '/pipelined_tb/DUT/fwding_unit/RdEXMEM_eq_Rm' written by more than one continuous assignment. See ./forwardingUnit.sv(20).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[0] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(37): Variable '/pipelined_tb/DUT/fwding_unit/signal_store_1' written by more than one continuous assignment. See ./forwardingUnit.sv(45).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[0] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(36): Variable '/pipelined_tb/DUT/fwding_unit/signal_store' written by more than one continuous assignment. See ./forwardingUnit.sv(44).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[0] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(34): Variable '/pipelined_tb/DUT/fwding_unit/RdEXMEM_eq_Rn' written by more than one continuous assignment. See ./forwardingUnit.sv(19).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[0] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(33): Variable '/pipelined_tb/DUT/fwding_unit/signal_store_1' written by more than one continuous assignment. See ./forwardingUnit.sv(45).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[0] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(32): Variable '/pipelined_tb/DUT/fwding_unit/signal_store' written by more than one continuous assignment. See ./forwardingUnit.sv(44).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[0] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(46): Variable '/pipelined_tb/DUT/fwding_unit/RdMEMWB_eq_Rm' written by more than one continuous assignment. See ./forwardingUnit.sv(23).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[1] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(45): Variable '/pipelined_tb/DUT/fwding_unit/signal_store_1' written by more than one continuous assignment. See ./forwardingUnit.sv(45).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[1] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(44): Variable '/pipelined_tb/DUT/fwding_unit/signal_store' written by more than one continuous assignment. See ./forwardingUnit.sv(44).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[1] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(42): Variable '/pipelined_tb/DUT/fwding_unit/RdMEMWB_eq_Rn' written by more than one continuous assignment. See ./forwardingUnit.sv(22).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[1] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(41): Variable '/pipelined_tb/DUT/fwding_unit/signal_store_1' written by more than one continuous assignment. See ./forwardingUnit.sv(45).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[1] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(40): Variable '/pipelined_tb/DUT/fwding_unit/signal_store' written by more than one continuous assignment. See ./forwardingUnit.sv(44).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[1] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(38): Variable '/pipelined_tb/DUT/fwding_unit/RdEXMEM_eq_Rm' written by more than one continuous assignment. See ./forwardingUnit.sv(20).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[1] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(37): Variable '/pipelined_tb/DUT/fwding_unit/signal_store_1' written by more than one continuous assignment. See ./forwardingUnit.sv(45).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[1] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(36): Variable '/pipelined_tb/DUT/fwding_unit/signal_store' written by more than one continuous assignment. See ./forwardingUnit.sv(44).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[1] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(34): Variable '/pipelined_tb/DUT/fwding_unit/RdEXMEM_eq_Rn' written by more than one continuous assignment. See ./forwardingUnit.sv(19).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[1] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(33): Variable '/pipelined_tb/DUT/fwding_unit/signal_store_1' written by more than one continuous assignment. See ./forwardingUnit.sv(45).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[1] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(32): Variable '/pipelined_tb/DUT/fwding_unit/signal_store' written by more than one continuous assignment. See ./forwardingUnit.sv(44).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[1] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(46): Variable '/pipelined_tb/DUT/fwding_unit/RdMEMWB_eq_Rm' written by more than one continuous assignment. See ./forwardingUnit.sv(23).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[2] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(45): Variable '/pipelined_tb/DUT/fwding_unit/signal_store_1' written by more than one continuous assignment. See ./forwardingUnit.sv(45).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[2] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(44): Variable '/pipelined_tb/DUT/fwding_unit/signal_store' written by more than one continuous assignment. See ./forwardingUnit.sv(44).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[2] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(42): Variable '/pipelined_tb/DUT/fwding_unit/RdMEMWB_eq_Rn' written by more than one continuous assignment. See ./forwardingUnit.sv(22).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[2] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(41): Variable '/pipelined_tb/DUT/fwding_unit/signal_store_1' written by more than one continuous assignment. See ./forwardingUnit.sv(45).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[2] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(40): Variable '/pipelined_tb/DUT/fwding_unit/signal_store' written by more than one continuous assignment. See ./forwardingUnit.sv(44).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[2] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(38): Variable '/pipelined_tb/DUT/fwding_unit/RdEXMEM_eq_Rm' written by more than one continuous assignment. See ./forwardingUnit.sv(20).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[2] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(37): Variable '/pipelined_tb/DUT/fwding_unit/signal_store_1' written by more than one continuous assignment. See ./forwardingUnit.sv(45).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[2] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(36): Variable '/pipelined_tb/DUT/fwding_unit/signal_store' written by more than one continuous assignment. See ./forwardingUnit.sv(44).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[2] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(34): Variable '/pipelined_tb/DUT/fwding_unit/RdEXMEM_eq_Rn' written by more than one continuous assignment. See ./forwardingUnit.sv(19).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[2] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(33): Variable '/pipelined_tb/DUT/fwding_unit/signal_store_1' written by more than one continuous assignment. See ./forwardingUnit.sv(45).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[2] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(32): Variable '/pipelined_tb/DUT/fwding_unit/signal_store' written by more than one continuous assignment. See ./forwardingUnit.sv(44).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[2] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(46): Variable '/pipelined_tb/DUT/fwding_unit/RdMEMWB_eq_Rm' written by more than one continuous assignment. See ./forwardingUnit.sv(23).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[3] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(45): Variable '/pipelined_tb/DUT/fwding_unit/signal_store_1' written by more than one continuous assignment. See ./forwardingUnit.sv(45).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[3] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(44): Variable '/pipelined_tb/DUT/fwding_unit/signal_store' written by more than one continuous assignment. See ./forwardingUnit.sv(44).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[3] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(42): Variable '/pipelined_tb/DUT/fwding_unit/RdMEMWB_eq_Rn' written by more than one continuous assignment. See ./forwardingUnit.sv(22).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[3] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(41): Variable '/pipelined_tb/DUT/fwding_unit/signal_store_1' written by more than one continuous assignment. See ./forwardingUnit.sv(45).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[3] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(40): Variable '/pipelined_tb/DUT/fwding_unit/signal_store' written by more than one continuous assignment. See ./forwardingUnit.sv(44).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[3] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(38): Variable '/pipelined_tb/DUT/fwding_unit/RdEXMEM_eq_Rm' written by more than one continuous assignment. See ./forwardingUnit.sv(20).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[3] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(37): Variable '/pipelined_tb/DUT/fwding_unit/signal_store_1' written by more than one continuous assignment. See ./forwardingUnit.sv(45).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[3] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(36): Variable '/pipelined_tb/DUT/fwding_unit/signal_store' written by more than one continuous assignment. See ./forwardingUnit.sv(44).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[3] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(34): Variable '/pipelined_tb/DUT/fwding_unit/RdEXMEM_eq_Rn' written by more than one continuous assignment. See ./forwardingUnit.sv(19).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[3] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(33): Variable '/pipelined_tb/DUT/fwding_unit/signal_store_1' written by more than one continuous assignment. See ./forwardingUnit.sv(45).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[3] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(32): Variable '/pipelined_tb/DUT/fwding_unit/signal_store' written by more than one continuous assignment. See ./forwardingUnit.sv(44).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[3] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(46): Variable '/pipelined_tb/DUT/fwding_unit/RdMEMWB_eq_Rm' written by more than one continuous assignment. See ./forwardingUnit.sv(23).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[4] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(45): Variable '/pipelined_tb/DUT/fwding_unit/signal_store_1' written by more than one continuous assignment. See ./forwardingUnit.sv(45).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[4] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(44): Variable '/pipelined_tb/DUT/fwding_unit/signal_store' written by more than one continuous assignment. See ./forwardingUnit.sv(44).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[4] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(42): Variable '/pipelined_tb/DUT/fwding_unit/RdMEMWB_eq_Rn' written by more than one continuous assignment. See ./forwardingUnit.sv(22).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[4] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(41): Variable '/pipelined_tb/DUT/fwding_unit/signal_store_1' written by more than one continuous assignment. See ./forwardingUnit.sv(45).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[4] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(40): Variable '/pipelined_tb/DUT/fwding_unit/signal_store' written by more than one continuous assignment. See ./forwardingUnit.sv(44).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[4] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(38): Variable '/pipelined_tb/DUT/fwding_unit/RdEXMEM_eq_Rm' written by more than one continuous assignment. See ./forwardingUnit.sv(20).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[4] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(37): Variable '/pipelined_tb/DUT/fwding_unit/signal_store_1' written by more than one continuous assignment. See ./forwardingUnit.sv(45).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[4] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(36): Variable '/pipelined_tb/DUT/fwding_unit/signal_store' written by more than one continuous assignment. See ./forwardingUnit.sv(44).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[4] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(34): Variable '/pipelined_tb/DUT/fwding_unit/RdEXMEM_eq_Rn' written by more than one continuous assignment. See ./forwardingUnit.sv(19).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[4] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(33): Variable '/pipelined_tb/DUT/fwding_unit/signal_store_1' written by more than one continuous assignment. See ./forwardingUnit.sv(45).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[4] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(32): Variable '/pipelined_tb/DUT/fwding_unit/signal_store' written by more than one continuous assignment. See ./forwardingUnit.sv(44).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[4] File: ./forwardingUnit.sv
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./runlab.do PAUSED at line 40
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:27:32 on May 18,2026
-# vlog -reportprogress 300 ./n_bit_2to1.sv 
-# -- Compiling module n_bit_2to1
-# 
-# Top level modules:
-# 	n_bit_2to1
-# End time: 21:27:32 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:27:32 on May 18,2026
-# vlog -reportprogress 300 ./EX.sv 
-# -- Compiling module EX
-# 
-# Top level modules:
-# 	EX
-# End time: 21:27:32 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:27:32 on May 18,2026
-# vlog -reportprogress 300 ./control_unit.sv 
-# -- Compiling module control_unit
-# 
-# Top level modules:
-# 	control_unit
-# End time: 21:27:32 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:27:32 on May 18,2026
-# vlog -reportprogress 300 ./math.sv 
-# -- Compiling module mult
-# -- Compiling module shifter
-# -- Compiling module shifter_testbench
-# -- Compiling module mult_testbench
-# 
-# Top level modules:
-# 	shifter_testbench
-# 	mult_testbench
-# End time: 21:27:32 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:27:32 on May 18,2026
-# vlog -reportprogress 300 ./instructmem.sv 
-# -- Compiling module instructmem
-# -- Compiling module instructmem_testbench
-# 
-# Top level modules:
-# 	instructmem_testbench
-# End time: 21:27:32 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:27:32 on May 18,2026
-# vlog -reportprogress 300 ./datamem.sv 
-# -- Compiling module datamem
-# -- Compiling module datamem_testbench
-# 
-# Top level modules:
-# 	datamem_testbench
-# End time: 21:27:32 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:27:32 on May 18,2026
-# vlog -reportprogress 300 ./register_file/thirtytwo_1_mux.sv 
-# -- Compiling module two_onemux
-# -- Compiling module four_onemux
-# -- Compiling module eight_onemux
-# -- Compiling module sixteen_onemux
-# -- Compiling module thirtytwo_1_mux
-# 
-# Top level modules:
-# 	thirtytwo_1_mux
-# End time: 21:27:32 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:27:32 on May 18,2026
-# vlog -reportprogress 300 ./register_file/register.sv 
-# -- Compiling module register
-# -- Compiling module register_tb
-# 
-# Top level modules:
-# 	register_tb
-# End time: 21:27:32 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:27:32 on May 18,2026
-# vlog -reportprogress 300 ./register_file/regfile.sv 
-# -- Compiling module regfile
-# 
-# Top level modules:
-# 	regfile
-# End time: 21:27:32 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:27:33 on May 18,2026
-# vlog -reportprogress 300 ./register_file/loopedthirtytwo_mux.sv 
-# -- Compiling module loopedthirtytwo_mux
-# 
-# Top level modules:
-# 	loopedthirtytwo_mux
-# End time: 21:27:33 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:27:33 on May 18,2026
-# vlog -reportprogress 300 ./register_file/five_thirtytwodecoder.sv 
-# -- Compiling module one_twodecoder
-# -- Compiling module two_fourdecoder
-# -- Compiling module three_eightdecoder
-# -- Compiling module four_sixteendecoder
-# -- Compiling module five_thirtytwodecoder
-# -- Compiling module one_two_tb
-# -- Compiling module five_thirtytwo_tb
-# -- Compiling module three_eight_tb
-# -- Compiling module two_four_tb
-# 
-# Top level modules:
-# 	one_two_tb
-# 	five_thirtytwo_tb
-# 	three_eight_tb
-# 	two_four_tb
-# End time: 21:27:33 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:27:33 on May 18,2026
-# vlog -reportprogress 300 ./register_file/D_FF.sv 
-# -- Compiling module D_FF
-# 
-# Top level modules:
-# 	D_FF
-# End time: 21:27:33 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:27:33 on May 18,2026
-# vlog -reportprogress 300 ./ALU/full_adder.sv 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 21:27:33 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:27:33 on May 18,2026
-# vlog -reportprogress 300 ./ALU/flags.sv 
-# -- Compiling module flags
-# 
-# Top level modules:
-# 	flags
-# End time: 21:27:33 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:27:33 on May 18,2026
-# vlog -reportprogress 300 ./ALU/bitsliceALU.sv 
-# -- Compiling module bitsliceALU
-# 
-# Top level modules:
-# 	bitsliceALU
-# End time: 21:27:33 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:27:33 on May 18,2026
-# vlog -reportprogress 300 ./ALU/ALU.sv 
-# -- Compiling module ALU
-# 
-# Top level modules:
-# 	ALU
-# End time: 21:27:33 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:27:33 on May 18,2026
-# vlog -reportprogress 300 ./IF.sv 
-# -- Compiling module IF
-# 
-# Top level modules:
-# 	IF
-# End time: 21:27:33 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:27:33 on May 18,2026
-# vlog -reportprogress 300 ./sixtyfourbit_fulladder.sv 
-# -- Compiling module sixtyfourbit_fulladder
-# 
-# Top level modules:
-# 	sixtyfourbit_fulladder
-# End time: 21:27:33 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:27:33 on May 18,2026
-# vlog -reportprogress 300 ./ID.sv 
-# -- Compiling module ID
-# 
-# Top level modules:
-# 	ID
-# End time: 21:27:34 on May 18,2026, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:27:34 on May 18,2026
-# vlog -reportprogress 300 ./WB.sv 
-# -- Compiling module WB
-# 
-# Top level modules:
-# 	WB
-# End time: 21:27:34 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:27:34 on May 18,2026
-# vlog -reportprogress 300 ./pipelinedTop.sv 
-# -- Compiling module pipelinedTop
-# 
-# Top level modules:
-# 	pipelinedTop
-# End time: 21:27:34 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:27:34 on May 18,2026
-# vlog -reportprogress 300 ./pipelined_tb.sv 
-# -- Compiling module pipelined_tb
-# 
-# Top level modules:
-# 	pipelined_tb
-# End time: 21:27:34 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:27:34 on May 18,2026
-# vlog -reportprogress 300 ./IF_ID.sv 
-# -- Compiling module IF_ID
-# 
-# Top level modules:
-# 	IF_ID
-# End time: 21:27:34 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:27:34 on May 18,2026
-# vlog -reportprogress 300 ./ID_EX.sv 
-# -- Compiling module ID_EX
-# 
-# Top level modules:
-# 	ID_EX
-# End time: 21:27:34 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:27:34 on May 18,2026
-# vlog -reportprogress 300 ./EX_MEM.sv 
-# -- Compiling module EX_MEM
-# 
-# Top level modules:
-# 	EX_MEM
-# End time: 21:27:34 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:27:34 on May 18,2026
-# vlog -reportprogress 300 ./MEM_WB.sv 
-# -- Compiling module MEM_WB
-# 
-# Top level modules:
-# 	MEM_WB
-# End time: 21:27:34 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:27:34 on May 18,2026
-# vlog -reportprogress 300 ./forwardingUnit.sv 
-# -- Compiling module forwardingUnit
-# 
-# Top level modules:
-# 	forwardingUnit
-# End time: 21:27:34 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:27:34 on May 18,2026
-# vlog -reportprogress 300 ./nbit_register.sv 
-# -- Compiling module nbit_register
-# 
-# Top level modules:
-# 	nbit_register
-# End time: 21:27:35 on May 18,2026, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work pipelined_tb 
-# Start time: 21:15:11 on May 18,2026
-# Loading sv_std.std
-# Loading work.pipelined_tb
-# Loading work.pipelinedTop
-# Loading work.control_unit
-# Loading work.IF
-# Loading work.register
-# Loading work.sixtyfourbit_fulladder
-# Loading work.full_adder
-# Loading work.n_bit_2to1
-# Loading work.instructmem
-# Loading work.IF_ID
-# Loading work.nbit_register
-# Loading work.ID
-# Loading work.regfile
-# Loading work.five_thirtytwodecoder
-# Loading work.one_twodecoder
-# Loading work.four_sixteendecoder
-# Loading work.three_eightdecoder
-# Loading work.two_fourdecoder
-# Loading work.loopedthirtytwo_mux
-# Loading work.ID_EX
-# Loading work.D_FF
-# Loading work.EX
-# Loading work.ALU
-# Loading work.bitsliceALU
-# Loading work.eight_onemux
-# Loading work.four_onemux
-# Loading work.two_onemux
-# Loading work.flags
-# Loading work.EX_MEM
-# Loading work.datamem
-# Loading work.MEM_WB
-# Loading work.forwardingUnit
-# Loading work.WB
-# Loading work.thirtytwo_1_mux
-# Loading work.sixteen_onemux
-# ** Warning: (vsim-3015) ./pipelinedTop.sv(71): [PCDPC] - Port size (32) does not match connection size (1) for port 'instructionOut'. The port definition is at: ./ID_EX.sv(9).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/secondpipeline File: ./ID_EX.sv
-# ** Warning: (vsim-3839) ./ID_EX.sv(50): Variable '/pipelined_tb/DUT/secondpipeline/MemReadOut', driven via a port connection, is multiply driven. See ./ID_EX.sv(47).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/secondpipeline/MemRd_dff File: ./register_file/D_FF.sv
-# ** Warning: (vsim-3015) ./ID_EX.sv(57): [PCDPC] - Port size (1) does not match connection size (3) for port 'q'. The port definition is at: ./register_file/D_FF.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/secondpipeline/ALUOp_dff File: ./register_file/D_FF.sv
-# ** Warning: (vsim-3015) ./ID_EX.sv(57): [PCDPC] - Port size (1) does not match connection size (3) for port 'd'. The port definition is at: ./register_file/D_FF.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/secondpipeline/ALUOp_dff File: ./register_file/D_FF.sv
-# ** Warning: (vsim-3015) ./pipelinedTop.sv(96): [PCDPC] - Port size (32) does not match connection size (1) for port 'instruction'. The port definition is at: ./EX.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/execution File: ./EX.sv
-# ** Warning: (vsim-3015) ./EX.sv(57): [PCDPC] - Port size (64) does not match connection size (1) for port 'A'. The port definition is at: ./sixtyfourbit_fulladder.sv(2).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/execution/BPCadd File: ./sixtyfourbit_fulladder.sv
-# ** Warning: (vsim-3017) ./pipelinedTop.sv(121): [TFMPC] - Too few port connections. Expected 19, found 18.
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/thirdpipeline File: ./EX_MEM.sv
-# ** Warning: (vsim-3722) ./pipelinedTop.sv(121): [TFMPC] - Missing connection for port 'BranchOut'.
-# ** Warning: (vsim-3015) ./EX_MEM.sv(22): [PCDPC] - Port size (64) does not match connection size (1) for port 'write'. The port definition is at: ./nbit_register.sv(5).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/thirdpipeline/passBranch File: ./nbit_register.sv
-# ** Warning: (vsim-3015) ./pipelinedTop.sv(155): [PCDPC] - Port size (5) does not match connection size (1) for port 'RdMEMWB'. The port definition is at: ./forwardingUnit.sv(5).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/fwding_unit File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(50): Variable '/pipelined_tb/DUT/fwding_unit/RdMEMWB_eq_Rm' written by more than one continuous assignment. See ./forwardingUnit.sv(23).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[0] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(46): Variable '/pipelined_tb/DUT/fwding_unit/RdMEMWB_eq_Rn' written by more than one continuous assignment. See ./forwardingUnit.sv(22).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[0] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(42): Variable '/pipelined_tb/DUT/fwding_unit/RdEXMEM_eq_Rm' written by more than one continuous assignment. See ./forwardingUnit.sv(20).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[0] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(38): Variable '/pipelined_tb/DUT/fwding_unit/RdEXMEM_eq_Rn' written by more than one continuous assignment. See ./forwardingUnit.sv(19).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[0] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(50): Variable '/pipelined_tb/DUT/fwding_unit/RdMEMWB_eq_Rm' written by more than one continuous assignment. See ./forwardingUnit.sv(23).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[1] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(49): Variable '/pipelined_tb/DUT/fwding_unit/x31_store_3' written by more than one continuous assignment. See ./forwardingUnit.sv(49).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[1] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(48): Variable '/pipelined_tb/DUT/fwding_unit/eq_store_3' written by more than one continuous assignment. See ./forwardingUnit.sv(48).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[1] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(46): Variable '/pipelined_tb/DUT/fwding_unit/RdMEMWB_eq_Rn' written by more than one continuous assignment. See ./forwardingUnit.sv(22).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[1] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(45): Variable '/pipelined_tb/DUT/fwding_unit/x31_store_2' written by more than one continuous assignment. See ./forwardingUnit.sv(45).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[1] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(44): Variable '/pipelined_tb/DUT/fwding_unit/eq_store_2' written by more than one continuous assignment. See ./forwardingUnit.sv(44).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[1] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(42): Variable '/pipelined_tb/DUT/fwding_unit/RdEXMEM_eq_Rm' written by more than one continuous assignment. See ./forwardingUnit.sv(20).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[1] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(41): Variable '/pipelined_tb/DUT/fwding_unit/x31_store_1' written by more than one continuous assignment. See ./forwardingUnit.sv(41).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[1] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(40): Variable '/pipelined_tb/DUT/fwding_unit/eq_store_1' written by more than one continuous assignment. See ./forwardingUnit.sv(40).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[1] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(38): Variable '/pipelined_tb/DUT/fwding_unit/RdEXMEM_eq_Rn' written by more than one continuous assignment. See ./forwardingUnit.sv(19).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[1] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(37): Variable '/pipelined_tb/DUT/fwding_unit/x31_store_0' written by more than one continuous assignment. See ./forwardingUnit.sv(37).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[1] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(36): Variable '/pipelined_tb/DUT/fwding_unit/eq_store_0' written by more than one continuous assignment. See ./forwardingUnit.sv(36).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[1] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(50): Variable '/pipelined_tb/DUT/fwding_unit/RdMEMWB_eq_Rm' written by more than one continuous assignment. See ./forwardingUnit.sv(23).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[2] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(49): Variable '/pipelined_tb/DUT/fwding_unit/x31_store_3' written by more than one continuous assignment. See ./forwardingUnit.sv(49).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[2] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(48): Variable '/pipelined_tb/DUT/fwding_unit/eq_store_3' written by more than one continuous assignment. See ./forwardingUnit.sv(48).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[2] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(46): Variable '/pipelined_tb/DUT/fwding_unit/RdMEMWB_eq_Rn' written by more than one continuous assignment. See ./forwardingUnit.sv(22).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[2] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(45): Variable '/pipelined_tb/DUT/fwding_unit/x31_store_2' written by more than one continuous assignment. See ./forwardingUnit.sv(45).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[2] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(44): Variable '/pipelined_tb/DUT/fwding_unit/eq_store_2' written by more than one continuous assignment. See ./forwardingUnit.sv(44).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[2] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(42): Variable '/pipelined_tb/DUT/fwding_unit/RdEXMEM_eq_Rm' written by more than one continuous assignment. See ./forwardingUnit.sv(20).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[2] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(41): Variable '/pipelined_tb/DUT/fwding_unit/x31_store_1' written by more than one continuous assignment. See ./forwardingUnit.sv(41).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[2] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(40): Variable '/pipelined_tb/DUT/fwding_unit/eq_store_1' written by more than one continuous assignment. See ./forwardingUnit.sv(40).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[2] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(38): Variable '/pipelined_tb/DUT/fwding_unit/RdEXMEM_eq_Rn' written by more than one continuous assignment. See ./forwardingUnit.sv(19).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[2] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(37): Variable '/pipelined_tb/DUT/fwding_unit/x31_store_0' written by more than one continuous assignment. See ./forwardingUnit.sv(37).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[2] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(36): Variable '/pipelined_tb/DUT/fwding_unit/eq_store_0' written by more than one continuous assignment. See ./forwardingUnit.sv(36).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[2] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(50): Variable '/pipelined_tb/DUT/fwding_unit/RdMEMWB_eq_Rm' written by more than one continuous assignment. See ./forwardingUnit.sv(23).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[3] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(49): Variable '/pipelined_tb/DUT/fwding_unit/x31_store_3' written by more than one continuous assignment. See ./forwardingUnit.sv(49).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[3] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(48): Variable '/pipelined_tb/DUT/fwding_unit/eq_store_3' written by more than one continuous assignment. See ./forwardingUnit.sv(48).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[3] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(46): Variable '/pipelined_tb/DUT/fwding_unit/RdMEMWB_eq_Rn' written by more than one continuous assignment. See ./forwardingUnit.sv(22).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[3] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(45): Variable '/pipelined_tb/DUT/fwding_unit/x31_store_2' written by more than one continuous assignment. See ./forwardingUnit.sv(45).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[3] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(44): Variable '/pipelined_tb/DUT/fwding_unit/eq_store_2' written by more than one continuous assignment. See ./forwardingUnit.sv(44).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[3] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(42): Variable '/pipelined_tb/DUT/fwding_unit/RdEXMEM_eq_Rm' written by more than one continuous assignment. See ./forwardingUnit.sv(20).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[3] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(41): Variable '/pipelined_tb/DUT/fwding_unit/x31_store_1' written by more than one continuous assignment. See ./forwardingUnit.sv(41).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[3] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(40): Variable '/pipelined_tb/DUT/fwding_unit/eq_store_1' written by more than one continuous assignment. See ./forwardingUnit.sv(40).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[3] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(38): Variable '/pipelined_tb/DUT/fwding_unit/RdEXMEM_eq_Rn' written by more than one continuous assignment. See ./forwardingUnit.sv(19).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[3] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(37): Variable '/pipelined_tb/DUT/fwding_unit/x31_store_0' written by more than one continuous assignment. See ./forwardingUnit.sv(37).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[3] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(36): Variable '/pipelined_tb/DUT/fwding_unit/eq_store_0' written by more than one continuous assignment. See ./forwardingUnit.sv(36).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[3] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(50): Variable '/pipelined_tb/DUT/fwding_unit/RdMEMWB_eq_Rm' written by more than one continuous assignment. See ./forwardingUnit.sv(23).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[4] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(49): Variable '/pipelined_tb/DUT/fwding_unit/x31_store_3' written by more than one continuous assignment. See ./forwardingUnit.sv(49).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[4] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(48): Variable '/pipelined_tb/DUT/fwding_unit/eq_store_3' written by more than one continuous assignment. See ./forwardingUnit.sv(48).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[4] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(46): Variable '/pipelined_tb/DUT/fwding_unit/RdMEMWB_eq_Rn' written by more than one continuous assignment. See ./forwardingUnit.sv(22).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[4] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(45): Variable '/pipelined_tb/DUT/fwding_unit/x31_store_2' written by more than one continuous assignment. See ./forwardingUnit.sv(45).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[4] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(44): Variable '/pipelined_tb/DUT/fwding_unit/eq_store_2' written by more than one continuous assignment. See ./forwardingUnit.sv(44).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[4] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(42): Variable '/pipelined_tb/DUT/fwding_unit/RdEXMEM_eq_Rm' written by more than one continuous assignment. See ./forwardingUnit.sv(20).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[4] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(41): Variable '/pipelined_tb/DUT/fwding_unit/x31_store_1' written by more than one continuous assignment. See ./forwardingUnit.sv(41).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[4] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(40): Variable '/pipelined_tb/DUT/fwding_unit/eq_store_1' written by more than one continuous assignment. See ./forwardingUnit.sv(40).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[4] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(38): Variable '/pipelined_tb/DUT/fwding_unit/RdEXMEM_eq_Rn' written by more than one continuous assignment. See ./forwardingUnit.sv(19).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[4] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(37): Variable '/pipelined_tb/DUT/fwding_unit/x31_store_0' written by more than one continuous assignment. See ./forwardingUnit.sv(37).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[4] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(36): Variable '/pipelined_tb/DUT/fwding_unit/eq_store_0' written by more than one continuous assignment. See ./forwardingUnit.sv(36).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[4] File: ./forwardingUnit.sv
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./runlab.do PAUSED at line 40
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:29:19 on May 18,2026
-# vlog -reportprogress 300 ./n_bit_2to1.sv 
-# -- Compiling module n_bit_2to1
-# 
-# Top level modules:
-# 	n_bit_2to1
-# End time: 21:29:19 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:29:19 on May 18,2026
-# vlog -reportprogress 300 ./EX.sv 
-# -- Compiling module EX
-# 
-# Top level modules:
-# 	EX
-# End time: 21:29:19 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:29:19 on May 18,2026
-# vlog -reportprogress 300 ./control_unit.sv 
-# -- Compiling module control_unit
-# 
-# Top level modules:
-# 	control_unit
-# End time: 21:29:19 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:29:19 on May 18,2026
-# vlog -reportprogress 300 ./math.sv 
-# -- Compiling module mult
-# -- Compiling module shifter
-# -- Compiling module shifter_testbench
-# -- Compiling module mult_testbench
-# 
-# Top level modules:
-# 	shifter_testbench
-# 	mult_testbench
-# End time: 21:29:19 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:29:19 on May 18,2026
-# vlog -reportprogress 300 ./instructmem.sv 
-# -- Compiling module instructmem
-# -- Compiling module instructmem_testbench
-# 
-# Top level modules:
-# 	instructmem_testbench
-# End time: 21:29:19 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:29:19 on May 18,2026
-# vlog -reportprogress 300 ./datamem.sv 
-# -- Compiling module datamem
-# -- Compiling module datamem_testbench
-# 
-# Top level modules:
-# 	datamem_testbench
-# End time: 21:29:19 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:29:19 on May 18,2026
-# vlog -reportprogress 300 ./register_file/thirtytwo_1_mux.sv 
-# -- Compiling module two_onemux
-# -- Compiling module four_onemux
-# -- Compiling module eight_onemux
-# -- Compiling module sixteen_onemux
-# -- Compiling module thirtytwo_1_mux
-# 
-# Top level modules:
-# 	thirtytwo_1_mux
-# End time: 21:29:20 on May 18,2026, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:29:20 on May 18,2026
-# vlog -reportprogress 300 ./register_file/register.sv 
-# -- Compiling module register
-# -- Compiling module register_tb
-# 
-# Top level modules:
-# 	register_tb
-# End time: 21:29:20 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:29:20 on May 18,2026
-# vlog -reportprogress 300 ./register_file/regfile.sv 
-# -- Compiling module regfile
-# 
-# Top level modules:
-# 	regfile
-# End time: 21:29:20 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:29:20 on May 18,2026
-# vlog -reportprogress 300 ./register_file/loopedthirtytwo_mux.sv 
-# -- Compiling module loopedthirtytwo_mux
-# 
-# Top level modules:
-# 	loopedthirtytwo_mux
-# End time: 21:29:20 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:29:20 on May 18,2026
-# vlog -reportprogress 300 ./register_file/five_thirtytwodecoder.sv 
-# -- Compiling module one_twodecoder
-# -- Compiling module two_fourdecoder
-# -- Compiling module three_eightdecoder
-# -- Compiling module four_sixteendecoder
-# -- Compiling module five_thirtytwodecoder
-# -- Compiling module one_two_tb
-# -- Compiling module five_thirtytwo_tb
-# -- Compiling module three_eight_tb
-# -- Compiling module two_four_tb
-# 
-# Top level modules:
-# 	one_two_tb
-# 	five_thirtytwo_tb
-# 	three_eight_tb
-# 	two_four_tb
-# End time: 21:29:20 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:29:20 on May 18,2026
-# vlog -reportprogress 300 ./register_file/D_FF.sv 
-# -- Compiling module D_FF
-# 
-# Top level modules:
-# 	D_FF
-# End time: 21:29:20 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:29:20 on May 18,2026
-# vlog -reportprogress 300 ./ALU/full_adder.sv 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 21:29:20 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:29:20 on May 18,2026
-# vlog -reportprogress 300 ./ALU/flags.sv 
-# -- Compiling module flags
-# 
-# Top level modules:
-# 	flags
-# End time: 21:29:20 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:29:20 on May 18,2026
-# vlog -reportprogress 300 ./ALU/bitsliceALU.sv 
-# -- Compiling module bitsliceALU
-# 
-# Top level modules:
-# 	bitsliceALU
-# End time: 21:29:20 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:29:20 on May 18,2026
-# vlog -reportprogress 300 ./ALU/ALU.sv 
-# -- Compiling module ALU
-# 
-# Top level modules:
-# 	ALU
-# End time: 21:29:20 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:29:20 on May 18,2026
-# vlog -reportprogress 300 ./IF.sv 
-# -- Compiling module IF
-# 
-# Top level modules:
-# 	IF
-# End time: 21:29:21 on May 18,2026, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:29:21 on May 18,2026
-# vlog -reportprogress 300 ./sixtyfourbit_fulladder.sv 
-# -- Compiling module sixtyfourbit_fulladder
-# 
-# Top level modules:
-# 	sixtyfourbit_fulladder
-# End time: 21:29:21 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:29:21 on May 18,2026
-# vlog -reportprogress 300 ./ID.sv 
-# -- Compiling module ID
-# 
-# Top level modules:
-# 	ID
-# End time: 21:29:21 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:29:21 on May 18,2026
-# vlog -reportprogress 300 ./WB.sv 
-# -- Compiling module WB
-# 
-# Top level modules:
-# 	WB
-# End time: 21:29:21 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:29:21 on May 18,2026
-# vlog -reportprogress 300 ./pipelinedTop.sv 
-# -- Compiling module pipelinedTop
-# 
-# Top level modules:
-# 	pipelinedTop
-# End time: 21:29:21 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:29:21 on May 18,2026
-# vlog -reportprogress 300 ./pipelined_tb.sv 
-# -- Compiling module pipelined_tb
-# 
-# Top level modules:
-# 	pipelined_tb
-# End time: 21:29:21 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:29:21 on May 18,2026
-# vlog -reportprogress 300 ./IF_ID.sv 
-# -- Compiling module IF_ID
-# 
-# Top level modules:
-# 	IF_ID
-# End time: 21:29:21 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:29:21 on May 18,2026
-# vlog -reportprogress 300 ./ID_EX.sv 
-# -- Compiling module ID_EX
-# 
-# Top level modules:
-# 	ID_EX
-# End time: 21:29:21 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:29:21 on May 18,2026
-# vlog -reportprogress 300 ./EX_MEM.sv 
-# -- Compiling module EX_MEM
-# 
-# Top level modules:
-# 	EX_MEM
-# End time: 21:29:21 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:29:21 on May 18,2026
-# vlog -reportprogress 300 ./MEM_WB.sv 
-# -- Compiling module MEM_WB
-# 
-# Top level modules:
-# 	MEM_WB
-# End time: 21:29:21 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:29:21 on May 18,2026
-# vlog -reportprogress 300 ./forwardingUnit.sv 
-# -- Compiling module forwardingUnit
-# 
-# Top level modules:
-# 	forwardingUnit
-# End time: 21:29:22 on May 18,2026, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:29:22 on May 18,2026
-# vlog -reportprogress 300 ./nbit_register.sv 
-# -- Compiling module nbit_register
-# 
-# Top level modules:
-# 	nbit_register
-# End time: 21:29:22 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work pipelined_tb 
-# Start time: 21:15:11 on May 18,2026
-# Loading sv_std.std
-# Loading work.pipelined_tb
-# Loading work.pipelinedTop
-# Loading work.control_unit
-# Loading work.IF
-# Loading work.register
-# Loading work.sixtyfourbit_fulladder
-# Loading work.full_adder
-# Loading work.n_bit_2to1
-# Loading work.instructmem
-# Loading work.IF_ID
-# Loading work.nbit_register
-# Loading work.ID
-# Loading work.regfile
-# Loading work.five_thirtytwodecoder
-# Loading work.one_twodecoder
-# Loading work.four_sixteendecoder
-# Loading work.three_eightdecoder
-# Loading work.two_fourdecoder
-# Loading work.loopedthirtytwo_mux
-# Loading work.ID_EX
-# Loading work.D_FF
-# Loading work.EX
-# Loading work.ALU
-# Loading work.bitsliceALU
-# Loading work.eight_onemux
-# Loading work.four_onemux
-# Loading work.two_onemux
-# Loading work.flags
-# Loading work.EX_MEM
-# Loading work.datamem
-# Loading work.MEM_WB
-# Loading work.forwardingUnit
-# Loading work.WB
-# Loading work.thirtytwo_1_mux
-# Loading work.sixteen_onemux
-# ** Warning: (vsim-3015) ./pipelinedTop.sv(71): [PCDPC] - Port size (32) does not match connection size (1) for port 'instructionOut'. The port definition is at: ./ID_EX.sv(9).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/secondpipeline File: ./ID_EX.sv
-# ** Warning: (vsim-3839) ./ID_EX.sv(50): Variable '/pipelined_tb/DUT/secondpipeline/MemReadOut', driven via a port connection, is multiply driven. See ./ID_EX.sv(47).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/secondpipeline/MemRd_dff File: ./register_file/D_FF.sv
-# ** Warning: (vsim-3015) ./ID_EX.sv(57): [PCDPC] - Port size (1) does not match connection size (3) for port 'q'. The port definition is at: ./register_file/D_FF.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/secondpipeline/ALUOp_dff File: ./register_file/D_FF.sv
-# ** Warning: (vsim-3015) ./ID_EX.sv(57): [PCDPC] - Port size (1) does not match connection size (3) for port 'd'. The port definition is at: ./register_file/D_FF.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/secondpipeline/ALUOp_dff File: ./register_file/D_FF.sv
-# ** Warning: (vsim-3015) ./pipelinedTop.sv(96): [PCDPC] - Port size (32) does not match connection size (1) for port 'instruction'. The port definition is at: ./EX.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/execution File: ./EX.sv
-# ** Warning: (vsim-3015) ./EX.sv(57): [PCDPC] - Port size (64) does not match connection size (1) for port 'A'. The port definition is at: ./sixtyfourbit_fulladder.sv(2).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/execution/BPCadd File: ./sixtyfourbit_fulladder.sv
-# ** Warning: (vsim-3017) ./pipelinedTop.sv(121): [TFMPC] - Too few port connections. Expected 19, found 18.
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/thirdpipeline File: ./EX_MEM.sv
-# ** Warning: (vsim-3722) ./pipelinedTop.sv(121): [TFMPC] - Missing connection for port 'BranchOut'.
-# ** Warning: (vsim-3015) ./EX_MEM.sv(22): [PCDPC] - Port size (64) does not match connection size (1) for port 'write'. The port definition is at: ./nbit_register.sv(5).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/thirdpipeline/passBranch File: ./nbit_register.sv
-# ** Warning: (vsim-3015) ./pipelinedTop.sv(155): [PCDPC] - Port size (5) does not match connection size (1) for port 'RdMEMWB'. The port definition is at: ./forwardingUnit.sv(5).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/fwding_unit File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(52): Variable '/pipelined_tb/DUT/fwding_unit/RdMEMWB_eq_Rm' written by more than one continuous assignment. See ./forwardingUnit.sv(23).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[0] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(48): Variable '/pipelined_tb/DUT/fwding_unit/RdMEMWB_eq_Rn' written by more than one continuous assignment. See ./forwardingUnit.sv(22).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[0] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(44): Variable '/pipelined_tb/DUT/fwding_unit/RdEXMEM_eq_Rm' written by more than one continuous assignment. See ./forwardingUnit.sv(20).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[0] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(40): Variable '/pipelined_tb/DUT/fwding_unit/RdEXMEM_eq_Rn' written by more than one continuous assignment. See ./forwardingUnit.sv(19).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[0] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(52): Variable '/pipelined_tb/DUT/fwding_unit/RdMEMWB_eq_Rm' written by more than one continuous assignment. See ./forwardingUnit.sv(23).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[1] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(48): Variable '/pipelined_tb/DUT/fwding_unit/RdMEMWB_eq_Rn' written by more than one continuous assignment. See ./forwardingUnit.sv(22).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[1] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(44): Variable '/pipelined_tb/DUT/fwding_unit/RdEXMEM_eq_Rm' written by more than one continuous assignment. See ./forwardingUnit.sv(20).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[1] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(40): Variable '/pipelined_tb/DUT/fwding_unit/RdEXMEM_eq_Rn' written by more than one continuous assignment. See ./forwardingUnit.sv(19).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[1] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(52): Variable '/pipelined_tb/DUT/fwding_unit/RdMEMWB_eq_Rm' written by more than one continuous assignment. See ./forwardingUnit.sv(23).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[2] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(48): Variable '/pipelined_tb/DUT/fwding_unit/RdMEMWB_eq_Rn' written by more than one continuous assignment. See ./forwardingUnit.sv(22).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[2] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(44): Variable '/pipelined_tb/DUT/fwding_unit/RdEXMEM_eq_Rm' written by more than one continuous assignment. See ./forwardingUnit.sv(20).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[2] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(40): Variable '/pipelined_tb/DUT/fwding_unit/RdEXMEM_eq_Rn' written by more than one continuous assignment. See ./forwardingUnit.sv(19).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[2] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(52): Variable '/pipelined_tb/DUT/fwding_unit/RdMEMWB_eq_Rm' written by more than one continuous assignment. See ./forwardingUnit.sv(23).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[3] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(48): Variable '/pipelined_tb/DUT/fwding_unit/RdMEMWB_eq_Rn' written by more than one continuous assignment. See ./forwardingUnit.sv(22).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[3] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(44): Variable '/pipelined_tb/DUT/fwding_unit/RdEXMEM_eq_Rm' written by more than one continuous assignment. See ./forwardingUnit.sv(20).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[3] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(40): Variable '/pipelined_tb/DUT/fwding_unit/RdEXMEM_eq_Rn' written by more than one continuous assignment. See ./forwardingUnit.sv(19).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[3] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(52): Variable '/pipelined_tb/DUT/fwding_unit/RdMEMWB_eq_Rm' written by more than one continuous assignment. See ./forwardingUnit.sv(23).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[4] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(48): Variable '/pipelined_tb/DUT/fwding_unit/RdMEMWB_eq_Rn' written by more than one continuous assignment. See ./forwardingUnit.sv(22).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[4] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(44): Variable '/pipelined_tb/DUT/fwding_unit/RdEXMEM_eq_Rm' written by more than one continuous assignment. See ./forwardingUnit.sv(20).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[4] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(40): Variable '/pipelined_tb/DUT/fwding_unit/RdEXMEM_eq_Rn' written by more than one continuous assignment. See ./forwardingUnit.sv(19).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[4] File: ./forwardingUnit.sv
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./runlab.do PAUSED at line 40
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:36:45 on May 18,2026
-# vlog -reportprogress 300 ./n_bit_2to1.sv 
-# -- Compiling module n_bit_2to1
-# 
-# Top level modules:
-# 	n_bit_2to1
-# End time: 21:36:45 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:36:45 on May 18,2026
-# vlog -reportprogress 300 ./EX.sv 
-# -- Compiling module EX
-# 
-# Top level modules:
-# 	EX
-# End time: 21:36:45 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:36:45 on May 18,2026
-# vlog -reportprogress 300 ./control_unit.sv 
-# -- Compiling module control_unit
-# 
-# Top level modules:
-# 	control_unit
-# End time: 21:36:45 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:36:45 on May 18,2026
-# vlog -reportprogress 300 ./math.sv 
-# -- Compiling module mult
-# -- Compiling module shifter
-# -- Compiling module shifter_testbench
-# -- Compiling module mult_testbench
-# 
-# Top level modules:
-# 	shifter_testbench
-# 	mult_testbench
-# End time: 21:36:45 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:36:45 on May 18,2026
-# vlog -reportprogress 300 ./instructmem.sv 
-# -- Compiling module instructmem
-# -- Compiling module instructmem_testbench
-# 
-# Top level modules:
-# 	instructmem_testbench
-# End time: 21:36:45 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:36:45 on May 18,2026
-# vlog -reportprogress 300 ./datamem.sv 
-# -- Compiling module datamem
-# -- Compiling module datamem_testbench
-# 
-# Top level modules:
-# 	datamem_testbench
-# End time: 21:36:45 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:36:45 on May 18,2026
-# vlog -reportprogress 300 ./register_file/thirtytwo_1_mux.sv 
-# -- Compiling module two_onemux
-# -- Compiling module four_onemux
-# -- Compiling module eight_onemux
-# -- Compiling module sixteen_onemux
-# -- Compiling module thirtytwo_1_mux
-# 
-# Top level modules:
-# 	thirtytwo_1_mux
-# End time: 21:36:46 on May 18,2026, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:36:46 on May 18,2026
-# vlog -reportprogress 300 ./register_file/register.sv 
-# -- Compiling module register
-# -- Compiling module register_tb
-# 
-# Top level modules:
-# 	register_tb
-# End time: 21:36:46 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:36:46 on May 18,2026
-# vlog -reportprogress 300 ./register_file/regfile.sv 
-# -- Compiling module regfile
-# 
-# Top level modules:
-# 	regfile
-# End time: 21:36:46 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:36:46 on May 18,2026
-# vlog -reportprogress 300 ./register_file/loopedthirtytwo_mux.sv 
-# -- Compiling module loopedthirtytwo_mux
-# 
-# Top level modules:
-# 	loopedthirtytwo_mux
-# End time: 21:36:46 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:36:46 on May 18,2026
-# vlog -reportprogress 300 ./register_file/five_thirtytwodecoder.sv 
-# -- Compiling module one_twodecoder
-# -- Compiling module two_fourdecoder
-# -- Compiling module three_eightdecoder
-# -- Compiling module four_sixteendecoder
-# -- Compiling module five_thirtytwodecoder
-# -- Compiling module one_two_tb
-# -- Compiling module five_thirtytwo_tb
-# -- Compiling module three_eight_tb
-# -- Compiling module two_four_tb
-# 
-# Top level modules:
-# 	one_two_tb
-# 	five_thirtytwo_tb
-# 	three_eight_tb
-# 	two_four_tb
-# End time: 21:36:46 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:36:46 on May 18,2026
-# vlog -reportprogress 300 ./register_file/D_FF.sv 
-# -- Compiling module D_FF
-# 
-# Top level modules:
-# 	D_FF
-# End time: 21:36:46 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:36:46 on May 18,2026
-# vlog -reportprogress 300 ./ALU/full_adder.sv 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 21:36:46 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:36:46 on May 18,2026
-# vlog -reportprogress 300 ./ALU/flags.sv 
-# -- Compiling module flags
-# 
-# Top level modules:
-# 	flags
-# End time: 21:36:46 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:36:46 on May 18,2026
-# vlog -reportprogress 300 ./ALU/bitsliceALU.sv 
-# -- Compiling module bitsliceALU
-# 
-# Top level modules:
-# 	bitsliceALU
-# End time: 21:36:46 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:36:46 on May 18,2026
-# vlog -reportprogress 300 ./ALU/ALU.sv 
-# -- Compiling module ALU
-# 
-# Top level modules:
-# 	ALU
-# End time: 21:36:47 on May 18,2026, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:36:47 on May 18,2026
-# vlog -reportprogress 300 ./IF.sv 
-# -- Compiling module IF
-# 
-# Top level modules:
-# 	IF
-# End time: 21:36:47 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:36:47 on May 18,2026
-# vlog -reportprogress 300 ./sixtyfourbit_fulladder.sv 
-# -- Compiling module sixtyfourbit_fulladder
-# 
-# Top level modules:
-# 	sixtyfourbit_fulladder
-# End time: 21:36:47 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:36:47 on May 18,2026
-# vlog -reportprogress 300 ./ID.sv 
-# -- Compiling module ID
-# 
-# Top level modules:
-# 	ID
-# End time: 21:36:47 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:36:47 on May 18,2026
-# vlog -reportprogress 300 ./WB.sv 
-# -- Compiling module WB
-# 
-# Top level modules:
-# 	WB
-# End time: 21:36:47 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:36:47 on May 18,2026
-# vlog -reportprogress 300 ./pipelinedTop.sv 
-# -- Compiling module pipelinedTop
-# 
-# Top level modules:
-# 	pipelinedTop
-# End time: 21:36:47 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:36:47 on May 18,2026
-# vlog -reportprogress 300 ./pipelined_tb.sv 
-# -- Compiling module pipelined_tb
-# 
-# Top level modules:
-# 	pipelined_tb
-# End time: 21:36:47 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:36:47 on May 18,2026
-# vlog -reportprogress 300 ./IF_ID.sv 
-# -- Compiling module IF_ID
-# 
-# Top level modules:
-# 	IF_ID
-# End time: 21:36:47 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:36:47 on May 18,2026
-# vlog -reportprogress 300 ./ID_EX.sv 
-# -- Compiling module ID_EX
-# 
-# Top level modules:
-# 	ID_EX
-# End time: 21:36:47 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:36:47 on May 18,2026
-# vlog -reportprogress 300 ./EX_MEM.sv 
-# -- Compiling module EX_MEM
-# 
-# Top level modules:
-# 	EX_MEM
-# End time: 21:36:47 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:36:47 on May 18,2026
-# vlog -reportprogress 300 ./MEM_WB.sv 
-# -- Compiling module MEM_WB
-# 
-# Top level modules:
-# 	MEM_WB
-# End time: 21:36:48 on May 18,2026, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:36:48 on May 18,2026
-# vlog -reportprogress 300 ./forwardingUnit.sv 
-# -- Compiling module forwardingUnit
-# ** Error: ./forwardingUnit.sv(51): (vlog-2730) Undefined variable: 'eq_store_'.
-# End time: 21:36:48 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./runlab.do line 33
-# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog "./forwardingUnit.sv""
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:37:32 on May 18,2026
-# vlog -reportprogress 300 ./n_bit_2to1.sv 
-# -- Compiling module n_bit_2to1
-# 
-# Top level modules:
-# 	n_bit_2to1
-# End time: 21:37:32 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:37:32 on May 18,2026
-# vlog -reportprogress 300 ./EX.sv 
-# -- Compiling module EX
-# 
-# Top level modules:
-# 	EX
-# End time: 21:37:32 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:37:32 on May 18,2026
-# vlog -reportprogress 300 ./control_unit.sv 
-# -- Compiling module control_unit
-# 
-# Top level modules:
-# 	control_unit
-# End time: 21:37:32 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:37:32 on May 18,2026
-# vlog -reportprogress 300 ./math.sv 
-# -- Compiling module mult
-# -- Compiling module shifter
-# -- Compiling module shifter_testbench
-# -- Compiling module mult_testbench
-# 
-# Top level modules:
-# 	shifter_testbench
-# 	mult_testbench
-# End time: 21:37:32 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:37:32 on May 18,2026
-# vlog -reportprogress 300 ./instructmem.sv 
-# -- Compiling module instructmem
-# -- Compiling module instructmem_testbench
-# 
-# Top level modules:
-# 	instructmem_testbench
-# End time: 21:37:32 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:37:33 on May 18,2026
-# vlog -reportprogress 300 ./datamem.sv 
-# -- Compiling module datamem
-# -- Compiling module datamem_testbench
-# 
-# Top level modules:
-# 	datamem_testbench
-# End time: 21:37:33 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:37:33 on May 18,2026
-# vlog -reportprogress 300 ./register_file/thirtytwo_1_mux.sv 
-# -- Compiling module two_onemux
-# -- Compiling module four_onemux
-# -- Compiling module eight_onemux
-# -- Compiling module sixteen_onemux
-# -- Compiling module thirtytwo_1_mux
-# 
-# Top level modules:
-# 	thirtytwo_1_mux
-# End time: 21:37:33 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:37:33 on May 18,2026
-# vlog -reportprogress 300 ./register_file/register.sv 
-# -- Compiling module register
-# -- Compiling module register_tb
-# 
-# Top level modules:
-# 	register_tb
-# End time: 21:37:33 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:37:33 on May 18,2026
-# vlog -reportprogress 300 ./register_file/regfile.sv 
-# -- Compiling module regfile
-# 
-# Top level modules:
-# 	regfile
-# End time: 21:37:33 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:37:33 on May 18,2026
-# vlog -reportprogress 300 ./register_file/loopedthirtytwo_mux.sv 
-# -- Compiling module loopedthirtytwo_mux
-# 
-# Top level modules:
-# 	loopedthirtytwo_mux
-# End time: 21:37:33 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:37:33 on May 18,2026
-# vlog -reportprogress 300 ./register_file/five_thirtytwodecoder.sv 
-# -- Compiling module one_twodecoder
-# -- Compiling module two_fourdecoder
-# -- Compiling module three_eightdecoder
-# -- Compiling module four_sixteendecoder
-# -- Compiling module five_thirtytwodecoder
-# -- Compiling module one_two_tb
-# -- Compiling module five_thirtytwo_tb
-# -- Compiling module three_eight_tb
-# -- Compiling module two_four_tb
-# 
-# Top level modules:
-# 	one_two_tb
-# 	five_thirtytwo_tb
-# 	three_eight_tb
-# 	two_four_tb
-# End time: 21:37:33 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:37:33 on May 18,2026
-# vlog -reportprogress 300 ./register_file/D_FF.sv 
-# -- Compiling module D_FF
-# 
-# Top level modules:
-# 	D_FF
-# End time: 21:37:33 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:37:33 on May 18,2026
-# vlog -reportprogress 300 ./ALU/full_adder.sv 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 21:37:33 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:37:33 on May 18,2026
-# vlog -reportprogress 300 ./ALU/flags.sv 
-# -- Compiling module flags
-# 
-# Top level modules:
-# 	flags
-# End time: 21:37:33 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:37:34 on May 18,2026
-# vlog -reportprogress 300 ./ALU/bitsliceALU.sv 
-# -- Compiling module bitsliceALU
-# 
-# Top level modules:
-# 	bitsliceALU
-# End time: 21:37:34 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:37:34 on May 18,2026
-# vlog -reportprogress 300 ./ALU/ALU.sv 
-# -- Compiling module ALU
-# 
-# Top level modules:
-# 	ALU
-# End time: 21:37:34 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:37:34 on May 18,2026
-# vlog -reportprogress 300 ./IF.sv 
-# -- Compiling module IF
-# 
-# Top level modules:
-# 	IF
-# End time: 21:37:34 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:37:34 on May 18,2026
-# vlog -reportprogress 300 ./sixtyfourbit_fulladder.sv 
-# -- Compiling module sixtyfourbit_fulladder
-# 
-# Top level modules:
-# 	sixtyfourbit_fulladder
-# End time: 21:37:34 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:37:34 on May 18,2026
-# vlog -reportprogress 300 ./ID.sv 
-# -- Compiling module ID
-# 
-# Top level modules:
-# 	ID
-# End time: 21:37:34 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:37:34 on May 18,2026
-# vlog -reportprogress 300 ./WB.sv 
-# -- Compiling module WB
-# 
-# Top level modules:
-# 	WB
-# End time: 21:37:34 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:37:34 on May 18,2026
-# vlog -reportprogress 300 ./pipelinedTop.sv 
-# -- Compiling module pipelinedTop
-# 
-# Top level modules:
-# 	pipelinedTop
-# End time: 21:37:34 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:37:34 on May 18,2026
-# vlog -reportprogress 300 ./pipelined_tb.sv 
-# -- Compiling module pipelined_tb
-# 
-# Top level modules:
-# 	pipelined_tb
-# End time: 21:37:34 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:37:34 on May 18,2026
-# vlog -reportprogress 300 ./IF_ID.sv 
-# -- Compiling module IF_ID
-# 
-# Top level modules:
-# 	IF_ID
-# End time: 21:37:34 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:37:34 on May 18,2026
-# vlog -reportprogress 300 ./ID_EX.sv 
-# -- Compiling module ID_EX
-# 
-# Top level modules:
-# 	ID_EX
-# End time: 21:37:34 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:37:34 on May 18,2026
-# vlog -reportprogress 300 ./EX_MEM.sv 
-# -- Compiling module EX_MEM
-# 
-# Top level modules:
-# 	EX_MEM
-# End time: 21:37:34 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:37:35 on May 18,2026
-# vlog -reportprogress 300 ./MEM_WB.sv 
-# -- Compiling module MEM_WB
-# 
-# Top level modules:
-# 	MEM_WB
-# End time: 21:37:35 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:37:35 on May 18,2026
-# vlog -reportprogress 300 ./forwardingUnit.sv 
-# -- Compiling module forwardingUnit
-# 
-# Top level modules:
-# 	forwardingUnit
-# End time: 21:37:35 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:37:35 on May 18,2026
-# vlog -reportprogress 300 ./nbit_register.sv 
-# -- Compiling module nbit_register
-# 
-# Top level modules:
-# 	nbit_register
-# End time: 21:37:35 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work pipelined_tb 
-# Start time: 21:15:11 on May 18,2026
-# Loading sv_std.std
-# Loading work.pipelined_tb
-# Loading work.pipelinedTop
-# Loading work.control_unit
-# Loading work.IF
-# Loading work.register
-# Loading work.sixtyfourbit_fulladder
-# Loading work.full_adder
-# Loading work.n_bit_2to1
-# Loading work.instructmem
-# Loading work.IF_ID
-# Loading work.nbit_register
-# Loading work.ID
-# Loading work.regfile
-# Loading work.five_thirtytwodecoder
-# Loading work.one_twodecoder
-# Loading work.four_sixteendecoder
-# Loading work.three_eightdecoder
-# Loading work.two_fourdecoder
-# Loading work.loopedthirtytwo_mux
-# Loading work.ID_EX
-# Loading work.D_FF
-# Loading work.EX
-# Loading work.ALU
-# Loading work.bitsliceALU
-# Loading work.eight_onemux
-# Loading work.four_onemux
-# Loading work.two_onemux
-# Loading work.flags
-# Loading work.EX_MEM
-# Loading work.datamem
-# Loading work.MEM_WB
-# Loading work.forwardingUnit
-# Loading work.WB
-# Loading work.thirtytwo_1_mux
-# Loading work.sixteen_onemux
-# ** Warning: (vsim-3015) ./pipelinedTop.sv(71): [PCDPC] - Port size (32) does not match connection size (1) for port 'instructionOut'. The port definition is at: ./ID_EX.sv(9).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/secondpipeline File: ./ID_EX.sv
-# ** Warning: (vsim-3839) ./ID_EX.sv(50): Variable '/pipelined_tb/DUT/secondpipeline/MemReadOut', driven via a port connection, is multiply driven. See ./ID_EX.sv(47).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/secondpipeline/MemRd_dff File: ./register_file/D_FF.sv
-# ** Warning: (vsim-3015) ./ID_EX.sv(57): [PCDPC] - Port size (1) does not match connection size (3) for port 'q'. The port definition is at: ./register_file/D_FF.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/secondpipeline/ALUOp_dff File: ./register_file/D_FF.sv
-# ** Warning: (vsim-3015) ./ID_EX.sv(57): [PCDPC] - Port size (1) does not match connection size (3) for port 'd'. The port definition is at: ./register_file/D_FF.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/secondpipeline/ALUOp_dff File: ./register_file/D_FF.sv
-# ** Warning: (vsim-3015) ./pipelinedTop.sv(96): [PCDPC] - Port size (32) does not match connection size (1) for port 'instruction'. The port definition is at: ./EX.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/execution File: ./EX.sv
-# ** Warning: (vsim-3015) ./EX.sv(57): [PCDPC] - Port size (64) does not match connection size (1) for port 'A'. The port definition is at: ./sixtyfourbit_fulladder.sv(2).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/execution/BPCadd File: ./sixtyfourbit_fulladder.sv
-# ** Warning: (vsim-3017) ./pipelinedTop.sv(121): [TFMPC] - Too few port connections. Expected 19, found 18.
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/thirdpipeline File: ./EX_MEM.sv
-# ** Warning: (vsim-3722) ./pipelinedTop.sv(121): [TFMPC] - Missing connection for port 'BranchOut'.
-# ** Warning: (vsim-3015) ./EX_MEM.sv(22): [PCDPC] - Port size (64) does not match connection size (1) for port 'write'. The port definition is at: ./nbit_register.sv(5).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/thirdpipeline/passBranch File: ./nbit_register.sv
-# ** Warning: (vsim-3015) ./pipelinedTop.sv(155): [PCDPC] - Port size (5) does not match connection size (1) for port 'RdMEMWB'. The port definition is at: ./forwardingUnit.sv(5).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/fwding_unit File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(53): Variable '/pipelined_tb/DUT/fwding_unit/RdMEMWB_eq_Rm' written by more than one continuous assignment. See ./forwardingUnit.sv(23).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[0] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(48): Variable '/pipelined_tb/DUT/fwding_unit/RdMEMWB_eq_Rn' written by more than one continuous assignment. See ./forwardingUnit.sv(22).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[0] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(43): Variable '/pipelined_tb/DUT/fwding_unit/RdEXMEM_eq_Rm' written by more than one continuous assignment. See ./forwardingUnit.sv(20).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[0] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(38): Variable '/pipelined_tb/DUT/fwding_unit/RdEXMEM_eq_Rn' written by more than one continuous assignment. See ./forwardingUnit.sv(19).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[0] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(53): Variable '/pipelined_tb/DUT/fwding_unit/RdMEMWB_eq_Rm' written by more than one continuous assignment. See ./forwardingUnit.sv(23).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[1] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(48): Variable '/pipelined_tb/DUT/fwding_unit/RdMEMWB_eq_Rn' written by more than one continuous assignment. See ./forwardingUnit.sv(22).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[1] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(43): Variable '/pipelined_tb/DUT/fwding_unit/RdEXMEM_eq_Rm' written by more than one continuous assignment. See ./forwardingUnit.sv(20).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[1] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(38): Variable '/pipelined_tb/DUT/fwding_unit/RdEXMEM_eq_Rn' written by more than one continuous assignment. See ./forwardingUnit.sv(19).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[1] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(53): Variable '/pipelined_tb/DUT/fwding_unit/RdMEMWB_eq_Rm' written by more than one continuous assignment. See ./forwardingUnit.sv(23).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[2] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(48): Variable '/pipelined_tb/DUT/fwding_unit/RdMEMWB_eq_Rn' written by more than one continuous assignment. See ./forwardingUnit.sv(22).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[2] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(43): Variable '/pipelined_tb/DUT/fwding_unit/RdEXMEM_eq_Rm' written by more than one continuous assignment. See ./forwardingUnit.sv(20).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[2] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(38): Variable '/pipelined_tb/DUT/fwding_unit/RdEXMEM_eq_Rn' written by more than one continuous assignment. See ./forwardingUnit.sv(19).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[2] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(53): Variable '/pipelined_tb/DUT/fwding_unit/RdMEMWB_eq_Rm' written by more than one continuous assignment. See ./forwardingUnit.sv(23).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[3] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(48): Variable '/pipelined_tb/DUT/fwding_unit/RdMEMWB_eq_Rn' written by more than one continuous assignment. See ./forwardingUnit.sv(22).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[3] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(43): Variable '/pipelined_tb/DUT/fwding_unit/RdEXMEM_eq_Rm' written by more than one continuous assignment. See ./forwardingUnit.sv(20).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[3] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(38): Variable '/pipelined_tb/DUT/fwding_unit/RdEXMEM_eq_Rn' written by more than one continuous assignment. See ./forwardingUnit.sv(19).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[3] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(53): Variable '/pipelined_tb/DUT/fwding_unit/RdMEMWB_eq_Rm' written by more than one continuous assignment. See ./forwardingUnit.sv(23).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[4] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(48): Variable '/pipelined_tb/DUT/fwding_unit/RdMEMWB_eq_Rn' written by more than one continuous assignment. See ./forwardingUnit.sv(22).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[4] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(43): Variable '/pipelined_tb/DUT/fwding_unit/RdEXMEM_eq_Rm' written by more than one continuous assignment. See ./forwardingUnit.sv(20).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[4] File: ./forwardingUnit.sv
-# ** Error: (vsim-3837) ./forwardingUnit.sv(38): Variable '/pipelined_tb/DUT/fwding_unit/RdEXMEM_eq_Rn' written by more than one continuous assignment. See ./forwardingUnit.sv(19).
-#    Time: 0 ps  Iteration: 0  Region: /pipelined_tb/DUT/fwding_unit/eq_loop[4] File: ./forwardingUnit.sv
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./runlab.do PAUSED at line 40
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:44:55 on May 18,2026
-# vlog -reportprogress 300 ./n_bit_2to1.sv 
-# -- Compiling module n_bit_2to1
-# 
-# Top level modules:
-# 	n_bit_2to1
-# End time: 21:44:55 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:44:55 on May 18,2026
-# vlog -reportprogress 300 ./EX.sv 
-# -- Compiling module EX
-# 
-# Top level modules:
-# 	EX
-# End time: 21:44:55 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:44:55 on May 18,2026
-# vlog -reportprogress 300 ./control_unit.sv 
-# -- Compiling module control_unit
-# 
-# Top level modules:
-# 	control_unit
-# End time: 21:44:55 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:44:55 on May 18,2026
-# vlog -reportprogress 300 ./math.sv 
-# -- Compiling module mult
-# -- Compiling module shifter
-# -- Compiling module shifter_testbench
-# -- Compiling module mult_testbench
-# 
-# Top level modules:
-# 	shifter_testbench
-# 	mult_testbench
-# End time: 21:44:55 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:44:55 on May 18,2026
-# vlog -reportprogress 300 ./instructmem.sv 
-# -- Compiling module instructmem
-# -- Compiling module instructmem_testbench
-# 
-# Top level modules:
-# 	instructmem_testbench
-# End time: 21:44:55 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:44:55 on May 18,2026
-# vlog -reportprogress 300 ./datamem.sv 
-# -- Compiling module datamem
-# -- Compiling module datamem_testbench
-# 
-# Top level modules:
-# 	datamem_testbench
-# End time: 21:44:55 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:44:55 on May 18,2026
-# vlog -reportprogress 300 ./register_file/thirtytwo_1_mux.sv 
-# -- Compiling module two_onemux
-# -- Compiling module four_onemux
-# -- Compiling module eight_onemux
-# -- Compiling module sixteen_onemux
-# -- Compiling module thirtytwo_1_mux
-# 
-# Top level modules:
-# 	thirtytwo_1_mux
-# End time: 21:44:55 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:44:56 on May 18,2026
-# vlog -reportprogress 300 ./register_file/register.sv 
-# -- Compiling module register
-# -- Compiling module register_tb
-# 
-# Top level modules:
-# 	register_tb
-# End time: 21:44:56 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:44:56 on May 18,2026
-# vlog -reportprogress 300 ./register_file/regfile.sv 
-# -- Compiling module regfile
-# 
-# Top level modules:
-# 	regfile
-# End time: 21:44:56 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:44:56 on May 18,2026
-# vlog -reportprogress 300 ./register_file/loopedthirtytwo_mux.sv 
-# -- Compiling module loopedthirtytwo_mux
-# 
-# Top level modules:
-# 	loopedthirtytwo_mux
-# End time: 21:44:56 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:44:56 on May 18,2026
-# vlog -reportprogress 300 ./register_file/five_thirtytwodecoder.sv 
-# -- Compiling module one_twodecoder
-# -- Compiling module two_fourdecoder
-# -- Compiling module three_eightdecoder
-# -- Compiling module four_sixteendecoder
-# -- Compiling module five_thirtytwodecoder
-# -- Compiling module one_two_tb
-# -- Compiling module five_thirtytwo_tb
-# -- Compiling module three_eight_tb
-# -- Compiling module two_four_tb
-# 
-# Top level modules:
-# 	one_two_tb
-# 	five_thirtytwo_tb
-# 	three_eight_tb
-# 	two_four_tb
-# End time: 21:44:56 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:44:56 on May 18,2026
-# vlog -reportprogress 300 ./register_file/D_FF.sv 
-# -- Compiling module D_FF
-# 
-# Top level modules:
-# 	D_FF
-# End time: 21:44:56 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:44:56 on May 18,2026
-# vlog -reportprogress 300 ./ALU/full_adder.sv 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 21:44:56 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:44:56 on May 18,2026
-# vlog -reportprogress 300 ./ALU/flags.sv 
-# -- Compiling module flags
-# 
-# Top level modules:
-# 	flags
-# End time: 21:44:56 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:44:56 on May 18,2026
-# vlog -reportprogress 300 ./ALU/bitsliceALU.sv 
-# -- Compiling module bitsliceALU
-# 
-# Top level modules:
-# 	bitsliceALU
-# End time: 21:44:56 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:44:56 on May 18,2026
-# vlog -reportprogress 300 ./ALU/ALU.sv 
-# -- Compiling module ALU
-# 
-# Top level modules:
-# 	ALU
-# End time: 21:44:56 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:44:56 on May 18,2026
-# vlog -reportprogress 300 ./IF.sv 
-# -- Compiling module IF
-# 
-# Top level modules:
-# 	IF
-# End time: 21:44:56 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:44:57 on May 18,2026
-# vlog -reportprogress 300 ./sixtyfourbit_fulladder.sv 
-# -- Compiling module sixtyfourbit_fulladder
-# 
-# Top level modules:
-# 	sixtyfourbit_fulladder
-# End time: 21:44:57 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:44:57 on May 18,2026
-# vlog -reportprogress 300 ./ID.sv 
-# -- Compiling module ID
-# 
-# Top level modules:
-# 	ID
-# End time: 21:44:57 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:44:57 on May 18,2026
-# vlog -reportprogress 300 ./WB.sv 
-# -- Compiling module WB
-# 
-# Top level modules:
-# 	WB
-# End time: 21:44:57 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:44:57 on May 18,2026
-# vlog -reportprogress 300 ./pipelinedTop.sv 
-# -- Compiling module pipelinedTop
-# 
-# Top level modules:
-# 	pipelinedTop
-# End time: 21:44:57 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:44:57 on May 18,2026
-# vlog -reportprogress 300 ./pipelined_tb.sv 
-# -- Compiling module pipelined_tb
-# 
-# Top level modules:
-# 	pipelined_tb
-# End time: 21:44:57 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:44:57 on May 18,2026
-# vlog -reportprogress 300 ./IF_ID.sv 
-# -- Compiling module IF_ID
-# 
-# Top level modules:
-# 	IF_ID
-# End time: 21:44:57 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:44:57 on May 18,2026
-# vlog -reportprogress 300 ./ID_EX.sv 
-# -- Compiling module ID_EX
-# 
-# Top level modules:
-# 	ID_EX
-# End time: 21:44:57 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:44:57 on May 18,2026
-# vlog -reportprogress 300 ./EX_MEM.sv 
-# -- Compiling module EX_MEM
-# 
-# Top level modules:
-# 	EX_MEM
-# End time: 21:44:57 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:44:57 on May 18,2026
-# vlog -reportprogress 300 ./MEM_WB.sv 
-# -- Compiling module MEM_WB
-# 
-# Top level modules:
-# 	MEM_WB
-# End time: 21:44:57 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:44:57 on May 18,2026
-# vlog -reportprogress 300 ./forwardingUnit.sv 
-# -- Compiling module forwardingUnit
-# 
-# Top level modules:
-# 	forwardingUnit
-# End time: 21:44:57 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:44:58 on May 18,2026
-# vlog -reportprogress 300 ./nbit_register.sv 
-# -- Compiling module nbit_register
-# 
-# Top level modules:
-# 	nbit_register
-# End time: 21:44:58 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work pipelined_tb 
-# Start time: 21:15:11 on May 18,2026
-# Loading sv_std.std
-# Loading work.pipelined_tb
-# Loading work.pipelinedTop
-# Loading work.control_unit
-# Loading work.IF
-# Loading work.register
-# Loading work.sixtyfourbit_fulladder
-# Loading work.full_adder
-# Loading work.n_bit_2to1
-# Loading work.instructmem
-# Loading work.IF_ID
-# Loading work.nbit_register
-# Loading work.ID
-# Loading work.regfile
-# Loading work.five_thirtytwodecoder
-# Loading work.one_twodecoder
-# Loading work.four_sixteendecoder
-# Loading work.three_eightdecoder
-# Loading work.two_fourdecoder
-# Loading work.loopedthirtytwo_mux
-# Loading work.ID_EX
-# Loading work.D_FF
-# Loading work.EX
-# Loading work.ALU
-# Loading work.bitsliceALU
-# Loading work.eight_onemux
-# Loading work.four_onemux
-# Loading work.two_onemux
-# Loading work.flags
-# Loading work.EX_MEM
-# Loading work.datamem
-# Loading work.MEM_WB
-# Loading work.forwardingUnit
-# Loading work.WB
-# Loading work.thirtytwo_1_mux
-# Loading work.sixteen_onemux
-# ** Warning: (vsim-3015) ./pipelinedTop.sv(71): [PCDPC] - Port size (32) does not match connection size (1) for port 'instructionOut'. The port definition is at: ./ID_EX.sv(9).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/secondpipeline File: ./ID_EX.sv
-# ** Warning: (vsim-3839) ./ID_EX.sv(50): Variable '/pipelined_tb/DUT/secondpipeline/MemReadOut', driven via a port connection, is multiply driven. See ./ID_EX.sv(47).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/secondpipeline/MemRd_dff File: ./register_file/D_FF.sv
-# ** Warning: (vsim-3015) ./ID_EX.sv(57): [PCDPC] - Port size (1) does not match connection size (3) for port 'q'. The port definition is at: ./register_file/D_FF.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/secondpipeline/ALUOp_dff File: ./register_file/D_FF.sv
-# ** Warning: (vsim-3015) ./ID_EX.sv(57): [PCDPC] - Port size (1) does not match connection size (3) for port 'd'. The port definition is at: ./register_file/D_FF.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/secondpipeline/ALUOp_dff File: ./register_file/D_FF.sv
-# ** Warning: (vsim-3015) ./pipelinedTop.sv(96): [PCDPC] - Port size (32) does not match connection size (1) for port 'instruction'. The port definition is at: ./EX.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/execution File: ./EX.sv
-# ** Warning: (vsim-3015) ./EX.sv(57): [PCDPC] - Port size (64) does not match connection size (1) for port 'A'. The port definition is at: ./sixtyfourbit_fulladder.sv(2).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/execution/BPCadd File: ./sixtyfourbit_fulladder.sv
-# ** Warning: (vsim-3017) ./pipelinedTop.sv(121): [TFMPC] - Too few port connections. Expected 19, found 18.
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/thirdpipeline File: ./EX_MEM.sv
-# ** Warning: (vsim-3722) ./pipelinedTop.sv(121): [TFMPC] - Missing connection for port 'BranchOut'.
-# ** Warning: (vsim-3015) ./EX_MEM.sv(22): [PCDPC] - Port size (64) does not match connection size (1) for port 'write'. The port definition is at: ./nbit_register.sv(5).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/thirdpipeline/passBranch File: ./nbit_register.sv
-# ** Warning: (vsim-3015) ./pipelinedTop.sv(155): [PCDPC] - Port size (5) does not match connection size (1) for port 'RdMEMWB'. The port definition is at: ./forwardingUnit.sv(5).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/fwding_unit File: ./forwardingUnit.sv
-# ** Warning: Design size of 12792 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
-# This may because you are loading cell libraries which are not recommended with
-# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
-# ** Error: Cannot open macro file: benchmark1pipeline.do
-# Error in macro ./runlab.do line 45
-# Cannot open macro file: benchmark1pipeline.do
-#     while executing
-# "do benchmark1pipeline.do"
-add wave -position end  sim:/pipelined_tb/clk
-add wave -position end sim:/pipelined_tb/DUT/control/*
-add wave -position end sim:/pipelined_tb/DUT/instructionFetch/*
-add wave -position end sim:/pipelined_tb/DUT/firstpipeline/*
-add wave -position end  sim:/pipelined_tb/DUT/instructionDecode/ALUInput
-add wave -position end  sim:/pipelined_tb/DUT/instructionDecode/ALUSrc
-add wave -position end  sim:/pipelined_tb/DUT/instructionDecode/Aw_in
-add wave -position end  sim:/pipelined_tb/DUT/instructionDecode/DT_address
-add wave -position end  sim:/pipelined_tb/DUT/instructionDecode/DT_address64
-add wave -position end  sim:/pipelined_tb/DUT/instructionDecode/Da
-add wave -position end  sim:/pipelined_tb/DUT/instructionDecode/Db
-add wave -position end  sim:/pipelined_tb/DUT/instructionDecode/Dw_in
-add wave -position end  sim:/pipelined_tb/DUT/instructionDecode/Immediate
-add wave -position end  sim:/pipelined_tb/DUT/instructionDecode/Immediate64
-add wave -position end  sim:/pipelined_tb/DUT/instructionDecode/IsBL
-add wave -position end  sim:/pipelined_tb/DUT/instructionDecode/PCp4
-add wave -position end  sim:/pipelined_tb/DUT/instructionDecode/Rd
-add wave -position end  sim:/pipelined_tb/DUT/instructionDecode/Reg2Loc
-add wave -position end  sim:/pipelined_tb/DUT/instructionDecode/RegWrite
-add wave -position end  sim:/pipelined_tb/DUT/instructionDecode/Rm
-add wave -position end  sim:/pipelined_tb/DUT/instructionDecode/Rn
-add wave -position end  sim:/pipelined_tb/DUT/instructionDecode/WriteBck
-add wave -position end  sim:/pipelined_tb/DUT/instructionDecode/clk
-add wave -position end  sim:/pipelined_tb/DUT/instructionDecode/instruction
-add wave -position end  sim:/pipelined_tb/DUT/instructionDecode/isDType
-add wave -position end  sim:/pipelined_tb/DUT/instructionDecode/reset
-add wave -position end  sim:/pipelined_tb/DUT/instructionDecode/shift
-add wave -position end  sim:/pipelined_tb/DUT/instructionDecode/splitout
-add wave -position end sim:/pipelined_tb/DUT/secondpipeline/*
-add wave -position end sim:/pipelined_tb/DUT/execution/*
-add wave -position end sim:/pipelined_tb/DUT/thirdpipeline/*
-add wave -position end sim:/pipelined_tb/DUT/MEM/*
-add wave -position end sim:/pipelined_tb/DUT/fourthpipeline/*
-add wave -position end sim:/pipelined_tb/DUT/writeBack/*
-add wave -position end sim:/pipelined_tb/DUT/fwding_unit/*
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/texan/Desktop/CPU-EE469/Pipelined CPU/benchmark1pipelined.do}
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:52:42 on May 18,2026
-# vlog -reportprogress 300 ./n_bit_2to1.sv 
-# -- Compiling module n_bit_2to1
-# 
-# Top level modules:
-# 	n_bit_2to1
-# End time: 21:52:42 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:52:42 on May 18,2026
-# vlog -reportprogress 300 ./EX.sv 
-# -- Compiling module EX
-# 
-# Top level modules:
-# 	EX
-# End time: 21:52:42 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:52:42 on May 18,2026
-# vlog -reportprogress 300 ./control_unit.sv 
-# -- Compiling module control_unit
-# 
-# Top level modules:
-# 	control_unit
-# End time: 21:52:42 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:52:42 on May 18,2026
-# vlog -reportprogress 300 ./math.sv 
-# -- Compiling module mult
-# -- Compiling module shifter
-# -- Compiling module shifter_testbench
-# -- Compiling module mult_testbench
-# 
-# Top level modules:
-# 	shifter_testbench
-# 	mult_testbench
-# End time: 21:52:42 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:52:42 on May 18,2026
-# vlog -reportprogress 300 ./instructmem.sv 
-# -- Compiling module instructmem
-# -- Compiling module instructmem_testbench
-# 
-# Top level modules:
-# 	instructmem_testbench
-# End time: 21:52:42 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:52:42 on May 18,2026
-# vlog -reportprogress 300 ./datamem.sv 
-# -- Compiling module datamem
-# -- Compiling module datamem_testbench
-# 
-# Top level modules:
-# 	datamem_testbench
-# End time: 21:52:42 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:52:42 on May 18,2026
-# vlog -reportprogress 300 ./register_file/thirtytwo_1_mux.sv 
-# -- Compiling module two_onemux
-# -- Compiling module four_onemux
-# -- Compiling module eight_onemux
-# -- Compiling module sixteen_onemux
-# -- Compiling module thirtytwo_1_mux
-# 
-# Top level modules:
-# 	thirtytwo_1_mux
-# End time: 21:52:42 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:52:43 on May 18,2026
-# vlog -reportprogress 300 ./register_file/register.sv 
-# -- Compiling module register
-# -- Compiling module register_tb
-# 
-# Top level modules:
-# 	register_tb
-# End time: 21:52:43 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:52:43 on May 18,2026
-# vlog -reportprogress 300 ./register_file/regfile.sv 
-# -- Compiling module regfile
-# 
-# Top level modules:
-# 	regfile
-# End time: 21:52:43 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:52:43 on May 18,2026
-# vlog -reportprogress 300 ./register_file/loopedthirtytwo_mux.sv 
-# -- Compiling module loopedthirtytwo_mux
-# 
-# Top level modules:
-# 	loopedthirtytwo_mux
-# End time: 21:52:43 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:52:43 on May 18,2026
-# vlog -reportprogress 300 ./register_file/five_thirtytwodecoder.sv 
-# -- Compiling module one_twodecoder
-# -- Compiling module two_fourdecoder
-# -- Compiling module three_eightdecoder
-# -- Compiling module four_sixteendecoder
-# -- Compiling module five_thirtytwodecoder
-# -- Compiling module one_two_tb
-# -- Compiling module five_thirtytwo_tb
-# -- Compiling module three_eight_tb
-# -- Compiling module two_four_tb
-# 
-# Top level modules:
-# 	one_two_tb
-# 	five_thirtytwo_tb
-# 	three_eight_tb
-# 	two_four_tb
-# End time: 21:52:43 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:52:43 on May 18,2026
-# vlog -reportprogress 300 ./register_file/D_FF.sv 
-# -- Compiling module D_FF
-# 
-# Top level modules:
-# 	D_FF
-# End time: 21:52:43 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:52:43 on May 18,2026
-# vlog -reportprogress 300 ./ALU/full_adder.sv 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 21:52:43 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:52:43 on May 18,2026
-# vlog -reportprogress 300 ./ALU/flags.sv 
-# -- Compiling module flags
-# 
-# Top level modules:
-# 	flags
-# End time: 21:52:43 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:52:43 on May 18,2026
-# vlog -reportprogress 300 ./ALU/bitsliceALU.sv 
-# -- Compiling module bitsliceALU
-# 
-# Top level modules:
-# 	bitsliceALU
-# End time: 21:52:43 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:52:43 on May 18,2026
-# vlog -reportprogress 300 ./ALU/ALU.sv 
-# -- Compiling module ALU
-# 
-# Top level modules:
-# 	ALU
-# End time: 21:52:43 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:52:43 on May 18,2026
-# vlog -reportprogress 300 ./IF.sv 
-# -- Compiling module IF
-# 
-# Top level modules:
-# 	IF
-# End time: 21:52:44 on May 18,2026, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:52:44 on May 18,2026
-# vlog -reportprogress 300 ./sixtyfourbit_fulladder.sv 
-# -- Compiling module sixtyfourbit_fulladder
-# 
-# Top level modules:
-# 	sixtyfourbit_fulladder
-# End time: 21:52:44 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:52:44 on May 18,2026
-# vlog -reportprogress 300 ./ID.sv 
-# -- Compiling module ID
-# 
-# Top level modules:
-# 	ID
-# End time: 21:52:44 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:52:44 on May 18,2026
-# vlog -reportprogress 300 ./WB.sv 
-# -- Compiling module WB
-# 
-# Top level modules:
-# 	WB
-# End time: 21:52:44 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:52:44 on May 18,2026
-# vlog -reportprogress 300 ./pipelinedTop.sv 
-# -- Compiling module pipelinedTop
-# 
-# Top level modules:
-# 	pipelinedTop
-# End time: 21:52:44 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:52:44 on May 18,2026
-# vlog -reportprogress 300 ./pipelined_tb.sv 
-# -- Compiling module pipelined_tb
-# 
-# Top level modules:
-# 	pipelined_tb
-# End time: 21:52:44 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:52:44 on May 18,2026
-# vlog -reportprogress 300 ./IF_ID.sv 
-# -- Compiling module IF_ID
-# 
-# Top level modules:
-# 	IF_ID
-# End time: 21:52:44 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:52:44 on May 18,2026
-# vlog -reportprogress 300 ./ID_EX.sv 
-# -- Compiling module ID_EX
-# 
-# Top level modules:
-# 	ID_EX
-# End time: 21:52:44 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:52:44 on May 18,2026
-# vlog -reportprogress 300 ./EX_MEM.sv 
-# -- Compiling module EX_MEM
-# 
-# Top level modules:
-# 	EX_MEM
-# End time: 21:52:44 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:52:44 on May 18,2026
-# vlog -reportprogress 300 ./MEM_WB.sv 
-# -- Compiling module MEM_WB
-# 
-# Top level modules:
-# 	MEM_WB
-# End time: 21:52:44 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:52:44 on May 18,2026
-# vlog -reportprogress 300 ./forwardingUnit.sv 
-# -- Compiling module forwardingUnit
-# 
-# Top level modules:
-# 	forwardingUnit
-# End time: 21:52:44 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:52:45 on May 18,2026
-# vlog -reportprogress 300 ./nbit_register.sv 
-# -- Compiling module nbit_register
-# 
-# Top level modules:
-# 	nbit_register
-# End time: 21:52:45 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 21:52:46 on May 18,2026, Elapsed time: 0:37:35
-# Errors: 157, Warnings: 52
-# vsim -voptargs=""+acc"" -t 1ps -lib work pipelined_tb 
-# Start time: 21:52:46 on May 18,2026
-# Loading sv_std.std
-# Loading work.pipelined_tb
-# Loading work.pipelinedTop
-# Loading work.control_unit
-# Loading work.IF
-# Loading work.register
-# Loading work.sixtyfourbit_fulladder
-# Loading work.full_adder
-# Loading work.n_bit_2to1
-# Loading work.instructmem
-# Loading work.IF_ID
-# Loading work.nbit_register
-# Loading work.ID
-# Loading work.regfile
-# Loading work.five_thirtytwodecoder
-# Loading work.one_twodecoder
-# Loading work.four_sixteendecoder
-# Loading work.three_eightdecoder
-# Loading work.two_fourdecoder
-# Loading work.loopedthirtytwo_mux
-# Loading work.ID_EX
-# Loading work.D_FF
-# Loading work.EX
-# Loading work.ALU
-# Loading work.bitsliceALU
-# Loading work.eight_onemux
-# Loading work.four_onemux
-# Loading work.two_onemux
-# Loading work.flags
-# Loading work.EX_MEM
-# Loading work.datamem
-# Loading work.MEM_WB
-# Loading work.forwardingUnit
-# Loading work.WB
-# Loading work.thirtytwo_1_mux
-# Loading work.sixteen_onemux
-# ** Warning: (vsim-3015) ./pipelinedTop.sv(71): [PCDPC] - Port size (32) does not match connection size (1) for port 'instructionOut'. The port definition is at: ./ID_EX.sv(9).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/secondpipeline File: ./ID_EX.sv
-# ** Warning: (vsim-3839) ./ID_EX.sv(50): Variable '/pipelined_tb/DUT/secondpipeline/MemReadOut', driven via a port connection, is multiply driven. See ./ID_EX.sv(47).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/secondpipeline/MemRd_dff File: ./register_file/D_FF.sv
-# ** Warning: (vsim-3015) ./ID_EX.sv(57): [PCDPC] - Port size (1) does not match connection size (3) for port 'q'. The port definition is at: ./register_file/D_FF.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/secondpipeline/ALUOp_dff File: ./register_file/D_FF.sv
-# ** Warning: (vsim-3015) ./ID_EX.sv(57): [PCDPC] - Port size (1) does not match connection size (3) for port 'd'. The port definition is at: ./register_file/D_FF.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/secondpipeline/ALUOp_dff File: ./register_file/D_FF.sv
-# ** Warning: (vsim-3015) ./pipelinedTop.sv(96): [PCDPC] - Port size (32) does not match connection size (1) for port 'instruction'. The port definition is at: ./EX.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/execution File: ./EX.sv
-# ** Warning: (vsim-3015) ./EX.sv(57): [PCDPC] - Port size (64) does not match connection size (1) for port 'A'. The port definition is at: ./sixtyfourbit_fulladder.sv(2).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/execution/BPCadd File: ./sixtyfourbit_fulladder.sv
-# ** Warning: (vsim-3017) ./pipelinedTop.sv(121): [TFMPC] - Too few port connections. Expected 19, found 18.
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/thirdpipeline File: ./EX_MEM.sv
-# ** Warning: (vsim-3722) ./pipelinedTop.sv(121): [TFMPC] - Missing connection for port 'BranchOut'.
-# ** Warning: (vsim-3015) ./EX_MEM.sv(22): [PCDPC] - Port size (64) does not match connection size (1) for port 'write'. The port definition is at: ./nbit_register.sv(5).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/thirdpipeline/passBranch File: ./nbit_register.sv
-# ** Warning: (vsim-3015) ./pipelinedTop.sv(155): [PCDPC] - Port size (5) does not match connection size (1) for port 'RdMEMWB'. The port definition is at: ./forwardingUnit.sv(5).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/fwding_unit File: ./forwardingUnit.sv
-# ** Warning: Design size of 12792 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
-# This may because you are loading cell libraries which are not recommended with
-# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
-# ** Error: Cannot open macro file: benchmark1pipeline.do
-# Error in macro ./runlab.do line 45
-# Cannot open macro file: benchmark1pipeline.do
-#     while executing
-# "do benchmark1pipeline.do"
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:53:19 on May 18,2026
-# vlog -reportprogress 300 ./n_bit_2to1.sv 
-# -- Compiling module n_bit_2to1
-# 
-# Top level modules:
-# 	n_bit_2to1
-# End time: 21:53:19 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:53:19 on May 18,2026
-# vlog -reportprogress 300 ./EX.sv 
-# -- Compiling module EX
-# 
-# Top level modules:
-# 	EX
-# End time: 21:53:19 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:53:19 on May 18,2026
-# vlog -reportprogress 300 ./control_unit.sv 
-# -- Compiling module control_unit
-# 
-# Top level modules:
-# 	control_unit
-# End time: 21:53:19 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:53:19 on May 18,2026
-# vlog -reportprogress 300 ./math.sv 
-# -- Compiling module mult
-# -- Compiling module shifter
-# -- Compiling module shifter_testbench
-# -- Compiling module mult_testbench
-# 
-# Top level modules:
-# 	shifter_testbench
-# 	mult_testbench
-# End time: 21:53:19 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:53:19 on May 18,2026
-# vlog -reportprogress 300 ./instructmem.sv 
-# -- Compiling module instructmem
-# -- Compiling module instructmem_testbench
-# 
-# Top level modules:
-# 	instructmem_testbench
-# End time: 21:53:19 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:53:20 on May 18,2026
-# vlog -reportprogress 300 ./datamem.sv 
-# -- Compiling module datamem
-# -- Compiling module datamem_testbench
-# 
-# Top level modules:
-# 	datamem_testbench
-# End time: 21:53:20 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:53:20 on May 18,2026
-# vlog -reportprogress 300 ./register_file/thirtytwo_1_mux.sv 
-# -- Compiling module two_onemux
-# -- Compiling module four_onemux
-# -- Compiling module eight_onemux
-# -- Compiling module sixteen_onemux
-# -- Compiling module thirtytwo_1_mux
-# 
-# Top level modules:
-# 	thirtytwo_1_mux
-# End time: 21:53:20 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:53:20 on May 18,2026
-# vlog -reportprogress 300 ./register_file/register.sv 
-# -- Compiling module register
-# -- Compiling module register_tb
-# 
-# Top level modules:
-# 	register_tb
-# End time: 21:53:20 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:53:20 on May 18,2026
-# vlog -reportprogress 300 ./register_file/regfile.sv 
-# -- Compiling module regfile
-# 
-# Top level modules:
-# 	regfile
-# End time: 21:53:20 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:53:20 on May 18,2026
-# vlog -reportprogress 300 ./register_file/loopedthirtytwo_mux.sv 
-# -- Compiling module loopedthirtytwo_mux
-# 
-# Top level modules:
-# 	loopedthirtytwo_mux
-# End time: 21:53:20 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:53:20 on May 18,2026
-# vlog -reportprogress 300 ./register_file/five_thirtytwodecoder.sv 
-# -- Compiling module one_twodecoder
-# -- Compiling module two_fourdecoder
-# -- Compiling module three_eightdecoder
-# -- Compiling module four_sixteendecoder
-# -- Compiling module five_thirtytwodecoder
-# -- Compiling module one_two_tb
-# -- Compiling module five_thirtytwo_tb
-# -- Compiling module three_eight_tb
-# -- Compiling module two_four_tb
-# 
-# Top level modules:
-# 	one_two_tb
-# 	five_thirtytwo_tb
-# 	three_eight_tb
-# 	two_four_tb
-# End time: 21:53:20 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:53:20 on May 18,2026
-# vlog -reportprogress 300 ./register_file/D_FF.sv 
-# -- Compiling module D_FF
-# 
-# Top level modules:
-# 	D_FF
-# End time: 21:53:20 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:53:20 on May 18,2026
-# vlog -reportprogress 300 ./ALU/full_adder.sv 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 21:53:20 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:53:20 on May 18,2026
-# vlog -reportprogress 300 ./ALU/flags.sv 
-# -- Compiling module flags
-# 
-# Top level modules:
-# 	flags
-# End time: 21:53:20 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:53:20 on May 18,2026
-# vlog -reportprogress 300 ./ALU/bitsliceALU.sv 
-# -- Compiling module bitsliceALU
-# 
-# Top level modules:
-# 	bitsliceALU
-# End time: 21:53:21 on May 18,2026, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:53:21 on May 18,2026
-# vlog -reportprogress 300 ./ALU/ALU.sv 
-# -- Compiling module ALU
-# 
-# Top level modules:
-# 	ALU
-# End time: 21:53:21 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:53:21 on May 18,2026
-# vlog -reportprogress 300 ./IF.sv 
-# -- Compiling module IF
-# 
-# Top level modules:
-# 	IF
-# End time: 21:53:21 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:53:21 on May 18,2026
-# vlog -reportprogress 300 ./sixtyfourbit_fulladder.sv 
-# -- Compiling module sixtyfourbit_fulladder
-# 
-# Top level modules:
-# 	sixtyfourbit_fulladder
-# End time: 21:53:21 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:53:21 on May 18,2026
-# vlog -reportprogress 300 ./ID.sv 
-# -- Compiling module ID
-# 
-# Top level modules:
-# 	ID
-# End time: 21:53:21 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:53:21 on May 18,2026
-# vlog -reportprogress 300 ./WB.sv 
-# -- Compiling module WB
-# 
-# Top level modules:
-# 	WB
-# End time: 21:53:21 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:53:21 on May 18,2026
-# vlog -reportprogress 300 ./pipelinedTop.sv 
-# -- Compiling module pipelinedTop
-# 
-# Top level modules:
-# 	pipelinedTop
-# End time: 21:53:21 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:53:21 on May 18,2026
-# vlog -reportprogress 300 ./pipelined_tb.sv 
-# -- Compiling module pipelined_tb
-# 
-# Top level modules:
-# 	pipelined_tb
-# End time: 21:53:21 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:53:21 on May 18,2026
-# vlog -reportprogress 300 ./IF_ID.sv 
-# -- Compiling module IF_ID
-# 
-# Top level modules:
-# 	IF_ID
-# End time: 21:53:21 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:53:21 on May 18,2026
-# vlog -reportprogress 300 ./ID_EX.sv 
-# -- Compiling module ID_EX
-# 
-# Top level modules:
-# 	ID_EX
-# End time: 21:53:21 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:53:21 on May 18,2026
-# vlog -reportprogress 300 ./EX_MEM.sv 
-# -- Compiling module EX_MEM
-# 
-# Top level modules:
-# 	EX_MEM
-# End time: 21:53:21 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:53:22 on May 18,2026
-# vlog -reportprogress 300 ./MEM_WB.sv 
-# -- Compiling module MEM_WB
-# 
-# Top level modules:
-# 	MEM_WB
-# End time: 21:53:22 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:53:22 on May 18,2026
-# vlog -reportprogress 300 ./forwardingUnit.sv 
-# -- Compiling module forwardingUnit
-# 
-# Top level modules:
-# 	forwardingUnit
-# End time: 21:53:22 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:53:22 on May 18,2026
-# vlog -reportprogress 300 ./nbit_register.sv 
-# -- Compiling module nbit_register
-# 
-# Top level modules:
-# 	nbit_register
-# End time: 21:53:22 on May 18,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 21:53:23 on May 18,2026, Elapsed time: 0:00:37
-# Errors: 3, Warnings: 11
-# vsim -voptargs=""+acc"" -t 1ps -lib work pipelined_tb 
-# Start time: 21:53:23 on May 18,2026
-# Loading sv_std.std
-# Loading work.pipelined_tb
-# Loading work.pipelinedTop
-# Loading work.control_unit
-# Loading work.IF
-# Loading work.register
-# Loading work.sixtyfourbit_fulladder
-# Loading work.full_adder
-# Loading work.n_bit_2to1
-# Loading work.instructmem
-# Loading work.IF_ID
-# Loading work.nbit_register
-# Loading work.ID
-# Loading work.regfile
-# Loading work.five_thirtytwodecoder
-# Loading work.one_twodecoder
-# Loading work.four_sixteendecoder
-# Loading work.three_eightdecoder
-# Loading work.two_fourdecoder
-# Loading work.loopedthirtytwo_mux
-# Loading work.ID_EX
-# Loading work.D_FF
-# Loading work.EX
-# Loading work.ALU
-# Loading work.bitsliceALU
-# Loading work.eight_onemux
-# Loading work.four_onemux
-# Loading work.two_onemux
-# Loading work.flags
-# Loading work.EX_MEM
-# Loading work.datamem
-# Loading work.MEM_WB
-# Loading work.forwardingUnit
-# Loading work.WB
-# Loading work.thirtytwo_1_mux
-# Loading work.sixteen_onemux
-# ** Warning: (vsim-3015) ./pipelinedTop.sv(71): [PCDPC] - Port size (32) does not match connection size (1) for port 'instructionOut'. The port definition is at: ./ID_EX.sv(9).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/secondpipeline File: ./ID_EX.sv
-# ** Warning: (vsim-3839) ./ID_EX.sv(50): Variable '/pipelined_tb/DUT/secondpipeline/MemReadOut', driven via a port connection, is multiply driven. See ./ID_EX.sv(47).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/secondpipeline/MemRd_dff File: ./register_file/D_FF.sv
-# ** Warning: (vsim-3015) ./ID_EX.sv(57): [PCDPC] - Port size (1) does not match connection size (3) for port 'q'. The port definition is at: ./register_file/D_FF.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/secondpipeline/ALUOp_dff File: ./register_file/D_FF.sv
-# ** Warning: (vsim-3015) ./ID_EX.sv(57): [PCDPC] - Port size (1) does not match connection size (3) for port 'd'. The port definition is at: ./register_file/D_FF.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/secondpipeline/ALUOp_dff File: ./register_file/D_FF.sv
-# ** Warning: (vsim-3015) ./pipelinedTop.sv(96): [PCDPC] - Port size (32) does not match connection size (1) for port 'instruction'. The port definition is at: ./EX.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/execution File: ./EX.sv
-# ** Warning: (vsim-3015) ./EX.sv(57): [PCDPC] - Port size (64) does not match connection size (1) for port 'A'. The port definition is at: ./sixtyfourbit_fulladder.sv(2).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/execution/BPCadd File: ./sixtyfourbit_fulladder.sv
-# ** Warning: (vsim-3017) ./pipelinedTop.sv(121): [TFMPC] - Too few port connections. Expected 19, found 18.
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/thirdpipeline File: ./EX_MEM.sv
-# ** Warning: (vsim-3722) ./pipelinedTop.sv(121): [TFMPC] - Missing connection for port 'BranchOut'.
-# ** Warning: (vsim-3015) ./EX_MEM.sv(22): [PCDPC] - Port size (64) does not match connection size (1) for port 'write'. The port definition is at: ./nbit_register.sv(5).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/thirdpipeline/passBranch File: ./nbit_register.sv
-# ** Warning: (vsim-3015) ./pipelinedTop.sv(155): [PCDPC] - Port size (5) does not match connection size (1) for port 'RdMEMWB'. The port definition is at: ./forwardingUnit.sv(5).
-#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/fwding_unit File: ./forwardingUnit.sv
-# ** Warning: Design size of 12792 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (64) does not match connection size (1) for port 'write'. The port definition is at: ./nbit_register.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/thirdpipeline/passBranch File: ./EX_MEM.sv Line: 22
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'RdMEMWB'. The port definition is at: ./forwardingUnit.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /pipelined_tb/DUT/fwding_unit File: ./pipelinedTop.sv Line: 155
+# ** Warning: Design size of 12794 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
 # This may because you are loading cell libraries which are not recommended with
 # the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
 # .main_pane.wave.interior.cs.body.pw.wf
