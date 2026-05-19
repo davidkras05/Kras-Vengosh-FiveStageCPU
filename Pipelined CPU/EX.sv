@@ -2,7 +2,7 @@ module EX (
 	input logic UncondBr,
 	input logic [2:0] ALUOp,
 	input logic [31:0] instruction,
-	input logic [63:0] ALUIn0, ALUIn1,
+	input logic [63:0] CurrPC, ALUIn0, ALUIn1,
 	output logic [63:0] ALURes, BrLoc,
 	output logic ZeroFlag, NegativeFlag
 );
