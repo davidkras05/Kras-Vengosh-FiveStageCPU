@@ -166,9 +166,9 @@ module control_unit (
 			RegWrite = 1'b0;
 			MemWrite = 1'b0;
 			MemRead = 1'b0;
-			BrTaken = ZeroFlag;
+			BrTaken = (Db == 64'b0);
 			UncondBr = 1'b0;
-			ALUOp = 3'b000; //PASS, change later
+			ALUOp = 3'b000; //PASS
 			SetFlags = 1'b0;
 			IsBL = 1'b0;
 			IsBR = 1'b0;

@@ -24,8 +24,10 @@ module EX (
 
 	n_bit_2to1 #(.BITS(64)) UncondMux (.data_line1(BrAddr64), .data_line0(CondAddr64), .s(UncondBr), .mux_out(BrLoc_unshifted));
 
-	//assign BrLoc = BrLoc_unshifted << 2;
+	logic BrLoc_not_pcrel;
+	assign BrLoc_not_pcrel = {BrLoc_unshifted[61:0], 2'b00}; //New shift (without RTL version)
 	
-	assign BrLoc = {BrLoc_unshifted[61:0], 2'b00}; //New shift (without RTL version)
+	
+	sixtyfourbit_fulladder BPCadd (.A(BrLoc_not_pcrel), .B(CurrPC), .Cin(1'b0), .S(BrLoc)); // Adds current PC to Br
 
 endmodule 
