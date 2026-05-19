@@ -1,7 +1,7 @@
 `timescale 1ps/1ps
 
 
-module singleCycle_tb ();
+module pipelined_tb ();
 
 	logic clk, reset;
 	

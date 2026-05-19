@@ -1,4 +1,4 @@
-module singleCycleTop(
+module pipelinedTop(
 	input logic clk,
 	input logic reset
 );
