@@ -17,7 +17,7 @@ module pipelinedTop(
 	
 	logic[31:0] IF_ID_instructionOut;
 	logic[63:0] ID_EX_readData2Out, EX_MEM_address;
-	logic ID_EX_BrTakenOut, ID_EX_IsBROut, MEM_WB_RegWriteOut, MEM_WB_IsBLOut;
+	logic ID_EX_BrTakenOut, MEM_WB_RegWriteOut, MEM_WB_IsBLOut;
 	logic [1:0] FwdA, FwdB;
 	
 	control_unit control (.instruction(IF_ID_instructionOut), .Db(Db), .ZeroFlag(ZeroFlaghold), .NegativeFlag(NegativeFlaghold), 
@@ -34,7 +34,7 @@ module pipelinedTop(
 	//		to the wires I made
 	
 	
-	IF instructionFetch (.clk(clk), .reset(reset), .BrLoc(BrLoc), .Db(ID_EX_readData2Out), .BrTaken(ID_EX_BrTakenOut), .IsBR(ID_EX_IsBROut), 
+	IF instructionFetch (.clk(clk), .reset(reset), .BrLoc(BrLoc), .Db(ID_EX_readData2Out), .BrTaken(ID_EX_BrTakenOut), .IsBR(IsBRwire), 
 	                     .instruction_output(instruction), .PCp4(PCp4), .CurrPC(CurrPC));
 								
 								// BrTaken, still an input IsBr still an input. pipeline BrTaken and IsBr to ID_EX and then write them 
@@ -42,19 +42,19 @@ module pipelinedTop(
 	
 	//IF_ID PIPELINE HERE ---------------------------------------------------------------------------------------------
 	
-	logic[63:0] IF_ID_currPCOut, IF_ID_PCp4Out;
+	logic[63:0] IF_ID_CurrPCOut, IF_ID_PCp4Out;
 	
 	
 	IF_ID firstpipeline (.clk(clk), .reset(reset), .instruction(instruction), .currPC(CurrPC), .PCp4(PCp4),
-								.instructionOut(IF_ID_instructionOut), .currPCOut(IF_ID_currPCOut), .PCp4Out(IF_ID_PCp4Out));
+								.instructionOut(IF_ID_instructionOut), .currPCOut(IF_ID_CurrPCOut), .PCp4Out(IF_ID_PCp4Out));
 	
 	//-----------------------------------------------------------------------------------------------------------------
 	
 	
 	ID instructionDecode(.clk(clk), .reset(reset), .Reg2Loc(Reg2Locwire), .ALUSrc(ALUSrcwire), 
 								.RegWrite(MEM_WB_RegWriteOut), .IsBL(MEM_WB_IsBLOut), .isDType(isDTypewire), 
-								.WriteBck(WriteBck), .PCp4(IF_ID_PCp4Out), .instruction(IF_ID_instructionOut), .Da(Da), 
-								.Db(Db), .ALUInput(ALUInput), .Rd(Rd), .Rm(Rm), .Rn(Rn)); 
+								.WriteBck(WriteBck), .PCp4(IF_ID_PCp4Out), .CurrPC(IF_ID_CurrPCOut), .instruction(IF_ID_instructionOut), .Da(Da), 
+								.Db(Db), .ALUInput(ALUInput), .BrLoc(BrLoc), .Rd(Rd), .Rm(Rm), .Rn(Rn)); 
 								
 								// Control signals generated here. Need to pipeline signals that are used after this.
 								
@@ -70,17 +70,13 @@ module pipelinedTop(
 	
 	ID_EX secondpipeline (.clk(clk), .reset(reset), 
 	
-								 .instruction(IF_ID_instructionOut),
-								 .readData1(Da), .readData2(Db), .ALUInput(ALUInput), 
-							    .currPC(IF_ID_currPCOut), 
+								 .readData1(Da), .readData2(Db), .ALUInput(ALUInput),  
 								 .Rd(Rd), .Rn(Rn), .Rm(Rm), 
 								 .ALUOp(ALUOpwire), .MemtoReg(MemtoRegwire), .RegWrite(RegWritewire), 
 								 .MemRead(MemReadwire), .MemWrite(MemWritewire), .BrTaken(BrTakenwire), 
-								 .UncondBr(UncondBrwire), .IsBL(IsBLwire), .IsBR(IsBRwire),
+								 .UncondBr(UncondBrwire), .IsBL(IsBLwire), 
 								 
-								 .instructionOut(ID_EX_instructionOut),
 								 .readData1Out(ID_EX_readData1Out), .readData2Out(ID_EX_readData2Out), .ALUInputOut(ID_EX_ALUInputOut), 
-								 .currPCOut(ID_EX_currPCOut),
 								 .RdOut(ID_EX_RdOut), .RnOut(ID_EX_RnOut), .RmOut(ID_EX_RmOut),
 								 .ALUOpOut(ID_EX_ALUOpOut), .MemtoRegOut(ID_EX_MemtoRegOut), .RegWriteOut(ID_EX_RegWriteOut), 
 								 .MemReadOut(ID_EX_MemReadOut), .MemWriteOut(ID_EX_MemWriteOut), .BrTakenOut(ID_EX_BrTakenOut), 
@@ -93,12 +89,11 @@ module pipelinedTop(
 	//------------------------------------------------------------------------------------------------------------------
 	
 	
-	EX execution (.UncondBr(ID_EX_UncondBrOut), .ALUOp(ID_EX_ALUOpOut), .instruction(ID_EX_instructionOut), 
-					  .CurrPC(ID_EX_currPCOut),
+	EX execution (.UncondBr(ID_EX_UncondBrOut), .ALUOp(ID_EX_ALUOpOut), 
 					  .ALUIn0(ID_EX_readData1Out), .ALUIn1(ID_EX_ALUInputOut),
 					  .ALUIn_WB(WriteBck), .ALUIn_EXMEM(EX_MEM_address),
 					  .FwdA(FwdA), .FwdB(FwdB),
-					  .ALURes(ALURes), .BrLoc(BrLoc), .ZeroFlag(ZeroFlag), .NegativeFlag(NegativeFlag));
+					  .ALURes(ALURes), .ZeroFlag(ZeroFlag), .NegativeFlag(NegativeFlag));
 					  
 	//Flag hold registers
 	

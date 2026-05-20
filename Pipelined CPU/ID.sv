@@ -1,9 +1,9 @@
 module ID (
 	input logic clk, reset, Reg2Loc, ALUSrc, RegWrite, IsBL, isDType,
-	input logic[63:0] WriteBck, PCp4, //From writeback
+	input logic[63:0] WriteBck, PCp4, CurrPC, //From writeback
 	input logic[31:0] instruction,
 	
-	output logic[63:0] Da, Db, ALUInput,
+	output logic[63:0] Da, Db, ALUInput, BrLoc,
 	output logic[4:0] Rd, Rm, Rn
 );
 	
@@ -44,6 +44,30 @@ module ID (
 	n_bit_2to1 #(.BITS(64)) ImmChoose (.data_line1(DT_address64), .data_line0(Immediate64), .s(isDType), .mux_out(shift));
 	
 	n_bit_2to1 #(.BITS(64)) ALUchoose (.data_line1(shift), .data_line0(Db), .s(ALUSrc), .mux_out(ALUInput));
+	
+	// Branching moved from EX -------------------------
+	
+	logic [18:0] CondAddr19;
+	logic [25:0] BrAddr26;
+
+	assign CondAddr19 = instruction[23:5];
+	assign BrAddr26 = instruction[25:0];
+
+	logic [63:0] BrAddr64, CondAddr64;
+
+	assign BrAddr64 = {{38{BrAddr26[25]}}, BrAddr26};
+	assign CondAddr64 = {{45{CondAddr19[18]}}, CondAddr19};
+
+	logic [63:0] BrLoc_unshifted, BrLoc_not_pcrel;
+
+	n_bit_2to1 #(.BITS(64)) UncondMux (.data_line1(BrAddr64), .data_line0(CondAddr64), .s(UncondBr), .mux_out(BrLoc_unshifted));
+
+	assign BrLoc_not_pcrel = {BrLoc_unshifted[61:0], 2'b00}; //New shift (without RTL version)
+	
+	
+	sixtyfourbit_fulladder BPCadd (.A(BrLoc_not_pcrel), .B(CurrPC), .Cin(1'b0), .S(BrLoc)); // Adds current PC to Br
+	
+	
 	
 endmodule
 								

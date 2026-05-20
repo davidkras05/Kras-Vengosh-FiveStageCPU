@@ -1,16 +1,14 @@
 module ID_EX (
 	input logic clk, reset,
-	input logic[31:0] instruction,
-	input logic[63:0] readData1, readData2, ALUInput, currPC, 
+	input logic[63:0] readData1, readData2, ALUInput, 
 	input logic[4:0] Rd, Rn, Rm,
 	input logic[2:0] ALUOp,
-	input logic MemtoReg, RegWrite, MemRead, MemWrite, BrTaken, UncondBr, IsBL, IsBR,
+	input logic MemtoReg, RegWrite, MemRead, MemWrite, BrTaken, UncondBr, IsBL,
 	
-	output logic[31:0] instructionOut,
-	output logic[63:0] readData1Out, readData2Out, ALUInputOut, currPCOut,
+	output logic[63:0] readData1Out, readData2Out, ALUInputOut,
 	output logic[4:0] RdOut, RnOut, RmOut,
 	output logic[2:0] ALUOpOut,
-	output logic MemtoRegOut, RegWriteOut, MemReadOut, MemWriteOut, BrTakenOut, UncondBrOut, IsBLOut, IsBROut
+	output logic MemtoRegOut, RegWriteOut, MemReadOut, MemWriteOut, BrTakenOut, UncondBrOut, IsBLOut
 	
 );
 
@@ -47,7 +45,6 @@ module ID_EX (
 	D_FF MemRd_dff (.q(MemReadOut), .d(MemRead), .reset(reset), .clk(clk));
 	D_FF MemWr_dff (.q(MemWriteOut), .d(MemWrite), .reset(reset), .clk(clk));
 	D_FF BrT_dff (.q(BrTakenOut), .d(BrTaken), .reset(reset), .clk(clk));
-	D_FF IsBR_dff (.q(IsBROut), .d(IsBR), .reset(reset), .clk(clk));
 	D_FF IsBL_dff (.q(IsBLOut), .d(IsBL), .reset(reset), .clk(clk));
 	
 	//Pass EX control bits ALU code, UncondBr
