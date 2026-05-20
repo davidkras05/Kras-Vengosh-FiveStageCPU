@@ -80,7 +80,7 @@ module pipelinedTop(
 								 .RdOut(ID_EX_RdOut), .RnOut(ID_EX_RnOut), .RmOut(ID_EX_RmOut),
 								 .ALUOpOut(ID_EX_ALUOpOut), .MemtoRegOut(ID_EX_MemtoRegOut), .RegWriteOut(ID_EX_RegWriteOut), 
 								 .MemReadOut(ID_EX_MemReadOut), .MemWriteOut(ID_EX_MemWriteOut), .BrTakenOut(ID_EX_BrTakenOut), 
-								 .UncondBrOut(ID_EX_UncondBrOut), .IsBLOut(ID_EX_IsBLOut), .IsBROut(ID_EX_IsBROut));
+								 .UncondBrOut(ID_EX_UncondBrOut), .IsBLOut(ID_EX_IsBLOut));
 								 
 								 // Pipeline IsBR and BrTaken through here since we are moving them from IF to EX. wire their outputs back
 								 // to inputs of IF (BrTaken and IsBr) also, wire DB back to IF from the ID_EX pipeline
