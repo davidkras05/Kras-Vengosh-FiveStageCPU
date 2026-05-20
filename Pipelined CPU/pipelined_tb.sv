@@ -18,7 +18,7 @@ module pipelined_tb ();
 	
 	initial begin
 		reset = 1;
-		repeat (2) @(posedge clk);
+		repeat (1) @(posedge clk);
 		reset = 0;
 	
 		repeat (50) begin

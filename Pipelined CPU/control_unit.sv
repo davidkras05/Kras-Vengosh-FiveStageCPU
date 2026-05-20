@@ -228,13 +228,13 @@ module control_unit (
 			Reg2Loc = 1'bx;
 			ALUSrc = 1'bx;
 			Mem2Reg = 1'bx;
-			RegWrite = 1'bx;
-			MemWrite = 1'bx;
+			RegWrite = 1'b0;
+			MemWrite = 1'b0;
 			MemRead = 1'bx;
-			BrTaken = 1'bx;
+			BrTaken = 1'b0;
 			UncondBr = 1'bx;
 			ALUOp = 3'bxxx; //DON'T CARE, change later
-			SetFlags = 1'bx;
+			SetFlags = 1'b0;
 			IsBL = 1'bx;
 			IsBR = 1'bx;
 			isDType = 1'bx;

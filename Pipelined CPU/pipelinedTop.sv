@@ -65,12 +65,12 @@ module pipelinedTop(
 	logic[31:0] ID_EX_instructionOut;
 	logic[4:0] ID_EX_RdOut, ID_EX_RnOut, ID_EX_RmOut;
 	logic ID_EX_MemtoRegOut, ID_EX_RegWriteOut, ID_EX_MemReadOut, ID_EX_MemWriteOut, ID_EX_ALUSrcOut;
-	logic ID_EX_UncondBrOut, ID_EX_ISBLOut;
+	logic ID_EX_UncondBrOut, ID_EX_IsBLOut;
 	logic[2:0] ID_EX_ALUOpOut;
 	
 	ID_EX secondpipeline (.clk(clk), .reset(reset), 
 	
-								 .instruction(instruction),
+								 .instruction(IF_ID_instructionOut),
 								 .readData1(Da), .readData2(Db), .ALUInput(ALUInput), 
 							    .currPC(IF_ID_currPCOut), 
 								 .Rd(Rd), .Rn(Rn), .Rm(Rm), 
@@ -123,7 +123,7 @@ module pipelinedTop(
 								 .ALURes(ALURes), .ReadData2(ID_EX_readData2Out), 
 								 .Rd(ID_EX_RdOut), 
 								 .MemtoReg(ID_EX_MemtoRegOut), .RegWrite(ID_EX_RegWriteOut), .MemRead(ID_EX_MemReadOut),
-								 .MemWrite(ID_EX_MemWriteOut), .IsBL(ID_EX_ISBLOut),
+								 .MemWrite(ID_EX_MemWriteOut), .IsBL(ID_EX_IsBLOut),
 								 
 								 .address(EX_MEM_address), .writeMemData(EX_MEM_writeMemData), 
 								 .RdOut(EX_MEM_RdOut),

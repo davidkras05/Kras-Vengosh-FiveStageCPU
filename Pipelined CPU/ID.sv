@@ -39,7 +39,7 @@ module ID (
 	
 	assign Immediate64 = {{52{1'b0}}, Immediate}; //Zero extend the immediate to 64 bits
 	
-	assign DT_address64 = {{55{DT_address[8]}}, DT_address}; //Sign extend the immediate to 64 bits
+	assign DT_address64 = {{55{DT_address[8]}}, DT_address}; //Sign extend the DT addr to 64 bits
 	
 	n_bit_2to1 #(.BITS(64)) ImmChoose (.data_line1(DT_address64), .data_line0(Immediate64), .s(isDType), .mux_out(shift));
 	
