@@ -12,7 +12,7 @@ module EX (
 	
 	// 64-bit 3:1 MUX needed, outputs are A and B (ALUIn0, ALUIn1, respectively)
 	
-	//MUX A
+	//MUX A: Da
 	
 	logic[63:0] firstlevel1A, firstlevel2A;
 	
@@ -21,7 +21,7 @@ module EX (
 	
 	n_bit_2to1 #(.BITS(64)) forwardMux3A (.data_line1(firstlevel2A), .data_line0(firstlevel1A), .s(FwdA[1]), .mux_out(A));
 	
-	//MUX B
+	//MUX B: Db
 	
 	logic[63:0] firstlevel1B, firstlevel2B;
 	

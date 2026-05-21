@@ -11,7 +11,6 @@
 
 	
 	always_comb begin
-	
 		if (1'b1 == 1'b1) begin
 			ForwardA = 2'b00;
 			ForwardB = 2'b00;
