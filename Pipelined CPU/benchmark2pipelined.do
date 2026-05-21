@@ -20,15 +20,15 @@ add wave -noupdate -group Controls -radix binary /pipelined_tb/DUT/control/isDTy
 add wave -noupdate -group Controls /pipelined_tb/DUT/control/ALUOp
 add wave -noupdate -group Controls /pipelined_tb/DUT/control/extended_op
 add wave -noupdate -group Controls /pipelined_tb/DUT/control/branch_conditional
-add wave -noupdate -group IF -radix decimal /pipelined_tb/DUT/instructionFetch/BrLoc
-add wave -noupdate -group IF -radix decimal /pipelined_tb/DUT/instructionFetch/Db
-add wave -noupdate -group IF -radix binary /pipelined_tb/DUT/instructionFetch/BrTaken
-add wave -noupdate -group IF -radix binary /pipelined_tb/DUT/instructionFetch/IsBR
-add wave -noupdate -group IF /pipelined_tb/DUT/instructionFetch/instruction_output
-add wave -noupdate -group IF -radix unsigned /pipelined_tb/DUT/instructionFetch/PCp4
-add wave -noupdate -group IF -radix unsigned /pipelined_tb/DUT/instructionFetch/CurrPC
-add wave -noupdate -group IF -radix unsigned /pipelined_tb/DUT/instructionFetch/NextPC
-add wave -noupdate -group IF -radix unsigned /pipelined_tb/DUT/instructionFetch/BrMux_noBR
+add wave -noupdate -expand -group IF -radix decimal /pipelined_tb/DUT/instructionFetch/BrLoc
+add wave -noupdate -expand -group IF -radix decimal /pipelined_tb/DUT/instructionFetch/Db
+add wave -noupdate -expand -group IF -radix binary /pipelined_tb/DUT/instructionFetch/BrTaken
+add wave -noupdate -expand -group IF -radix binary /pipelined_tb/DUT/instructionFetch/IsBR
+add wave -noupdate -expand -group IF /pipelined_tb/DUT/instructionFetch/instruction_output
+add wave -noupdate -expand -group IF -radix unsigned /pipelined_tb/DUT/instructionFetch/PCp4
+add wave -noupdate -expand -group IF -radix unsigned /pipelined_tb/DUT/instructionFetch/CurrPC
+add wave -noupdate -expand -group IF -radix unsigned /pipelined_tb/DUT/instructionFetch/NextPC
+add wave -noupdate -expand -group IF -radix unsigned /pipelined_tb/DUT/instructionFetch/BrMux_noBR
 add wave -noupdate -group IF_ID /pipelined_tb/DUT/firstpipeline/instruction
 add wave -noupdate -group IF_ID -radix unsigned /pipelined_tb/DUT/firstpipeline/currPC
 add wave -noupdate -group IF_ID -radix unsigned /pipelined_tb/DUT/firstpipeline/PCp4
@@ -83,21 +83,21 @@ add wave -noupdate -group ID_EX /pipelined_tb/DUT/secondpipeline/MemWriteOut
 add wave -noupdate -group ID_EX /pipelined_tb/DUT/secondpipeline/BrTakenOut
 add wave -noupdate -group ID_EX /pipelined_tb/DUT/secondpipeline/UncondBrOut
 add wave -noupdate -group ID_EX /pipelined_tb/DUT/secondpipeline/IsBLOut
-add wave -noupdate -group EX -radix binary /pipelined_tb/DUT/execution/UncondBr
-add wave -noupdate -group EX /pipelined_tb/DUT/execution/ALUOp
-add wave -noupdate -group EX -radix decimal /pipelined_tb/DUT/execution/ALUIn0
-add wave -noupdate -group EX -radix decimal /pipelined_tb/DUT/execution/ALUIn1
-add wave -noupdate -group EX -radix decimal /pipelined_tb/DUT/execution/ALUIn_WB
-add wave -noupdate -group EX -radix decimal /pipelined_tb/DUT/execution/ALUIn_EXMEM
-add wave -noupdate -group EX /pipelined_tb/DUT/execution/FwdA
-add wave -noupdate -group EX /pipelined_tb/DUT/execution/FwdB
-add wave -noupdate -group EX -radix decimal /pipelined_tb/DUT/execution/ALURes
-add wave -noupdate -group EX -radix decimal /pipelined_tb/DUT/execution/A
-add wave -noupdate -group EX -radix decimal /pipelined_tb/DUT/execution/B
-add wave -noupdate -group EX -radix decimal /pipelined_tb/DUT/execution/firstlevel1A
-add wave -noupdate -group EX -radix decimal /pipelined_tb/DUT/execution/firstlevel2A
-add wave -noupdate -group EX -radix decimal /pipelined_tb/DUT/execution/firstlevel1B
-add wave -noupdate -group EX -radix decimal /pipelined_tb/DUT/execution/firstlevel2B
+add wave -noupdate -expand -group EX -radix binary /pipelined_tb/DUT/execution/UncondBr
+add wave -noupdate -expand -group EX /pipelined_tb/DUT/execution/ALUOp
+add wave -noupdate -expand -group EX -radix decimal /pipelined_tb/DUT/execution/ALUIn0
+add wave -noupdate -expand -group EX -radix decimal /pipelined_tb/DUT/execution/ALUIn1
+add wave -noupdate -expand -group EX -radix decimal /pipelined_tb/DUT/execution/ALUIn_WB
+add wave -noupdate -expand -group EX -radix decimal /pipelined_tb/DUT/execution/ALUIn_EXMEM
+add wave -noupdate -expand -group EX /pipelined_tb/DUT/execution/FwdA
+add wave -noupdate -expand -group EX /pipelined_tb/DUT/execution/FwdB
+add wave -noupdate -expand -group EX -radix decimal /pipelined_tb/DUT/execution/ALURes
+add wave -noupdate -expand -group EX -radix decimal /pipelined_tb/DUT/execution/A
+add wave -noupdate -expand -group EX -radix decimal /pipelined_tb/DUT/execution/B
+add wave -noupdate -expand -group EX -radix decimal /pipelined_tb/DUT/execution/firstlevel1A
+add wave -noupdate -expand -group EX -radix decimal /pipelined_tb/DUT/execution/firstlevel2A
+add wave -noupdate -expand -group EX -radix decimal /pipelined_tb/DUT/execution/firstlevel1B
+add wave -noupdate -expand -group EX -radix decimal /pipelined_tb/DUT/execution/firstlevel2B
 add wave -noupdate -group EX_MEM -radix decimal /pipelined_tb/DUT/thirdpipeline/ALURes
 add wave -noupdate -group EX_MEM -radix decimal /pipelined_tb/DUT/thirdpipeline/ReadData2
 add wave -noupdate -group EX_MEM -radix unsigned /pipelined_tb/DUT/thirdpipeline/Rd
@@ -142,13 +142,16 @@ add wave -noupdate -expand -group {FWDING UNIT} -radix binary /pipelined_tb/DUT/
 add wave -noupdate -expand -group {FWDING UNIT} -radix binary /pipelined_tb/DUT/fwding_unit/RegWriteMEMWB
 add wave -noupdate -expand -group {FWDING UNIT} /pipelined_tb/DUT/fwding_unit/ForwardA
 add wave -noupdate -expand -group {FWDING UNIT} /pipelined_tb/DUT/fwding_unit/ForwardB
+add wave -noupdate -radix decimal {/pipelined_tb/DUT/instructionDecode/registerFile/reg_outs[7]}
+add wave -noupdate -radix decimal {/pipelined_tb/DUT/instructionDecode/registerFile/reg_outs[6]}
+add wave -noupdate -radix decimal {/pipelined_tb/DUT/instructionDecode/registerFile/reg_outs[5]}
 add wave -noupdate -radix decimal {/pipelined_tb/DUT/instructionDecode/registerFile/reg_outs[4]}
 add wave -noupdate -radix decimal {/pipelined_tb/DUT/instructionDecode/registerFile/reg_outs[3]}
 add wave -noupdate -radix decimal {/pipelined_tb/DUT/instructionDecode/registerFile/reg_outs[2]}
 add wave -noupdate -radix decimal {/pipelined_tb/DUT/instructionDecode/registerFile/reg_outs[1]}
 add wave -noupdate -radix decimal {/pipelined_tb/DUT/instructionDecode/registerFile/reg_outs[0]}
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {317461 ps} 0}
+WaveRestoreCursors {{Cursor 1} {395709 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 150
 configure wave -valuecolwidth 100

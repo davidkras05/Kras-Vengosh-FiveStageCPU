@@ -18,6 +18,7 @@ module pipelinedTop(
 	logic[31:0] IF_ID_instructionOut;
 	logic[63:0] ID_EX_readData2Out, EX_MEM_address;
 	logic ID_EX_BrTakenOut, MEM_WB_RegWriteOut, MEM_WB_IsBLOut;
+	logic [4:0] MEM_WB_RdOut;
 	logic [1:0] FwdA, FwdB;
 	
 	control_unit control (.instruction(IF_ID_instructionOut), .Db(Db), .ZeroFlag(ZeroFlaghold), .NegativeFlag(NegativeFlaghold), 
@@ -34,7 +35,7 @@ module pipelinedTop(
 	//		to the wires I made
 	
 	
-	IF instructionFetch (.clk(clk), .reset(reset), .BrLoc(BrLoc), .Db(ID_EX_readData2Out), .BrTaken(ID_EX_BrTakenOut), .IsBR(IsBRwire), 
+	IF instructionFetch (.clk(clk), .reset(reset), .BrLoc(BrLoc), .Db(ID_EX_readData2Out), .BrTaken(BrTakenwire), .IsBR(IsBRwire), 
 	                     .instruction_output(instruction), .PCp4(PCp4), .CurrPC(CurrPC));
 								
 								// BrTaken, still an input IsBr still an input. pipeline BrTaken and IsBr to ID_EX and then write them 
@@ -51,10 +52,17 @@ module pipelinedTop(
 	//-----------------------------------------------------------------------------------------------------------------
 	
 	
-	ID instructionDecode(.clk(clk), .reset(reset), .Reg2Loc(Reg2Locwire), .ALUSrc(ALUSrcwire), 
-								.RegWrite(MEM_WB_RegWriteOut), .IsBL(MEM_WB_IsBLOut), .isDType(isDTypewire), 
-								.WriteBck(WriteBck), .PCp4(IF_ID_PCp4Out), .CurrPC(IF_ID_CurrPCOut), .instruction(IF_ID_instructionOut), .Da(Da), 
-								.Db(Db), .ALUInput(ALUInput), .BrLoc(BrLoc), .Rd(Rd), .Rm(Rm), .Rn(Rn)); 
+	ID instructionDecode(.clk(clk), .reset(reset), 
+	
+								.Reg2Loc(Reg2Locwire), .ALUSrc(ALUSrcwire), .RegWrite(MEM_WB_RegWriteOut), 
+								.IsBL(MEM_WB_IsBLOut), .isDType(isDTypewire), 
+								.WriteBck(WriteBck), 
+								.PCp4(IF_ID_PCp4Out), .CurrPC(IF_ID_CurrPCOut), .instruction(IF_ID_instructionOut), 
+								.WBRd(MEM_WB_RdOut), 
+								
+								.Da(Da), .Db(Db), .ALUInput(ALUInput), 
+								.BrLoc(BrLoc), 
+								.Rd(Rd), .Rm(Rm), .Rn(Rn)); 
 								
 								// Control signals generated here. Need to pipeline signals that are used after this.
 								
@@ -138,16 +146,16 @@ module pipelinedTop(
 	
 	MEM_WB fourthpipeline (.clk(clk), .reset(reset), 
 	
-								  .readMemData(MEMData), .ALURes(EX_MEM_address), 
+								  .readMemData(MEMData), .ALURes(EX_MEM_address), .Rd(EX_MEM_RdOut), 
 								  .MemtoReg(EX_MEM_MemtoRegOut),.RegWrite(EX_MEM_RegWriteOut), .IsBL(EX_MEM_IsBLOut),
 								  
-								  .ALUResOut(MEM_WB_ALUResOut), .readMemDataOut(MEM_WB_readMemDataOut), 
+								  .ALUResOut(MEM_WB_ALUResOut), .readMemDataOut(MEM_WB_readMemDataOut), .RdOut(MEM_WB_RdOut),
 								  .MemtoRegOut(MEM_WB_MemtoRegOut), .RegWriteOut(MEM_WB_RegWriteOut), .IsBLOut(MEM_WB_IsBLOut));
 	
 	//FORWARDING UNIT HERE ---------------------------------------------------------------------------------------------
 	
 	
-	forwardingUnit fwding_unit (.RnIDEX(ID_EX_RnOut), .RmIDEX(ID_EX_RmOut), .RdEXMEM(ID_EX_RdOut), .RdMEMWB(EX_MEM_RdOut),
+	forwardingUnit fwding_unit (.RnIDEX(ID_EX_RnOut), .RmIDEX(ID_EX_RmOut), .RdEXMEM(EX_MEM_RdOut), .RdMEMWB(MEM_WB_RdOut),
 	                            .RegWriteEXMEM(EX_MEM_RegWriteOut), .RegWriteMEMWB(MEM_WB_RegWriteOut),
 										 .ForwardA(FwdA), .ForwardB(FwdB));
 	//------------------------------------------------------------------------------------------------------------------

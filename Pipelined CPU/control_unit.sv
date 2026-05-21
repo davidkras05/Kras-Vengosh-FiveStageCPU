@@ -227,7 +227,7 @@ module control_unit (
 			$error("Invalid opcode: %h", extended_op);
 			Reg2Loc = 1'bx;
 			ALUSrc = 1'bx;
-			Mem2Reg = 1'bx;
+			Mem2Reg = 1'b0;
 			RegWrite = 1'b0;
 			MemWrite = 1'b0;
 			MemRead = 1'bx;
@@ -235,9 +235,9 @@ module control_unit (
 			UncondBr = 1'bx;
 			ALUOp = 3'bxxx; //DON'T CARE, change later
 			SetFlags = 1'b0;
-			IsBL = 1'bx;
-			IsBR = 1'bx;
-			isDType = 1'bx;
+			IsBL = 1'b0;
+			IsBR = 1'b0;
+			isDType = 1'b0;
 		end
 	end
 

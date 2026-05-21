@@ -1,9 +1,11 @@
 module MEM_WB (
 	input logic clk, reset,
 	input logic[63:0] readMemData, ALURes,
+	input logic [4:0] Rd,
 	input logic MemtoReg, RegWrite, IsBL,
 	
 	output logic[63:0] ALUResOut, readMemDataOut,
+	output logic [4:0] RdOut,
 	output logic MemtoRegOut, RegWriteOut, IsBLOut
 );
 
@@ -14,6 +16,9 @@ module MEM_WB (
 	//Pass 64 bit ALU Result
 	
 	nbit_register #(.BITS(64)) passALURes (.clk(clk), .reset(reset), .write(ALURes), .q(ALUResOut));
+	
+	//Pass 5 bit Rd reg addr
+	nbit_register #(.BITS(5)) passRd (.clk(clk), .reset(reset), .write(Rd), .q(RdOut));
 	
 	//Pass WB control signals MemtoReg, RegWrite
 	

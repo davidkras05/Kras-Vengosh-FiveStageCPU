@@ -2,6 +2,7 @@ module ID (
 	input logic clk, reset, Reg2Loc, ALUSrc, RegWrite, IsBL, isDType,
 	input logic[63:0] WriteBck, PCp4, CurrPC, //From writeback
 	input logic[31:0] instruction,
+	input logic[4:0] WBRd,
 	
 	output logic[63:0] Da, Db, ALUInput, BrLoc,
 	output logic[4:0] Rd, Rm, Rn
@@ -15,7 +16,7 @@ module ID (
 	
 	n_bit_2to1 #(.BITS(5)) ldurstur_mux (.data_line1(Rd), .data_line0(Rm), .s(Reg2Loc), .mux_out(splitout));
 	
-	n_bit_2to1 #(.BITS(5)) aw_mux (.data_line1(5'b11110), .data_line0(Rd), .s(IsBL), .mux_out(Aw_in));
+	n_bit_2to1 #(.BITS(5)) aw_mux (.data_line1(5'b11110), .data_line0(WBRd), .s(IsBL), .mux_out(Aw_in));
 	
 	logic [63:0] Dw_in;
 	n_bit_2to1 #(.BITS(64)) dw_mux (.data_line1(PCp4), .data_line0(WriteBck), .s(IsBL), .mux_out(Dw_in));
