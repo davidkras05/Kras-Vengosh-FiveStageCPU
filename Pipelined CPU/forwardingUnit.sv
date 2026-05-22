@@ -4,7 +4,7 @@
  module forwardingUnit (
 	input logic[4:0] RnID, RmID,
 	input logic[4:0] RnIDEX, RmIDEX, RdEXMEM, RdMEMWB,
-	input logic RegWriteEXMEM, RegWriteMEMWB, ALUSrcEX, ALUSrcID,
+	input logic RegWriteEXMEM, RegWriteMEMWB, ALUSrcEX, Reg2LocID,
 	
 	output logic[1:0] ForwardA, ForwardB,
 	output logic WBErrorA, WBErrorB
@@ -47,7 +47,7 @@
 		end
 		
 		
-		if (RdMEMWB == RmID && ~ALUSrcID) begin
+		if (RdMEMWB == RmID && ~Reg2LocID) begin
 			WBErrorB = 1'b1;
 		end
 		else begin

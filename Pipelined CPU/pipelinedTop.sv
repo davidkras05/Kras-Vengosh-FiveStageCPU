@@ -158,7 +158,7 @@ module pipelinedTop(
 	
 	forwardingUnit fwding_unit (.RnID(Rn), .RmID(Rm), .RnIDEX(ID_EX_RnOut), .RmIDEX(ID_EX_RmOut), .RdEXMEM(EX_MEM_RdOut), .RdMEMWB(MEM_WB_RdOut),
 	                            .RegWriteEXMEM(EX_MEM_RegWriteOut), .RegWriteMEMWB(MEM_WB_RegWriteOut),
-										 .ALUSrcEX(ID_EX_ALUSrcOut), .ALUSrcID(ALUSrcwire),
+										 .ALUSrcEX(ID_EX_ALUSrcOut), .Reg2LocID(Reg2Locwire),
 										 .ForwardA(FwdA), .ForwardB(FwdB), .WBErrorA(WBErrorA), .WBErrorB(WBErrorB));
 	//------------------------------------------------------------------------------------------------------------------
 	
