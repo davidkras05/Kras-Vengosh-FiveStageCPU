@@ -1,5 +1,5 @@
 module ID (
-	input logic clk, reset, Reg2Loc, ALUSrc, RegWrite, IsBL, isDType,
+	input logic clk, reset, Reg2Loc, ALUSrc, RegWrite, IsBL, isDType, UncondBr,
 	input logic[63:0] WriteBck, PCp4, CurrPC, //From writeback
 	input logic[31:0] instruction,
 	input logic[4:0] WBRd,
@@ -70,14 +70,14 @@ module ID (
 	assign BrAddr64 = {{38{BrAddr26[25]}}, BrAddr26};
 	assign CondAddr64 = {{45{CondAddr19[18]}}, CondAddr19};
 
-	logic [63:0] BrLoc_unshifted, BrLoc_not_pcrel;
+	logic [63:0] BrLoc_unshifted, BrLoc_unsummed;
 
 	n_bit_2to1 #(.BITS(64)) UncondMux (.data_line1(BrAddr64), .data_line0(CondAddr64), .s(UncondBr), .mux_out(BrLoc_unshifted));
 
-	assign BrLoc_not_pcrel = {BrLoc_unshifted[61:0], 2'b00}; //New shift (without RTL version)
+	assign BrLoc_unsummed = {BrLoc_unshifted[61:0], 2'b00}; //New shift (without RTL version)
 	
 	
-	sixtyfourbit_fulladder BPCadd (.A(BrLoc_not_pcrel), .B(CurrPC), .Cin(1'b0), .S(BrLoc)); // Adds current PC to Br
+	sixtyfourbit_fulladder BPCadd (.A(BrLoc_unsummed), .B(CurrPC), .Cin(1'b0), .S(BrLoc)); // Adds current PC to Br
 	
 	
 	

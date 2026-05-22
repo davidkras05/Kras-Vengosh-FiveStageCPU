@@ -56,7 +56,7 @@ module pipelinedTop(
 	ID instructionDecode(.clk(clk), .reset(reset), 
 	
 								.Reg2Loc(Reg2Locwire), .ALUSrc(ALUSrcwire), .RegWrite(MEM_WB_RegWriteOut), 
-								.IsBL(MEM_WB_IsBLOut), .isDType(isDTypewire), 
+								.IsBL(MEM_WB_IsBLOut), .isDType(isDTypewire), .UncondBr(UncondBrwire),
 								.WriteBck(WriteBck), 
 								.PCp4(IF_ID_PCp4Out), .CurrPC(IF_ID_CurrPCOut), .instruction(IF_ID_instructionOut), 
 								.WBRd(MEM_WB_RdOut), .WBErrorA(WBErrorA), .WBErrorB(WBErrorB), 

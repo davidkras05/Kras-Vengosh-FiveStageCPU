@@ -5014,3 +5014,1879 @@ do runlab.do
 # ** Note: $stop    : ./pipelined_tb.sv(30)
 #    Time: 5050 ns  Iteration: 1  Instance: /pipelined_tb
 # Break in Module pipelined_tb at ./pipelined_tb.sv line 30
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:02:47 on May 22,2026
+# vlog -reportprogress 300 ./n_bit_2to1.sv 
+# -- Compiling module n_bit_2to1
+# 
+# Top level modules:
+# 	n_bit_2to1
+# End time: 00:02:47 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:02:47 on May 22,2026
+# vlog -reportprogress 300 ./EX.sv 
+# -- Compiling module EX
+# 
+# Top level modules:
+# 	EX
+# End time: 00:02:47 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:02:47 on May 22,2026
+# vlog -reportprogress 300 ./control_unit.sv 
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# End time: 00:02:47 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:02:47 on May 22,2026
+# vlog -reportprogress 300 ./math.sv 
+# -- Compiling module mult
+# -- Compiling module shifter
+# -- Compiling module shifter_testbench
+# -- Compiling module mult_testbench
+# 
+# Top level modules:
+# 	shifter_testbench
+# 	mult_testbench
+# End time: 00:02:48 on May 22,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:02:48 on May 22,2026
+# vlog -reportprogress 300 ./instructmem.sv 
+# -- Compiling module instructmem
+# -- Compiling module instructmem_testbench
+# 
+# Top level modules:
+# 	instructmem_testbench
+# End time: 00:02:48 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:02:48 on May 22,2026
+# vlog -reportprogress 300 ./datamem.sv 
+# -- Compiling module datamem
+# -- Compiling module datamem_testbench
+# 
+# Top level modules:
+# 	datamem_testbench
+# End time: 00:02:48 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:02:48 on May 22,2026
+# vlog -reportprogress 300 ./register_file/thirtytwo_1_mux.sv 
+# -- Compiling module two_onemux
+# -- Compiling module four_onemux
+# -- Compiling module eight_onemux
+# -- Compiling module sixteen_onemux
+# -- Compiling module thirtytwo_1_mux
+# 
+# Top level modules:
+# 	thirtytwo_1_mux
+# End time: 00:02:48 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:02:48 on May 22,2026
+# vlog -reportprogress 300 ./register_file/register.sv 
+# -- Compiling module register
+# -- Compiling module register_tb
+# 
+# Top level modules:
+# 	register_tb
+# End time: 00:02:48 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:02:48 on May 22,2026
+# vlog -reportprogress 300 ./register_file/regfile.sv 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 00:02:48 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:02:48 on May 22,2026
+# vlog -reportprogress 300 ./register_file/loopedthirtytwo_mux.sv 
+# -- Compiling module loopedthirtytwo_mux
+# ** Warning: ./register_file/loopedthirtytwo_mux.sv(2): (vlog-13314) Defaulting port 'data_lines' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# 
+# Top level modules:
+# 	loopedthirtytwo_mux
+# End time: 00:02:49 on May 22,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:02:49 on May 22,2026
+# vlog -reportprogress 300 ./register_file/five_thirtytwodecoder.sv 
+# -- Compiling module one_twodecoder
+# -- Compiling module two_fourdecoder
+# -- Compiling module three_eightdecoder
+# -- Compiling module four_sixteendecoder
+# -- Compiling module five_thirtytwodecoder
+# -- Compiling module one_two_tb
+# -- Compiling module five_thirtytwo_tb
+# -- Compiling module three_eight_tb
+# -- Compiling module two_four_tb
+# 
+# Top level modules:
+# 	one_two_tb
+# 	five_thirtytwo_tb
+# 	three_eight_tb
+# 	two_four_tb
+# End time: 00:02:49 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:02:49 on May 22,2026
+# vlog -reportprogress 300 ./register_file/D_FF.sv 
+# -- Compiling module D_FF
+# 
+# Top level modules:
+# 	D_FF
+# End time: 00:02:49 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:02:49 on May 22,2026
+# vlog -reportprogress 300 ./ALU/full_adder.sv 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 00:02:49 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:02:49 on May 22,2026
+# vlog -reportprogress 300 ./ALU/flags.sv 
+# -- Compiling module flags
+# 
+# Top level modules:
+# 	flags
+# End time: 00:02:49 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:02:49 on May 22,2026
+# vlog -reportprogress 300 ./ALU/bitsliceALU.sv 
+# -- Compiling module bitsliceALU
+# 
+# Top level modules:
+# 	bitsliceALU
+# End time: 00:02:49 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:02:49 on May 22,2026
+# vlog -reportprogress 300 ./ALU/ALU.sv 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 00:02:49 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:02:50 on May 22,2026
+# vlog -reportprogress 300 ./IF.sv 
+# -- Compiling module IF
+# 
+# Top level modules:
+# 	IF
+# End time: 00:02:50 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:02:50 on May 22,2026
+# vlog -reportprogress 300 ./sixtyfourbit_fulladder.sv 
+# -- Compiling module sixtyfourbit_fulladder
+# 
+# Top level modules:
+# 	sixtyfourbit_fulladder
+# End time: 00:02:50 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:02:50 on May 22,2026
+# vlog -reportprogress 300 ./ID.sv 
+# -- Compiling module ID
+# 
+# Top level modules:
+# 	ID
+# End time: 00:02:50 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:02:50 on May 22,2026
+# vlog -reportprogress 300 ./WB.sv 
+# -- Compiling module WB
+# 
+# Top level modules:
+# 	WB
+# End time: 00:02:50 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:02:50 on May 22,2026
+# vlog -reportprogress 300 ./pipelinedTop.sv 
+# -- Compiling module pipelinedTop
+# 
+# Top level modules:
+# 	pipelinedTop
+# End time: 00:02:50 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:02:50 on May 22,2026
+# vlog -reportprogress 300 ./pipelined_tb.sv 
+# -- Compiling module pipelined_tb
+# 
+# Top level modules:
+# 	pipelined_tb
+# End time: 00:02:50 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:02:50 on May 22,2026
+# vlog -reportprogress 300 ./IF_ID.sv 
+# -- Compiling module IF_ID
+# 
+# Top level modules:
+# 	IF_ID
+# End time: 00:02:51 on May 22,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:02:51 on May 22,2026
+# vlog -reportprogress 300 ./ID_EX.sv 
+# -- Compiling module ID_EX
+# 
+# Top level modules:
+# 	ID_EX
+# End time: 00:02:51 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:02:51 on May 22,2026
+# vlog -reportprogress 300 ./EX_MEM.sv 
+# -- Compiling module EX_MEM
+# 
+# Top level modules:
+# 	EX_MEM
+# End time: 00:02:51 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:02:51 on May 22,2026
+# vlog -reportprogress 300 ./MEM_WB.sv 
+# -- Compiling module MEM_WB
+# 
+# Top level modules:
+# 	MEM_WB
+# End time: 00:02:51 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:02:51 on May 22,2026
+# vlog -reportprogress 300 ./forwardingUnit.sv 
+# -- Compiling module forwardingUnit
+# 
+# Top level modules:
+# 	forwardingUnit
+# End time: 00:02:51 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:02:51 on May 22,2026
+# vlog -reportprogress 300 ./nbit_register.sv 
+# -- Compiling module nbit_register
+# 
+# Top level modules:
+# 	nbit_register
+# End time: 00:02:51 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 00:02:51 on May 22,2026, Elapsed time: 0:01:50
+# Errors: 3, Warnings: 1
+# vsim -voptargs=""+acc"" -t 1ps -lib work pipelined_tb 
+# Start time: 00:02:52 on May 22,2026
+# Loading sv_std.std
+# Loading work.pipelined_tb
+# Loading work.pipelinedTop
+# Loading work.control_unit
+# Loading work.IF
+# Loading work.register
+# Loading work.sixtyfourbit_fulladder
+# Loading work.full_adder
+# Loading work.n_bit_2to1
+# Loading work.instructmem
+# Loading work.IF_ID
+# Loading work.nbit_register
+# Loading work.ID
+# Loading work.regfile
+# Loading work.five_thirtytwodecoder
+# Loading work.one_twodecoder
+# Loading work.four_sixteendecoder
+# Loading work.three_eightdecoder
+# Loading work.two_fourdecoder
+# Loading work.loopedthirtytwo_mux
+# Loading work.ID_EX
+# Loading work.D_FF
+# Loading work.EX
+# Loading work.ALU
+# Loading work.bitsliceALU
+# Loading work.eight_onemux
+# Loading work.four_onemux
+# Loading work.two_onemux
+# Loading work.flags
+# Loading work.EX_MEM
+# Loading work.datamem
+# Loading work.MEM_WB
+# Loading work.forwardingUnit
+# Loading work.WB
+# Loading work.thirtytwo_1_mux
+# Loading work.sixteen_onemux
+# ** Warning: Design size of 12767 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Running benchmark: .\benchmarks\test03_CbzB.arm
+# ** Error: Invalid opcode: Xxx
+#    Time: 0 ps  Scope: pipelined_tb.DUT.control File: ./control_unit.sv Line: 227
+# ** Error: Invalid opcode: 000
+#    Time: 50 ns  Scope: pipelined_tb.DUT.control File: ./control_unit.sv Line: 227
+# ** Error: Invalid opcode: 000
+#    Time: 50900 ps  Scope: pipelined_tb.DUT.control File: ./control_unit.sv Line: 227
+# time=150.00 ns instruction=910007e0 ALURes=0000000000000000 Writebck=0000000000000000
+# time=250.00 ns instruction=910003e1 ALURes=xxxxxxxxxxxxxxxx Writebck=0000000000000000
+# time=350.00 ns instruction=910003e2 ALURes=0000000000000001 Writebck=0000000000000000
+# time=450.00 ns instruction=910003e3 ALURes=0000000000000000 Writebck=xxxxxxxxxxxxxxxx
+# time=550.00 ns instruction=910003e4 ALURes=0000000000000000 Writebck=0000000000000001
+# time=650.00 ns instruction=910003e5 ALURes=0000000000000000 Writebck=0000000000000000
+# time=750.00 ns instruction=1400000c ALURes=0000000000000000 Writebck=0000000000000000
+# time=850.00 ns instruction=91000442 ALURes=0000000000000000 Writebck=0000000000000000
+# ** Error: Assertion error.
+#    Time: 950 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=950.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=0000000000000000
+# ** Error: Invalid opcode: Xxx
+#    Time: 950 ns  Scope: pipelined_tb.DUT.control File: ./control_unit.sv Line: 227
+# ** Error: Invalid opcode: Xxx
+#    Time: 951050 ps  Scope: pipelined_tb.DUT.control File: ./control_unit.sv Line: 227
+# ** Error: Assertion error.
+#    Time: 1050 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=1050.00 ns instruction=xxxxxxxx ALURes=0000000000000001 Writebck=0000000000000000
+# ** Error: Assertion error.
+#    Time: 1150 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=1150.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 1250 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=1250.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=0000000000000001
+# ** Error: Assertion error.
+#    Time: 1350 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=1350.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 1450 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=1450.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 1550 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=1550.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 1650 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=1650.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 1750 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=1750.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 1850 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=1850.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 1950 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=1950.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2050 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2050.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2150 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2150.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2250 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2250.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2350 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2350.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2450 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2450.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2550 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2550.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2650 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2650.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2750 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2750.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2850 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2850.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2950 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2950.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3050 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3050.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3150 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3150.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3250 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3250.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3350 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3350.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3450 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3450.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3550 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3550.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3650 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3650.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3750 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3750.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3850 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3850.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3950 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3950.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4050 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4050.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4150 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4150.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4250 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4250.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4350 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4350.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4450 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4450.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4550 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4550.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4650 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4650.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4750 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4750.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4850 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4850.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4950 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4950.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 5050 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=5050.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Note: $stop    : ./pipelined_tb.sv(30)
+#    Time: 5050 ns  Iteration: 1  Instance: /pipelined_tb
+# Break in Module pipelined_tb at ./pipelined_tb.sv line 30
+add wave -position 33  sim:/pipelined_tb/DUT/instructionDecode/BrLoc
+add wave -position 33  sim:/pipelined_tb/DUT/instructionDecode/CurrPC
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: Design size of 12767 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+run -all
+# Running benchmark: .\benchmarks\test03_CbzB.arm
+# ** Error: Invalid opcode: Xxx
+#    Time: 0 ps  Scope: pipelined_tb.DUT.control File: ./control_unit.sv Line: 227
+# ** Error: Invalid opcode: 000
+#    Time: 50 ns  Scope: pipelined_tb.DUT.control File: ./control_unit.sv Line: 227
+# ** Error: Invalid opcode: 000
+#    Time: 50900 ps  Scope: pipelined_tb.DUT.control File: ./control_unit.sv Line: 227
+# time=150.00 ns instruction=910007e0 ALURes=0000000000000000 Writebck=0000000000000000
+# time=250.00 ns instruction=910003e1 ALURes=xxxxxxxxxxxxxxxx Writebck=0000000000000000
+# time=350.00 ns instruction=910003e2 ALURes=0000000000000001 Writebck=0000000000000000
+# time=450.00 ns instruction=910003e3 ALURes=0000000000000000 Writebck=xxxxxxxxxxxxxxxx
+# time=550.00 ns instruction=910003e4 ALURes=0000000000000000 Writebck=0000000000000001
+# time=650.00 ns instruction=910003e5 ALURes=0000000000000000 Writebck=0000000000000000
+# time=750.00 ns instruction=1400000c ALURes=0000000000000000 Writebck=0000000000000000
+# time=850.00 ns instruction=91000442 ALURes=0000000000000000 Writebck=0000000000000000
+# ** Error: Assertion error.
+#    Time: 950 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=950.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=0000000000000000
+# ** Error: Invalid opcode: Xxx
+#    Time: 950 ns  Scope: pipelined_tb.DUT.control File: ./control_unit.sv Line: 227
+# ** Error: Invalid opcode: Xxx
+#    Time: 951050 ps  Scope: pipelined_tb.DUT.control File: ./control_unit.sv Line: 227
+# ** Error: Assertion error.
+#    Time: 1050 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=1050.00 ns instruction=xxxxxxxx ALURes=0000000000000001 Writebck=0000000000000000
+# ** Error: Assertion error.
+#    Time: 1150 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=1150.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 1250 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=1250.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=0000000000000001
+# ** Error: Assertion error.
+#    Time: 1350 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=1350.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 1450 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=1450.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 1550 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=1550.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 1650 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=1650.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 1750 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=1750.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 1850 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=1850.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 1950 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=1950.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2050 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2050.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2150 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2150.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2250 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2250.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2350 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2350.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2450 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2450.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2550 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2550.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2650 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2650.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2750 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2750.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2850 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2850.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2950 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2950.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3050 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3050.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3150 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3150.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3250 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3250.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3350 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3350.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3450 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3450.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3550 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3550.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3650 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3650.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3750 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3750.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3850 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3850.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3950 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3950.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4050 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4050.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4150 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4150.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4250 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4250.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4350 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4350.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4450 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4450.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4550 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4550.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4650 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4650.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4750 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4750.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4850 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4850.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4950 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4950.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 5050 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=5050.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Note: $stop    : ./pipelined_tb.sv(30)
+#    Time: 5050 ns  Iteration: 1  Instance: /pipelined_tb
+# Break in Module pipelined_tb at ./pipelined_tb.sv line 30
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:10:41 on May 22,2026
+# vlog -reportprogress 300 ./n_bit_2to1.sv 
+# -- Compiling module n_bit_2to1
+# 
+# Top level modules:
+# 	n_bit_2to1
+# End time: 00:10:41 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:10:41 on May 22,2026
+# vlog -reportprogress 300 ./EX.sv 
+# -- Compiling module EX
+# 
+# Top level modules:
+# 	EX
+# End time: 00:10:41 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:10:41 on May 22,2026
+# vlog -reportprogress 300 ./control_unit.sv 
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# End time: 00:10:41 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:10:42 on May 22,2026
+# vlog -reportprogress 300 ./math.sv 
+# -- Compiling module mult
+# -- Compiling module shifter
+# -- Compiling module shifter_testbench
+# -- Compiling module mult_testbench
+# 
+# Top level modules:
+# 	shifter_testbench
+# 	mult_testbench
+# End time: 00:10:42 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:10:42 on May 22,2026
+# vlog -reportprogress 300 ./instructmem.sv 
+# -- Compiling module instructmem
+# -- Compiling module instructmem_testbench
+# 
+# Top level modules:
+# 	instructmem_testbench
+# End time: 00:10:42 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:10:42 on May 22,2026
+# vlog -reportprogress 300 ./datamem.sv 
+# -- Compiling module datamem
+# -- Compiling module datamem_testbench
+# 
+# Top level modules:
+# 	datamem_testbench
+# End time: 00:10:42 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:10:42 on May 22,2026
+# vlog -reportprogress 300 ./register_file/thirtytwo_1_mux.sv 
+# -- Compiling module two_onemux
+# -- Compiling module four_onemux
+# -- Compiling module eight_onemux
+# -- Compiling module sixteen_onemux
+# -- Compiling module thirtytwo_1_mux
+# 
+# Top level modules:
+# 	thirtytwo_1_mux
+# End time: 00:10:42 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:10:42 on May 22,2026
+# vlog -reportprogress 300 ./register_file/register.sv 
+# -- Compiling module register
+# -- Compiling module register_tb
+# 
+# Top level modules:
+# 	register_tb
+# End time: 00:10:42 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:10:42 on May 22,2026
+# vlog -reportprogress 300 ./register_file/regfile.sv 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 00:10:42 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:10:42 on May 22,2026
+# vlog -reportprogress 300 ./register_file/loopedthirtytwo_mux.sv 
+# -- Compiling module loopedthirtytwo_mux
+# ** Warning: ./register_file/loopedthirtytwo_mux.sv(2): (vlog-13314) Defaulting port 'data_lines' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# 
+# Top level modules:
+# 	loopedthirtytwo_mux
+# End time: 00:10:43 on May 22,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:10:43 on May 22,2026
+# vlog -reportprogress 300 ./register_file/five_thirtytwodecoder.sv 
+# -- Compiling module one_twodecoder
+# -- Compiling module two_fourdecoder
+# -- Compiling module three_eightdecoder
+# -- Compiling module four_sixteendecoder
+# -- Compiling module five_thirtytwodecoder
+# -- Compiling module one_two_tb
+# -- Compiling module five_thirtytwo_tb
+# -- Compiling module three_eight_tb
+# -- Compiling module two_four_tb
+# 
+# Top level modules:
+# 	one_two_tb
+# 	five_thirtytwo_tb
+# 	three_eight_tb
+# 	two_four_tb
+# End time: 00:10:43 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:10:43 on May 22,2026
+# vlog -reportprogress 300 ./register_file/D_FF.sv 
+# -- Compiling module D_FF
+# 
+# Top level modules:
+# 	D_FF
+# End time: 00:10:43 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:10:43 on May 22,2026
+# vlog -reportprogress 300 ./ALU/full_adder.sv 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 00:10:43 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:10:43 on May 22,2026
+# vlog -reportprogress 300 ./ALU/flags.sv 
+# -- Compiling module flags
+# 
+# Top level modules:
+# 	flags
+# End time: 00:10:43 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:10:43 on May 22,2026
+# vlog -reportprogress 300 ./ALU/bitsliceALU.sv 
+# -- Compiling module bitsliceALU
+# 
+# Top level modules:
+# 	bitsliceALU
+# End time: 00:10:43 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:10:43 on May 22,2026
+# vlog -reportprogress 300 ./ALU/ALU.sv 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 00:10:44 on May 22,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:10:44 on May 22,2026
+# vlog -reportprogress 300 ./IF.sv 
+# -- Compiling module IF
+# 
+# Top level modules:
+# 	IF
+# End time: 00:10:44 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:10:44 on May 22,2026
+# vlog -reportprogress 300 ./sixtyfourbit_fulladder.sv 
+# -- Compiling module sixtyfourbit_fulladder
+# 
+# Top level modules:
+# 	sixtyfourbit_fulladder
+# End time: 00:10:44 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:10:44 on May 22,2026
+# vlog -reportprogress 300 ./ID.sv 
+# -- Compiling module ID
+# 
+# Top level modules:
+# 	ID
+# End time: 00:10:44 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:10:44 on May 22,2026
+# vlog -reportprogress 300 ./WB.sv 
+# -- Compiling module WB
+# 
+# Top level modules:
+# 	WB
+# End time: 00:10:44 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:10:44 on May 22,2026
+# vlog -reportprogress 300 ./pipelinedTop.sv 
+# -- Compiling module pipelinedTop
+# 
+# Top level modules:
+# 	pipelinedTop
+# End time: 00:10:44 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:10:44 on May 22,2026
+# vlog -reportprogress 300 ./pipelined_tb.sv 
+# -- Compiling module pipelined_tb
+# 
+# Top level modules:
+# 	pipelined_tb
+# End time: 00:10:45 on May 22,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:10:45 on May 22,2026
+# vlog -reportprogress 300 ./IF_ID.sv 
+# -- Compiling module IF_ID
+# 
+# Top level modules:
+# 	IF_ID
+# End time: 00:10:45 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:10:45 on May 22,2026
+# vlog -reportprogress 300 ./ID_EX.sv 
+# -- Compiling module ID_EX
+# 
+# Top level modules:
+# 	ID_EX
+# End time: 00:10:45 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:10:45 on May 22,2026
+# vlog -reportprogress 300 ./EX_MEM.sv 
+# -- Compiling module EX_MEM
+# 
+# Top level modules:
+# 	EX_MEM
+# End time: 00:10:45 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:10:45 on May 22,2026
+# vlog -reportprogress 300 ./MEM_WB.sv 
+# -- Compiling module MEM_WB
+# 
+# Top level modules:
+# 	MEM_WB
+# End time: 00:10:45 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:10:45 on May 22,2026
+# vlog -reportprogress 300 ./forwardingUnit.sv 
+# -- Compiling module forwardingUnit
+# 
+# Top level modules:
+# 	forwardingUnit
+# End time: 00:10:45 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:10:45 on May 22,2026
+# vlog -reportprogress 300 ./nbit_register.sv 
+# -- Compiling module nbit_register
+# 
+# Top level modules:
+# 	nbit_register
+# End time: 00:10:45 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 00:10:46 on May 22,2026, Elapsed time: 0:07:54
+# Errors: 47, Warnings: 1
+# vsim -voptargs=""+acc"" -t 1ps -lib work pipelined_tb 
+# Start time: 00:10:46 on May 22,2026
+# Loading sv_std.std
+# Loading work.pipelined_tb
+# Loading work.pipelinedTop
+# Loading work.control_unit
+# Loading work.IF
+# Loading work.register
+# Loading work.sixtyfourbit_fulladder
+# Loading work.full_adder
+# Loading work.n_bit_2to1
+# Loading work.instructmem
+# Loading work.IF_ID
+# Loading work.nbit_register
+# Loading work.ID
+# Loading work.regfile
+# Loading work.five_thirtytwodecoder
+# Loading work.one_twodecoder
+# Loading work.four_sixteendecoder
+# Loading work.three_eightdecoder
+# Loading work.two_fourdecoder
+# Loading work.loopedthirtytwo_mux
+# Loading work.ID_EX
+# Loading work.D_FF
+# Loading work.EX
+# Loading work.ALU
+# Loading work.bitsliceALU
+# Loading work.eight_onemux
+# Loading work.four_onemux
+# Loading work.two_onemux
+# Loading work.flags
+# Loading work.EX_MEM
+# Loading work.datamem
+# Loading work.MEM_WB
+# Loading work.forwardingUnit
+# Loading work.WB
+# Loading work.thirtytwo_1_mux
+# Loading work.sixteen_onemux
+# ** Warning: Design size of 12767 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Running benchmark: .\benchmarks\test03_CbzB.arm
+# ** Error: Invalid opcode: Xxx
+#    Time: 0 ps  Scope: pipelined_tb.DUT.control File: ./control_unit.sv Line: 227
+# ** Error: Invalid opcode: 000
+#    Time: 50 ns  Scope: pipelined_tb.DUT.control File: ./control_unit.sv Line: 227
+# ** Error: Invalid opcode: 000
+#    Time: 50900 ps  Scope: pipelined_tb.DUT.control File: ./control_unit.sv Line: 227
+# time=150.00 ns instruction=910007e0 ALURes=0000000000000000 Writebck=0000000000000000
+# time=250.00 ns instruction=910003e1 ALURes=xxxxxxxxxxxxxxxx Writebck=0000000000000000
+# time=350.00 ns instruction=910003e2 ALURes=0000000000000001 Writebck=0000000000000000
+# time=450.00 ns instruction=910003e3 ALURes=0000000000000000 Writebck=xxxxxxxxxxxxxxxx
+# time=550.00 ns instruction=910003e4 ALURes=0000000000000000 Writebck=0000000000000001
+# time=650.00 ns instruction=910003e5 ALURes=0000000000000000 Writebck=0000000000000000
+# time=750.00 ns instruction=1400000c ALURes=0000000000000000 Writebck=0000000000000000
+# time=850.00 ns instruction=91000442 ALURes=0000000000000000 Writebck=0000000000000000
+# ** Error: Assertion error.
+#    Time: 950 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=950.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=0000000000000000
+# ** Error: Invalid opcode: Xxx
+#    Time: 950 ns  Scope: pipelined_tb.DUT.control File: ./control_unit.sv Line: 227
+# ** Error: Invalid opcode: Xxx
+#    Time: 951050 ps  Scope: pipelined_tb.DUT.control File: ./control_unit.sv Line: 227
+# ** Error: Assertion error.
+#    Time: 1050 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=1050.00 ns instruction=xxxxxxxx ALURes=0000000000000001 Writebck=0000000000000000
+# ** Error: Assertion error.
+#    Time: 1150 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=1150.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 1250 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=1250.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=0000000000000001
+# ** Error: Assertion error.
+#    Time: 1350 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=1350.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 1450 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=1450.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 1550 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=1550.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 1650 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=1650.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 1750 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=1750.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 1850 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=1850.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 1950 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=1950.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2050 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2050.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2150 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2150.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2250 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2250.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2350 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2350.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2450 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2450.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2550 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2550.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2650 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2650.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2750 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2750.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2850 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2850.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2950 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2950.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3050 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3050.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3150 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3150.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3250 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3250.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3350 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3350.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3450 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3450.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3550 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3550.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3650 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3650.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3750 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3750.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3850 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3850.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3950 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3950.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4050 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4050.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4150 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4150.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4250 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4250.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4350 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4350.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4450 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4450.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4550 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4550.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4650 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4650.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4750 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4750.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4850 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4850.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4950 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4950.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 5050 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=5050.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Note: $stop    : ./pipelined_tb.sv(30)
+#    Time: 5050 ns  Iteration: 1  Instance: /pipelined_tb
+# Break in Module pipelined_tb at ./pipelined_tb.sv line 30
+add wave -position 24  sim:/pipelined_tb/DUT/instructionDecode/CurrPC
+add wave -position 25  sim:/pipelined_tb/DUT/instructionDecode/BrLoc
+add wave -position 26  sim:/pipelined_tb/DUT/instructionDecode/BrLoc_unshifted
+add wave -position 27  sim:/pipelined_tb/DUT/instructionDecode/BrLoc_unsummed
+add wave -position 28  sim:/pipelined_tb/DUT/instructionDecode/BrAddr64
+add wave -position 29  sim:/pipelined_tb/DUT/instructionDecode/CondAddr64
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: Design size of 12767 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Running benchmark: .\benchmarks\test03_CbzB.arm
+# ** Error: Invalid opcode: Xxx
+#    Time: 0 ps  Scope: pipelined_tb.DUT.control File: ./control_unit.sv Line: 227
+# ** Error: Invalid opcode: 000
+#    Time: 50 ns  Scope: pipelined_tb.DUT.control File: ./control_unit.sv Line: 227
+# ** Error: Invalid opcode: 000
+#    Time: 50900 ps  Scope: pipelined_tb.DUT.control File: ./control_unit.sv Line: 227
+# time=150.00 ns instruction=910007e0 ALURes=0000000000000000 Writebck=0000000000000000
+# time=250.00 ns instruction=910003e1 ALURes=xxxxxxxxxxxxxxxx Writebck=0000000000000000
+# time=350.00 ns instruction=910003e2 ALURes=0000000000000001 Writebck=0000000000000000
+# time=450.00 ns instruction=910003e3 ALURes=0000000000000000 Writebck=xxxxxxxxxxxxxxxx
+# time=550.00 ns instruction=910003e4 ALURes=0000000000000000 Writebck=0000000000000001
+# time=650.00 ns instruction=910003e5 ALURes=0000000000000000 Writebck=0000000000000000
+# time=750.00 ns instruction=1400000c ALURes=0000000000000000 Writebck=0000000000000000
+# time=850.00 ns instruction=91000442 ALURes=0000000000000000 Writebck=0000000000000000
+# ** Error: Assertion error.
+#    Time: 950 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=950.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=0000000000000000
+# ** Error: Invalid opcode: Xxx
+#    Time: 950 ns  Scope: pipelined_tb.DUT.control File: ./control_unit.sv Line: 227
+# ** Error: Invalid opcode: Xxx
+#    Time: 951050 ps  Scope: pipelined_tb.DUT.control File: ./control_unit.sv Line: 227
+# ** Error: Assertion error.
+#    Time: 1050 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=1050.00 ns instruction=xxxxxxxx ALURes=0000000000000001 Writebck=0000000000000000
+# ** Error: Assertion error.
+#    Time: 1150 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=1150.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 1250 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=1250.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=0000000000000001
+# ** Error: Assertion error.
+#    Time: 1350 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=1350.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 1450 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=1450.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 1550 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=1550.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 1650 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=1650.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 1750 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=1750.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 1850 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=1850.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 1950 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=1950.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2050 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2050.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2150 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2150.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2250 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2250.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2350 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2350.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2450 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2450.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2550 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2550.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2650 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2650.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2750 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2750.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2850 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2850.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2950 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2950.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3050 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3050.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3150 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3150.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3250 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3250.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3350 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3350.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3450 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3450.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3550 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3550.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3650 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3650.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3750 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3750.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3850 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3850.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3950 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3950.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4050 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4050.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4150 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4150.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4250 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4250.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4350 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4350.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4450 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4450.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4550 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4550.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4650 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4650.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4750 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4750.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4850 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4850.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4950 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4950.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 5050 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=5050.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Note: $stop    : ./pipelined_tb.sv(30)
+#    Time: 5050 ns  Iteration: 1  Instance: /pipelined_tb
+# Break in Module pipelined_tb at ./pipelined_tb.sv line 30
+add wave -position 30  sim:/pipelined_tb/DUT/instructionDecode/UncondBr
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: Design size of 12767 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Running benchmark: .\benchmarks\test03_CbzB.arm
+# ** Error: Invalid opcode: Xxx
+#    Time: 0 ps  Scope: pipelined_tb.DUT.control File: ./control_unit.sv Line: 227
+# ** Error: Invalid opcode: 000
+#    Time: 50 ns  Scope: pipelined_tb.DUT.control File: ./control_unit.sv Line: 227
+# ** Error: Invalid opcode: 000
+#    Time: 50900 ps  Scope: pipelined_tb.DUT.control File: ./control_unit.sv Line: 227
+# time=150.00 ns instruction=910007e0 ALURes=0000000000000000 Writebck=0000000000000000
+# time=250.00 ns instruction=910003e1 ALURes=xxxxxxxxxxxxxxxx Writebck=0000000000000000
+# time=350.00 ns instruction=910003e2 ALURes=0000000000000001 Writebck=0000000000000000
+# time=450.00 ns instruction=910003e3 ALURes=0000000000000000 Writebck=xxxxxxxxxxxxxxxx
+# time=550.00 ns instruction=910003e4 ALURes=0000000000000000 Writebck=0000000000000001
+# time=650.00 ns instruction=910003e5 ALURes=0000000000000000 Writebck=0000000000000000
+# time=750.00 ns instruction=1400000c ALURes=0000000000000000 Writebck=0000000000000000
+# time=850.00 ns instruction=91000442 ALURes=0000000000000000 Writebck=0000000000000000
+# ** Error: Assertion error.
+#    Time: 950 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=950.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=0000000000000000
+# ** Error: Invalid opcode: Xxx
+#    Time: 950 ns  Scope: pipelined_tb.DUT.control File: ./control_unit.sv Line: 227
+# ** Error: Invalid opcode: Xxx
+#    Time: 951050 ps  Scope: pipelined_tb.DUT.control File: ./control_unit.sv Line: 227
+# ** Error: Assertion error.
+#    Time: 1050 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=1050.00 ns instruction=xxxxxxxx ALURes=0000000000000001 Writebck=0000000000000000
+# ** Error: Assertion error.
+#    Time: 1150 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=1150.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 1250 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=1250.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=0000000000000001
+# ** Error: Assertion error.
+#    Time: 1350 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=1350.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 1450 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=1450.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 1550 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=1550.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 1650 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=1650.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 1750 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=1750.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 1850 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=1850.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 1950 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=1950.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2050 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2050.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2150 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2150.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2250 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2250.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2350 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2350.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2450 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2450.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2550 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2550.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2650 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2650.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2750 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2750.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2850 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2850.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2950 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2950.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3050 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3050.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3150 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3150.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3250 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3250.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3350 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3350.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3450 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3450.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3550 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3550.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3650 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3650.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3750 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3750.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3850 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3850.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3950 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3950.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4050 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4050.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4150 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4150.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4250 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4250.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4350 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4350.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4450 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4450.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4550 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4550.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4650 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4650.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4750 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4750.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4850 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4850.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4950 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4950.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 5050 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=5050.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Note: $stop    : ./pipelined_tb.sv(30)
+#    Time: 5050 ns  Iteration: 1  Instance: /pipelined_tb
+# Break in Module pipelined_tb at ./pipelined_tb.sv line 30
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:13:45 on May 22,2026
+# vlog -reportprogress 300 ./n_bit_2to1.sv 
+# -- Compiling module n_bit_2to1
+# 
+# Top level modules:
+# 	n_bit_2to1
+# End time: 00:13:46 on May 22,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:13:46 on May 22,2026
+# vlog -reportprogress 300 ./EX.sv 
+# -- Compiling module EX
+# 
+# Top level modules:
+# 	EX
+# End time: 00:13:46 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:13:46 on May 22,2026
+# vlog -reportprogress 300 ./control_unit.sv 
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# End time: 00:13:46 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:13:46 on May 22,2026
+# vlog -reportprogress 300 ./math.sv 
+# -- Compiling module mult
+# -- Compiling module shifter
+# -- Compiling module shifter_testbench
+# -- Compiling module mult_testbench
+# 
+# Top level modules:
+# 	shifter_testbench
+# 	mult_testbench
+# End time: 00:13:46 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:13:46 on May 22,2026
+# vlog -reportprogress 300 ./instructmem.sv 
+# -- Compiling module instructmem
+# -- Compiling module instructmem_testbench
+# 
+# Top level modules:
+# 	instructmem_testbench
+# End time: 00:13:46 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:13:46 on May 22,2026
+# vlog -reportprogress 300 ./datamem.sv 
+# -- Compiling module datamem
+# -- Compiling module datamem_testbench
+# 
+# Top level modules:
+# 	datamem_testbench
+# End time: 00:13:47 on May 22,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:13:47 on May 22,2026
+# vlog -reportprogress 300 ./register_file/thirtytwo_1_mux.sv 
+# -- Compiling module two_onemux
+# -- Compiling module four_onemux
+# -- Compiling module eight_onemux
+# -- Compiling module sixteen_onemux
+# -- Compiling module thirtytwo_1_mux
+# 
+# Top level modules:
+# 	thirtytwo_1_mux
+# End time: 00:13:47 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:13:47 on May 22,2026
+# vlog -reportprogress 300 ./register_file/register.sv 
+# -- Compiling module register
+# -- Compiling module register_tb
+# 
+# Top level modules:
+# 	register_tb
+# End time: 00:13:47 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:13:47 on May 22,2026
+# vlog -reportprogress 300 ./register_file/regfile.sv 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 00:13:47 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:13:47 on May 22,2026
+# vlog -reportprogress 300 ./register_file/loopedthirtytwo_mux.sv 
+# -- Compiling module loopedthirtytwo_mux
+# ** Warning: ./register_file/loopedthirtytwo_mux.sv(2): (vlog-13314) Defaulting port 'data_lines' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# 
+# Top level modules:
+# 	loopedthirtytwo_mux
+# End time: 00:13:47 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:13:47 on May 22,2026
+# vlog -reportprogress 300 ./register_file/five_thirtytwodecoder.sv 
+# -- Compiling module one_twodecoder
+# -- Compiling module two_fourdecoder
+# -- Compiling module three_eightdecoder
+# -- Compiling module four_sixteendecoder
+# -- Compiling module five_thirtytwodecoder
+# -- Compiling module one_two_tb
+# -- Compiling module five_thirtytwo_tb
+# -- Compiling module three_eight_tb
+# -- Compiling module two_four_tb
+# 
+# Top level modules:
+# 	one_two_tb
+# 	five_thirtytwo_tb
+# 	three_eight_tb
+# 	two_four_tb
+# End time: 00:13:47 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:13:47 on May 22,2026
+# vlog -reportprogress 300 ./register_file/D_FF.sv 
+# -- Compiling module D_FF
+# 
+# Top level modules:
+# 	D_FF
+# End time: 00:13:48 on May 22,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:13:48 on May 22,2026
+# vlog -reportprogress 300 ./ALU/full_adder.sv 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 00:13:48 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:13:48 on May 22,2026
+# vlog -reportprogress 300 ./ALU/flags.sv 
+# -- Compiling module flags
+# 
+# Top level modules:
+# 	flags
+# End time: 00:13:48 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:13:48 on May 22,2026
+# vlog -reportprogress 300 ./ALU/bitsliceALU.sv 
+# -- Compiling module bitsliceALU
+# 
+# Top level modules:
+# 	bitsliceALU
+# End time: 00:13:48 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:13:48 on May 22,2026
+# vlog -reportprogress 300 ./ALU/ALU.sv 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 00:13:48 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:13:48 on May 22,2026
+# vlog -reportprogress 300 ./IF.sv 
+# -- Compiling module IF
+# 
+# Top level modules:
+# 	IF
+# End time: 00:13:48 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:13:48 on May 22,2026
+# vlog -reportprogress 300 ./sixtyfourbit_fulladder.sv 
+# -- Compiling module sixtyfourbit_fulladder
+# 
+# Top level modules:
+# 	sixtyfourbit_fulladder
+# End time: 00:13:49 on May 22,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:13:49 on May 22,2026
+# vlog -reportprogress 300 ./ID.sv 
+# -- Compiling module ID
+# 
+# Top level modules:
+# 	ID
+# End time: 00:13:49 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:13:49 on May 22,2026
+# vlog -reportprogress 300 ./WB.sv 
+# -- Compiling module WB
+# 
+# Top level modules:
+# 	WB
+# End time: 00:13:49 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:13:49 on May 22,2026
+# vlog -reportprogress 300 ./pipelinedTop.sv 
+# -- Compiling module pipelinedTop
+# 
+# Top level modules:
+# 	pipelinedTop
+# End time: 00:13:49 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:13:49 on May 22,2026
+# vlog -reportprogress 300 ./pipelined_tb.sv 
+# -- Compiling module pipelined_tb
+# 
+# Top level modules:
+# 	pipelined_tb
+# End time: 00:13:49 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:13:49 on May 22,2026
+# vlog -reportprogress 300 ./IF_ID.sv 
+# -- Compiling module IF_ID
+# 
+# Top level modules:
+# 	IF_ID
+# End time: 00:13:49 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:13:49 on May 22,2026
+# vlog -reportprogress 300 ./ID_EX.sv 
+# -- Compiling module ID_EX
+# 
+# Top level modules:
+# 	ID_EX
+# End time: 00:13:50 on May 22,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:13:50 on May 22,2026
+# vlog -reportprogress 300 ./EX_MEM.sv 
+# -- Compiling module EX_MEM
+# 
+# Top level modules:
+# 	EX_MEM
+# End time: 00:13:50 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:13:50 on May 22,2026
+# vlog -reportprogress 300 ./MEM_WB.sv 
+# -- Compiling module MEM_WB
+# 
+# Top level modules:
+# 	MEM_WB
+# End time: 00:13:50 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:13:50 on May 22,2026
+# vlog -reportprogress 300 ./forwardingUnit.sv 
+# -- Compiling module forwardingUnit
+# 
+# Top level modules:
+# 	forwardingUnit
+# End time: 00:13:50 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:13:50 on May 22,2026
+# vlog -reportprogress 300 ./nbit_register.sv 
+# -- Compiling module nbit_register
+# 
+# Top level modules:
+# 	nbit_register
+# End time: 00:13:50 on May 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 00:13:50 on May 22,2026, Elapsed time: 0:03:04
+# Errors: 47, Warnings: 1
+# vsim -voptargs=""+acc"" -t 1ps -lib work pipelined_tb 
+# Start time: 00:13:50 on May 22,2026
+# Loading sv_std.std
+# Loading work.pipelined_tb
+# Loading work.pipelinedTop
+# Loading work.control_unit
+# Loading work.IF
+# Loading work.register
+# Loading work.sixtyfourbit_fulladder
+# Loading work.full_adder
+# Loading work.n_bit_2to1
+# Loading work.instructmem
+# Loading work.IF_ID
+# Loading work.nbit_register
+# Loading work.ID
+# Loading work.regfile
+# Loading work.five_thirtytwodecoder
+# Loading work.one_twodecoder
+# Loading work.four_sixteendecoder
+# Loading work.three_eightdecoder
+# Loading work.two_fourdecoder
+# Loading work.loopedthirtytwo_mux
+# Loading work.ID_EX
+# Loading work.D_FF
+# Loading work.EX
+# Loading work.ALU
+# Loading work.bitsliceALU
+# Loading work.eight_onemux
+# Loading work.four_onemux
+# Loading work.two_onemux
+# Loading work.flags
+# Loading work.EX_MEM
+# Loading work.datamem
+# Loading work.MEM_WB
+# Loading work.forwardingUnit
+# Loading work.WB
+# Loading work.thirtytwo_1_mux
+# Loading work.sixteen_onemux
+# ** Warning: Design size of 12767 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Running benchmark: .\benchmarks\test03_CbzB.arm
+# ** Error: Invalid opcode: Xxx
+#    Time: 0 ps  Scope: pipelined_tb.DUT.control File: ./control_unit.sv Line: 227
+# ** Error: Invalid opcode: 000
+#    Time: 50 ns  Scope: pipelined_tb.DUT.control File: ./control_unit.sv Line: 227
+# ** Error: Invalid opcode: 000
+#    Time: 50900 ps  Scope: pipelined_tb.DUT.control File: ./control_unit.sv Line: 227
+# time=150.00 ns instruction=910007e0 ALURes=0000000000000000 Writebck=0000000000000000
+# time=250.00 ns instruction=910003e1 ALURes=xxxxxxxxxxxxxxxx Writebck=0000000000000000
+# time=350.00 ns instruction=910003e2 ALURes=0000000000000001 Writebck=0000000000000000
+# time=450.00 ns instruction=910003e3 ALURes=0000000000000000 Writebck=xxxxxxxxxxxxxxxx
+# time=550.00 ns instruction=910003e4 ALURes=0000000000000000 Writebck=0000000000000001
+# time=650.00 ns instruction=910003e5 ALURes=0000000000000000 Writebck=0000000000000000
+# time=750.00 ns instruction=1400000c ALURes=0000000000000000 Writebck=0000000000000000
+# time=850.00 ns instruction=91000442 ALURes=0000000000000000 Writebck=0000000000000000
+# time=950.00 ns instruction=91000484 ALURes=xxxxxxxxxxxxxxxx Writebck=0000000000000000
+# time=1050.00 ns instruction=17fffff9 ALURes=0000000000000001 Writebck=0000000000000000
+# time=1150.00 ns instruction=91000442 ALURes=0000000000000001 Writebck=xxxxxxxxxxxxxxxx
+# time=1250.00 ns instruction=91000884 ALURes=xxxxxxxxxxxxxxxx Writebck=0000000000000001
+# time=1350.00 ns instruction=b400029f ALURes=0000000000000002 Writebck=0000000000000001
+# time=1450.00 ns instruction=91000442 ALURes=0000000000000003 Writebck=xxxxxxxxxxxxxxxx
+# time=1550.00 ns instruction=91001084 ALURes=0000000000000000 Writebck=0000000000000002
+# time=1650.00 ns instruction=b4fffedf ALURes=0000000000000003 Writebck=0000000000000003
+# time=1750.00 ns instruction=91000442 ALURes=0000000000000007 Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 1850 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=1850.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=0000000000000003
+# ** Error: Invalid opcode: Xxx
+#    Time: 1850 ns  Scope: pipelined_tb.DUT.control File: ./control_unit.sv Line: 227
+# ** Error: Invalid opcode: Xxx
+#    Time: 1850900 ps  Scope: pipelined_tb.DUT.control File: ./control_unit.sv Line: 227
+# ** Error: Invalid opcode: Xxx
+#    Time: 1851050 ps  Scope: pipelined_tb.DUT.control File: ./control_unit.sv Line: 227
+# ** Error: Assertion error.
+#    Time: 1950 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=1950.00 ns instruction=xxxxxxxx ALURes=0000000000000004 Writebck=0000000000000007
+# ** Error: Invalid opcode: Xxx
+#    Time: 1950900 ps  Scope: pipelined_tb.DUT.control File: ./control_unit.sv Line: 227
+# ** Error: Assertion error.
+#    Time: 2050 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2050.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2150 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2150.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=0000000000000004
+# ** Error: Assertion error.
+#    Time: 2250 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2250.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2350 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2350.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2450 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2450.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2550 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2550.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2650 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2650.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2750 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2750.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2850 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2850.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 2950 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=2950.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3050 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3050.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3150 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3150.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3250 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3250.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3350 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3350.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3450 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3450.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3550 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3550.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3650 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3650.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3750 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3750.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3850 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3850.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 3950 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=3950.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4050 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4050.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4150 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4150.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4250 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4250.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4350 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4350.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4450 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4450.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4550 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4550.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4650 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4650.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4750 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4750.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4850 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4850.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 4950 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=4950.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Error: Assertion error.
+#    Time: 5050 ns  Scope: pipelined_tb.DUT.instructionFetch.instructionMemory File: ./instructmem.sv Line: 35
+# time=5050.00 ns instruction=xxxxxxxx ALURes=xxxxxxxxxxxxxxxx Writebck=xxxxxxxxxxxxxxxx
+# ** Note: $stop    : ./pipelined_tb.sv(30)
+#    Time: 5050 ns  Iteration: 1  Instance: /pipelined_tb
+# Break in Module pipelined_tb at ./pipelined_tb.sv line 30
