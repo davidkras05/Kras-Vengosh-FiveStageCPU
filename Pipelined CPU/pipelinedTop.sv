@@ -17,7 +17,8 @@ module pipelinedTop(
 	
 	logic[31:0] IF_ID_instructionOut;
 	logic[63:0] ID_EX_readData2Out, EX_MEM_address;
-	logic ID_EX_BrTakenOut, MEM_WB_RegWriteOut, MEM_WB_IsBLOut;
+	logic ID_EX_BrTakenOut, MEM_WB_RegWriteOut, MEM_WB_IsBLOut, ID_EX_ALUSrcOut;
+	logic WBErrorA, WBErrorB;
 	logic [4:0] MEM_WB_RdOut;
 	logic [1:0] FwdA, FwdB;
 	
@@ -58,7 +59,7 @@ module pipelinedTop(
 								.IsBL(MEM_WB_IsBLOut), .isDType(isDTypewire), 
 								.WriteBck(WriteBck), 
 								.PCp4(IF_ID_PCp4Out), .CurrPC(IF_ID_CurrPCOut), .instruction(IF_ID_instructionOut), 
-								.WBRd(MEM_WB_RdOut), 
+								.WBRd(MEM_WB_RdOut), .WBErrorA(WBErrorA), .WBErrorB(WBErrorB), 
 								
 								.Da(Da), .Db(Db), .ALUInput(ALUInput), 
 								.BrLoc(BrLoc), 
@@ -72,7 +73,7 @@ module pipelinedTop(
 	logic[63:0] ID_EX_readData1Out, ID_EX_ALUInputOut, ID_EX_currPCOut;
 	logic[31:0] ID_EX_instructionOut;
 	logic[4:0] ID_EX_RdOut, ID_EX_RnOut, ID_EX_RmOut;
-	logic ID_EX_MemtoRegOut, ID_EX_RegWriteOut, ID_EX_MemReadOut, ID_EX_MemWriteOut, ID_EX_ALUSrcOut;
+	logic ID_EX_MemtoRegOut, ID_EX_RegWriteOut, ID_EX_MemReadOut, ID_EX_MemWriteOut;
 	logic ID_EX_UncondBrOut, ID_EX_IsBLOut;
 	logic[2:0] ID_EX_ALUOpOut;
 	
@@ -80,13 +81,13 @@ module pipelinedTop(
 	
 								 .readData1(Da), .readData2(Db), .ALUInput(ALUInput),  
 								 .Rd(Rd), .Rn(Rn), .Rm(Rm), 
-								 .ALUOp(ALUOpwire), .MemtoReg(MemtoRegwire), .RegWrite(RegWritewire), 
+								 .ALUOp(ALUOpwire), .ALUSrc(ALUSrcwire), .MemtoReg(MemtoRegwire), .RegWrite(RegWritewire), 
 								 .MemRead(MemReadwire), .MemWrite(MemWritewire), .BrTaken(BrTakenwire), 
 								 .UncondBr(UncondBrwire), .IsBL(IsBLwire), 
 								 
 								 .readData1Out(ID_EX_readData1Out), .readData2Out(ID_EX_readData2Out), .ALUInputOut(ID_EX_ALUInputOut), 
 								 .RdOut(ID_EX_RdOut), .RnOut(ID_EX_RnOut), .RmOut(ID_EX_RmOut),
-								 .ALUOpOut(ID_EX_ALUOpOut), .MemtoRegOut(ID_EX_MemtoRegOut), .RegWriteOut(ID_EX_RegWriteOut), 
+								 .ALUOpOut(ID_EX_ALUOpOut), .ALUSrcOut(ID_EX_ALUSrcOut), .MemtoRegOut(ID_EX_MemtoRegOut), .RegWriteOut(ID_EX_RegWriteOut), 
 								 .MemReadOut(ID_EX_MemReadOut), .MemWriteOut(ID_EX_MemWriteOut), .BrTakenOut(ID_EX_BrTakenOut), 
 								 .UncondBrOut(ID_EX_UncondBrOut), .IsBLOut(ID_EX_IsBLOut));
 								 
@@ -155,9 +156,10 @@ module pipelinedTop(
 	//FORWARDING UNIT HERE ---------------------------------------------------------------------------------------------
 	
 	
-	forwardingUnit fwding_unit (.RnIDEX(ID_EX_RnOut), .RmIDEX(ID_EX_RmOut), .RdEXMEM(EX_MEM_RdOut), .RdMEMWB(MEM_WB_RdOut),
+	forwardingUnit fwding_unit (.RnID(Rn), .RmID(Rm), .RnIDEX(ID_EX_RnOut), .RmIDEX(ID_EX_RmOut), .RdEXMEM(EX_MEM_RdOut), .RdMEMWB(MEM_WB_RdOut),
 	                            .RegWriteEXMEM(EX_MEM_RegWriteOut), .RegWriteMEMWB(MEM_WB_RegWriteOut),
-										 .ForwardA(FwdA), .ForwardB(FwdB));
+										 .ALUSrcEX(ID_EX_ALUSrcOut), .ALUSrcID(ALUSrcwire),
+										 .ForwardA(FwdA), .ForwardB(FwdB), .WBErrorA(WBErrorA), .WBErrorB(WBErrorB));
 	//------------------------------------------------------------------------------------------------------------------
 	
 	WB writeBack (.ALURes(MEM_WB_ALUResOut), .MEMData(MEM_WB_readMemDataOut), .Mem2Reg(MEM_WB_MemtoRegOut), .WriteBck(WriteBck));

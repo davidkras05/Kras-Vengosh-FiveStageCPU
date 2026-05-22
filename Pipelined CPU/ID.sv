@@ -3,10 +3,13 @@ module ID (
 	input logic[63:0] WriteBck, PCp4, CurrPC, //From writeback
 	input logic[31:0] instruction,
 	input logic[4:0] WBRd,
+	input logic WBErrorA, WBErrorB,
 	
 	output logic[63:0] Da, Db, ALUInput, BrLoc,
 	output logic[4:0] Rd, Rm, Rn
 );
+	
+	logic[63:0] Da_pre_wb_mux, Db_pre_wb_mux;
 	
 	assign Rm = instruction[20:16];
 	assign Rd = instruction[4:0];
@@ -24,10 +27,16 @@ module ID (
 	// Made changes here. WriteRegister is the register that's being written into, which is always Rd
 	// Additionally, WriteData is the actual data, which comes from WB. Also, the input WriteBck had only 5 bits when it needed 64.
 	// Finally, DataWrite was redundant to WriteBck
-	regfile registerFile (.ReadData1(Da), .ReadData2(Db), .WriteData(Dw_in), 
+	regfile registerFile (.ReadData1(Da_pre_wb_mux), .ReadData2(Db_pre_wb_mux), .WriteData(Dw_in), 
 								.ReadRegister1(Rn), .ReadRegister2(splitout), .WriteRegister(Aw_in), 
 								.RegWrite(RegWrite),
 								.clk(clk), .reset(reset));
+	
+	// These (hopefully) muxes take care of the issue where the WB takes an extra clock cycle 
+   //	so the data is wrong in the read out for Da and Db
+	n_bit_2to1 #(.BITS(64)) Da_WB_MUX (.data_line1(WriteBck), .data_line0(Da_pre_wb_mux), .s(WBErrorA), .mux_out(Da));
+								
+	n_bit_2to1 #(.BITS(64)) Db_WB_MUX (.data_line1(WriteBck), .data_line0(Db_pre_wb_mux), .s(WBErrorB), .mux_out(Db));
 								
 	logic[11:0] Immediate;
 	assign Immediate = instruction[21:10];
@@ -45,6 +54,8 @@ module ID (
 	n_bit_2to1 #(.BITS(64)) ImmChoose (.data_line1(DT_address64), .data_line0(Immediate64), .s(isDType), .mux_out(shift));
 	
 	n_bit_2to1 #(.BITS(64)) ALUchoose (.data_line1(shift), .data_line0(Db), .s(ALUSrc), .mux_out(ALUInput));
+	
+	
 	
 	// Branching moved from EX -------------------------
 	

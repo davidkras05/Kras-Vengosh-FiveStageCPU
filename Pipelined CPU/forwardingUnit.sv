@@ -2,44 +2,58 @@
 
  
  module forwardingUnit (
+	input logic[4:0] RnID, RmID,
 	input logic[4:0] RnIDEX, RmIDEX, RdEXMEM, RdMEMWB,
-	input logic RegWriteEXMEM, RegWriteMEMWB,
+	input logic RegWriteEXMEM, RegWriteMEMWB, ALUSrcEX, ALUSrcID,
 	
-	output logic[1:0] ForwardA, ForwardB
+	output logic[1:0] ForwardA, ForwardB,
+	output logic WBErrorA, WBErrorB
 );
 
 
 	
 	always_comb begin
-		if (1'b1 == 1'b1) begin
-			ForwardA = 2'b00;
-			ForwardB = 2'b00;
-		end
 	
-		if (RegWriteMEMWB && RdMEMWB != 5'b11111) begin
-			if (RdMEMWB == RnIDEX) begin
-				ForwardA = 2'b01;
-			end
-			
-			if (RdMEMWB == RmIDEX) begin
-				ForwardB = 2'b01;
-			end
+		//FwdA
+		if (RegWriteEXMEM && RdEXMEM != 5'b11111 && RdEXMEM == RnIDEX) begin
+			ForwardA = 2'b10;
 		end
-	
-		if (RegWriteEXMEM && RdEXMEM != 5'b11111) begin
-			if (RdEXMEM == RnIDEX) begin
-				ForwardA = 2'b10;
-			end
-			
-			if (RdEXMEM == RmIDEX) begin
-				ForwardB = 2'b10;
-			end
+		else if (RegWriteMEMWB && RdMEMWB != 5'b11111 && RdMEMWB == RnIDEX) begin
+			ForwardA = 2'b01;
 		end
-		
 		else begin
 			ForwardA = 2'b00;
+		end
+			
+		
+		//FwdB
+		if (RegWriteEXMEM && RdEXMEM != 5'b11111 && RdEXMEM == RmIDEX && ~ALUSrcEX) begin
+			ForwardB = 2'b10;
+		end
+		else if (RegWriteMEMWB && RdMEMWB != 5'b11111 && RdMEMWB == RmIDEX && ~ALUSrcEX) begin
+			ForwardB = 2'b01;
+		end
+		else begin
 			ForwardB = 2'b00;
 		end
+		
+		
+			
+		if (RdMEMWB == RnID) begin
+			WBErrorA = 1'b1;
+		end
+		else begin
+			WBErrorA = 1'b0;
+		end
+		
+		
+		if (RdMEMWB == RmID && ~ALUSrcID) begin
+			WBErrorB = 1'b1;
+		end
+		else begin
+			WBErrorB = 1'b0;
+		end
+		
 	end
 			
 endmodule
