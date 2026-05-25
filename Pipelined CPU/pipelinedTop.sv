@@ -16,7 +16,7 @@ module pipelinedTop(
 
 	
 	logic[31:0] IF_ID_instructionOut;
-	logic[63:0] ID_EX_readData2Out, EX_MEM_address;
+	logic[63:0] ID_EX_readData2Out, EX_MEM_address, ID_EX_PCp4Out, EX_MEM_PCp4Out, MEM_WB_PCp4Out;
 	logic ID_EX_BrTakenOut, MEM_WB_RegWriteOut, MEM_WB_IsBLOut, ID_EX_ALUSrcOut;
 	logic WBErrorA, WBErrorB;
 	logic [4:0] MEM_WB_RdOut;
@@ -36,7 +36,7 @@ module pipelinedTop(
 	//		to the wires I made
 	
 	
-	IF instructionFetch (.clk(clk), .reset(reset), .BrLoc(BrLoc), .Db(ID_EX_readData2Out), .BrTaken(BrTakenwire), .IsBR(IsBRwire), 
+	IF instructionFetch (.clk(clk), .reset(reset), .BrLoc(BrLoc), .Db(Db), .BrTaken(BrTakenwire), .IsBR(IsBRwire), 
 	                     .instruction_output(instruction), .PCp4(PCp4), .CurrPC(CurrPC));
 								
 								// BrTaken, still an input IsBr still an input. pipeline BrTaken and IsBr to ID_EX and then write them 
@@ -58,7 +58,7 @@ module pipelinedTop(
 								.Reg2Loc(Reg2Locwire), .ALUSrc(ALUSrcwire), .RegWrite(MEM_WB_RegWriteOut), 
 								.IsBL(MEM_WB_IsBLOut), .isDType(isDTypewire), .UncondBr(UncondBrwire),
 								.WriteBck(WriteBck), 
-								.PCp4(IF_ID_PCp4Out), .CurrPC(IF_ID_CurrPCOut), .instruction(IF_ID_instructionOut), 
+								.PCp4(MEM_WB_PCp4Out), .CurrPC(IF_ID_CurrPCOut), .instruction(IF_ID_instructionOut), 
 								.WBRd(MEM_WB_RdOut), .WBErrorA(WBErrorA), .WBErrorB(WBErrorB), 
 								
 								.Da(Da), .Db(Db), .ALUInput(ALUInput), 
@@ -79,13 +79,13 @@ module pipelinedTop(
 	
 	ID_EX secondpipeline (.clk(clk), .reset(reset), 
 	
-								 .readData1(Da), .readData2(Db), .ALUInput(ALUInput),  
+								 .readData1(Da), .readData2(Db), .ALUInput(ALUInput), .PCp4(IF_ID_PCp4Out),  
 								 .Rd(Rd), .Rn(Rn), .Rm(Rm), 
 								 .ALUOp(ALUOpwire), .ALUSrc(ALUSrcwire), .MemtoReg(MemtoRegwire), .RegWrite(RegWritewire), 
 								 .MemRead(MemReadwire), .MemWrite(MemWritewire), .BrTaken(BrTakenwire), 
 								 .UncondBr(UncondBrwire), .IsBL(IsBLwire), 
 								 
-								 .readData1Out(ID_EX_readData1Out), .readData2Out(ID_EX_readData2Out), .ALUInputOut(ID_EX_ALUInputOut), 
+								 .readData1Out(ID_EX_readData1Out), .readData2Out(ID_EX_readData2Out), .ALUInputOut(ID_EX_ALUInputOut), .PCp4Out(ID_EX_PCp4Out),
 								 .RdOut(ID_EX_RdOut), .RnOut(ID_EX_RnOut), .RmOut(ID_EX_RmOut),
 								 .ALUOpOut(ID_EX_ALUOpOut), .ALUSrcOut(ID_EX_ALUSrcOut), .MemtoRegOut(ID_EX_MemtoRegOut), .RegWriteOut(ID_EX_RegWriteOut), 
 								 .MemReadOut(ID_EX_MemReadOut), .MemWriteOut(ID_EX_MemWriteOut), .BrTakenOut(ID_EX_BrTakenOut), 
@@ -124,12 +124,12 @@ module pipelinedTop(
 	// ALURes = address and readData2 = writeMemData
 	EX_MEM thirdpipeline (.clk(clk), .reset(reset),
 	
-								 .ALURes(ALURes), .ReadData2(ID_EX_readData2Out), 
+								 .ALURes(ALURes), .ReadData2(ID_EX_readData2Out), .PCp4(ID_EX_PCp4Out),
 								 .Rd(ID_EX_RdOut), 
 								 .MemtoReg(ID_EX_MemtoRegOut), .RegWrite(ID_EX_RegWriteOut), .MemRead(ID_EX_MemReadOut),
 								 .MemWrite(ID_EX_MemWriteOut), .IsBL(ID_EX_IsBLOut),
 								 
-								 .address(EX_MEM_address), .writeMemData(EX_MEM_writeMemData), 
+								 .address(EX_MEM_address), .writeMemData(EX_MEM_writeMemData), .PCp4Out(EX_MEM_PCp4Out),
 								 .RdOut(EX_MEM_RdOut),
 								 .MemtoRegOut(EX_MEM_MemtoRegOut), .RegWriteOut(EX_MEM_RegWriteOut), .MemReadOut(EX_MEM_MemReadOut), 
 								 .MemWriteOut(EX_MEM_MemWriteOut), .IsBLOut(EX_MEM_IsBLOut));
@@ -147,10 +147,10 @@ module pipelinedTop(
 	
 	MEM_WB fourthpipeline (.clk(clk), .reset(reset), 
 	
-								  .readMemData(MEMData), .ALURes(EX_MEM_address), .Rd(EX_MEM_RdOut), 
+								  .readMemData(MEMData), .ALURes(EX_MEM_address), .PCp4(EX_MEM_PCp4Out), .Rd(EX_MEM_RdOut), 
 								  .MemtoReg(EX_MEM_MemtoRegOut),.RegWrite(EX_MEM_RegWriteOut), .IsBL(EX_MEM_IsBLOut),
 								  
-								  .ALUResOut(MEM_WB_ALUResOut), .readMemDataOut(MEM_WB_readMemDataOut), .RdOut(MEM_WB_RdOut),
+								  .ALUResOut(MEM_WB_ALUResOut), .readMemDataOut(MEM_WB_readMemDataOut), .PCp4Out(MEM_WB_PCp4Out), .RdOut(MEM_WB_RdOut),
 								  .MemtoRegOut(MEM_WB_MemtoRegOut), .RegWriteOut(MEM_WB_RegWriteOut), .IsBLOut(MEM_WB_IsBLOut));
 	
 	//FORWARDING UNIT HERE ---------------------------------------------------------------------------------------------

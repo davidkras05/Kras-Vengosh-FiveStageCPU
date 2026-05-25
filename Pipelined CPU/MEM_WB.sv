@@ -1,10 +1,10 @@
 module MEM_WB (
 	input logic clk, reset,
-	input logic[63:0] readMemData, ALURes,
+	input logic[63:0] readMemData, ALURes, PCp4,
 	input logic [4:0] Rd,
 	input logic MemtoReg, RegWrite, IsBL,
 	
-	output logic[63:0] ALUResOut, readMemDataOut,
+	output logic[63:0] ALUResOut, readMemDataOut, PCp4Out,
 	output logic [4:0] RdOut,
 	output logic MemtoRegOut, RegWriteOut, IsBLOut
 );
@@ -12,6 +12,9 @@ module MEM_WB (
 	//Pass 64 bit Memory read data
 	
 	nbit_register #(.BITS(64)) passMemoryRead (.clk(clk), .reset(reset), .write(readMemData), .q(readMemDataOut));
+	
+	nbit_register #(.BITS(64)) Pcp4hold (.clk(clk), .reset(reset), .write(PCp4), .q(PCp4Out));
+
 	
 	//Pass 64 bit ALU Result
 	

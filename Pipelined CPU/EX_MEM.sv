@@ -1,10 +1,10 @@
 module EX_MEM (
 	input logic clk, reset,
-	input logic[63:0] ALURes, ReadData2,
+	input logic[63:0] ALURes, ReadData2, PCp4,
 	input logic[4:0] Rd,
 	input logic MemtoReg, RegWrite, MemRead, MemWrite, IsBL,
 	
-	output logic[63:0] address, writeMemData,
+	output logic[63:0] address, writeMemData, PCp4Out,
 	output logic[4:0] RdOut,
 	output logic MemtoRegOut, RegWriteOut, MemReadOut, MemWriteOut, IsBLOut
 );
@@ -12,6 +12,9 @@ module EX_MEM (
 	//Pass 64 bit ALU Result
 	
 	nbit_register #(.BITS(64)) passALU (.clk(clk), .reset(reset), .write(ALURes), .q(address));
+	
+	nbit_register #(.BITS(64)) Pcp4hold (.clk(clk), .reset(reset), .write(PCp4), .q(PCp4Out));
+
 	
 	//Pass 64 bit ReadData2
 	
