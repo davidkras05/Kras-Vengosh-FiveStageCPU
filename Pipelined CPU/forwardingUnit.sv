@@ -39,7 +39,7 @@
 		
 		
 			
-		if (RdMEMWB == RnID && RegWriteMEMWB) begin
+		if (RdMEMWB == RnID && RegWriteMEMWB && RdMEMWB != 5'b11111) begin
 			WBErrorA = 1'b1;
 		end
 		else begin
@@ -47,7 +47,7 @@
 		end
 		
 		
-		if (RdMEMWB == RmID && ~Reg2LocID && RegWriteMEMWB) begin
+		if (RdMEMWB == RmID && ~Reg2LocID && RegWriteMEMWB && RdMEMWB != 5'b11111) begin
 			WBErrorB = 1'b1;
 		end
 		else begin

@@ -17,12 +17,14 @@ module pipelinedTop(
 	
 	logic[31:0] IF_ID_instructionOut;
 	logic[63:0] ID_EX_readData2Out, EX_MEM_address, ID_EX_PCp4Out, EX_MEM_PCp4Out, MEM_WB_PCp4Out;
-	logic ID_EX_BrTakenOut, MEM_WB_RegWriteOut, MEM_WB_IsBLOut, ID_EX_ALUSrcOut;
+	logic ID_EX_BrTakenOut, MEM_WB_RegWriteOut, MEM_WB_IsBLOut, ID_EX_ALUSrcOut, ID_EX_SetFlagsOut;
 	logic WBErrorA, WBErrorB;
 	logic [4:0] MEM_WB_RdOut;
 	logic [1:0] FwdA, FwdB;
 	
-	control_unit control (.instruction(IF_ID_instructionOut), .Db(Db), .ZeroFlag(ZeroFlaghold), .NegativeFlag(NegativeFlaghold), 
+	control_unit control (.instruction(IF_ID_instructionOut), .Db(Db), 
+								 .ZeroFlag(ZeroFlaghold), .NegativeFlag(NegativeFlaghold),
+								 .ALUOutputZero(ZeroFlag), .ALUOutputNegative(NegativeFlag), .EX_SetFlags(ID_EX_SetFlagsOut),
 	                      .Reg2Loc(Reg2Locwire), .ALUSrc(ALUSrcwire), .Mem2Reg(MemtoRegwire), 
 								 .RegWrite(RegWritewire), .MemWrite(MemWritewire), .MemRead(MemReadwire), .BrTaken(BrTakenwire), 
 								 .UncondBr(UncondBrwire), .SetFlags(SetFlagswire), .IsBL(IsBLwire), .IsBR(IsBRwire), 
@@ -56,9 +58,9 @@ module pipelinedTop(
 	ID instructionDecode(.clk(clk), .reset(reset), 
 	
 								.Reg2Loc(Reg2Locwire), .ALUSrc(ALUSrcwire), .RegWrite(MEM_WB_RegWriteOut), 
-								.IsBL(MEM_WB_IsBLOut), .isDType(isDTypewire), .UncondBr(UncondBrwire),
+								.IsBL(IsBLwire), .isDType(isDTypewire), .UncondBr(UncondBrwire),
 								.WriteBck(WriteBck), 
-								.PCp4(MEM_WB_PCp4Out), .CurrPC(IF_ID_CurrPCOut), .instruction(IF_ID_instructionOut), 
+								.PCp4(IF_ID_PCp4Out), .CurrPC(IF_ID_CurrPCOut), .instruction(IF_ID_instructionOut), 
 								.WBRd(MEM_WB_RdOut), .WBErrorA(WBErrorA), .WBErrorB(WBErrorB), 
 								
 								.Da(Da), .Db(Db), .ALUInput(ALUInput), 
@@ -83,13 +85,13 @@ module pipelinedTop(
 								 .Rd(Rd), .Rn(Rn), .Rm(Rm), 
 								 .ALUOp(ALUOpwire), .ALUSrc(ALUSrcwire), .MemtoReg(MemtoRegwire), .RegWrite(RegWritewire), 
 								 .MemRead(MemReadwire), .MemWrite(MemWritewire), .BrTaken(BrTakenwire), 
-								 .UncondBr(UncondBrwire), .IsBL(IsBLwire), 
+								 .UncondBr(UncondBrwire), .IsBL(IsBLwire), .SetFlags(SetFlagswire),
 								 
 								 .readData1Out(ID_EX_readData1Out), .readData2Out(ID_EX_readData2Out), .ALUInputOut(ID_EX_ALUInputOut), .PCp4Out(ID_EX_PCp4Out),
 								 .RdOut(ID_EX_RdOut), .RnOut(ID_EX_RnOut), .RmOut(ID_EX_RmOut),
 								 .ALUOpOut(ID_EX_ALUOpOut), .ALUSrcOut(ID_EX_ALUSrcOut), .MemtoRegOut(ID_EX_MemtoRegOut), .RegWriteOut(ID_EX_RegWriteOut), 
 								 .MemReadOut(ID_EX_MemReadOut), .MemWriteOut(ID_EX_MemWriteOut), .BrTakenOut(ID_EX_BrTakenOut), 
-								 .UncondBrOut(ID_EX_UncondBrOut), .IsBLOut(ID_EX_IsBLOut));
+								 .UncondBrOut(ID_EX_UncondBrOut), .IsBLOut(ID_EX_IsBLOut), .SetFlagsOut(ID_EX_SetFlagsOut));
 								 
 								 // Pipeline IsBR and BrTaken through here since we are moving them from IF to EX. wire their outputs back
 								 // to inputs of IF (BrTaken and IsBr) also, wire DB back to IF from the ID_EX pipeline
@@ -106,11 +108,11 @@ module pipelinedTop(
 					  
 	//Flag hold registers
 	
-	two_onemux zeromux (.in({ZeroFlag, ZeroFlaghold}), .s(SetFlagswire), .y(ZeroFlagmuxout));
+	two_onemux zeromux (.in({ZeroFlag, ZeroFlaghold}), .s(ID_EX_SetFlagsOut), .y(ZeroFlagmuxout));
 	
 	D_FF zeroreg (.q(ZeroFlaghold), .d(ZeroFlagmuxout), .reset(reset), .clk(clk));
 	
-	two_onemux negativemux (.in({NegativeFlag, NegativeFlaghold}), .s(SetFlagswire), .y(NegativeFlagmuxout));
+	two_onemux negativemux (.in({NegativeFlag, NegativeFlaghold}), .s(ID_EX_SetFlagsOut), .y(NegativeFlagmuxout));
 	
 	D_FF negativereg (.q(NegativeFlaghold), .d(NegativeFlagmuxout), .reset(reset), .clk(clk));
 					  

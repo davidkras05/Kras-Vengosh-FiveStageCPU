@@ -2,16 +2,18 @@ onerror {resume}
 quietly WaveActivateNextPane {} 0
 add wave -noupdate /pipelined_tb/clk
 add wave -noupdate /pipelined_tb/reset
-add wave -noupdate -expand -group CNTRLS /pipelined_tb/DUT/control/NegativeFlag
-add wave -noupdate -expand -group CNTRLS /pipelined_tb/DUT/control/ZeroFlag
-add wave -noupdate -expand -group CNTRLS /pipelined_tb/DUT/control/UncondBr
-add wave -noupdate -expand -group CNTRLS /pipelined_tb/DUT/control/SetFlags
-add wave -noupdate -expand -group CNTRLS /pipelined_tb/DUT/control/IsBL
-add wave -noupdate -expand -group CNTRLS /pipelined_tb/DUT/control/IsBR
-add wave -noupdate -expand -group CNTRLS /pipelined_tb/DUT/control/isDType
-add wave -noupdate -expand -group CNTRLS /pipelined_tb/DUT/control/ALUOp
-add wave -noupdate -expand -group CNTRLS /pipelined_tb/DUT/control/extended_op
-add wave -noupdate -expand -group CNTRLS /pipelined_tb/DUT/control/branch_conditional
+add wave -noupdate /pipelined_tb/DUT/ZeroFlaghold
+add wave -noupdate /pipelined_tb/DUT/NegativeFlaghold
+add wave -noupdate -group CNTRLS /pipelined_tb/DUT/control/NegativeFlag
+add wave -noupdate -group CNTRLS /pipelined_tb/DUT/control/ZeroFlag
+add wave -noupdate -group CNTRLS /pipelined_tb/DUT/control/UncondBr
+add wave -noupdate -group CNTRLS /pipelined_tb/DUT/control/SetFlags
+add wave -noupdate -group CNTRLS /pipelined_tb/DUT/control/IsBL
+add wave -noupdate -group CNTRLS /pipelined_tb/DUT/control/IsBR
+add wave -noupdate -group CNTRLS /pipelined_tb/DUT/control/isDType
+add wave -noupdate -group CNTRLS /pipelined_tb/DUT/control/ALUOp
+add wave -noupdate -group CNTRLS /pipelined_tb/DUT/control/extended_op
+add wave -noupdate -group CNTRLS /pipelined_tb/DUT/control/branch_conditional
 add wave -noupdate -expand -group IF /pipelined_tb/DUT/instructionFetch/clk
 add wave -noupdate -expand -group IF /pipelined_tb/DUT/instructionFetch/reset
 add wave -noupdate -expand -group IF /pipelined_tb/DUT/instructionFetch/BrLoc
@@ -23,14 +25,14 @@ add wave -noupdate -expand -group IF /pipelined_tb/DUT/instructionFetch/PCp4
 add wave -noupdate -expand -group IF -radix unsigned /pipelined_tb/DUT/instructionFetch/CurrPC
 add wave -noupdate -expand -group IF /pipelined_tb/DUT/instructionFetch/NextPC
 add wave -noupdate -expand -group IF /pipelined_tb/DUT/instructionFetch/BrMux_noBR
-add wave -noupdate -expand -group IF_ID /pipelined_tb/DUT/firstpipeline/clk
-add wave -noupdate -expand -group IF_ID /pipelined_tb/DUT/firstpipeline/reset
-add wave -noupdate -expand -group IF_ID /pipelined_tb/DUT/firstpipeline/instruction
-add wave -noupdate -expand -group IF_ID /pipelined_tb/DUT/firstpipeline/currPC
-add wave -noupdate -expand -group IF_ID /pipelined_tb/DUT/firstpipeline/PCp4
-add wave -noupdate -expand -group IF_ID /pipelined_tb/DUT/firstpipeline/instructionOut
-add wave -noupdate -expand -group IF_ID -radix unsigned /pipelined_tb/DUT/firstpipeline/currPCOut
-add wave -noupdate -expand -group IF_ID /pipelined_tb/DUT/firstpipeline/PCp4Out
+add wave -noupdate -group IF_ID /pipelined_tb/DUT/firstpipeline/clk
+add wave -noupdate -group IF_ID /pipelined_tb/DUT/firstpipeline/reset
+add wave -noupdate -group IF_ID /pipelined_tb/DUT/firstpipeline/instruction
+add wave -noupdate -group IF_ID /pipelined_tb/DUT/firstpipeline/currPC
+add wave -noupdate -group IF_ID /pipelined_tb/DUT/firstpipeline/PCp4
+add wave -noupdate -group IF_ID /pipelined_tb/DUT/firstpipeline/instructionOut
+add wave -noupdate -group IF_ID -radix unsigned /pipelined_tb/DUT/firstpipeline/currPCOut
+add wave -noupdate -group IF_ID /pipelined_tb/DUT/firstpipeline/PCp4Out
 add wave -noupdate -expand -group ID /pipelined_tb/DUT/instructionDecode/clk
 add wave -noupdate -expand -group ID /pipelined_tb/DUT/instructionDecode/reset
 add wave -noupdate -expand -group ID /pipelined_tb/DUT/instructionDecode/Reg2Loc
@@ -172,7 +174,7 @@ add wave -noupdate -group {FWDING UNIT} /pipelined_tb/DUT/fwding_unit/ForwardB
 add wave -noupdate -group {FWDING UNIT} /pipelined_tb/DUT/fwding_unit/WBErrorA
 add wave -noupdate -group {FWDING UNIT} /pipelined_tb/DUT/fwding_unit/WBErrorB
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {1187208 ps} 0}
+WaveRestoreCursors {{Cursor 1} {1161373 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 150
 configure wave -valuecolwidth 82
@@ -188,4 +190,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ns
 update
-WaveRestoreZoom {0 ps} {658085 ps}
+WaveRestoreZoom {771412 ps} {1984465 ps}

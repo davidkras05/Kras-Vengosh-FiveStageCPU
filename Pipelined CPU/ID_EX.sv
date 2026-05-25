@@ -3,12 +3,12 @@ module ID_EX (
 	input logic[63:0] readData1, readData2, ALUInput, PCp4,
 	input logic[4:0] Rd, Rn, Rm,
 	input logic[2:0] ALUOp,
-	input logic ALUSrc, MemtoReg, RegWrite, MemRead, MemWrite, BrTaken, UncondBr, IsBL,
+	input logic ALUSrc, MemtoReg, RegWrite, MemRead, MemWrite, BrTaken, UncondBr, IsBL, SetFlags,
 	
 	output logic[63:0] readData1Out, readData2Out, ALUInputOut, PCp4Out,
 	output logic[4:0] RdOut, RnOut, RmOut,
 	output logic[2:0] ALUOpOut,
-	output logic ALUSrcOut, MemtoRegOut, RegWriteOut, MemReadOut, MemWriteOut, BrTakenOut, UncondBrOut, IsBLOut
+	output logic ALUSrcOut, MemtoRegOut, RegWriteOut, MemReadOut, MemWriteOut, BrTakenOut, UncondBrOut, IsBLOut, SetFlagsOut
 	
 );
 
@@ -49,6 +49,7 @@ module ID_EX (
 	nbit_register #(.BITS(3)) ALUOp_reg (.clk(clk), .reset(reset), .write(ALUOp), .q(ALUOpOut));
 	D_FF UncondBr_dff (.q(UncondBrOut), .d(UncondBr), .reset(reset), .clk(clk));
 	D_FF ALUSrc_dff (.q(ALUSrcOut), .d(ALUSrc), .reset(reset), .clk(clk));
+	D_FF SetFlags_dff (.q(SetFlagsOut), .d(SetFlags), .reset(reset), .clk(clk));
 
 
 endmodule
