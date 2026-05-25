@@ -18,7 +18,7 @@ module pipelinedTop(
 	logic[31:0] IF_ID_instructionOut;
 	logic[63:0] ID_EX_readData2Out, EX_MEM_address, ID_EX_PCp4Out, EX_MEM_PCp4Out, MEM_WB_PCp4Out;
 	logic ID_EX_BrTakenOut, MEM_WB_RegWriteOut, MEM_WB_IsBLOut, ID_EX_ALUSrcOut, ID_EX_SetFlagsOut;
-	logic WBErrorA, WBErrorB;
+	logic WBErrorA, WBErrorB, FwdForBR;
 	logic [4:0] MEM_WB_RdOut;
 	logic [1:0] FwdA, FwdB;
 	
@@ -38,8 +38,8 @@ module pipelinedTop(
 	//		to the wires I made
 	
 	
-	IF instructionFetch (.clk(clk), .reset(reset), .BrLoc(BrLoc), .Db(Db), .BrTaken(BrTakenwire), .IsBR(IsBRwire), 
-	                     .instruction_output(instruction), .PCp4(PCp4), .CurrPC(CurrPC));
+	IF instructionFetch (.clk(clk), .reset(reset), .BrLoc(BrLoc), .Db(Db), .EX_ALURes(ALURes), .BrTaken(BrTakenwire), .IsBR(IsBRwire),
+	                     .FwdForBR(FwdForBR), .instruction_output(instruction), .PCp4(PCp4), .CurrPC(CurrPC));
 								
 								// BrTaken, still an input IsBr still an input. pipeline BrTaken and IsBr to ID_EX and then write them 
 								// back as inputs to IF.
@@ -158,10 +158,14 @@ module pipelinedTop(
 	//FORWARDING UNIT HERE ---------------------------------------------------------------------------------------------
 	
 	
-	forwardingUnit fwding_unit (.RnID(Rn), .RmID(Rm), .RnIDEX(ID_EX_RnOut), .RmIDEX(ID_EX_RmOut), .RdEXMEM(EX_MEM_RdOut), .RdMEMWB(MEM_WB_RdOut),
+	forwardingUnit fwding_unit (.RnID(Rn), .RmID(Rm), 
+										 .RnIDEX(ID_EX_RnOut), .RmIDEX(ID_EX_RmOut), 
+										 .RdEXMEM(EX_MEM_RdOut), .RdMEMWB(MEM_WB_RdOut), .RdEX(ID_EX_RdOut), .RdID(Rd),
 	                            .RegWriteEXMEM(EX_MEM_RegWriteOut), .RegWriteMEMWB(MEM_WB_RegWriteOut),
-										 .ALUSrcEX(ID_EX_ALUSrcOut), .Reg2LocID(Reg2Locwire),
-										 .ForwardA(FwdA), .ForwardB(FwdB), .WBErrorA(WBErrorA), .WBErrorB(WBErrorB));
+										 .ALUSrcEX(ID_EX_ALUSrcOut), .Reg2LocID(Reg2Locwire), .ID_IsBR(IsBRwire), .RegWriteIDEX(ID_EX_RegWriteOut),
+										 .ForwardA(FwdA), .ForwardB(FwdB), 
+										 .WBErrorA(WBErrorA), .WBErrorB(WBErrorB), 
+										 .FwdForBR(FwdForBR));
 	//------------------------------------------------------------------------------------------------------------------
 	
 	WB writeBack (.ALURes(MEM_WB_ALUResOut), .MEMData(MEM_WB_readMemDataOut), .Mem2Reg(MEM_WB_MemtoRegOut), .WriteBck(WriteBck));

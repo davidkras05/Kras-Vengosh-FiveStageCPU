@@ -1,3 +1,5 @@
+`timescale 1ps/1ps
+
 module ID (
 	input logic clk, reset, Reg2Loc, ALUSrc, RegWrite, IsBL, isDType, UncondBr,
 	input logic[63:0] WriteBck, PCp4, CurrPC, //From writeback
@@ -8,6 +10,7 @@ module ID (
 	output logic[63:0] Da, Db, ALUInput, BrLoc,
 	output logic[4:0] Rd, Rm, Rn
 );
+	parameter DELAY = 50;
 	
 	logic[63:0] Da_pre_wb_mux, Db_pre_wb_mux;
 	
@@ -24,12 +27,16 @@ module ID (
 	logic [63:0] Dw_in;
 	n_bit_2to1 #(.BITS(64)) dw_mux (.data_line1(PCp4), .data_line0(WriteBck), .s(IsBL), .mux_out(Dw_in));
 	
+	// Hopefully fixes the double WB issue with BL instructions. Along with this, removed RegWrite from BL instruction in control unit
+	logic RegWrite_with_BL;
+	or #(DELAY) (RegWrite_with_BL, RegWrite, IsBL);
+	
 	// Made changes here. WriteRegister is the register that's being written into, which is always Rd
 	// Additionally, WriteData is the actual data, which comes from WB. Also, the input WriteBck had only 5 bits when it needed 64.
 	// Finally, DataWrite was redundant to WriteBck
 	regfile registerFile (.ReadData1(Da_pre_wb_mux), .ReadData2(Db_pre_wb_mux), .WriteData(Dw_in), 
 								.ReadRegister1(Rn), .ReadRegister2(splitout), .WriteRegister(Aw_in), 
-								.RegWrite(RegWrite),
+								.RegWrite(RegWrite_with_BL),
 								.clk(clk), .reset(reset));
 	
 	// These (hopefully) muxes take care of the issue where the WB takes an extra clock cycle 
