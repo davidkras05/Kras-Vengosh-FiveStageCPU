@@ -21,7 +21,7 @@ module pipelined_tb ();
 		repeat (1) @(posedge clk);
 		reset = 0;
 	
-		repeat (600) begin
+		repeat (675) begin
 			@(posedge clk);
 			$display("time=%0t instruction=%h ALURes=%h Writebck=%h", $time, DUT.instruction, DUT.ALURes, DUT.WriteBck);
 			
