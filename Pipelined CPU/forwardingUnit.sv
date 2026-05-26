@@ -63,7 +63,7 @@
 			FwdForBR = 1'b0;
 		end
 		
-		if (RdEX == RdID && ID_MemWrite && RegWriteIDEX && RdEX != 5'b11111) begin
+		if (RdEX == RdID && Reg2LocID && RegWriteIDEX && RdEX != 5'b11111) begin
 			FwdRt = 1'b1;
 		end
 		else begin
