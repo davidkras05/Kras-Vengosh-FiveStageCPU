@@ -2,17 +2,17 @@
 
 module ID (
 	input logic clk, reset, Reg2Loc, ALUSrc, RegWrite, IsBL, isDType, UncondBr,
-	input logic[63:0] WriteBck, PCp4, CurrPC, //From writeback
+	input logic[63:0] WriteBck, PCp4, CurrPC, ALURes,
 	input logic[31:0] instruction,
 	input logic[4:0] WBRd,
-	input logic WBErrorA, WBErrorB,
+	input logic WBErrorA, WBErrorB, FwdRt,
 	
 	output logic[63:0] Da, Db, ALUInput, BrLoc,
 	output logic[4:0] Rd, Rm, Rn
 );
 	parameter DELAY = 50;
 	
-	logic[63:0] Da_pre_wb_mux, Db_pre_wb_mux;
+	logic[63:0] Da_pre_wb_mux, Db_pre_wb_mux, Db_pre_Rt_mux;
 	
 	assign Rm = instruction[20:16];
 	assign Rd = instruction[4:0];
@@ -43,7 +43,9 @@ module ID (
    //	so the data is wrong in the read out for Da and Db
 	n_bit_2to1 #(.BITS(64)) Da_WB_MUX (.data_line1(WriteBck), .data_line0(Da_pre_wb_mux), .s(WBErrorA), .mux_out(Da));
 								
-	n_bit_2to1 #(.BITS(64)) Db_WB_MUX (.data_line1(WriteBck), .data_line0(Db_pre_wb_mux), .s(WBErrorB), .mux_out(Db));
+	n_bit_2to1 #(.BITS(64)) Db_WB_MUX (.data_line1(WriteBck), .data_line0(Db_pre_wb_mux), .s(WBErrorB), .mux_out(Db_pre_Rt_mux));
+	
+	n_bit_2to1 #(.BITS(64)) Rt_MUX (.data_line1(ALURes), .data_line0(Db_pre_Rt_mux), .s(FwdRt), .mux_out(Db));
 								
 	logic[11:0] Immediate;
 	assign Immediate = instruction[21:10];

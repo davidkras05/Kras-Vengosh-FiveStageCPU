@@ -35,26 +35,26 @@ add wave -noupdate -group IF_ID -radix unsigned /pipelined_tb/DUT/firstpipeline/
 add wave -noupdate -group IF_ID /pipelined_tb/DUT/firstpipeline/instructionOut
 add wave -noupdate -group IF_ID -radix unsigned /pipelined_tb/DUT/firstpipeline/currPCOut
 add wave -noupdate -group IF_ID -radix unsigned /pipelined_tb/DUT/firstpipeline/PCp4Out
-add wave -noupdate -group ID -radix decimal /pipelined_tb/DUT/instructionDecode/ALUInput
-add wave -noupdate -group ID -radix binary /pipelined_tb/DUT/instructionDecode/ALUSrc
-add wave -noupdate -group ID -radix unsigned /pipelined_tb/DUT/instructionDecode/Aw_in
-add wave -noupdate -group ID -radix decimal /pipelined_tb/DUT/instructionDecode/DT_address64
-add wave -noupdate -group ID -radix decimal /pipelined_tb/DUT/instructionDecode/Da
-add wave -noupdate -group ID -radix decimal /pipelined_tb/DUT/instructionDecode/Db
-add wave -noupdate -group ID -radix decimal /pipelined_tb/DUT/instructionDecode/Dw_in
-add wave -noupdate -group ID -radix decimal /pipelined_tb/DUT/instructionDecode/Immediate64
-add wave -noupdate -group ID -radix binary /pipelined_tb/DUT/instructionDecode/IsBL
-add wave -noupdate -group ID -radix unsigned /pipelined_tb/DUT/instructionDecode/PCp4
-add wave -noupdate -group ID -radix unsigned /pipelined_tb/DUT/instructionDecode/Rd
-add wave -noupdate -group ID -radix binary /pipelined_tb/DUT/instructionDecode/Reg2Loc
-add wave -noupdate -group ID -radix binary /pipelined_tb/DUT/instructionDecode/RegWrite
-add wave -noupdate -group ID -radix unsigned /pipelined_tb/DUT/instructionDecode/Rm
-add wave -noupdate -group ID -radix unsigned /pipelined_tb/DUT/instructionDecode/Rn
-add wave -noupdate -group ID -radix decimal /pipelined_tb/DUT/instructionDecode/WriteBck
-add wave -noupdate -group ID /pipelined_tb/DUT/instructionDecode/instruction
-add wave -noupdate -group ID -radix binary /pipelined_tb/DUT/instructionDecode/isDType
-add wave -noupdate -group ID -radix decimal /pipelined_tb/DUT/instructionDecode/shift
-add wave -noupdate -group ID -radix unsigned /pipelined_tb/DUT/instructionDecode/splitout
+add wave -noupdate -expand -group ID -radix decimal /pipelined_tb/DUT/instructionDecode/ALUInput
+add wave -noupdate -expand -group ID -radix binary /pipelined_tb/DUT/instructionDecode/ALUSrc
+add wave -noupdate -expand -group ID -radix unsigned /pipelined_tb/DUT/instructionDecode/Aw_in
+add wave -noupdate -expand -group ID -radix decimal /pipelined_tb/DUT/instructionDecode/DT_address64
+add wave -noupdate -expand -group ID -radix decimal /pipelined_tb/DUT/instructionDecode/Da
+add wave -noupdate -expand -group ID -radix decimal /pipelined_tb/DUT/instructionDecode/Db
+add wave -noupdate -expand -group ID -radix decimal /pipelined_tb/DUT/instructionDecode/Dw_in
+add wave -noupdate -expand -group ID -radix decimal /pipelined_tb/DUT/instructionDecode/Immediate64
+add wave -noupdate -expand -group ID -radix binary /pipelined_tb/DUT/instructionDecode/IsBL
+add wave -noupdate -expand -group ID -radix unsigned /pipelined_tb/DUT/instructionDecode/PCp4
+add wave -noupdate -expand -group ID -radix unsigned /pipelined_tb/DUT/instructionDecode/Rd
+add wave -noupdate -expand -group ID -radix unsigned /pipelined_tb/DUT/instructionDecode/Rn
+add wave -noupdate -expand -group ID -radix unsigned /pipelined_tb/DUT/instructionDecode/Rm
+add wave -noupdate -expand -group ID -radix binary /pipelined_tb/DUT/instructionDecode/Reg2Loc
+add wave -noupdate -expand -group ID -radix binary /pipelined_tb/DUT/instructionDecode/RegWrite
+add wave -noupdate -expand -group ID -radix decimal /pipelined_tb/DUT/instructionDecode/WriteBck
+add wave -noupdate -expand -group ID /pipelined_tb/DUT/instructionDecode/instruction
+add wave -noupdate -expand -group ID -radix binary /pipelined_tb/DUT/instructionDecode/isDType
+add wave -noupdate -expand -group ID -radix decimal /pipelined_tb/DUT/instructionDecode/shift
+add wave -noupdate -expand -group ID -radix unsigned /pipelined_tb/DUT/instructionDecode/splitout
 add wave -noupdate -group ID_EX -radix decimal /pipelined_tb/DUT/secondpipeline/readData1
 add wave -noupdate -group ID_EX -radix decimal /pipelined_tb/DUT/secondpipeline/readData2
 add wave -noupdate -group ID_EX -radix decimal /pipelined_tb/DUT/secondpipeline/ALUInput
@@ -142,18 +142,34 @@ add wave -noupdate -expand -group {FWDING UNIT} -radix binary /pipelined_tb/DUT/
 add wave -noupdate -expand -group {FWDING UNIT} -radix binary /pipelined_tb/DUT/fwding_unit/RegWriteMEMWB
 add wave -noupdate -expand -group {FWDING UNIT} /pipelined_tb/DUT/fwding_unit/ForwardA
 add wave -noupdate -expand -group {FWDING UNIT} /pipelined_tb/DUT/fwding_unit/ForwardB
-add wave -noupdate -radix unsigned {/pipelined_tb/DUT/instructionDecode/registerFile/reg_outs[20]}
-add wave -noupdate -radix unsigned {/pipelined_tb/DUT/instructionDecode/registerFile/reg_outs[19]}
-add wave -noupdate -radix unsigned {/pipelined_tb/DUT/instructionDecode/registerFile/reg_outs[18]}
-add wave -noupdate -radix unsigned {/pipelined_tb/DUT/instructionDecode/registerFile/reg_outs[17]}
-add wave -noupdate -radix unsigned {/pipelined_tb/DUT/instructionDecode/registerFile/reg_outs[16]}
-add wave -noupdate -radix unsigned {/pipelined_tb/DUT/instructionDecode/registerFile/reg_outs[15]}
-add wave -noupdate -radix unsigned {/pipelined_tb/DUT/instructionDecode/registerFile/reg_outs[14]}
-add wave -noupdate -radix unsigned {/pipelined_tb/DUT/instructionDecode/registerFile/reg_outs[13]}
-add wave -noupdate -radix unsigned {/pipelined_tb/DUT/instructionDecode/registerFile/reg_outs[12]}
-add wave -noupdate -radix unsigned {/pipelined_tb/DUT/instructionDecode/registerFile/reg_outs[11]}
+add wave -noupdate -expand -group Registers -radix unsigned {/pipelined_tb/DUT/instructionDecode/registerFile/reg_outs[20]}
+add wave -noupdate -expand -group Registers -radix unsigned {/pipelined_tb/DUT/instructionDecode/registerFile/reg_outs[19]}
+add wave -noupdate -expand -group Registers -radix unsigned {/pipelined_tb/DUT/instructionDecode/registerFile/reg_outs[18]}
+add wave -noupdate -expand -group Registers -radix unsigned {/pipelined_tb/DUT/instructionDecode/registerFile/reg_outs[17]}
+add wave -noupdate -expand -group Registers -radix unsigned {/pipelined_tb/DUT/instructionDecode/registerFile/reg_outs[16]}
+add wave -noupdate -expand -group Registers -radix unsigned {/pipelined_tb/DUT/instructionDecode/registerFile/reg_outs[15]}
+add wave -noupdate -expand -group Registers -radix unsigned {/pipelined_tb/DUT/instructionDecode/registerFile/reg_outs[14]}
+add wave -noupdate -expand -group Registers -radix unsigned {/pipelined_tb/DUT/instructionDecode/registerFile/reg_outs[13]}
+add wave -noupdate -expand -group Registers -radix unsigned {/pipelined_tb/DUT/instructionDecode/registerFile/reg_outs[12]}
+add wave -noupdate -expand -group Registers -radix unsigned {/pipelined_tb/DUT/instructionDecode/registerFile/reg_outs[11]}
+add wave -noupdate -expand -group Registers -radix decimal {/pipelined_tb/DUT/instructionDecode/registerFile/reg_outs[5]}
+add wave -noupdate -expand -group Registers -radix decimal {/pipelined_tb/DUT/instructionDecode/registerFile/reg_outs[4]}
+add wave -noupdate -expand -group Registers -radix decimal {/pipelined_tb/DUT/instructionDecode/registerFile/reg_outs[3]}
+add wave -noupdate -expand -group Registers -radix decimal {/pipelined_tb/DUT/instructionDecode/registerFile/reg_outs[2]}
+add wave -noupdate -expand -group Registers -radix decimal {/pipelined_tb/DUT/instructionDecode/registerFile/reg_outs[1]}
+add wave -noupdate -expand -group Registers -radix decimal {/pipelined_tb/DUT/instructionDecode/registerFile/reg_outs[0]}
+add wave -noupdate -expand -group {Used MEM} -radix decimal {/pipelined_tb/DUT/MEM/mem[72]}
+add wave -noupdate -expand -group {Used MEM} -radix decimal {/pipelined_tb/DUT/MEM/mem[64]}
+add wave -noupdate -expand -group {Used MEM} -radix decimal {/pipelined_tb/DUT/MEM/mem[56]}
+add wave -noupdate -expand -group {Used MEM} -radix decimal {/pipelined_tb/DUT/MEM/mem[48]}
+add wave -noupdate -expand -group {Used MEM} -radix decimal {/pipelined_tb/DUT/MEM/mem[40]}
+add wave -noupdate -expand -group {Used MEM} -radix decimal {/pipelined_tb/DUT/MEM/mem[32]}
+add wave -noupdate -expand -group {Used MEM} -radix decimal {/pipelined_tb/DUT/MEM/mem[24]}
+add wave -noupdate -expand -group {Used MEM} -radix decimal {/pipelined_tb/DUT/MEM/mem[16]}
+add wave -noupdate -expand -group {Used MEM} -radix decimal {/pipelined_tb/DUT/MEM/mem[8]}
+add wave -noupdate -expand -group {Used MEM} -radix decimal {/pipelined_tb/DUT/MEM/mem[0]}
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {4921211 ps} 0}
+WaveRestoreCursors {{Cursor 1} {59723101 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 150
 configure wave -valuecolwidth 100
@@ -169,4 +185,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ps
 update
-WaveRestoreZoom {4543988 ps} {5076633 ps}
+WaveRestoreZoom {56602825 ps} {60231430 ps}

@@ -18,7 +18,7 @@ module pipelinedTop(
 	logic[31:0] IF_ID_instructionOut;
 	logic[63:0] ID_EX_readData2Out, EX_MEM_address, ID_EX_PCp4Out, EX_MEM_PCp4Out, MEM_WB_PCp4Out;
 	logic ID_EX_BrTakenOut, MEM_WB_RegWriteOut, MEM_WB_IsBLOut, ID_EX_ALUSrcOut, ID_EX_SetFlagsOut;
-	logic WBErrorA, WBErrorB, FwdForBR;
+	logic WBErrorA, WBErrorB, FwdForBR, FwdRt;
 	logic [4:0] MEM_WB_RdOut;
 	logic [1:0] FwdA, FwdB;
 	
@@ -60,8 +60,9 @@ module pipelinedTop(
 								.Reg2Loc(Reg2Locwire), .ALUSrc(ALUSrcwire), .RegWrite(MEM_WB_RegWriteOut), 
 								.IsBL(IsBLwire), .isDType(isDTypewire), .UncondBr(UncondBrwire),
 								.WriteBck(WriteBck), 
-								.PCp4(IF_ID_PCp4Out), .CurrPC(IF_ID_CurrPCOut), .instruction(IF_ID_instructionOut), 
-								.WBRd(MEM_WB_RdOut), .WBErrorA(WBErrorA), .WBErrorB(WBErrorB), 
+								.PCp4(IF_ID_PCp4Out), .CurrPC(IF_ID_CurrPCOut), .ALURes(ALURes),
+								.instruction(IF_ID_instructionOut), 
+								.WBRd(MEM_WB_RdOut), .WBErrorA(WBErrorA), .WBErrorB(WBErrorB), .FwdRt(FwdRt),
 								
 								.Da(Da), .Db(Db), .ALUInput(ALUInput), 
 								.BrLoc(BrLoc), 
@@ -162,10 +163,11 @@ module pipelinedTop(
 										 .RnIDEX(ID_EX_RnOut), .RmIDEX(ID_EX_RmOut), 
 										 .RdEXMEM(EX_MEM_RdOut), .RdMEMWB(MEM_WB_RdOut), .RdEX(ID_EX_RdOut), .RdID(Rd),
 	                            .RegWriteEXMEM(EX_MEM_RegWriteOut), .RegWriteMEMWB(MEM_WB_RegWriteOut),
-										 .ALUSrcEX(ID_EX_ALUSrcOut), .Reg2LocID(Reg2Locwire), .ID_IsBR(IsBRwire), .RegWriteIDEX(ID_EX_RegWriteOut),
+										 .ALUSrcEX(ID_EX_ALUSrcOut), .Reg2LocID(Reg2Locwire), .ID_IsBR(IsBRwire), .ID_MemWrite(MemWritewire),
+										 .RegWriteIDEX(ID_EX_RegWriteOut),
 										 .ForwardA(FwdA), .ForwardB(FwdB), 
 										 .WBErrorA(WBErrorA), .WBErrorB(WBErrorB), 
-										 .FwdForBR(FwdForBR));
+										 .FwdForBR(FwdForBR), .FwdRt(FwdRt));
 	//------------------------------------------------------------------------------------------------------------------
 	
 	WB writeBack (.ALURes(MEM_WB_ALUResOut), .MEMData(MEM_WB_readMemDataOut), .Mem2Reg(MEM_WB_MemtoRegOut), .WriteBck(WriteBck));

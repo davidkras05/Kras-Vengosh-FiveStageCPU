@@ -5,10 +5,10 @@
 	input logic[4:0] RnID, RmID,
 	input logic[4:0] RnIDEX, RmIDEX, RdEXMEM, RdMEMWB, RdEX, RdID,
 	input logic RegWriteEXMEM, RegWriteMEMWB, ALUSrcEX, Reg2LocID,
-	input logic ID_IsBR, RegWriteIDEX,
+	input logic ID_IsBR, ID_MemWrite, RegWriteIDEX,
 	
 	output logic[1:0] ForwardA, ForwardB,
-	output logic WBErrorA, WBErrorB, FwdForBR
+	output logic WBErrorA, WBErrorB, FwdForBR, FwdRt
 );
 
 
@@ -55,11 +55,19 @@
 			WBErrorB = 1'b0;
 		end
 		
+		// This can be extended to any case where Rt to Rt needs to happen
 		if (RdEX == RdID && ID_IsBR && RegWriteIDEX && RdEX != 5'b11111) begin
 			FwdForBR = 1'b1;
 		end
 		else begin
 			FwdForBR = 1'b0;
+		end
+		
+		if (RdEX == RdID && ID_MemWrite && RegWriteIDEX && RdEX != 5'b11111) begin
+			FwdRt = 1'b1;
+		end
+		else begin
+			FwdRt = 1'b0;
 		end
 		
 	end
