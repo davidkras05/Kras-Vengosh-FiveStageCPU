@@ -20,8 +20,8 @@ module pipelined_tb ();
 		reset = 1;
 		repeat (1) @(posedge clk);
 		reset = 0;
-	
-		repeat (675) begin
+		// 675 for 11, 65 for 10
+		repeat (65) begin
 			@(posedge clk);
 			$display("time=%0t instruction=%h ALURes=%h Writebck=%h", $time, DUT.instruction, DUT.ALURes, DUT.WriteBck);
 			
