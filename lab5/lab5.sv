@@ -161,7 +161,7 @@ module lab5_testbench ();
 		
 		for(i=1; i<num_reads; i++) begin
 			readMem(read_addr+stride*i, read_data, delay);
-			//readMem(read_addr, read_data, delay); //Check back to the first addr to see if overwritten yet
+			readMem(read_addr, read_data, delay); //Check back to the first addr to see if overwritten yet
 			min_delay = min(min_delay, delay);
 			max_delay = max(max_delay, delay);
 			//$display("2  delay: %d", delay);
