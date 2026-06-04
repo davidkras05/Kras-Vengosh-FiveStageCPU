@@ -123,6 +123,9 @@ module lab5_testbench ();
 		read_data = data_out;
 		endTime = cycles;
 		delay = endTime - startTime - 1;
+		
+		$display("%t Read took %d cycles for %d", $time, delay, read_addr);
+
 	endtask
 	
 	function int min;
@@ -158,6 +161,7 @@ module lab5_testbench ();
 		
 		for(i=1; i<num_reads; i++) begin
 			readMem(read_addr+stride*i, read_data, delay);
+			//readMem(read_addr, read_data, delay); //Check back to the first addr to see if overwritten yet
 			min_delay = min(min_delay, delay);
 			max_delay = max(max_delay, delay);
 			//$display("2  delay: %d", delay);
@@ -244,12 +248,19 @@ module lab5_testbench ();
 		dummy_data <= '0;
 		resetMem();				// Initialize the memory.
 		
-		// Do 20 random reads.
+		readMem('0, dummy_data, delay);
+		readStride(0, 8, (1024 + 8)/8, minval, maxval); // access the first KB
+		
+		
+		
+		/*// Do 20 random reads.
 		for (i=0; i<20; i++) begin
 			addr = $random()*8; // *8 to doubleword-align the access.
 			readMem(addr, dummy_data, delay);
 			$display("%t Read took %d cycles", $time, delay);
 		end
+		
+
 		
 		// Do 5 random double-word writes of random data.
 		for (i=0; i<5; i++) begin
@@ -265,8 +276,8 @@ module lab5_testbench ();
 		// Read all of the first KB
 		readStride(0, 8, 1024/8, minval, maxval);
 		$display("%t Reading the first KB took between %d and %d cycles each", $time, minval, maxval);
-
+		*/
 		$stop();
-	end
+	end 
 	
 endmodule
