@@ -2,4 +2,4 @@
 
 This is a 5 Stage Pipelined 64 bit ARM CPU built and simulated entirely in SystemVerilog
 
-Built by both David Kras and Adam Vengosh
+Built by both David Kras and Adam Vengosh at the University of Washington in Seattle
